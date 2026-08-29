@@ -10,6 +10,7 @@ No disc content lives in this folder - only identification records, listings, no
 | `disc-info.txt` | Captured `drutil` and `diskutil` output from the physical disc: TOC, session/track/block counts, slice layout |
 | `masterpieces-1996.hls.txt` | Full `hls -l -R` catalogue listing of the HFS volume (879 entries), also the parser fixture for `scripts/hfscopy.py --dry-run` |
 | `notes.md` | Per-disc findings, including corrections and extensions to the published catalogues |
+| `checksums.txt` | Reference hashes for a full dump of this disc, Redump-verified; check your own dump against these |
 | `build-masterpieces.sh` | Turns a dumped HFS slice image into a modern, mountable HFS+ `.dmg` with resource forks and metadata intact |
 
 ## Archiving your own copy
@@ -17,19 +18,26 @@ No disc content lives in this folder - only identification records, listings, no
 The full method with its pitfalls is in [docs/knowledge-transfer.md](../../docs/knowledge-transfer.md). The short version for this disc:
 
 1. Insert the disc and confirm it matches [disc-info.txt](disc-info.txt): one session, one data track, 150515 blocks, an Apple partition scheme with ISO9660 and Apple_HFS slices.
-2. Unmount and dump the HFS slice from the *buffered* device (the raw device rejects 2048-byte reads on some drives):
+2. Unmount and dump the whole disc as raw sectors (no `sudo` needed; macOS gives the console user the optical device nodes):
 
    ```
    diskutil unmountDisk /dev/diskN
-   sudo dd if=/dev/diskNs1s3 of=~/Desktop/mp-hfs.img bs=2048 status=progress
-   sudo chown $(whoami) ~/Desktop/mp-hfs.img
+   dd if=/dev/rdiskN of=~/Desktop/mp-full-2352.bin bs=2352 count=150515 status=progress
    ```
 
-3. Verify before anything else: the image should be 308,254,720 bytes at most (slice-sized), with zeros for the first 1024 bytes and `BD` at offset 0x400 followed by the volume name `Masterpieces`.
-4. Build the mountable derivative:
+   Expect ~1 MB/s and about six minutes. A transfer rate in the tens of MB/s means you are not reading the disc; stop and reread the traps in the method doc.
+
+3. Convert to user data, which also verifies sector structure and prints hashes:
 
    ```
-   ./build-masterpieces.sh ~/Desktop/mp-hfs.img
+   python3 ../../scripts/raw2user.py ~/Desktop/mp-full-2352.bin ~/Desktop/mp-full-user.img
    ```
 
-Keep the slice image as the archival artifact and never modify it; the `.dmg` is a convenience copy.
+4. Compare the printed hashes against [checksums.txt](checksums.txt). A match means your copy is byte-identical to the Redump reference pressing.
+5. The user-data image mounts directly with hfsutils (`hmount ~/Desktop/mp-full-user.img 1`). To build a double-clickable modern HFS+ image:
+
+   ```
+   ./build-masterpieces.sh ~/Desktop/mp-full-user.img
+   ```
+
+Keep the raw `.bin` as the archival artifact and never modify it; everything else is a convenience copy.

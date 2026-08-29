@@ -1,0 +1,22 @@
+# Jekyll configuration for the GitHub Pages site.
+# Built by .github/workflows/pages.yml with the github-pages gem;
+# the site mirrors the repo layout, with each README as its folder's index.
+title: infocompendium
+description: Imaging, cataloguing, and findings for the Activision Infocom compilation CD-ROMs
+url: "https://graysonlang.github.io"
+baseurl: "/infocompendium"
+
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-optional-front-matter   # pages without front matter still build
+  - jekyll-default-layout          # ...and get the theme layout
+  - jekyll-titles-from-headings    # ...and take their title from the first heading
+  - jekyll-readme-index            # README.md serves as index.html per folder
+  - jekyll-relative-links          # links to .md files become links to the built pages
+
+# Repo files that are not catalog material.
+exclude:
+  - AGENTS.md
+  - infocompendium.code-workspace
+  - scripts/

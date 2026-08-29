@@ -17,10 +17,18 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 
 | Disc | Imaged | Extracted | Notes |
 | --- | --- | --- | --- |
-| Classic Text Adventure Masterpieces of Infocom (1996) | partial | in progress | Slice dump works; full-disc dump blocked by drive block-size reporting |
+| [Classic Text Adventure Masterpieces of Infocom (1996)](discs/masterpieces-1996/README.md) | yes | in progress | Full raw dump hash-matches the Redump database entry |
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | The Zork Anthology (1994) | no | no | |
+
+## Findings
+
+What each disc actually contains, checked against the published references:
+
+- [Masterpieces (1996)](discs/masterpieces-1996/notes.md) - the Leather Goddesses boss key survives, Lurking Horror sound on the PC side, real save files with the copy-protection credentials in them, and more. The pressing is Redump-verified, so these describe the reference disc, not a variant.
+
+The disc-agnostic method - what a hybrid disc is, why macOS fights you, and the imaging traps - is in [docs/knowledge-transfer.md](docs/knowledge-transfer.md).
 
 ## Layout
 
@@ -29,6 +37,8 @@ docs/
   knowledge-transfer.md          Method and pitfalls, disc-agnostic. Read this first.
 scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
+  raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
+                                 verifying sector structure and printing Redump-style hashes.
 discs/
   masterpieces-1996/             One folder per disc: identification capture, catalogue
     README.md                    listing, findings, and disc-specific build scripts.
@@ -54,8 +64,7 @@ Given an HFS slice image already dumped from the disc:
 
 That produces `~/Desktop/masterpieces.dmg`, a compressed read-only HFS+ image with resource forks, type/creator codes, and modification dates intact.
 
-If you are starting from a physical disc, read `docs/knowledge-transfer.md` first.
-The imaging step has several traps that will silently produce a file full of zeros.
+If you are starting from a physical disc, read [docs/knowledge-transfer.md](docs/knowledge-transfer.md) first - the imaging step has several traps that will silently produce a file full of zeros - then follow the per-disc steps in that disc's README, e.g. [Masterpieces](discs/masterpieces-1996/README.md).
 
 ## Principles
 

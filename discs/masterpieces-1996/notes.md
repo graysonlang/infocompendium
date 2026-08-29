@@ -11,6 +11,10 @@ Volume `Masterpieces`, created 18 June 1996, modified 22 June 1996.
 879 catalogue entries: 113 directories, 766 files.
 See [disc-info.txt](disc-info.txt) for the captured TOC and slice layout.
 
+**The pressing is Redump-verified.**
+A full raw dump made 2026-08-29 hashes byte-identical to redump.org disc 64685 (serial CDD-3640-101-U3); see [checksums.txt](checksums.txt).
+Every finding below therefore describes the reference pressing, not a variant or a damaged copy - including the `LHSOUND.ZIP` provenance question, now settled: Jokisch's freeware sound package genuinely shipped on the commercial disc.
+
 ## Structure
 
 The HFS volume is the whole disc.
@@ -35,5 +39,7 @@ Do not merge the two trees by filename; keep them as siblings.
 
 ## Open items for this disc
 
-- Full-disc image with Redump-comparable hashes. Redump has a Masterpieces entry, so a hash match would confirm the pressing is unmodified - which matters for the `LHSOUND.ZIP` provenance question above.
 - `SetFile -d` pass to restore creation dates on extracted files.
+
+Resolved 2026-08-29: full-disc image with Redump-comparable hashes.
+`dd bs=2352 count=150515` against the raw whole-disc device produced a track that hashes identical to the Redump entry; see [checksums.txt](checksums.txt) and the method notes in [docs/knowledge-transfer.md](../../docs/knowledge-transfer.md).

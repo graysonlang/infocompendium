@@ -1,0 +1,28 @@
+# Classic Text Adventure Masterpieces of Infocom (1996) - dump checksums
+#
+# Dumped 2026-08-29 on macOS 26 (Apple Silicon), Pioneer BD-RW BDR-XS07U fw 1.03.
+# Method: dd if=/dev/rdiskN bs=2352 count=150515 against the whole-disc raw
+# device (no sudo needed; macOS gives the console user the optical device
+# nodes), then scripts/raw2user.py to convert and verify.
+#
+# The raw track hashes match redump.org disc 64685 exactly
+# (http://redump.org/disc/64685/, serial CDD-3640-101-U3, 0 errors),
+# so this pressing is byte-identical to the Redump reference.
+#
+# Structure verification at conversion time: 150515 sectors, all Mode 1,
+# 0 bad sync, 0 bad address, 0 bad mode, 0 EDC mismatches in 603 sampled.
+
+# Raw track, 2352 bytes/sector (Redump-comparable) - 354,011,280 bytes
+crc32  dacb4c43                                  mp-full-2352.bin
+md5    8433668090977ccdb21e725105537412          mp-full-2352.bin
+sha1   240c8da1afc7e2b66f032cf6f1f4cfa6b875d02e  mp-full-2352.bin
+
+# User data, 2048 bytes/sector (mountable/carvable) - 308,254,720 bytes
+crc32  57015b5d                                  mp-full-user.img
+md5    8483b7c447c7a734de868696d9bd5f5b          mp-full-user.img
+sha1   a20d7f2a47c1aeecbb9cda4a8153688788cec46a  mp-full-user.img
+
+# Apple partition map inside the user-data image (512-byte blocks):
+#   1  Apple_partition_map  start 1    blocks 3
+#   2  ISO9660_system       start 4    blocks 509
+#   3  Apple_HFS            start 513  blocks 1299979   "Masterpieces"

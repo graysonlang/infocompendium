@@ -118,19 +118,28 @@ hexdump -C ~/Desktop/mp-hfs.img | head -5
 
 A good HFS image shows zeros for the first 1024 bytes (empty boot blocks on a non-bootable volume) and then `BD` at offset 0x400 followed by the volume name.
 
-For a **full-disc** image that can be verified against Redump, try native block size on the raw device:
+For a **full-disc** image that can be verified against Redump, use the drive's native block size on the raw device with an explicit sector count from `drutil status`:
 
 ```
-sudo dd if=/dev/rdiskN of=full.img bs=2352 status=progress
+diskutil unmountDisk /dev/diskN
+dd if=/dev/rdiskN of=full-2352.bin bs=2352 count=<blocks> status=progress
 ```
 
-That yields raw 2352-byte sectors rather than 2048-byte user data, so it needs converting before hashing. This is still an open item; see section 8.
+Confirmed working on the Pioneer (2026-08-29): the resulting track hashed byte-identical to the Redump database entry for Masterpieces, so this route produces Redump-comparable dumps directly. Reading to EOF probably also works, but an explicit `count` avoids any chance of an error at the lead-out; `drutil status` gives the exact block count.
 
-Take ownership afterwards, since `sudo dd` leaves the file owned by root and `hmount` needs write access:
+Note that `sudo` turned out to be unnecessary: macOS gives the console user ownership of removable-media device nodes (`ls -l /dev/rdiskN` shows your user), so plain `dd` can read the disc. If you do use `sudo`, take ownership afterwards, since `hmount` needs write access:
 
 ```
 sudo chown $(whoami) ~/Desktop/mp-hfs.img
 ```
+
+Convert raw sectors to 2048-byte user data with `scripts/raw2user.py`, which also checks every sector's sync pattern, mode and address header, samples the EDC checksums, and prints CRC32/MD5/SHA-1 for both forms in the shape Redump publishes:
+
+```
+python3 scripts/raw2user.py full-2352.bin full-user.img
+```
+
+The user-data image is directly usable: `hmount full-user.img 1` mounts the first HFS partition through the Apple partition map, no carving needed.
 
 ## 5. Reading the HFS volume
 
@@ -204,11 +213,14 @@ For the Mac side, note that the applications are 68k and will not run on modern 
 
 ## 8. Open items
 
-- Full-disc imaging with Redump-comparable hashes. The `bs=2352` route against `/dev/rdiskN` is untested; raw 2352-byte sectors need converting to 2048-byte user data before hashing.
-- Whether the Pioneer BD combo drive reports sector layout in a way that confuses imaging tools generally, or only `dd`. DiscImageCreator on a PC is the fallback.
 - Regression fixtures for the parser as more discs are added.
 
-Per-disc open items (Redump verification of a given pressing, creation-date restoration passes) live in each disc's `notes.md` under `discs/`.
+Resolved 2026-08-29:
+
+- Full-disc imaging with Redump-comparable hashes: works. `dd bs=2352` against `/dev/rdiskN` with an explicit count, then `scripts/raw2user.py`; see section 4. The Masterpieces dump matched Redump exactly.
+- The Pioneer drive does not confuse imaging tools generally. The only real constraint is that the raw device requires reads in multiples of 2352; `bs=2048` failing was that constraint, not a drive quirk.
+
+Per-disc open items (creation-date restoration passes and the like) live in each disc's `notes.md` under `discs/`.
 
 ## 9. Per-disc findings
 
