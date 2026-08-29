@@ -69,6 +69,7 @@ hdiutil verify "$FINAL_DMG"
 
 echo
 echo "done."
-echo "  archival (do not modify):  $SRC_IMG"
-echo "  working, double-clickable: $FINAL_DMG"
-echo "  scratch r/w copy:          $RW_DMG   (delete once happy)"
+echo "  source image (keep, do not modify): $SRC_IMG"
+echo "  working, double-clickable:          $FINAL_DMG"
+echo "  scratch r/w copy:                   $RW_DMG   (delete once happy)"
+echo "The archival artifact is the raw sector dump the source image came from; keep that above all."

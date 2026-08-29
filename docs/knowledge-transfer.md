@@ -162,6 +162,15 @@ Recovery, in order: `hvol` to see what it thinks is mounted, `humount` to releas
 
 This is easy to loop on: you test `hmount` by hand to check it works, it succeeds and holds the lock, then a script's own `hmount` fails. `hfscopy.py` calls `humount` before mounting to break that cycle.
 
+A second source of the same error, observed 2026-08-29: macOS itself holds an exclusive lock on any image the DiskImages framework has attached - which happens if anyone double-clicks the `.img` in Finder, even though the HFS volume inside never mounts. `lsof` on the image shows nothing. Check `hdiutil info` for the image path and `hdiutil detach` the disk it names.
+
+### Paths starting with ":" are relative
+
+In hfsutils path syntax, a leading colon means *relative to the current directory*; absolute paths start with the volume name (`Masterpieces:DOCS:`).
+The `hls -l -R` listing prints its directory headers in the relative form (`:DOCS:`), so feeding those back to `hcd` verbatim only works while the current directory happens to be the root.
+The failure mode found on real hardware: a copy loop that ran `hcd :ACRODOS:` (fine, from root), then `hcd :DOCS:` resolved *inside* ACRODOS, failed silently, and every subsequent file copy failed with "no such file or directory" - 730 of 766 files lost, while the script exited zero.
+`hfscopy.py` now prefixes the volume root from `hpwd` onto every directory change, treats a failed `hcd` as a loud per-directory failure, and exits nonzero if any file failed, so the wrapper script aborts instead of packaging an almost-empty volume.
+
 ### Reading the listing format
 
 ```

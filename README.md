@@ -17,7 +17,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 
 | Disc | Imaged | Extracted | Notes |
 | --- | --- | --- | --- |
-| [Classic Text Adventure Masterpieces of Infocom (1996)](discs/masterpieces-1996/README.md) | yes | in progress | Full raw dump hash-matches the Redump database entry |
+| [Classic Text Adventure Masterpieces of Infocom (1996)](discs/masterpieces-1996/README.md) | yes | yes | Full raw dump hash-matches the Redump database entry; extraction verified, 766 files with all resource forks |
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | The Zork Anthology (1994) | no | no | |

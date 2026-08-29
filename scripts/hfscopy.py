@@ -140,6 +140,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
+    vol_root = None
     if args.listing:
         text = open(args.listing, encoding="utf-8", errors="replace").read()
     elif args.image:
@@ -148,6 +149,11 @@ def main():
         run(["humount"], check=False)
         run(["hmount", args.image])
         text = run(["hls", "-l", "-R"]).stdout
+        # Volume root, e.g. "Masterpieces:". Needed to build absolute paths:
+        # hfsutils treats a path starting with ":" as RELATIVE to the current
+        # directory, so successive `hcd :FOO:` calls chain instead of starting
+        # from the root.
+        vol_root = run(["hpwd"]).stdout.strip()
     else:
         ap.error("need --image or --listing")
 
@@ -168,6 +174,10 @@ def main():
     if not args.dest:
         ap.error("--dest required unless --dry-run")
 
+    if vol_root is None:
+        # --listing plus --dest: copy from whatever volume is already mounted.
+        vol_root = run(["hpwd"]).stdout.strip()
+
     for e in dirs:
         os.makedirs(e.local_path(args.dest), exist_ok=True)
 
@@ -180,7 +190,13 @@ def main():
             by_dir.setdefault(e.hfs_dir, []).append(e)
 
         for hfs_dir, group in by_dir.items():
-            run(["hcd", hfs_dir], check=False)
+            abs_dir = vol_root.rstrip(":") + hfs_dir
+            try:
+                run(["hcd", abs_dir])
+            except RuntimeError as exc:
+                failed += len(group)
+                print(f"  FAIL {abs_dir} (whole directory): {exc}", file=sys.stderr)
+                continue
             for e in group:
                 tmp = os.path.join(tmpdir, "item.bin")
                 try:
@@ -203,6 +219,8 @@ def main():
         run(["humount"], check=False)
 
     print(f"done: {ok} copied ({total_rsrc} with resource forks), {failed} failed")
+    if failed:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
