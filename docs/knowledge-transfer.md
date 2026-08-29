@@ -205,6 +205,8 @@ Useful side effect: for Mac game applications that *do* have a data fork, that f
 
 Creation dates are restored with `SetFile -d` from the Xcode command line tools (resolved 2026-08-29; `os.utime` cannot set birth times). `hfscopy.py` finds `SetFile` on the PATH and warns but continues without it. Order matters on APFS: set the modification time first, then the creation date, because setting an mtime older than the current birth time silently lowers the birth time.
 
+Directory dates come from the `hls` listing rather than MacBinary (directories have no MacBinary form), and are set in a final pass because writing a file into a folder bumps the folder's mtime. Two approximations follow: `hls` shows only a modification date, so a directory's birth time is set equal to it, and the listing is day-resolution, so directories get local midnight. Files are exact.
+
 The restored dates are evidence in their own right: on Masterpieces they reach back to February 1988 and show 1991/1992 creation dates on Mac games modified in 1996, i.e. earlier masters reused.
 
 ## 7. Producing a mountable modern image

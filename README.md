@@ -39,6 +39,8 @@ scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
   raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
                                  verifying sector structure and printing Redump-style hashes.
+  picdir.py                      Lists the image directory of an Infocom V6 picture library
+                                 (PC .CG1/.EG1/.MG1, Mac PIC.DATA), either byte order.
 discs/
   masterpieces-1996/             One folder per disc: identification capture, catalogue
     README.md                    listing, findings, and disc-specific build scripts.

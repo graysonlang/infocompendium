@@ -36,11 +36,12 @@ HEADER_RE = re.compile(r"^:.*:$")
 
 
 class Entry:
-    def __init__(self, kind, name, hfs_dir, type_creator=None):
+    def __init__(self, kind, name, hfs_dir, type_creator=None, date_str=None):
         self.kind = kind              # 'f' or 'd'
         self.name = name
         self.hfs_dir = hfs_dir        # ':' or ':MAC:ARTHUR FOLDER:'
         self.type_creator = type_creator
+        self.date_str = date_str      # 'Jun 19  1996' or 'Feb 10 14:32'
 
     @property
     def hfs_path(self):
@@ -82,8 +83,22 @@ def parse_listing(text):
             tcm = re.match(r"^[fF]\s+(\S*/\S*|\s*/\s*)", line)
             if tcm:
                 tc = tcm.group(1).strip()
-        entries.append(Entry(kind, name, current, tc))
+        entries.append(Entry(kind, name, current, tc, m.group(0).strip()))
     return entries
+
+
+def parse_hls_date(s):
+    """'Jun 15  1996' -> epoch seconds (local midnight), else None.
+
+    The 'Feb 10 14:32' form omits the year (only used for recent files),
+    so it cannot be converted and is skipped.
+    """
+    if not s:
+        return None
+    try:
+        return time.mktime(time.strptime(" ".join(s.split()), "%b %d %Y"))
+    except ValueError:
+        return None
 
 
 def run(cmd, check=True):
@@ -234,6 +249,26 @@ def main():
     finally:
         shutil.rmtree(tmpdir, ignore_errors=True)
         run(["humount"], check=False)
+
+    # Directory dates go last: writing a file into a folder bumps the folder's
+    # mtime, which would undo them. hls only exposes a directory's modification
+    # date, so its birth time is approximated by it; files carry their true
+    # creation dates from the MacBinary header.
+    dated = 0
+    for e in dirs:
+        t = parse_hls_date(e.date_str)
+        if t is None:
+            continue
+        path = e.local_path(args.dest)
+        try:
+            os.utime(path, (t, t))
+        except OSError:
+            continue
+        if SETFILE:
+            stamp = time.strftime("%m/%d/%Y %H:%M:%S", time.localtime(t))
+            run([SETFILE, "-d", stamp, path], check=False)
+        dated += 1
+    print(f"dated {dated}/{len(dirs)} directories from the listing")
 
     print(f"done: {ok} copied ({total_rsrc} with resource forks), {failed} failed")
     if failed:
