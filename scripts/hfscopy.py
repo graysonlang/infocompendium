@@ -22,8 +22,13 @@ import shutil
 import struct
 import subprocess
 import tempfile
+import time
 
 MAC_EPOCH_OFFSET = 2082844800  # seconds between 1904-01-01 and 1970-01-01
+
+# os.utime cannot set birth times; SetFile -d (Xcode command line tools) can.
+# Optional: without it everything else still works, creation dates are skipped.
+SETFILE = shutil.which("SetFile")
 
 # "Jun 19  1996 " or "Feb 10 14:32 " -- everything after this is the name
 DATE_RE = re.compile(r"[A-Z][a-z]{2} +\d+ +(?:\d{4}|\d{1,2}:\d{2}) ")
@@ -103,6 +108,7 @@ def unpack_macbinary(binpath, outpath):
         flags_lo = hdr[101]
         datalen = struct.unpack(">I", hdr[83:87])[0]
         rsrclen = struct.unpack(">I", hdr[87:91])[0]
+        ctime_mac = struct.unpack(">I", hdr[91:95])[0]
         mtime_mac = struct.unpack(">I", hdr[95:99])[0]
 
         data = fh.read(datalen)
@@ -128,6 +134,13 @@ def unpack_macbinary(binpath, outpath):
             os.utime(outpath, (unix_mtime, unix_mtime))
         except OSError:
             pass
+
+    # After utime, so a creation date later than the (already lowered)
+    # birth time still wins. SetFile takes local time.
+    if SETFILE and ctime_mac > MAC_EPOCH_OFFSET:
+        stamp = time.strftime("%m/%d/%Y %H:%M:%S",
+                              time.localtime(ctime_mac - MAC_EPOCH_OFFSET))
+        run([SETFILE, "-d", stamp, outpath], check=False)
 
     return datalen, rsrclen
 
@@ -177,6 +190,10 @@ def main():
     if vol_root is None:
         # --listing plus --dest: copy from whatever volume is already mounted.
         vol_root = run(["hpwd"]).stdout.strip()
+
+    if not SETFILE:
+        print("SetFile not found; creation dates will not be restored "
+              "(install the Xcode command line tools)", file=sys.stderr)
 
     for e in dirs:
         os.makedirs(e.local_path(args.dest), exist_ok=True)

@@ -22,10 +22,12 @@ Usage:
     python3 raw2user.py disc-raw.bin disc-user.img
 """
 
+import sys
+sys.dont_write_bytecode = True
+
 import argparse
 import hashlib
 import os
-import sys
 import zlib
 
 SECTOR_RAW = 2352

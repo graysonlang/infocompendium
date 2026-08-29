@@ -12,9 +12,15 @@ Source code stays 7-bit ASCII (bytes 0x00-0x7F), comments and string literals in
 
 This governs source files. Markdown prose may use non-ASCII freely.
 
+## Python scripts
+
+Start every script with `import sys` followed by `sys.dont_write_bytecode = True`, before the other imports, so no `.pyc` files are created.
+
 ## Shell scripts
 
 Use `set -euo pipefail`. Quote every variable expansion. Never write a destructive command that can run without an explicit path argument.
+
+Resolve a script's own directory as `SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" >/dev/null 2>&1 && pwd -P)"` - the `:-$0` fallback and `pwd -P` make it survive `sh` invocation and symlinked paths.
 
 Scripts must refuse to overwrite existing output files rather than clobbering silently. Disc images take minutes to produce and hours to re-source if the disc is damaged in the meantime.
 

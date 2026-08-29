@@ -39,7 +39,11 @@ Do not merge the two trees by filename; keep them as siblings.
 
 ## Open items for this disc
 
-- `SetFile -d` pass to restore creation dates on extracted files.
+None.
+
+Resolved 2026-08-29: creation dates on extracted files.
+`scripts/hfscopy.py` now restores them from the MacBinary header via `SetFile -d`.
+The restored dates carry provenance: `MAC:SOUND:S3` was created 1988-02-08 (the original Sherlock sound build), and Mac `ARTHUR` (1992-10-29) and `ZORK I` (1991-10-28) carry Lost Treasures-era creation dates under their 1995/1996 modification stamps, consistent with Activision reusing the earlier masters.
 
 Resolved 2026-08-29: full-disc image with Redump-comparable hashes.
 `dd bs=2352 count=150515` against the raw whole-disc device produced a track that hashes identical to the Redump entry; see [checksums.txt](checksums.txt) and the method notes in [docs/knowledge-transfer.md](../../docs/knowledge-transfer.md).

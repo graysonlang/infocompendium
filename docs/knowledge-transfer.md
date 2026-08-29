@@ -195,6 +195,7 @@ MacBinary II header fields used:
 | 73 | 1 | Finder flags, high byte |
 | 83 | 4 | data fork length, big endian |
 | 87 | 4 | resource fork length, big endian |
+| 91 | 4 | creation date, Mac epoch |
 | 95 | 4 | modification date, Mac epoch |
 | 101 | 1 | Finder flags, low byte |
 
@@ -202,7 +203,9 @@ Data fork begins at offset 128 and is padded to a 128-byte boundary; the resourc
 
 Useful side effect: for Mac game applications that *do* have a data fork, that fork **is** the z-code story file. `hcopy -r` on those extracts a directly playable file.
 
-Not preserved: creation dates. `os.utime` cannot set birth times. Add `SetFile -d` from the Xcode command line tools if you need them.
+Creation dates are restored with `SetFile -d` from the Xcode command line tools (resolved 2026-08-29; `os.utime` cannot set birth times). `hfscopy.py` finds `SetFile` on the PATH and warns but continues without it. Order matters on APFS: set the modification time first, then the creation date, because setting an mtime older than the current birth time silently lowers the birth time.
+
+The restored dates are evidence in their own right: on Masterpieces they reach back to February 1988 and show 1991/1992 creation dates on Mac games modified in 1996, i.e. earlier masters reused.
 
 ## 7. Producing a mountable modern image
 
