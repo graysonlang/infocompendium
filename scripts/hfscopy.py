@@ -12,13 +12,15 @@ Usage:
     python3 hfscopy.py --listing mp-hfs.txt --dry-run
 """
 
+import sys
+sys.dont_write_bytecode = True
+
 import argparse
 import os
 import re
 import shutil
 import struct
 import subprocess
-import sys
 import tempfile
 
 MAC_EPOCH_OFFSET = 2082844800  # seconds between 1904-01-01 and 1970-01-01

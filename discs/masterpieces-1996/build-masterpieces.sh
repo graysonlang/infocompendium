@@ -13,13 +13,15 @@ WORKDIR="$HOME/Desktop"
 RW_DMG="$WORKDIR/masterpieces-rw.dmg"
 FINAL_DMG="$WORKDIR/masterpieces.dmg"
 SIZE="420m"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" >/dev/null 2>&1 && pwd -P)"
+# Shared tooling lives at the repo root; this script is disc-specific.
+HFSCOPY="$SCRIPT_DIR/../../scripts/hfscopy.py"
 
 echo "==> checking prerequisites"
 [ -f "$SRC_IMG" ] || { echo "source image not found: $SRC_IMG"; exit 1; }
 command -v hmount >/dev/null || { echo "hfsutils missing -- run: brew install hfsutils"; exit 1; }
 command -v python3 >/dev/null || { echo "python3 missing"; exit 1; }
-[ -f "$SCRIPT_DIR/hfscopy.py" ] || { echo "hfscopy.py not found next to this script"; exit 1; }
+[ -f "$HFSCOPY" ] || { echo "hfscopy.py not found at $HFSCOPY"; exit 1; }
 
 # Refuse to clobber silently.
 for f in "$RW_DMG" "$FINAL_DMG"; do
@@ -43,7 +45,7 @@ cleanup() {
 trap cleanup EXIT
 
 echo "==> copying contents (this walks ~766 files; a few minutes)"
-python3 "$SCRIPT_DIR/hfscopy.py" --image "$SRC_IMG" --dest "$MOUNTPOINT"
+python3 "$HFSCOPY" --image "$SRC_IMG" --dest "$MOUNTPOINT"
 
 echo "==> spot-checking resource forks"
 PROBE="$MOUNTPOINT/MAC/ARTHUR FOLDER/ARTHUR"

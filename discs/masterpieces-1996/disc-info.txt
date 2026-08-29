@@ -1,0 +1,71 @@
+# Captured 2026-08-29T21:56:50Z - Pioneer BD-RW BDR-XS07U, macOS 26.6.2
+
+## drutil status
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+           Type: CD-ROM               Name: /dev/disk6
+       Sessions: 1                  Tracks: 1 
+   Overwritable:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Free:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Used:   33:26:65         blocks:   150515 / 308.25MB / 293.97MiB
+    Writability: 
+
+
+## drutil toc
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+    First session:             1
+    Last session:              1
+    First track:               1
+    Disc type:                 0 (CD-DA, or CD-ROM with first track in Mode 1)
+    Last track:                1
+    Lead-out:                  33:28.65
+    Session  1, Track  1:      00:02.00  data track, digital copy prohibited
+
+
+## diskutil list disk6
+/dev/disk6 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:        CD_partition_scheme                        *354.0 MB   disk6
+   1:     Apple_partition_scheme                         308.3 MB   disk6s1
+   2:        Apple_partition_map                         1.5 KB     disk6s1s1
+   3:             ISO9660_system                         260.6 KB   disk6s1s2
+   4:                  Apple_HFS                         308.0 MB   disk6s1s3
+
+## diskutil info disk6
+   Device Identifier:         disk6
+   Device Node:               /dev/disk6
+   Whole:                     Yes
+   Part of Whole:             disk6
+   Device / Media Name:       PIONEER BD-RW BDR-XS07U
+
+   Volume Name:               Not applicable (no file system)
+   Mounted:                   Not applicable (no file system)
+   File System:               None
+
+   Content (IOContent):       CD_partition_scheme
+   OS Can Be Installed:       No
+   Media Type:                
+   Protocol:                  USB
+   SMART Status:              Not Supported
+
+   Disk Size:                 354.0 MB (354011280 Bytes) (691428 512-Byte-Units + 144 Byte(s))
+   Device Block Size:         2352 Bytes
+
+   Media OS Use Only:         No
+   Media Read-Only:           Yes
+   Volume Read-Only:          Not applicable (no file system)
+
+   Device Location:           External
+   Removable Media:           Removable
+   Media Removal:             Software-Activated
+
+   Solid State:               Info not available
+   Virtual:                   No
+
+   Optical Drive Type:        CD-ROM, CD-R, CD-RW, DVD-ROM, DVD-R, DVD-R DL, DVD-RW, DVD-RAM, DVD+R, DVD+R DL, DVD+RW, BD-ROM, BD-R, BD-RE
+   Optical Media Type:        CD-ROM
+   Optical Media Erasable:    No
+

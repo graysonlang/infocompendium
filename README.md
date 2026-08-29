@@ -1,6 +1,13 @@
-# infocom-disc-preservation
+# infocompendium
 
 Tooling and notes for imaging and extracting 1990s hybrid CD-ROMs, with a focus on the Activision Infocom compilations.
+
+The repo serves two purposes:
+
+- Source material for filling gaps in the shared public knowledge of the Infocom catalogue and related assets. Per-disc notes record what a physical pressing actually contains, including where it contradicts the published references.
+- A mechanism for people to archive their own media. Each disc folder documents how to image and verify that specific disc, and the shared scripts do the extraction.
+
+No disc content is stored here - only identification records, catalogue listings, notes, and tooling.
 
 These discs carry two filesystems over one set of data blocks: ISO 9660 for the PC side and HFS for the Mac side.
 macOS dropped HFS support in Ventura, so modern Macs can identify these discs but refuse to mount them.
@@ -19,10 +26,16 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 
 ```
 docs/
-  knowledge-transfer.md   Method, pitfalls, and per-disc findings. Read this first.
+  knowledge-transfer.md          Method and pitfalls, disc-agnostic. Read this first.
 scripts/
-  hfscopy.py              Walks an HFS volume and copies it out preserving forks and metadata.
-  build-masterpieces.sh   End-to-end wrapper: create HFS+ DMG, copy, verify, compress.
+  hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
+discs/
+  masterpieces-1996/             One folder per disc: identification capture, catalogue
+    README.md                    listing, findings, and disc-specific build scripts.
+    disc-info.txt                No disc content, just the material needed to archive
+    masterpieces-1996.hls.txt    and verify a copy.
+    notes.md
+    build-masterpieces.sh
 ```
 
 ## Quick start
@@ -36,7 +49,7 @@ brew install hfsutils
 Given an HFS slice image already dumped from the disc:
 
 ```
-./scripts/build-masterpieces.sh ~/Desktop/mp-hfs.img
+./discs/masterpieces-1996/build-masterpieces.sh ~/Desktop/mp-hfs.img
 ```
 
 That produces `~/Desktop/masterpieces.dmg`, a compressed read-only HFS+ image with resource forks, type/creator codes, and modification dates intact.

@@ -38,4 +38,4 @@ Specific habits that matter here:
 
 The scripts touch real hardware and real disk images, so they cannot be fully tested in isolation. Where logic can be separated from I/O, separate it: `hfscopy.py` parses a captured listing independently of any mount, and `--dry-run` exercises that path against a saved `hls -l -R` capture with no disc present.
 
-Add a saved listing to `tests/fixtures/` when adding support for a new disc, so the parser can be regression-tested without the physical media.
+Each disc folder under `discs/` keeps a saved `hls -l -R` listing; add one when adding support for a new disc, so the parser can be regression-tested without the physical media (e.g. `python3 scripts/hfscopy.py --listing discs/masterpieces-1996/masterpieces-1996.hls.txt --dry-run`).
