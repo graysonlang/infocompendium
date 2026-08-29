@@ -33,11 +33,16 @@ The game draws whichever frame `SET-BORDER` picks as a single `<DISPLAY pic 1 1>
 - PC (`ZORK0.CG1`/`ZORK0.EG1`, 503 images each): the same numbers hold only the top banners (640 x 29-39), and the libraries carry twenty PC-only pictures, 484-504, that the leaked ZIL never references: eight column strips (60-86 wide x 161-171 tall - four left/right pairs matching the four frame themes), ten invisible 0x0 entries, and two 20x7 fragments. The IF Archive `.MG1` shows the same banner/column split.
 - Both platforms use invisible pictures as a layout-data channel: entries such as 383, 417 and 422 have zero or hairline dimensions and exist so the game can read per-platform metrics through `PICINF` (picture 417 "measures" 0x127 on the PC but 0x186 on the Mac).
 
-Where the PC columns get composited: not in the leaked source, whose picture constants stop at exactly 483 - the Mac library's count - and not in the interpreter, since the shipped `ZORKZERO.EXE` is the generic 47,494-byte 6.71 build with no trace of a 484-504 picture table.
-By elimination the banner-plus-columns drawing lives in the later PC story build itself, compiled from a source revision newer than the leak (the two sides of this disc ship different releases; see the findings above).
+Where the PC columns get composited: in the r393 story file itself, confirmed by disassembly (routine at `0x1baf8` in `ZORK0.ZIP`).
+It draws the border picture at (1,1) - which on the PC is just the banner - reads the banner's height and width back with `PICTURE_DATA`, selects the column pair for the current border (5 -> 497/498, 6 -> 501/502, 7 -> 499/500, 8 -> 503/504), then draws the left column at (1+height, 1) and the right column at (1+height, width-colwidth+1).
+Crucially the code stays platform-agnostic: each column draw is guarded by a `PICTURE_DATA` existence check, so against a Mac-style library with full-frame borders and no pictures 497-504 the same code draws the frame and silently skips the columns.
+The compiled `SET-BORDER` sits directly after it, matching the leaked source line for line; the leak (picture constants ending at 483, the Mac library's count) simply predates the r393 border rework.
+Neither the leaked ZIL nor the shipped `ZORKZERO.EXE` (the generic 47,494-byte 6.71 interpreter) contains any of this - it is all r393 z-code.
 The split also makes sense on 1989 PC hardware: on a region change, redrawing a 640x37 banner and two column strips is far cheaper in EGA planar memory than repainting a full 640x200 frame.
 
-Analysed with `scripts/picdir.py` against this disc's picture libraries, plus the ZIL source at <https://github.com/historicalsource/zorkzero> (`globals.zil` `SET-BORDER`/`INIT-STATUS-LINE`, `picdef.zil`).
+Loose ends from the disassembly: the invisible PC-only pictures are read via `PICTURE_DATA` as expected (486, 487 and 496 observed), confirming the layout-metrics channel; the two 20x7 fragments 484/485 appear in an r393 picture-preload table alongside the `U-BOX`/`D-BOX`/`BOX-COVER` button pictures, so they belong to that on-screen button UI, though their exact draw sites use computed operands and were not pinned down.
+
+Analysed with `scripts/picdir.py` against this disc's picture libraries, `txd` from ztools 7.3.1 against this disc's `ZORK0.ZIP`, plus the ZIL source at <https://github.com/historicalsource/zorkzero> (`globals.zil` `SET-BORDER`/`INIT-STATUS-LINE`, `picdef.zil`).
 
 ## Findings that correct or extend the published catalogues
 

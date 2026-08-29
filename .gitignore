@@ -11,3 +11,6 @@
 # Extracted disc contents
 extracted/
 out/
+
+# Third-party tools fetched by scripts/get-ztools.sh
+tools/

@@ -41,6 +41,8 @@ scripts/
                                  verifying sector structure and printing Redump-style hashes.
   picdir.py                      Lists the image directory of an Infocom V6 picture library
                                  (PC .CG1/.EG1/.MG1, Mac PIC.DATA), either byte order.
+  get-ztools.sh                  Fetches and builds ztools (txd, infodump, pix2gif, check)
+                                 from the IF Archive into tools/ztools/ (gitignored).
 discs/
   masterpieces-1996/             One folder per disc: identification capture, catalogue
     README.md                    listing, findings, and disc-specific build scripts.
