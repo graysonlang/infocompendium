@@ -1,0 +1,13 @@
+.DS_Store
+
+# Disc images and derivatives - large, and some content is still under copyright.
+*.bin
+*.cue
+*.dmg
+*.img
+*.iso
+*.toc
+
+# Extracted disc contents
+extracted/
+out/

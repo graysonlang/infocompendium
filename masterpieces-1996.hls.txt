@@ -1,0 +1,1109 @@
+Volume name is "Masterpieces" (locked)
+Volume was created on Tue Jun 18 11:05:53 1996
+Volume was last modified on Sat Jun 22 01:45:03 1996
+Volume has 357969920 bytes free
+f  TEXT/mdos         0    276020 Jun 22  1996 _INST16.EX_
+f  TEXT/mdos         0      7680 Jun 22  1996 _ISDEL.EXE
+f  TEXT/mdos         0     10752 Jun 22  1996 _SETUP.DLL
+f  TEXT/mdos         0    161065 Jun 22  1996 _SETUP.LIB
+d         12 items               Jun 17  1996 ACRODOS
+f  TEXT/mdos         0   1528560 Jun 22  1996 ACROREAD.EXE
+f  TEXT/mdos         0     20976 Jun 22  1996 CTL3D.DLL
+f  TEXT/mdos         0  10587923 Jun 20  1996 DATA.Z
+d          0 items               Jun 18  1996 Desktop Folder
+d          4 items               Jun 21  1996 DOCS
+f  TEXT/dosa         0    272482 Jun 22  1996 DOSSETUP.EXE
+f  TEXT/dosa         0     34320 Jun 22  1996 EREGLIB.DLL
+f  TEXT/dosa         0     34160 Jun 22  1996 EREGREG2.DLL
+d         40 items               Jun 21  1996 MAC
+f  TEXT/mdos         0    137610 Jun 22  1996 MPREG.EXE
+d         38 items               Jun 21  1996 PC
+d          8 items               Jun 20  1996 PCDEMOS
+f  TEXT/mdos         0       188 Jun 22  1996 PRODUCT.INI
+f  TEXT/ttxt         0      9195 Jun 22  1996 README.TXT
+f  TEXT/dosa         0     19228 Jun 22  1996 REGISTER.EXE
+f  TEXT/mdos         0     78518 Jun 22  1996 SETUP.BMP
+f  TEXT/mdos         0     75102 Jun 20  1996 SETUP.INS
+f  TEXT/mdos         0      6259 Jun 22  1996 SETUP.PKG
+d          0 items               Jun 22  1996 Temporary Items
+f  TEXT/dosa         0     18487 Jun 22  1996 TEST.ICO
+d          0 items               Jun 20  1996 Trash
+f  TEXT/mdos         0    246784 Jun 22  1996 UNINST16.EXE
+f  TEXT/mdos         0     47616 Jun 22  1996 WINSETUP.EXE
+
+:ACRODOS:
+f  TEXT/mdos         0      3245 Jun 22  1996 8514HERE.EXE
+f  TEXT/mdos         0   1209256 Jun 22  1996 ACROBAT.001
+f  TEXT/mdos         0   1221865 Jun 22  1996 ACROBAT.002
+f  TEXT/mdos         0   2609640 Jun 22  1996 ACRODOS.EXE
+f  TEXT/mdos         0      5763 Jun 22  1996 ACRTEST.EXE
+f  TEXT/mdos         0      4873 Jun 22  1996 BINMOD.EXE
+f  TEXT/mdos         0        43 Jun 22  1996 DISK.ID
+f  TEXT/mdos         0    204111 Jun 22  1996 INSTALL.EXE
+f  TEXT/mdos         0      1504 Jun 22  1996 MOUSECHK.EXE
+f  TEXT/mdos         0     10587 Jun 22  1996 README.TXT
+f  TEXT/mdos         0        18 Jun 22  1996 SERNUM.TXT
+f  TEXT/mdos         0      5302 Jun 22  1996 UPDATE.TXT
+
+:Desktop Folder:
+
+:DOCS:
+d          1 item                Jun 21  1996 HINTS
+f  PDF /CARO       286   3683789 Jun 22  1996 INFOCOM.PDF
+d          1 item                Jun 21  1996 MANUALS
+d          1 item                Jun 21  1996 MAPS
+
+:MAC:
+f  APPL/INZ8     23047    262144 Jun 19  1996 A MIND FOREVER VOYAGING
+f  APPL/VIS3    207785   2637836 Jun  7  1996 ACROBAT Installer
+d          4 items               Jun 15  1996 ARTHUR FOLDER
+f  APPL/INBH     23162    129024 Jun 19  1996 BALLYHOO
+f  APPL/INBZ     27652    262144 Apr  3  1995 BEYOND ZORK
+f  APPL/INE1     26680    178688 Jun 19  1996 BORDER ZONE
+f  APPL/INC2     23070    243712 Jun 19  1996 BUREAUCRACY
+f  APPL/INCT     23323    112640 Jun 19  1996 CUTTHROATS
+f  APPL/INDL     23162    108544 Jun 19  1996 DEADLINE
+f  APPL/INZ4     23162    111616 Jun 19  1996 ENCHANTER
+f  APPL/INA4     23308    110080 Jun 19  1996 HOLLYWOOD HIJINX
+f  APPL/INA1     23162     93696 Jun 19  1996 INFIDEL
+d          4 items               Jun 19  1996 JOURNEY FOLDER
+f  APPL/INS7     24518    160256 Jun 19  1996 LEATHER GODESSES
+f  APPL/INm5     23162    129024 Jun 19  1996 MOONMIST
+f  APPL/INC3     23070    170496 Jun 19  1996 NORD AND BERT
+f  APPL/INFO     29462    136704 Jun 19  1996 PLANETFALL
+f  APPL/INR1     23152    129024 Jun 19  1996 PLUNDERED HEARTS
+f  TEXT/MSWD         0       108 Jun 20  1996 Product File
+f  APPL/????    159920         0 Feb 26  1996 Product Registration
+f  TEXT/ttxt       332       828 Jun 22  1996 README.TXT
+f  APPL/INSS     23323    117760 Jun 19  1996 SEASTALKER
+f  APPL/INM9     29470    190464 Jun 19  1996 SHERLOCK
+f  APPL/INZ5     23162    109056 Jun 19  1996 SORCERER
+d         17 items               Jun 15  1996 SOUND
+f  APPL/INz6     23162    129024 Jun 19  1996 SPELLBREAKER
+f  APPL/INSC     23162     83968 Jun 19  1996 STARCROSS
+f  APPL/INS6     23162    129024 Jun 19  1996 STATIONFALL
+f  APPL/INST     23162    118784 Jun 19  1996 SUSPECT
+f  APPL/INSP     23162    105984 Jun 19  1996 SUSPENDED
+f  APPL/INH1     23162    129024 Jun 19  1996 THE LURKING HORROR
+f  APPL/INTW     23162    104960 Jun 19  1996 THE WITNESS
+f  APPL/INZ7     23032    262144 Jun 19  1996 TRINITY
+d          4 items               Jun 19  1996 Very Lost Treasures of Infocom
+d          7 items               Jun 20  1996 Winners
+f  APPL/INR2     23323    129024 Jun 19  1996 WISHBRINGER
+f  APPL/INZ1     21770     84992 Apr  3  1995 ZORK I
+f  APPL/INZ2     21770     90112 Apr  3  1995 ZORK II
+f  APPL/INZ3     21770     82944 Apr  3  1995 ZORK III
+d          4 items               Jun 15  1996 ZORK ZERO
+
+:PC:
+d          4 items               Jun 15  1996 AMFV
+d          8 items               Jun 15  1996 ARTHUR
+d          6 items               Jun 15  1996 BALLYHOO
+d          3 items               Jun 15  1996 BORDERZO
+d          4 items               Jun 15  1996 BUREAUCR
+F  TEXT/mdos         0     33946 Jun 22  1996 BZORK.EXE
+d          4 items               Jun 15  1996 CUTTHROA
+d         18 items               Jun 15  1996 DATA
+d          6 items               Jun 15  1996 DEADLINE
+d          6 items               Jun 15  1996 ENCHANT
+d          4 items               Jun 15  1996 HOLLYWOO
+d          6 items               Jun 15  1996 INFIDEL
+d          7 items               Jun 17  1996 JOURNEY
+d          5 items               Jun 15  1996 LEATHER
+d          6 items               Jun 15  1996 LURKING
+d          6 items               Jun 15  1996 MOONMIST
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          5 items               Jun 15  1996 NORDANDB
+d          6 items               Jun 15  1996 PLANETF
+d          4 items               Jun 15  1996 PLUNDERE
+f  TEXT/mdos         0      8662 Jun 22  1996 README.TXT
+d          4 items               Jun 15  1996 SEASTALK
+d          3 items               Jun 15  1996 SHERLOCK
+d          6 items               Jun 15  1996 SORCERER
+d          6 items               Jun 15  1996 SPELLBR
+d          6 items               Jun 15  1996 STARCROS
+d          6 items               Jun 15  1996 STATIONF
+d          6 items               Jun 15  1996 SUSPECT
+d          6 items               Jun 15  1996 SUSPENDE
+d          4 items               Jun 15  1996 TRINITY
+d          4 items               Jun 21  1996 VERYLOST
+d          6 items               Jun 19  1996 WINNERS
+d          4 items               Jun 15  1996 WISHBRIN
+d          6 items               Jun 15  1996 WITNESS
+d          4 items               Jun 15  1996 ZORK0
+d          6 items               Jun 15  1996 ZORK1
+d          6 items               Jun 15  1996 ZORK2
+d          6 items               Jun 15  1996 ZORK3
+
+:PCDEMOS:
+d          1 item                May 31  1996 BLASTCHAMBER
+d          1 item                Jun 18  1996 HYPER
+d          3 items               May  8  1996 MECH2
+d          1 item                Jun 19  1996 MERCS
+d         30 items               Jun 20  1996 NEMDEMO
+d          1 item                Jun 18  1996 PLANETFALL
+d          1 item                Jun 18  1996 SPYCRAFT
+d          1 item                May 31  1996 TIMECOM
+
+:Temporary Items:
+
+:Trash:
+
+:DOCS:HINTS:
+f  PDF /CARO       286   2826177 Jun 22  1996 HINTS.PDF
+
+:DOCS:MANUALS:
+f  PDF /CARO       286  59613924 Jun 22  1996 MANUAL.PDF
+
+:DOCS:MAPS:
+f  PDF /CARO       286  20305155 Jun 22  1996 MAP.PDF
+
+:MAC:ARTHUR FOLDER:
+f  APPL/INL1     43798         0 Jun 19  1996 ARTHUR
+f  INdf/INL1       399    328548 Jun  6  1989 CPIC.DATA
+f  INdf/INL1       404    341556 Jun  6  1989 PIC.DATA
+f  INdf/INL1       482    270848 Jun  6  1989 STORY.DATA
+
+:MAC:JOURNEY FOLDER:
+f  INdf/INJ1       286    493425 Mar 16  1989 CPIC.DATA
+f  APPL/INJ1     43656         0 Jun 19  1996 JOURNEY
+f  INdf/INJ1         0    473730 Mar 16  1989 PIC.DATA
+f  INdf/INJ1         0    279872 Mar 16  1989 STORY.DATA
+
+:MAC:SOUND:
+f      /             0        32 Feb 10  1988 M11
+f      /             0        32 Feb 10  1988 M13
+f      /             0        32 Feb 10  1988 M14
+f      /             0        32 Feb 10  1988 M8
+f  SDAT/             0     25244 Feb  8  1988 S10
+f  SDAT/             0      7004 Feb  8  1988 S12
+f  SDAT/             0      9704 Feb  9  1988 S14
+f  SDAT/             0     48218 Feb  8  1988 S15
+f  SDAT/             0     49930 Feb  8  1988 S16
+f  SDAT/             0     25454 Feb  8  1988 S17
+f  SDAT/             0     33290 Feb  8  1988 S3
+f  SDAT/             0     38650 Feb  8  1988 S4
+f  SDAT/             0      6508 Feb  8  1988 S5
+f  SDAT/             0     53130 Feb  8  1988 S6
+f  SDAT/             0     19090 Feb  8  1988 S7
+f  SDAT/             0     25830 Feb 18  1988 S8
+f  SDAT/             0     56602 Feb  8  1988 S9
+
+:MAC:Very Lost Treasures of Infocom:
+d         13 items               Jun 15  1996 ABORTED
+f  TEXT/ttxt       332      4298 Jun 22  1996 ABOUT.TXT
+d          3 items               Jun 15  1996 INFODOPE
+d          5 items               Jun 19  1996 MISC
+
+:MAC:Winners:
+f  APPL/WEth    243545    144815 Jun 19  1996 A Change in the Weather
+f  APPL/TADR    186318         0 Oct 26  1994 TADS Run-Time 2.2
+f  APPL/MZIP    223060    144815 Jun 19  1996 The Magic Toyshop
+f  APPL/TMEC    220499    144815 Jun 19  1996 The Mind Electric
+f  TADG/TADR       286    105824 Jun 13  1996 THE_ONE.GAM
+f  TADG/TADR       286    126627 Jun 13  1996 TOONESIA.GAM
+f  TADG/TADR       286    133098 Aug 31  1995 ZEBULON.GAM
+
+:MAC:ZORK ZERO:
+f  INdf/IN0Z         0    218624 Oct 21  1988 CPIC.DATA
+f  INdf/IN0Z         0    239104 Oct 21  1988 PIC.DATA
+f  INdf/IN0Z         0    295936 Oct 21  1988 STORY.DATA
+f  APPL/IN0Z     50107         0 Jun 19  1996 ZORK ZERO
+
+:PC:AMFV:
+F  TEXT/mdos         0     12640 Jun 22  1996 _AMFV.COM
+f  TEXT/mdos         0        64 Jun 22  1996 AMFV.BAT
+F  TEXT/mdos         0    262018 Jun 22  1996 AMFV.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:ARTHUR:
+f  TEXT/mdos         0     47528 Jun 22  1996 _ARTHUR.EXE
+F  TEXT/mdos         0        26 Jun 22  1996 ARTHUR.BAT
+f  TEXT/mdos         0    209359 Jun 22  1996 ARTHUR.CG1
+f  TEXT/mdos         0    223522 Jun 22  1996 ARTHUR.EG1
+f  TEXT/mdos         0    154137 Jun 22  1996 ARTHUR.EG2
+f  TEXT/mdos         0    292279 Jun 22  1996 ARTHUR.MG1
+f  TEXT/mdos         0    269312 Jun 22  1996 ARTHUR.ZIP
+d          0 items               Jun 14  1996 DATA
+
+:PC:BALLYHOO:
+F  TEXT/mdos         0     11402 Jun 22  1996 _BALLYHO.COM
+F  TEXT/mdos         0        61 Jun 22  1996 BALLYHOO.BAT
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:BORDERZO:
+F  TEXT/mdos         0    178373 Jun 22  1996 BORDERZO.DAT
+F  TEXT/mdos         0     33946 Jun 22  1996 BORDERZO.EXE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:BUREAUCR:
+F  TEXT/mdos         0     12688 Jun 22  1996 _BUREAUC.COM
+F  TEXT/mdos         0        67 Jun 22  1996 BUREAUCR.BAT
+F  TEXT/mdos         0    243341 Jun 22  1996 BUREAUCR.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:CUTTHROA:
+F  TEXT/mdos         0     11402 Jun 22  1996 _CUTTHRO.COM
+F  TEXT/mdos         0        67 Jun 22  1996 CUTTHROA.BAT
+F  TEXT/mdos         0    112640 Jun 22  1996 CUTTHROA.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:DATA:
+F  TEXT/mdos         0    153600 Jun 22  1996 BALLYHOO.DAT
+F  TEXT/mdos         0    276480 Jun 22  1996 BEYONDZO.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 DEADLINE.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 ENCHANTE.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 INFIDEL.DAT
+F  TEXT/mdos         0    153600 Jun 22  1996 LURKING.DAT
+F  TEXT/mdos         0    153600 Jun 22  1996 MOONMIST.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 PLANETFA.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 SORCERER.DAT
+F  TEXT/mdos         0    153600 Jun 22  1996 SPELLBRE.DAT
+F  TEXT/mdos         0     92160 Jun 22  1996 STARCROS.DAT
+F  TEXT/mdos         0    153600 Jun 22  1996 STATIONF.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 SUSPECT.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 SUSPEND.DAT
+F  TEXT/mdos         0    122880 Jun 22  1996 WITNESS.DAT
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK1.DAT
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK2.DAT
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK3.DAT
+
+:PC:DEADLINE:
+F  TEXT/mdos         0     11402 Jun 22  1996 _DEADLIN.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0        61 Jun 22  1996 DEADLINE.BAT
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:ENCHANT:
+F  TEXT/mdos         0     12004 Jun 22  1996 _ENCHANT.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0        61 Jun 22  1996 ENCHANTE.BAT
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:HOLLYWOO:
+F  TEXT/mdos         0     12004 Jun 22  1996 _HOLLYWO.COM
+F  TEXT/mdos         0        67 Jun 22  1996 HOLLYWOO.BAT
+F  TEXT/mdos         0    109651 Jun 22  1996 HOLLYWOO.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:INFIDEL:
+F  TEXT/mdos         0     11402 Jun 22  1996 _INFIDEL.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0        61 Jun 22  1996 INFIDEL.BAT
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:JOURNEY:
+f  TEXT/mdos         0     47442 Jun 22  1996 _JOURNEY.EXE
+f  TEXT/mdos         0        27 Jun 22  1996 JOURNEY.BAT
+f  TEXT/mdos         0    297105 Jun 22  1996 JOURNEY.CG1
+f  TEXT/mdos         0    360500 Jun 22  1996 JOURNEY.EG1
+f  TEXT/mdos         0    249241 Jun 22  1996 JOURNEY.EG2
+f  TEXT/mdos         0    465606 Jun 13  1996 JOURNEY.MG1
+f  TEXT/mdos         0    282624 Jun 22  1996 JOURNEY.ZIP
+
+:PC:LEATHER:
+f  TEXT/mdos         0     12004 Jun 22  1996 _LEATHER.COM
+f  TEXT/mdos         0        64 Jun 22  1996 LEATHER.BAT
+f  TEXT/mdos         0    129023 Jun 22  1996 LEATHER.DAT
+f  TEXT/mdos         0      1408 Jun 22  1996 LEATHER.SCR
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:LURKING:
+F  TEXT/mdos         0     12004 Jun 22  1996 _LURKING.COM
+d          2 items               Jun 17  1996 DATA
+F  TEXT/mdos         0        61 Jun 22  1996 LURKING.BAT
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:MOONMIST:
+F  TEXT/mdos         0     12004 Jun 22  1996 _MOONMIS.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0        61 Jun 22  1996 MOONMIST.BAT
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:NORDANDB:
+F  TEXT/mdos         0     12682 Jun 22  1996 _NORDAND.COM
+d          0 items               Jun 14  1996 DATA
+F  TEXT/mdos         0        67 Jun 22  1996 NORDANDB.BAT
+F  TEXT/mdos         0    170285 Jun 22  1996 NORDANDB.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:PLANETF:
+F  TEXT/mdos         0     12004 Jun 22  1996 _PLANETF.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+F  TEXT/mdos         0        61 Jun 22  1996 PLANETFA.BAT
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:PLUNDERE:
+F  TEXT/mdos         0     12004 Jun 22  1996 _PLUNDER.COM
+F  TEXT/mdos         0        67 Jun 22  1996 PLUNDERE.BAT
+F  TEXT/mdos         0    128963 Jun 22  1996 PLUNDERE.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:SEASTALK:
+F  TEXT/mdos         0     11394 Jun 22  1996 _SEASTAL.COM
+F  TEXT/mdos         0        67 Jun 22  1996 SEASTALK.BAT
+F  TEXT/mdos         0    117763 Jun 22  1996 SEASTALK.DAT
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+
+:PC:SHERLOCK:
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0    188445 Jun 22  1996 SHERLOCK.DAT
+F  TEXT/mdos         0     33946 Jun 22  1996 SHERLOCK.EXE
+
+:PC:SORCERER:
+F  TEXT/mdos         0     11402 Jun 22  1996 _SORCERE.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 SORCERER.BAT
+
+:PC:SPELLBR:
+F  TEXT/mdos         0     12004 Jun 22  1996 _SPELLBR.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+f  TEXT/mdos         0        61 Jun 22  1996 SPELLBRE.BAT
+
+:PC:STARCROS:
+F  TEXT/mdos         0     11402 Jun 22  1996 _STARCRO.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 STARCROS.BAT
+
+:PC:STATIONF:
+F  TEXT/mdos         0     12004 Jun 22  1996 _STATION.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 STATIONF.BAT
+
+:PC:SUSPECT:
+F  TEXT/mdos         0     11402 Jun 22  1996 _SUSPECT.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 SUSPECT.BAT
+
+:PC:SUSPENDE:
+F  TEXT/mdos         0     11402 Jun 22  1996 _SUSPEND.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 SUSPENDE.BAT
+
+:PC:TRINITY:
+F  TEXT/mdos         0     12682 Jun 22  1996 _TRINITY.COM
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        67 Jun 22  1996 TRINITY.BAT
+F  TEXT/mdos         0    262065 Jun 22  1996 TRINITY.DAT
+
+:PC:VERYLOST:
+d         13 items               Jun 15  1996 ABORTED
+f  TEXT/ttxt         0      4210 Jun 22  1996 ABOUT.TXT
+d          3 items               Jun 15  1996 INFODOPE
+d          4 items               Jun 19  1996 MISC
+
+:PC:WINNERS:
+f  TEXT/mdos         0    120776 Jun 22  1996 MAGIC.EXE
+f  TEXT/mdos         0    118216 Jun 22  1996 MINDELEC.EXE
+f  TEXT/mdos         0    340548 Jun 22  1996 THEONE.EXE
+f  TEXT/dosa         0    365031 Jun 22  1996 TOONESIA.EXE
+f  TEXT/dosa         0    141256 Jun 22  1996 WEATHER.EXE
+f  TEXT/mdos         0    371502 Jun 22  1996 ZEBULON.EXE
+
+:PC:WISHBRIN:
+F  TEXT/mdos         0     11402 Jun 22  1996 _WISHBRI.COM
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        67 Jun 22  1996 WISHBRIN.BAT
+F  TEXT/mdos         0    128905 Jun 22  1996 WISHBRIN.DAT
+
+:PC:WITNESS:
+F  TEXT/mdos         0     11402 Jun 22  1996 _WITNESS.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        61 Jun 22  1996 WITNESS.BAT
+
+:PC:ZORK0:
+F  TEXT/mdos         0    244507 Jun 22  1996 ZORK0.CG1
+F  TEXT/mdos         0    333654 Jun 22  1996 ZORK0.EG1
+F  TEXT/mdos         0    300032 Jun 22  1996 ZORK0.ZIP
+F  TEXT/mdos         0     47494 Jun 22  1996 ZORKZERO.EXE
+
+:PC:ZORK1:
+F  TEXT/mdos         0     11402 Jun 22  1996 _ZORK1.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        59 Jun 22  1996 ZORK1.BAT
+
+:PC:ZORK2:
+F  TEXT/mdos         0     11402 Jun 22  1996 _ZORK2.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        59 Jun 22  1996 ZORK2.BAT
+
+:PC:ZORK3:
+F  TEXT/mdos         0     11402 Jun 22  1996 _ZORK3.COM
+d          1 item                Jun 15  1996 DATA
+F  TEXT/mdos         0      5221 Jun 22  1996 NNANSI.COM
+d          1 item                Jun 15  1996 SAVE
+F  TEXT/mdos         0         3 Jun 22  1996 SETUP.INF
+F  TEXT/mdos         0        59 Jun 22  1996 ZORK3.BAT
+
+:PCDEMOS:BLASTCHAMBER:
+f  TEXT/mdos         0  12860606 May 10  1996 BLAST.AVI
+
+:PCDEMOS:HYPER:
+f  TEXT/hscd         0  12595692 Jun 17  1996 HYPER3D.AVI
+
+:PCDEMOS:MECH2:
+F  TEXT/mdos         0        18 May 10  1996 GWYDION.JLL
+F  TEXT/mdos         0      1821 May 10  1996 INSTALL.BAT
+F  TEXT/mdos         0  14622631 May 10  1996 MW2DEMO.EXE
+
+:PCDEMOS:MERCS:
+f  TEXT/mdos         0  11927204 Jun 22  1996 merc.avi
+
+:PCDEMOS:NEMDEMO:
+f  TEXT/hscd         0    296021 Aug 16  1995 _INST32I.EX_
+f  TEXT/hscd         0      7680 Aug  6  1995 _ISDEL.EXE
+f  TEXT/hscd         0     88576 Aug 16  1995 _ISRES.DLL
+f  TEXT/hscd         0     16384 Nov  6  1995 _ISUSER.DLL
+f  TEXT/hscd         0      9728 Jun 12  1995 _SETUP.DLL
+f  TEXT/hscd         0    500990 Apr  5  1996 _SETUP.LIB
+f  TEXT/hscd         0     19968 Nov 11  1995 ADSET.DLL
+f  TEXT/hscd         0       281 Mar 16  1996 AUTORUN.INF
+f  TEXT/hscd         0     20976 Sep 16  1994 CTL3D.DLL
+f  TEXT/hscd         0     25088 Sep 16  1994 CTL3D32.DLL
+f  TEXT/hscd         0     26112 Sep 16  1994 CTL3D32S.DLL
+d         12 items               Jun 20  1996 DIRECTX
+d         47 items               Jun 20  1996 DOS
+f  TEXT/hscd         0     76288 Feb 21  1996 DSET.EXE
+f  TEXT/hscd         0     15872 Sep 26  1995 DSETUP.DLL
+f  TEXT/hscd         0     33376 Sep 26  1995 DSETUP16.DLL
+f  TEXT/hscd         0      1569 Jun 29  1995 INSTALL.MID
+f  TEXT/hscd         0    128512 Jul 11  1995 ISDBGN.DLL
+f  TEXT/hscd         0     20480 Nov 10  1995 MIDIDLL.DLL
+d          9 items               Jun 20  1996 NEMESIS
+f  TEXT/hscd         0       185 Mar 11  1996 PRODUCT.INI
+f  TEXT/hscd         0      5601 Mar  1  1996 REQFILES.LST
+f  TEXT/hscd         0     81526 Mar 13  1996 SETUP.BMP
+f  TEXT/hscd         0     25022 Apr  5  1996 SETUP.DBG
+f  TEXT/hscd         0     47104 Aug 16  1995 SETUP.EXE
+f  TEXT/hscd         0     70835 Apr  5  1996 SETUP.INS
+f  TEXT/hscd         0       170 Apr  5  1996 SETUP.PKG
+f  TEXT/hscd         0    261632 Aug 16  1995 UNINST.EXE
+f  TEXT/hscd         0     16826 Mar 16  1996 ZNEMHELP.GID
+f  TEXT/hscd         0   1605612 Mar 18  1996 ZNEMHELP.HLP
+
+:PCDEMOS:PLANETFALL:
+f  TEXT/mdos         0   4261918 Jun 22  1996 planetfall.avi
+
+:PCDEMOS:SPYCRAFT:
+f  TEXT/mdos         0  16783988 May 10  1996 SPYCRAFT.AVI
+
+:PCDEMOS:TIMECOM:
+f  TEXT/mdos         0  26254026 May 10  1996 TIME_COM.AVI
+
+:MAC:Very Lost Treasures of Infocom:ABORTED:
+f  TEXT/ttxt       332      2362 Jun 13  1996 AMNESIA.TXT
+f  TEXT/ttxt       332       705 Jun 13  1996 BLANK.TXT
+f  TEXT/ttxt       332      2506 Jun 13  1996 BOSTON.TXT
+f  TEXT/ttxt       332      2791 Jun 13  1996 CREATION.TXT
+f  TEXT/ttxt       332      2538 Jun 13  1996 IDEAS.TXT
+f  TEXT/ttxt       332      1820 Jun 13  1996 LG2IDEA.TXT
+f  TEXT/ttxt       332       415 Jun 13  1996 MONKEY.TXT
+f  TEXT/ttxt       332      6920 Jun 13  1996 NEXT.TXT
+f  TEXT/ttxt       332     11403 Jun 13  1996 OZ.TXT
+f  TEXT/ttxt       332      8470 Jun 13  1996 OZOLD.TXT
+f  TEXT/ttxt       332      4924 Jun 13  1996 THRILLER.TXT
+f  TEXT/ttxt       332      3556 Jun 13  1996 TREK.TXT
+f  TEXT/ttxt       332       307 Jun 13  1996 TRUFFLES.TXT
+
+:MAC:Very Lost Treasures of Infocom:INFODOPE:
+f  TEXT/ttxt       286      2662 Jun 11  1996 DOPE.TXT
+f  TEXT/ttxt       286      2307 Jun 11  1996 INFODOPE.TXT
+f  TEXT/ttxt       286       621 Jun 11  1996 INFODOPR.TXT
+
+:MAC:Very Lost Treasures of Infocom:MISC:
+f  TEXT/ttxt       332      5323 Jun 19  1996 ABOUT.TXT
+f  TEXT/ttxt       332      2675 Jun 19  1996 GNUTRIV.TXT
+f  TEXT/ttxt       332      2290 Jun 13  1996 IMPLEMEN.TXT
+f  TEXT/ttxt       332      3326 Jun 13  1996 INFO.TXT
+f  TEXT/ttxt       332      9984 Jun 13  1996 MEETING.TXT
+
+:PC:ARTHUR:DATA:
+
+:PC:BALLYHOO:DATA:
+F  TEXT/mdos         0    153600 Jun 22  1996 BALLYHOO.DAT
+
+:PC:BALLYHOO:SAVE:
+f  TEXT/mdos         0     12282 Jun 22  1996 BALLYHOO.DAT
+
+:PC:DEADLINE:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 DEADLINE.DAT
+
+:PC:DEADLINE:SAVE:
+f  TEXT/mdos         0     13179 Jun 22  1996 DEADLINE.DAT
+
+:PC:ENCHANT:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 ENCHANTE.DAT
+
+:PC:ENCHANT:SAVE:
+f  TEXT/mdos         0     13677 Jun 22  1996 ENCHANTE.DAT
+
+:PC:INFIDEL:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 INFIDEL.DAT
+
+:PC:INFIDEL:SAVE:
+f  TEXT/mdos         0     12797 Jun 22  1996 INFIDEL.DAT
+
+:PC:LURKING:DATA:
+f  TEXT/mdos         0    589733 Jun 13  1996 LHSOUND.ZIP
+F  TEXT/mdos         0    153600 Jun 22  1996 LURKING.DAT
+
+:PC:LURKING:SAVE:
+f  TEXT/mdos         0     12434 Jun 22  1996 LURKING.DAT
+
+:PC:MOONMIST:DATA:
+F  TEXT/mdos         0    153600 Jun 22  1996 MOONMIST.DAT
+
+:PC:MOONMIST:SAVE:
+f  TEXT/mdos         0     14884 Jun 22  1996 MOONMIST.DAT
+
+:PC:NORDANDB:DATA:
+
+:PC:PLANETF:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 PLANETFA.DAT
+
+:PC:PLANETF:SAVE:
+f  TEXT/mdos         0     15312 Jun 22  1996 PLANETFA.DAT
+
+:PC:SORCERER:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 SORCERER.DAT
+
+:PC:SORCERER:SAVE:
+f  TEXT/mdos         0     12532 Jun 22  1996 SORCERER.DAT
+
+:PC:SPELLBR:DATA:
+F  TEXT/mdos         0    153600 Jun 22  1996 SPELLBRE.DAT
+
+:PC:SPELLBR:SAVE:
+f  TEXT/mdos         0     12418 Jun 22  1996 SPELLBRE.DAT
+
+:PC:STARCROS:DATA:
+F  TEXT/mdos         0     92160 Jun 22  1996 STARCROS.DAT
+
+:PC:STARCROS:SAVE:
+f  TEXT/mdos         0     11624 Jun 22  1996 STARCROS.DAT
+
+:PC:STATIONF:DATA:
+F  TEXT/mdos         0    153600 Jun 22  1996 STATIONF.DAT
+
+:PC:STATIONF:SAVE:
+f  TEXT/mdos         0     12965 Jun 22  1996 STATIONF.DAT
+
+:PC:SUSPECT:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 SUSPECT.DAT
+
+:PC:SUSPECT:SAVE:
+f  TEXT/mdos         0     13658 Jun 22  1996 SUSPECT.DAT
+
+:PC:SUSPENDE:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 SUSPEND.DAT
+
+:PC:SUSPENDE:SAVE:
+f  TEXT/mdos         0     10886 Jun 22  1996 SUSPEND.DAT
+
+:PC:VERYLOST:ABORTED:
+f  TEXT/mdos         0      2399 Jun 22  1996 AMNESIA.TXT
+f  TEXT/mdos         0       720 Jun 22  1996 BLANK.TXT
+f  TEXT/mdos         0      2559 Jun 22  1996 BOSTON.TXT
+f  TEXT/mdos         0      2961 Jun 22  1996 CREATION.TXT
+f  TEXT/mdos         0      2604 Jun 22  1996 IDEAS.TXT
+f  TEXT/mdos         0      1899 Jun 22  1996 LG2IDEA.TXT
+f  TEXT/mdos         0       422 Jun 22  1996 MONKEY.TXT
+f  TEXT/mdos         0      7031 Jun 22  1996 NEXT.TXT
+f  TEXT/mdos         0     11673 Jun 22  1996 OZ.TXT
+f  TEXT/mdos         0      8656 Jun 22  1996 OZOLD.TXT
+f  TEXT/mdos         0      5044 Jun 22  1996 THRILLER.TXT
+f  TEXT/mdos         0      3631 Jun 22  1996 TREK.TXT
+f  TEXT/mdos         0       315 Jun 22  1996 TRUFFLES.TXT
+
+:PC:VERYLOST:INFODOPE:
+f  TEXT/mdos         0      2702 Jun 22  1996 DOPE.TXT
+f  TEXT/mdos         0      2347 Jun 22  1996 INFODOPE.TXT
+f  TEXT/mdos         0       630 Jun 22  1996 INFODOPR.TXT
+
+:PC:VERYLOST:MISC:
+f  TEXT/ttxt         0      2754 Jun 22  1996 GNUTRIV.TXT
+f  TEXT/mdos         0      2347 Jun 22  1996 IMPLEMEN.TXT
+f  TEXT/mdos         0      3413 Jun 22  1996 INFO.TXT
+f  TEXT/mdos         0     10210 Jun 22  1996 MEETING.TXT
+
+:PC:WITNESS:DATA:
+F  TEXT/mdos         0    122880 Jun 22  1996 WITNESS.DAT
+
+:PC:WITNESS:SAVE:
+f  TEXT/mdos         0     12284 Jun 22  1996 WITNESS.DAT
+
+:PC:ZORK1:DATA:
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK1.DAT
+
+:PC:ZORK1:SAVE:
+f  TEXT/mdos         0     12883 Jun 22  1996 ZORK1.DAT
+
+:PC:ZORK2:DATA:
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK2.DAT
+
+:PC:ZORK2:SAVE:
+f  TEXT/mdos         0     12213 Jun 22  1996 ZORK2.DAT
+
+:PC:ZORK3:DATA:
+F  TEXT/mdos         0     92160 Jun 22  1996 ZORK3.DAT
+
+:PC:ZORK3:SAVE:
+f  TEXT/mdos         0     12680 Jun 22  1996 ZORK3.DAT
+
+:PCDEMOS:NEMDEMO:DIRECTX:
+f  TEXT/hscd         0     16896 Sep 24  1995 DDHELP.EXE
+f  TEXT/hscd         0    113664 Sep 27  1995 DDRAW.DLL
+f  TEXT/hscd         0     19808 Sep 28  1995 DDRAW16.DLL
+f  TEXT/hscd         0      2308 Sep 28  1995 DIRECTX.INF
+f  TEXT/hscd         0     30208 Sep 24  1995 DPLAY.DLL
+f  TEXT/hscd         0     54272 Sep 26  1995 DPSERIAL.DLL
+f  TEXT/hscd         0     28160 Sep 24  1995 DPWSOCK.DLL
+d          2 items               Apr  5  1996 DRIVERS
+f  TEXT/hscd         0     69632 Sep 28  1995 DSOUND.DLL
+f  TEXT/hscd         0     17079 Sep 24  1995 DSOUND.VXD
+f  TEXT/hscd         0     12288 Sep 28  1995 DXSETUP.EXE
+f  TEXT/hscd         0      1151 Sep 26  1995 LICENSE.TXT
+
+:PCDEMOS:NEMDEMO:DOS:
+f  TEXT/hscd         0     14986 Nov  7  1995 ADLIB.MDI
+f  TEXT/hscd         0     16377 Nov  7  1995 ADLIBG.MDI
+f  TEXT/hscd         0     11278 Nov  7  1995 ADRV688.DIG
+f  TEXT/hscd         0     21624 Mar 18  1996 AILDRVR.LST
+f  TEXT/hscd         0      9114 Jan 21  1994 BINMOD.EXE
+f  TEXT/hscd         0      5802 Jun 28  1995 CPU.EXE
+f  TEXT/hscd         0     26950 Jan 18  1995 DEMO.XMI
+f  TEXT/hscd         0    156718 Jan 18  1995 DIGPLAY.EXE
+f  TEXT/hscd         0    265420 Sep  1  1994 DOS4GW.EXE
+f  TEXT/hscd         0     15896 Nov  7  1995 ESFM.MDI
+f  TEXT/hscd         0    373566 Jan 18  1995 GLASS.WAV
+f  TEXT/hscd         0    261123 Apr  5  1996 INSTALL.EXE
+f  TEXT/hscd         0      5984 Jun 28  1995 INWIN.EXE
+f  TEXT/hscd         0      3219 Nov  7  1995 JAMMER.DIG
+f  TEXT/hscd         0      1927 Nov  7  1995 MPU401.MDI
+f  TEXT/hscd         0      6980 Nov  7  1995 MT32MPU.MDI
+f  TEXT/hscd         0      1609 Nov  7  1995 NULL.MDI
+f  TEXT/hscd         0     16387 Nov  7  1995 OPL3.MDI
+f  TEXT/hscd         0      2537 Mar 28  1995 ORDER.TXT
+f  TEXT/hscd         0     15425 Nov  7  1995 PAS.MDI
+f  TEXT/hscd         0     16458 Nov  7  1995 PASPLUS.MDI
+f  TEXT/hscd         0      4705 Nov  7  1995 PCSPKR.MDI
+f  TEXT/hscd         0      2127 Nov  7  1995 PROAUDIO.DIG
+f  TEXT/hscd         0      2849 Jan 18  1995 RAP10.DIG
+f  TEXT/hscd         0      3242 Jan 18  1995 SAMPLE.AD
+f  TEXT/hscd         0     10780 Jan 18  1995 SAMPLE.BNK
+f  TEXT/hscd         0      3242 Jan 18  1995 SAMPLE.OPL
+f  TEXT/hscd         0      2836 Nov  7  1995 SB16.DIG
+f  TEXT/hscd         0     32694 Nov  7  1995 SBAWE32.MDI
+f  TEXT/hscd         0      3125 Nov  7  1995 SBLASTER.DIG
+f  TEXT/hscd         0     15118 Nov  7  1995 SBLASTER.MDI
+f  TEXT/hscd         0      2763 Nov  7  1995 SBPRO.DIG
+f  TEXT/hscd         0     15471 Nov  7  1995 SBPRO1.MDI
+f  TEXT/hscd         0     16541 Nov  7  1995 SBPRO2.MDI
+f  TEXT/hscd         0    168737 Nov  7  1995 SETSOUND.EXE
+f  TEXT/hscd         0      4171 Nov  7  1995 SNDSCAPE.DIG
+f  TEXT/hscd         0      2971 Nov  7  1995 SNDSCAPE.MDI
+f  TEXT/hscd         0      3332 Nov  7  1995 SNDSYS.DIG
+f  TEXT/hscd         0      2249 Feb 29  1996 SOUND.TXT
+f  TEXT/hscd         0      5010 Nov  7  1995 TANDY.MDI
+f  TEXT/hscd         0      9478 Nov  7  1995 ULTRA.DIG
+f  TEXT/hscd         0     49672 Nov  7  1995 ULTRA.MDI
+f  TEXT/hscd         0    157147 Jan 18  1995 XMIPLAY.EXE
+f  TEXT/hscd         0     31212 Mar 18  1996 ZNEMHELP.TXT
+f  TEXT/hscd         0    256741 Mar 13  1996 ZNSETUP.CFG
+f  TEXT/hscd         0    608883 Mar 19  1996 ZORKDOS.EXE
+f  TEXT/hscd         0       503 Mar 18  1996 ZORKUVBE.BAT
+
+:PCDEMOS:NEMDEMO:NEMESIS:
+f  TEXT/hscd         0   2094166 Mar 17  1996 CURSOR.ZFS
+f  TEXT/ttxt       332      9648 Jun 20  1996 MEDIUM.ZIX
+f  TEXT/hscd         0      7925 Apr  3  1996 NEMESIS.STR
+f  TEXT/hscd         0     96256 Feb 22  1996 QMIXER95.DLL
+f  TEXT/hscd         0    380539 Apr  5  1996 SCRIPTS.ZFS
+f  TEXT/hscd         0   4813750 Apr  3  1996 T000H1TC.RAW
+d        194 items               Jun 20  1996 ZASSETS
+f  TEXT/hscd         0    486400 Mar 17  1996 ZNEMESIS.EXE
+f  TEXT/hscd         0       217 Mar 17  1996 ZNEMESIS.INI
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:
+d          3 items               Jun 20  1996 AUDIO
+d          3 items               Jun 20  1996 DISPLAY
+
+:PCDEMOS:NEMDEMO:NEMESIS:ZASSETS:
+f  TEXT/hscd         0     53610 Mar 13  1996 GJPEAH1C.TGA
+f  TEXT/hscd         0     53610 Mar 13  1996 GJPEAH2C.TGA
+f  TEXT/hscd         0     53610 Mar 13  1996 GJPEAH3C.TGA
+f  TEXT/hscd         0     51218 Mar 13  1996 GJPEAP1C.TGA
+f  TEXT/hscd         0     51218 Mar 13  1996 GJPEAP2C.TGA
+f  TEXT/hscd         0     51218 Mar 13  1996 GJPEAP3C.TGA
+f  TEXT/hscd         0     51218 Mar 13  1996 GJPEAP4C.TGA
+f  TEXT/hscd         0     51218 Mar 13  1996 GJPEAP5C.TGA
+f  TEXT/hscd         0     50530 Mar 13  1996 GJPEAQ1C.TGA
+f  TEXT/hscd         0     50530 Mar 13  1996 GJPEAQ2C.TGA
+f  TEXT/hscd         0    327698 Mar 14  1996 GJPEB11C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS0C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS1C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS2C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS3C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS4C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS5C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS6C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS7C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS8C.TGA
+f  TEXT/hscd         0     57090 Mar 13  1996 GJPEBS9C.TGA
+f  TEXT/hscd         0     42542 Mar 11  1996 GJPEH1TC.RAW
+f  TEXT/hscd         0     65000 Mar 11  1996 GJPEH2TC.RAW
+f  TEXT/hscd         0     56740 Mar 11  1996 GJPEH3TC.RAW
+f  TEXT/hscd         0    155142 Mar 11  1996 GJPEH4TC.RAW
+f  TEXT/hscd         0    156147 Mar 12  1996 GJREB11C.TGA
+f  TEXT/hscd         0    156963 Mar 12  1996 GJSEB11C.TGA
+f  TEXT/hscd         0   1962928 Mar 12  1996 T000A41C.AVI
+f  TEXT/hscd         0    158087 Apr  2  1996 T000B41C.TGA
+f  TEXT/hscd         0    483743 Mar 12  1996 TD10S11C.TGA
+f  TEXT/hscd         0    472198 Mar 12  1996 TD20S11C.TGA
+f  TEXT/hscd         0    437642 Mar 15  1996 TF00H2AA.IFP
+f  TEXT/hscd         0    437642 Mar 15  1996 TF00H2AA.RAW
+f  TEXT/hscd         0    437932 Feb 19  1996 TF00H3AA.IFP
+f  TEXT/hscd         0    437932 Jan 23  1996 TF00H3AA.RAW
+f  TEXT/hscd         0    545926 Mar  5  1996 TF10S11C.TGA
+f  TEXT/hscd         0    603169 Mar 12  1996 TF40S11C.TGA
+f  TEXT/hscd         0    208104 Jan 26  1996 TF70A11C.AVI
+f  TEXT/hscd         0    192980 Jan 26  1996 TF70A21C.AVI
+f  TEXT/hscd         0    627471 Mar 12  1996 TF70S11C.TGA
+f  TEXT/hscd         0    365787 Mar 12  1996 TG10S11C.TGA
+f  TEXT/hscd         0    501151 Mar 12  1996 TH10S11C.TGA
+f  TEXT/hscd         0    525896 Mar 12  1996 TH30S11C.TGA
+f  TEXT/hscd         0    495745 Feb 29  1996 TH80S11C.TGA
+f  TEXT/hscd         0     93610 Mar 18  1996 TH8EB11C.TGA
+f  TEXT/hscd         0    509464 Mar 12  1996 THB0S11C.TGA
+f  TEXT/hscd         0    142972 Mar  6  1996 THBEB11C.TGA
+f  TEXT/hscd         0    174332 Feb 29  1996 THBFB11C.TGA
+f  TEXT/hscd         0   7668458 Mar 15  1996 THBFL11C.AVI
+f  TEXT/hscd         0    512939 Mar 12  1996 THC0S11C.TGA
+f  TEXT/hscd         0    471903 Mar 12  1996 THK0S11C.TGA
+f  TEXT/hscd         0    489501 Mar 12  1996 THL0S11C.TGA
+f  TEXT/hscd         0    467160 Mar 11  1996 THM0H1TC.RAW
+f  TEXT/hscd         0    477434 Mar 12  1996 THM0S11C.TGA
+f  TEXT/hscd         0    333581 Feb 29  1996 THM0S51C.TGA
+f  TEXT/hscd         0    439228 Feb 13  1996 THMEAA1C.RLF
+f  TEXT/hscd         0     21175 Feb 29  1996 THMEAC1C.TGA
+f  TEXT/hscd         0     23513 Feb 29  1996 THMEAL1C.TGA
+f  TEXT/hscd         0    219312 Mar 12  1996 THMEB11C.TGA
+f  TEXT/hscd         0    300546 Mar 11  1996 THMEQ7TC.RAW
+f  TEXT/hscd         0    137204 Mar 16  1996 TJ40A11C.AVI
+f  TEXT/hscd         0    146652 Mar 16  1996 TJ40A21C.AVI
+f  TEXT/hscd         0     39610 Mar 11  1996 TJ40Q1SC.RAW
+f  TEXT/hscd         0     46052 Mar 11  1996 TJ40Q2SC.RAW
+f  TEXT/hscd         0    405144 Mar 15  1996 TJ40S11C.TGA
+f  TEXT/hscd         0     82608 Feb 28  1996 TJ4EA11C.RLF
+f  TEXT/hscd         0     85200 Feb 29  1996 TJ4EA21C.RLF
+f  TEXT/hscd         0     95512 Mar  3  1996 TJ4EA31C.RLF
+f  TEXT/hscd         0     52508 Feb 28  1996 TJ4EA41C.RLF
+f  TEXT/hscd         0     71404 Feb 28  1996 TJ4EA51C.RLF
+f  TEXT/hscd         0     72944 Feb 28  1996 TJ4EA61C.RLF
+f  TEXT/hscd         0     97080 Feb 28  1996 TJ4EA71C.RLF
+f  TEXT/hscd         0    106502 Mar  5  1996 TJ4EB11C.TGA
+f  TEXT/hscd         0    108750 Mar 16  1996 TJ4EH4TC.RAW
+f  TEXT/hscd         0    205840 Mar 11  1996 TJ4EH5TC.RAW
+f  TEXT/hscd         0    917300 Mar  5  1996 TJ4FA11C.RLF
+f  TEXT/hscd         0    163235 Apr  5  1996 TJ4FB11C.TGA
+f  TEXT/hscd         0    299662 Mar 11  1996 TJ4FQ1TC.RAW
+f  TEXT/hscd         0    372642 Feb  8  1996 TJ4GA11C.AVI
+f  TEXT/hscd         0    140883 Feb 29  1996 TJ4GA11C.TGA
+f  TEXT/hscd         0    811450 Mar  8  1996 TJ4GA21C.AVI
+f  TEXT/hscd         0    201188 Mar 11  1996 TJ4GQ2TC.RAW
+f  TEXT/hscd         0    209850 Mar 11  1996 TJ4GQ4TC.RAW
+f  TEXT/hscd         0    786650 Mar  8  1996 TJ4HA11C.AVI
+f  TEXT/hscd         0    663666 Feb 12  1996 TJ4HA21C.AVI
+f  TEXT/hscd         0     71087 Mar 12  1996 TJ4HB21C.TGA
+f  TEXT/hscd         0    136160 Feb 29  1996 TJ4KB11C.TGA
+f  TEXT/hscd         0    120294 Mar  5  1996 TJ5AB11C.TGA
+f  TEXT/hscd         0    153606 Mar  5  1996 TJ6AB11C.TGA
+f  TEXT/hscd         0    168594 Apr  8  1996 TK1AB11C.TGA
+f  TEXT/hscd         0     80437 Apr  8  1996 TK1BB11C.TGA
+f  TEXT/hscd         0    216940 Apr  8  1996 TK1CB11C.TGA
+f  TEXT/hscd         0    175079 Apr  8  1996 TK1DB11C.TGA
+f  TEXT/hscd         0    205608 Apr  8  1996 TK1EB11C.TGA
+f  TEXT/hscd         0    164437 Apr  8  1996 TK1FB11C.TGA
+f  TEXT/hscd         0    202989 Apr  8  1996 TK1GB11C.TGA
+f  TEXT/hscd         0    220176 Apr  8  1996 TK1HB11C.TGA
+f  TEXT/hscd         0     79920 Apr  8  1996 TK1IB11C.TGA
+f  TEXT/hscd         0    122602 Apr  8  1996 TK1JB11C.TGA
+f  TEXT/hscd         0    190939 Apr  8  1996 TK1KB11C.TGA
+f  TEXT/hscd         0    168454 Apr  8  1996 TK1LB11C.TGA
+f  TEXT/hscd         0    136535 Apr  8  1996 TK1MB11C.TGA
+f  TEXT/hscd         0    140160 Apr  8  1996 TK1NB11C.TGA
+f  TEXT/hscd         0    204284 Apr  8  1996 TK1OB11C.TGA
+f  TEXT/hscd         0    119781 Apr  8  1996 TK1PB11C.TGA
+f  TEXT/hscd         0    123715 Apr  8  1996 TK1QB11C.TGA
+f  TEXT/hscd         0    120424 Apr  8  1996 TK1RB11C.TGA
+f  TEXT/hscd         0    218939 Apr  8  1996 TK1SB11C.TGA
+f  TEXT/hscd         0    143612 Apr  8  1996 TK1TB11C.TGA
+f  TEXT/hscd         0    179640 Apr  8  1996 TK1UB11C.TGA
+f  TEXT/hscd         0    121741 Apr  2  1996 TK2AB11C.TGA
+f  TEXT/hscd         0    175079 Apr  2  1996 TK2BB11C.TGA
+f  TEXT/hscd         0     98464 Apr  5  1996 TK2CB11C.TGA
+f  TEXT/hscd         0     78293 Apr  5  1996 TK2DB11C.TGA
+f  TEXT/hscd         0     86385 Apr  5  1996 TK2EB11C.TGA
+f  TEXT/hscd         0    139412 Mar 16  1996 TN10A11C.AVI
+f  TEXT/hscd         0     22074 Apr  2  1996 TN10A11C.TGA
+f  TEXT/hscd         0    139412 Mar 16  1996 TN10A21C.AVI
+f  TEXT/hscd         0     52968 Mar 17  1996 TN10Q2TC.RAW
+f  TEXT/hscd         0     47744 Mar 17  1996 TN10Q3TC.RAW
+f  TEXT/hscd         0    488546 Feb 29  1996 TN10S11C.TGA
+f  TEXT/hscd         0    489040 Feb 29  1996 TN10S21C.TGA
+f  TEXT/hscd         0    376730 Feb 24  1996 TN1EA11C.AVI
+f  TEXT/hscd         0    495772 Feb 24  1996 TN1EA21C.AVI
+f  TEXT/hscd         0    121741 Feb 29  1996 TN1EB11C.TGA
+f  TEXT/hscd         0    132847 Feb 29  1996 TN1EB21C.TGA
+f  TEXT/hscd         0    267232 Mar 11  1996 TN1EQ1TC.RAW
+f  TEXT/hscd         0     40443 Feb 29  1996 TN20A21C.TGA
+f  TEXT/hscd         0     45043 Feb 29  1996 TN20A31C.TGA
+f  TEXT/hscd         0     52061 Feb 29  1996 TN20A41C.TGA
+f  TEXT/hscd         0     53775 Feb 29  1996 TN20A51C.TGA
+f  TEXT/hscd         0     40019 Feb 29  1996 TN20A71C.TGA
+f  TEXT/hscd         0     43877 Feb 29  1996 TN20A81C.TGA
+f  TEXT/hscd         0     52987 Feb 29  1996 TN20A91C.TGA
+f  TEXT/hscd         0     47032 Feb 29  1996 TN20AA1C.TGA
+f  TEXT/hscd         0     52649 Mar 12  1996 TN20AB1C.TGA
+f  TEXT/hscd         0    419162 Mar 13  1996 TN20S11C.TGA
+f  TEXT/hscd         0    149210 Jan 21  1996 TN2EA11C.AVI
+f  TEXT/hscd         0     66726 Jan 21  1996 TN2EA21C.AVI
+f  TEXT/hscd         0    148168 Jan 21  1996 TN2EA31C.AVI
+f  TEXT/hscd         0    200671 Feb 29  1996 TN2EB11C.TGA
+f  TEXT/hscd         0    183731 Feb 29  1996 TN2EB21C.TGA
+f  TEXT/hscd         0    196910 Feb 29  1996 TN2EB31C.TGA
+f  TEXT/hscd         0    212603 Feb 29  1996 TN2EB41C.TGA
+f  TEXT/hscd         0    239672 Feb 29  1996 TN2EB51C.TGA
+f  TEXT/hscd         0    205750 Mar 12  1996 TN2EB61C.TGA
+f  TEXT/hscd         0    183060 Feb 29  1996 TN2EB71C.TGA
+f  TEXT/hscd         0    208590 Feb 29  1996 TN2EB81C.TGA
+f  TEXT/hscd         0    162054 Feb 29  1996 TN2EB91C.TGA
+f  TEXT/hscd         0    171147 Feb 29  1996 TN2EBA1C.TGA
+f  TEXT/hscd         0    152915 Feb 29  1996 TN2EBB1C.TGA
+f  TEXT/hscd         0    222904 Mar  2  1996 TN2EH26A.RAW
+f  TEXT/hscd         0    621980 Mar  2  1996 TN2EH36A.RAW
+f  TEXT/hscd         0    543176 Mar  2  1996 TN2EH46A.RAW
+f  TEXT/hscd         0    664344 Mar  2  1996 TN2EH56A.RAW
+f  TEXT/hscd         0    155142 Mar 11  1996 TN2EH8TC.RAW
+f  TEXT/hscd         0    126568 Mar 11  1996 TN2EH9TC.RAW
+f  TEXT/hscd         0     89742 Mar 11  1996 TN2EHATC.RAW
+f  TEXT/hscd         0    335172 Mar 11  1996 TN2EHCTC.RAW
+f  TEXT/hscd         0      5740 Mar 11  1996 TN2EHDSC.RAW
+f  TEXT/hscd         0    273420 Mar 10  1995 TN2EHE6A.RAW
+f  TEXT/hscd         0    150696 Mar 11  1996 TN2EQ1TC.RAW
+f  TEXT/hscd         0     83480 Mar 11  1996 TN2EQ2TC.RAW
+f  TEXT/hscd         0    166498 Mar 11  1996 TN2EQ3TC.RAW
+f  TEXT/hscd         0    211892 Feb 29  1996 TN2FB11C.TGA
+f  TEXT/hscd         0    214053 Feb 29  1996 TN2FB21C.TGA
+f  TEXT/hscd         0    193298 Feb 29  1996 TN2FB31C.TGA
+f  TEXT/hscd         0    196681 Feb 29  1996 TN2FB41C.TGA
+f  TEXT/hscd         0    194307 Feb 29  1996 TN2FB51C.TGA
+f  TEXT/hscd         0    221845 Feb 29  1996 TN2FB61C.TGA
+f  TEXT/hscd         0    221893 Feb 29  1996 TN2FB71C.TGA
+f  TEXT/hscd         0    207082 Feb 29  1996 TN2FB81C.TGA
+f  TEXT/hscd         0    215523 Feb 29  1996 TN2FB91C.TGA
+f  TEXT/hscd         0    526952 Feb 29  1996 TN30S11C.TGA
+f  TEXT/hscd         0    527042 Feb 29  1996 TN30S21C.TGA
+f  TEXT/hscd         0    197628 Feb 29  1996 TN3EB11C.TGA
+f  TEXT/hscd         0    212140 Feb 29  1996 TN3FB11C.TGA
+f  TEXT/hscd         0    198632 Feb 29  1996 TN3GB11C.TGA
+f  TEXT/hscd         0    176752 Mar 12  1996 TN3HB11C.TGA
+f  TEXT/hscd         0    143256 Mar 12  1996 TN3JB11C.TGA
+f  TEXT/hscd         0    164439 Mar 12  1996 TN3KB11C.TGA
+f  TEXT/hscd         0    505911 Feb 29  1996 TN40S11C.TGA
+f  TEXT/hscd         0    506074 Feb 29  1996 TN40S21C.TGA
+f  TEXT/hscd         0    190301 Feb 29  1996 TN4EB11C.TGA
+f  TEXT/hscd         0    188121 Feb 29  1996 TN4FB11C.TGA
+f  TEXT/hscd         0    175570 Feb 29  1996 TN4GB11C.TGA
+f  TEXT/hscd         0    167340 Mar 12  1996 TN4HB11C.TGA
+f  TEXT/hscd         0    145017 Mar 12  1996 TN4JB11C.TGA
+f  TEXT/hscd         0    162834 Mar 12  1996 TN4KB11C.TGA
+f  TEXT/hscd         0    533068 Feb 29  1996 TN50S11C.TGA
+f  TEXT/hscd         0    533349 Feb 29  1996 TN50S21C.TGA
+f  TEXT/hscd         0    498688 Mar 13  1996 WNE3HNTC.RAW
+f  TEXT/hscd         0    389120 Mar 16  1996 WNE3HPTC.RAW
+f  TEXT/hscd         0      2560 Feb 15  1996 Z4TEXT10.RLF
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:AUDIO:
+d         66 items               Jun 20  1996 BIN
+d          1 item                Jun 20  1996 MSDSOUND
+f  TEXT/hscd         0     64453 Sep 26  1995 MSDSOUND.INF
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:DISPLAY:
+d         55 items               Jun 20  1996 BIN
+d          2 items               Jun 20  1996 MSDDRAW
+f  TEXT/hscd         0     40465 Sep 28  1995 MSDDRAW.INF
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:AUDIO:BIN:
+f  TEXT/hscd         0     26770 Sep 24  1995 AZT16.VXD
+f  TEXT/hscd         0     42080 Sep 24  1995 AZT16C.DRV
+f  TEXT/hscd         0     43664 Sep 24  1995 AZT16W.DRV
+f  TEXT/hscd         0       643 Sep 24  1995 CDPLAYER.CNT
+f  TEXT/hscd         0     88064 Sep 24  1995 CDPLAYER.EXE
+f  TEXT/hscd         0     20579 Sep 24  1995 CDPLAYER.HLP
+f  TEXT/hscd         0     17776 Sep 24  1995 CSPMAN.DLL
+f  TEXT/hscd         0     43936 Sep 24  1995 ES1488.DRV
+f  TEXT/hscd         0     20116 Sep 27  1995 ES1488.VXD
+f  TEXT/hscd         0     50128 Sep 24  1995 ES1688.DRV
+f  TEXT/hscd         0     25236 Sep 27  1995 ES1688.VXD
+f  TEXT/hscd         0     36976 Sep 24  1995 ES488.DRV
+f  TEXT/hscd         0     19603 Sep 27  1995 ES488.VXD
+f  TEXT/hscd         0     47008 Sep 24  1995 ES688.DRV
+f  TEXT/hscd         0     22675 Sep 27  1995 ES688.VXD
+f  TEXT/hscd         0     17920 Sep 24  1995 ESSFM.DRV
+f  TEXT/hscd         0      9904 Sep 24  1995 ESSMPORT.DRV
+f  TEXT/hscd         0      8240 Sep 24  1995 ESSMPU.DRV
+f  TEXT/hscd         0      5728 Sep 24  1995 FINDMVI.DLL
+f  TEXT/hscd         0     18944 Sep 24  1995 IMAADP32.ACM
+f  TEXT/hscd         0      5152 Sep 24  1995 MMMIXER.DLL
+f  TEXT/hscd         0      1042 Sep 24  1995 MPLAYER.CNT
+f  TEXT/hscd         0    147968 Sep 24  1995 MPLAYER.EXE
+f  TEXT/hscd         0     26940 Sep 24  1995 MPLAYER.HLP
+f  TEXT/hscd         0     17920 Sep 24  1995 MSADP32.ACM
+f  TEXT/hscd         0     10240 Sep 24  1995 MSG711.ACM
+f  TEXT/hscd         0     25088 Sep 24  1995 MSGSM32.ACM
+f  TEXT/hscd         0      7744 Sep 24  1995 MSJSTICK.DRV
+f  TEXT/hscd         0      8704 Sep 24  1995 MSMPU401.DRV
+f  TEXT/hscd         0     17952 Sep 24  1995 MSOPL.DRV
+f  TEXT/hscd         0     40848 Sep 24  1995 MSSBLST.DRV
+f  TEXT/hscd         0     21142 Sep 24  1995 MSSBLST.VXD
+f  TEXT/hscd         0     39728 Sep 24  1995 MSSNDSYS.DRV
+f  TEXT/hscd         0     29932 Sep 24  1995 MSSNDSYS.VXD
+f  TEXT/hscd         0     38432 Sep 24  1995 MVI514MX.DRV
+f  TEXT/hscd         0     19760 Sep 24  1995 MVIWAVE.DRV
+f  TEXT/hscd         0     59568 Sep 24  1995 MVMIXER.DRV
+f  TEXT/hscd         0      8898 Sep 24  1995 MVPAS.VXD
+f  TEXT/hscd         0     26128 Sep 24  1995 MVPROAUD.DRV
+f  TEXT/hscd         0     53200 Sep 24  1995 PA3DMXD.DRV
+f  TEXT/hscd         0     70235 Sep 24  1995 SB16.VXD
+f  TEXT/hscd         0     46000 Sep 24  1995 SB16SND.DRV
+f  TEXT/hscd         0     42226 Sep 22  1995 SBAWE.VXD
+f  TEXT/hscd         0     23216 Sep 24  1995 SBAWE32.DRV
+f  TEXT/hscd         0      4128 Sep 24  1995 SBFM.DRV
+f  TEXT/hscd         0    105472 Sep 24  1995 SNDREC32.EXE
+f  TEXT/hscd         0       392 Sep 24  1995 SNDVOL32.CNT
+f  TEXT/hscd         0     54784 Sep 24  1995 SNDVOL32.EXE
+f  TEXT/hscd         0     11120 Sep 24  1995 SNDVOL32.HLP
+f  TEXT/hscd         0      1023 Sep 24  1995 SOUNDREC.CNT
+f  TEXT/hscd         0     24895 Sep 24  1995 SOUNDREC.HLP
+f  TEXT/hscd         0     34832 Sep 24  1995 SYNTHGM.SBK
+f  TEXT/hscd         0     12048 Sep 24  1995 TMV1.MPD
+f  TEXT/hscd         0     17408 Sep 24  1995 TSD32.DLL
+f  TEXT/hscd         0      8704 Sep 24  1995 TSSOFT32.ACM
+f  TEXT/hscd         0     20590 Sep 24  1995 VJOYD.VXD
+f  TEXT/hscd         0     18586 Sep 24  1995 VMVID.VXD
+f  TEXT/hscd         0     24162 Sep 24  1995 VPASD.VXD
+f  TEXT/hscd         0     13456 Sep 24  1995 WFM0200.ACV
+f  TEXT/hscd         0      2238 Sep 24  1995 WFM0200A.CSP
+f  TEXT/hscd         0      5184 Sep 24  1995 WFM0201.ACV
+f  TEXT/hscd         0      6776 Sep 24  1995 WFM0201A.CSP
+f  TEXT/hscd         0      9056 Sep 24  1995 WFM0202.ACV
+f  TEXT/hscd         0      9004 Sep 24  1995 WFM0202A.CSP
+f  TEXT/hscd         0      9056 Sep 24  1995 WFM0203.ACV
+f  TEXT/hscd         0      9004 Sep 24  1995 WFM0203A.CSP
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:AUDIO:MSDSOUND:
+f  TEXT/hscd         0      6064 Sep 24  1995 ISNA.DLL
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:DISPLAY:BIN:
+f  TEXT/hscd         0     25737 Sep 24  1995 ATI.VXD
+f  TEXT/hscd         0     97952 Sep 24  1995 ATIM32.DRV
+f  TEXT/hscd         0     70624 Sep 24  1995 ATIM64.DRV
+f  TEXT/hscd         0    128800 Sep 24  1995 ATIM8.DRV
+f  TEXT/hscd         0      5040 Sep 24  1995 CDALLOC2.EXE
+f  TEXT/hscd         0      3808 Sep 24  1995 CDD16.DLL
+f  TEXT/hscd         0     22528 Sep 24  1995 CDD32.DLL
+f  TEXT/hscd         0     28480 Sep 24  1995 CHIPS.DRV
+f  TEXT/hscd         0     18590 Sep 24  1995 CHIPS.VXD
+f  TEXT/hscd         0      3856 Sep 24  1995 CHTDD16.DLL
+f  TEXT/hscd         0      7168 Sep 24  1995 CHTDD32.DLL
+f  TEXT/hscd         0     65664 Sep 24  1995 CIRRUS.DRV
+f  TEXT/hscd         0     17021 Sep 24  1995 CIRRUS.VXD
+f  TEXT/hscd         0     43520 Sep 24  1995 CIRRUSMM.DRV
+f  TEXT/hscd         0      3808 Sep 28  1995 CMMDD16.DLL
+f  TEXT/hscd         0     25600 Sep 28  1995 CMMDD32.DLL
+f  TEXT/hscd         0      8128 Sep 24  1995 CP3.DLL
+f  TEXT/hscd         0        53 Sep 26  1995 CPX.INI
+f  TEXT/hscd         0     17159 Sep 24  1995 DMSICS64.VXD
+f  TEXT/hscd         0     24576 Sep 24  1995 DMSICSS.VXD
+f  TEXT/hscd         0      3824 Sep 24  1995 FBDD16.DLL
+f  TEXT/hscd         0      7168 Sep 24  1995 FBDD32.DLL
+f  TEXT/hscd         0     20784 Sep 24  1995 FRAMEBUF.DRV
+f  TEXT/hscd         0     38080 Sep 24  1995 K2V_DIG.INI
+f  TEXT/hscd         0     38401 Sep 23  1995 K2V_HWC.INI
+f  TEXT/hscd         0     37743 Sep 24  1995 K2V_SWC.INI
+f  TEXT/hscd         0      3808 Sep 24  1995 M32DD16.DLL
+f  TEXT/hscd         0     10240 Sep 24  1995 M32DD32.DLL
+f  TEXT/hscd         0      3808 Sep 24  1995 M64DD16.DLL
+f  TEXT/hscd         0      8192 Sep 26  1995 M64DD32.DLL
+f  TEXT/hscd         0     33968 Sep 24  1995 MCIMPEG.DRV
+f  TEXT/hscd         0     14476 Sep 24  1995 OAK.VXD
+f  TEXT/hscd         0     30236 Sep 24  1995 RFMDD.DLL
+f  TEXT/hscd         0     52736 Sep 24  1995 RFMK2V.DLL
+f  TEXT/hscd         0       732 Sep 26  1995 RFMK2V.INI
+f  TEXT/hscd         0     62432 Sep 24  1995 S3.DRV
+f  TEXT/hscd         0     17084 Sep 24  1995 S3.VXD
+f  TEXT/hscd         0      3808 Sep 24  1995 S376DD16.DLL
+f  TEXT/hscd         0     13312 Sep 24  1995 S376DD32.DLL
+f  TEXT/hscd         0     72912 Sep 26  1995 S3_765.DRV
+f  TEXT/hscd         0     18580 Sep 25  1995 S3_765.VXD
+f  TEXT/hscd         0     81040 Sep 24  1995 S3ADE.DLL
+f  TEXT/hscd         0      3808 Sep 24  1995 S3DD16.DLL
+f  TEXT/hscd         0      8704 Sep 24  1995 S3DD32.DLL
+f  TEXT/hscd         0     37904 Sep 24  1995 S3MPG.DLL
+f  TEXT/hscd         0     20112 Sep 24  1995 S3VDE.DLL
+f  TEXT/hscd         0     52320 Sep 24  1995 SUPERVGA.DRV
+f  TEXT/hscd         0     98144 Sep 24  1995 SXCIEXT.DLL
+f  TEXT/hscd         0     90752 Sep 26  1995 TSENG.DRV
+f  TEXT/hscd         0     14531 Sep 24  1995 TSENG.VXD
+f  TEXT/hscd         0      3824 Sep 24  1995 TSNGDD16.DLL
+f  TEXT/hscd         0      9216 Sep 26  1995 TSNGDD32.DLL
+f  TEXT/hscd         0     14938 Sep 24  1995 VIDEO7.VXD
+f  TEXT/hscd         0     21680 Sep 28  1995 WD.DRV
+f  TEXT/hscd         0     18328 Sep 24  1995 WD.VXD
+
+:PCDEMOS:NEMDEMO:DIRECTX:DRIVERS:DISPLAY:MSDDRAW:
+f  TEXT/hscd         0      3520 Sep 24  1995 ISS3_765.DLL
+f  TEXT/hscd         0      4544 Sep 24  1995 S3_CP3CQ.DLL
