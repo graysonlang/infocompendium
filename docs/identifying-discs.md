@@ -49,6 +49,7 @@ drutil toc
 ```
 
 `diskutil` can transiently report "Could not find disk" for a disc that is present; retry before concluding anything.
+`drutil toc` needs exclusive access to the drive and fails with "Could not unmount disc" once macOS has mounted a mixed-mode disc's audio side as a `cddafs` volume; run `diskutil unmountDisk` first, or read the TOC in the seconds before the audio mount appears.
 
 Expected shape for a hybrid, using Masterpieces as the reference:
 

@@ -1,0 +1,97 @@
+# Captured 2026-08-30T02:06:37Z - Pioneer BD-RW BDR-XS07U, macOS 26.6.2
+
+## drutil status
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+           Type: CD-ROM               Name: /dev/disk6
+       Sessions: 1                  Tracks: 26
+   Overwritable:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Free:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Used:   42:34:51         blocks:   191601 / 392.40MB / 374.22MiB
+    Writability: 
+
+
+## drutil toc
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+    Could not unmount disc.  Exclusive access is required to read TOC/ATIP information.
+
+
+## diskutil list disk6
+/dev/disk6 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:        CD_partition_scheme Audio CD               *450.6 MB   disk6
+   1:              CD_ROM_Mode_1 RTZ-CD                  392.4 MB   disk6s0
+   2:                      CD_DA                         3.1 MB     disk6s2
+   3:                      CD_DA                         2.7 MB     disk6s3
+   4:                      CD_DA                         11.3 MB    disk6s4
+   5:                      CD_DA                         6.4 MB     disk6s5
+   6:                      CD_DA                         6.4 MB     disk6s6
+   7:                      CD_DA                         12.1 MB    disk6s7
+   8:                      CD_DA                         21.4 MB    disk6s8
+   9:                      CD_DA                         14.2 MB    disk6s9
+  10:                      CD_DA                         4.5 MB     disk6s10
+  11:                      CD_DA                         4.5 MB     disk6s11
+  12:                      CD_DA                         6.2 MB     disk6s12
+  13:                      CD_DA                         7.5 MB     disk6s13
+  14:                      CD_DA                         6.1 MB     disk6s14
+  15:                      CD_DA                         4.6 MB     disk6s15
+  16:                      CD_DA                         12.6 MB    disk6s16
+  17:                      CD_DA                         9.7 MB     disk6s17
+  18:                      CD_DA                         10.8 MB    disk6s18
+  19:                      CD_DA                         3.5 MB     disk6s19
+  20:                      CD_DA                         10.5 MB    disk6s20
+  21:                      CD_DA                         6.7 MB     disk6s21
+  22:                      CD_DA                         8.6 MB     disk6s22
+  23:                      CD_DA                         19.4 MB    disk6s23
+  24:                      CD_DA                         15.4 MB    disk6s24
+  25:                      CD_DA                         13.9 MB    disk6s25
+  26:                      CD_DA                         35.6 MB    disk6s26
+                    (free space)                         415.0 MB   -
+
+## diskutil info disk6s0
+   Device Identifier:         disk6s0
+   Device Node:               /dev/disk6s0
+   Whole:                     No
+   Part of Whole:             disk6
+
+   Volume Name:               RTZ-CD
+   Mounted:                   Yes
+   Mount Point:               /Volumes/RTZ-CD
+
+   Partition Type:            CD_ROM_Mode_1
+   File System Personality:   ISO
+   Type (Bundle):             cd9660
+   Name (User Visible):       ISO 9660
+
+   OS Can Be Installed:       No
+   Media Type:                
+   Protocol:                  USB
+   SMART Status:              Not Supported
+
+   Disk Size:                 392.4 MB (392398848 Bytes) (exactly 766404 512-Byte-Units)
+   Device Block Size:         2048 Bytes
+
+   Volume Total Space:        158.2 MB (158244864 Bytes) (exactly 309072 512-Byte-Units)
+   Volume Used Space:         158.2 MB (158244864 Bytes) (exactly 309072 512-Byte-Units) (100.0%)
+   Volume Free Space:         0 B (0 Bytes) (exactly 0 512-Byte-Units) (0.0%)
+   Allocation Block Size:     2048 Bytes
+
+   Media OS Use Only:         No
+   Media Read-Only:           Yes
+   Volume Read-Only:          Yes (read-only mount flag set)
+
+   Device Location:           External
+   Removable Media:           Removable
+   Media Removal:             Software-Activated
+
+   Solid State:               Info not available
+
+   Optical Drive Type:        CD-ROM, CD-R, CD-RW, DVD-ROM, DVD-R, DVD-R DL, DVD-RW, DVD-RAM, DVD+R, DVD+R DL, DVD+RW, BD-ROM, BD-R, BD-RE
+   Optical Media Type:        CD-ROM
+   Optical Media Erasable:    No
+
+## cddafs audio tracks (as macOS presents them)
+ls: /Volumes/Audio CD/: No such file or directory
