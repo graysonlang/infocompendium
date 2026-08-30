@@ -22,6 +22,14 @@ Two things had to be right for that to work, both learned on this disc: the corr
 - **The v1.1 installer**: `INSTALL.EXE`/`INSTALL.DAT`, `RTZCD.RED` (276,177 bytes, 1994-01-31) and `RTZCDDRV.RED` (111,013 bytes, 1994-02-06).
 - **Three demos**, per the README: Simon the Sorcerer (`SIMON/`, 63 files - a playable demo run through `RUNVGA GDEMO`), MechWarrior II: The Clans (`MECH2/`, an intro movie), and Richard Scarry's Best Neighborhood Disc Ever (`SCARRY/`, `BEST.EXE` with a `BESTDEMO.PRJ` and four movies). The README promises MechWarrior II "early in 1994" - it shipped in 1995 - and the two Richard Scarry titles for IBM and Macintosh CD-ROM in early 1994.
 
+## Gaps, post-gap and padding
+
+Measured on the raw dump (2026-08-29):
+
+- **The data track is padded by a minute.** The ISO volume declares 77,268 sectors, but the data track runs to 81,843: the last 4,575 sectors (9.4 MB, 61 seconds) are structured empty Mode 1 sectors - sync, headers, EDC and ECC present, user data all zero. The Yellow Book calls for about two seconds of such post-gap before a mode change; this is thirty times that, and the reason is unknown. (The 1997 pressing has exactly 152.)
+- **The pregap before track 2 is 150 sectors of digital silence**, all zero bytes. In an uncorrected dump its tail holds the first 2,580 bytes of track 2's audio, pulled back by the drive's read offset; the correction restores them.
+- **No pregaps between audio tracks.** The silence between songs is inside the audio instead: the last 75 sectors (one second) of track 2 are zero and track 3 sounds from its first sector. The 1997 pressing does the opposite, with a 150-sector zero pregap before every track.
+
 ## Compared with the 1997 Zork Legacy Collection pressing
 
 The same disc, revised twice over. Against [the 1997 disc](../zork-legacy-1997-rtz-anthology/notes.md):

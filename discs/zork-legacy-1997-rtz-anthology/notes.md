@@ -22,6 +22,11 @@ Three layers of different ages sit on one disc:
 - **1994 installer layer.** `INSTALL.EXE`/`INSTALL.DAT` (the Activision DOS installer) and the `.RED` archives `RTZCD.RED`, `RTZCDDRV.RED` and `DRIVERS.RED`, all dated September 1994 - but at different sizes from the 1994 disc's (276,584 vs 130,683; 104,708 vs 101,827; 28,032 vs 27,847), so the RTZ install set was revised between the two pressings.
 - **1997 Legacy Collection layer.** A Windows InstallShield front end (`SETUP.EXE`, `_SETUP.LIB`, `DATA.Z`, `UNINST.EXE`), `SPLASH.EXE` with `SP256/` button bitmaps, `AUTORUN.INF`, a 5 MB `AVI/MOVIE.AVI` (1997-03-10), Acrobat Reader in `ACRODOS/`, and the documentation as PDFs in `DATA/` (`FINAL.PDF` 11.6 MB, `MAPS.PDF`, `HINTS.PDF`, all 1997-03-07).
 
+## Gaps and post-gap
+
+Measured on the raw dump (2026-08-29): the ISO volume declares 94,430 sectors and the data track runs to 94,582, so the data track ends with 152 structured empty Mode 1 sectors - the standard two-second post-gap before the mode change, and nothing like the 61-second pad on the [1994 pressing](../return-to-zork-1994/notes.md).
+The 150-sector pregap before track 2 and the 150-sector pregaps before each of tracks 3-26 are all pure digital silence; in an uncorrected dump the first pregap's tail carries the opening 2,668 bytes of track 2, displaced by the drive's read offset.
+
 ## The anthology games
 
 Unlike the 1994 disc, where the games hide inside `ZORKANTH.RED`, here they sit as loose files under `DATA/`:
