@@ -1,0 +1,75 @@
+# Captured 2026-08-29T23:34:10Z - Pioneer BD-RW BDR-XS07U, macOS 26.6.2
+
+## drutil status
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+           Type: CD-ROM               Name: /dev/disk6
+       Sessions: 1                  Tracks: 1 
+   Overwritable:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Free:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Used:   26:43:70         blocks:   120295 / 246.36MB / 234.95MiB
+    Writability: 
+
+
+## drutil toc
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+    First session:             1
+    Last session:              1
+    First track:               1
+    Disc type:                 0 (CD-DA, or CD-ROM with first track in Mode 1)
+    Last track:                1
+    Lead-out:                  26:45.70
+    Session  1, Track  1:      00:02.00  data track, digital copy prohibited
+
+
+## diskutil list disk6
+Could not find disk for disk6
+
+## diskutil info disk6s0
+   Device Identifier:         disk6s0
+   Device Node:               /dev/disk6s0
+   Whole:                     No
+   Part of Whole:             disk6
+
+   Volume Name:               ZORK_ANTHOLOGY
+   Mounted:                   Yes
+   Mount Point:               /Volumes/ZORK_ANTHOLOGY
+
+   Partition Type:            CD_ROM_Mode_1
+   File System Personality:   ISO
+   Type (Bundle):             cd9660
+   Name (User Visible):       ISO 9660
+
+   OS Can Be Installed:       No
+   Media Type:                
+   Protocol:                  USB
+   SMART Status:              Not Supported
+
+   Disk Size:                 246.4 MB (246364160 Bytes) (exactly 481180 512-Byte-Units)
+   Device Block Size:         2048 Bytes
+
+   Volume Total Space:        245.7 MB (245749760 Bytes) (exactly 479980 512-Byte-Units)
+   Volume Used Space:         245.7 MB (245749760 Bytes) (exactly 479980 512-Byte-Units) (100.0%)
+   Volume Free Space:         0 B (0 Bytes) (exactly 0 512-Byte-Units) (0.0%)
+   Allocation Block Size:     2048 Bytes
+
+   Media OS Use Only:         No
+   Media Read-Only:           Yes
+   Volume Read-Only:          Yes (read-only mount flag set)
+
+   Device Location:           External
+   Removable Media:           Removable
+   Media Removal:             Software-Activated
+
+   Solid State:               Info not available
+
+   Optical Drive Type:        CD-ROM, CD-R, CD-RW, DVD-ROM, DVD-R, DVD-R DL, DVD-RW, DVD-RAM, DVD+R, DVD+R DL, DVD+RW, BD-ROM, BD-R, BD-RE
+   Optical Media Type:        CD-ROM
+   Optical Media Erasable:    No
+
+## mount
+/dev/disk6s0 on /Volumes/ZORK_ANTHOLOGY (cd9660, local, nodev, nosuid, read-only, noowners)
+

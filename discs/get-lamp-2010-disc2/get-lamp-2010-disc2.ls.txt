@@ -1,0 +1,799 @@
+total 56
+dr-xr-xr-x   2 grayson  staff   216 Jul 15 13:35:54 2010 audio
+dr-xr-xr-x   2 grayson  staff    40 Jul 15 13:35:54 2010 AUDIO_TS
+dr-xr-xr-x   2 grayson  staff    92 Jul 15 13:35:54 2010 eamon
+dr-xr-xr-x  43 grayson  staff  2108 Jul 15 13:35:54 2010 games
+dr-xr-xr-x   4 grayson  staff   140 Jul 15 13:35:54 2010 interpreters
+dr-xr-xr-x   2 grayson  staff   196 Jul 15 13:35:54 2010 JACKET_P
+dr-xr-xr-x   4 grayson  staff   200 Jul 15 13:35:54 2010 photos
+dr-xr-xr-x   4 grayson  staff   132 Jul 15 13:35:54 2010 production
+dr-xr-xr-x   2 grayson  staff   364 Jul 15 13:35:54 2010 video
+dr-xr-xr-x   2 grayson  staff  6488 Jul 15 13:35:54 2010 VIDEO_TS
+
+/Volumes/GETLAMP/audio:
+total 117080
+-r-xr-xr-x  1 grayson  staff   3249719 Jul 15 13:35:54 2010 DeathofFloydCollins.mp3
+-r-xr-xr-x  1 grayson  staff  56692717 Jul 15 13:35:54 2010 eyesandhands.mp3
+-r-xr-xr-x  1 grayson  staff       209 Jul 15 13:35:54 2010 eyesandhands.txt
+
+/Volumes/GETLAMP/AUDIO_TS:
+total 0
+
+/Volumes/GETLAMP/eamon:
+total 374032
+-r-xr-xr-x  1 grayson  staff  191503923 Jul 15 13:35:54 2010 EAG_90F.rar
+
+/Volumes/GETLAMP/games:
+total 172
+dr-xr-xr-x  2 grayson  staff   220 Jul 15 13:35:54 2010 aboveandbeyond
+dr-xr-xr-x  2 grayson  staff    92 Jul 15 13:35:54 2010 acheton
+dr-xr-xr-x  3 grayson  staff   408 Jul 15 13:35:54 2010 across
+dr-xr-xr-x  2 grayson  staff   200 Jul 15 13:35:54 2010 ad-verbum
+dr-xr-xr-x  2 grayson  staff   380 Jul 15 13:35:54 2010 advcrowther
+dr-xr-xr-x  2 grayson  staff   196 Jul 15 13:35:54 2010 annoyotron
+dr-xr-xr-x  2 grayson  staff   308 Jul 15 13:35:54 2010 arrival
+dr-xr-xr-x  2 grayson  staff   236 Jul 15 13:35:54 2010 bmch
+dr-xr-xr-x  3 grayson  staff   300 Jul 15 13:35:54 2010 book-and-volume
+dr-xr-xr-x  2 grayson  staff    92 Jul 15 13:35:54 2010 bronze
+dr-xr-xr-x  2 grayson  staff   212 Jul 15 13:35:54 2010 childsplay
+dr-xr-xr-x  2 grayson  staff   288 Jul 15 13:35:54 2010 dawn
+dr-xr-xr-x  2 grayson  staff   144 Jul 15 13:35:54 2010 dreamhold
+dr-xr-xr-x  5 grayson  staff   172 Jul 15 13:35:54 2010 earthandsky
+dr-xr-xr-x  2 grayson  staff   148 Jul 15 13:35:54 2010 escapade
+dr-xr-xr-x  2 grayson  staff   212 Jul 15 13:35:54 2010 everybodydies
+dr-xr-xr-x  2 grayson  staff   200 Jul 15 13:35:54 2010 fridd
+dr-xr-xr-x  2 grayson  staff   216 Jul 15 13:35:54 2010 friendlyfoe
+dr-xr-xr-x  2 grayson  staff    96 Jul 15 13:35:54 2010 galatea
+dr-xr-xr-x  4 grayson  staff   740 Jul 15 13:35:54 2010 gggold
+dr-xr-xr-x  2 grayson  staff   524 Jul 15 13:35:54 2010 grip
+dr-xr-xr-x  2 grayson  staff   144 Jul 15 13:35:54 2010 hunter-in-darkness
+dr-xr-xr-x  2 grayson  staff  1448 Jul 15 13:35:54 2010 king
+dr-xr-xr-x  2 grayson  staff   144 Jul 15 13:35:54 2010 lash
+dr-xr-xr-x  2 grayson  staff    92 Jul 15 13:35:54 2010 lighthouse
+dr-xr-xr-x  2 grayson  staff   448 Jul 15 13:35:54 2010 ndrift
+dr-xr-xr-x  2 grayson  staff    88 Jul 15 13:35:54 2010 pantomime
+dr-xr-xr-x  2 grayson  staff   304 Jul 15 13:35:54 2010 parrots
+dr-xr-xr-x  2 grayson  staff    92 Jul 15 13:35:54 2010 piracy
+dr-xr-xr-x  2 grayson  staff   188 Jul 15 13:35:54 2010 quick
+-r-xr-xr-x  1 grayson  staff  2299 Jul 15 13:35:54 2010 README.txt
+dr-xr-xr-x  2 grayson  staff   208 Jul 15 13:35:54 2010 recruit
+dr-xr-xr-x  2 grayson  staff   100 Jul 15 13:35:54 2010 savoirfaire
+dr-xr-xr-x  2 grayson  staff   140 Jul 15 13:35:54 2010 shade
+dr-xr-xr-x  5 grayson  staff   796 Jul 15 13:35:54 2010 smuggler
+dr-xr-xr-x  2 grayson  staff   140 Jul 15 13:35:54 2010 spider-and-web
+dr-xr-xr-x  2 grayson  staff   220 Jul 15 13:35:54 2010 squeal
+dr-xr-xr-x  2 grayson  staff   212 Jul 15 13:35:54 2010 tilldeath
+dr-xr-xr-x  2 grayson  staff   156 Jul 15 13:35:54 2010 violet
+dr-xr-xr-x  2 grayson  staff   164 Jul 15 13:35:54 2010 winchesters-nightmare
+dr-xr-xr-x  2 grayson  staff   212 Jul 15 13:35:54 2010 witsend
+dr-xr-xr-x  2 grayson  staff   204 Jul 15 13:35:54 2010 yomomma
+
+/Volumes/GETLAMP/games/aboveandbeyond:
+total 3392
+-r-xr-xr-x  1 grayson  staff  1185298 Jul 15 13:35:54 2010 Above and Beyond (Windows).zip
+-r-xr-xr-x  1 grayson  staff      877 Jul 15 13:35:54 2010 Above and Beyond.txt
+-r-xr-xr-x  1 grayson  staff   548484 Jul 15 13:35:54 2010 ABOVE.GAM
+
+/Volumes/GETLAMP/games/acheton:
+total 496
+-r-xr-xr-x  1 grayson  staff  252416 Jul 15 13:35:54 2010 Acheton.z8
+
+/Volumes/GETLAMP/games/across:
+total 1300
+-r-xr-xr-x  1 grayson  staff  524288 Jul 15 13:35:54 2010 across.z8
+-r-xr-xr-x  1 grayson  staff  122880 Jul 15 13:35:54 2010 atsclues.z5
+dr-xr-xr-x  6 grayson  staff     328 Jul 15 13:35:54 2010 Feelies
+-r-xr-xr-x  1 grayson  staff     685 Jul 15 13:35:54 2010 README.first
+-r-xr-xr-x  1 grayson  staff    6282 Jul 15 13:35:54 2010 Sample Transcript.txt
+-r-xr-xr-x  1 grayson  staff    1030 Jul 15 13:35:54 2010 synopsis.txt
+-r-xr-xr-x  1 grayson  staff    2847 Jul 15 13:35:54 2010 walkthrough.txt
+
+/Volumes/GETLAMP/games/across/Feelies:
+total 852
+dr-xr-xr-x  2 grayson  staff     208 Jul 15 13:35:54 2010 Icons
+-r-xr-xr-x  1 grayson  staff   76079 Jul 15 13:35:54 2010 idbadge.jpg
+-r-xr-xr-x  1 grayson  staff  349826 Jul 15 13:35:54 2010 InductionPack.pdf
+dr-xr-xr-x  2 grayson  staff     168 Jul 15 13:35:54 2010 Maps
+dr-xr-xr-x  3 grayson  staff     944 Jul 15 13:35:54 2010 PDR
+dr-xr-xr-x  2 grayson  staff     208 Jul 15 13:35:54 2010 Wallpaper
+
+/Volumes/GETLAMP/games/across/Feelies/Icons:
+total 72
+-r-xr-xr-x  1 grayson  staff  19214 Jul 15 13:35:54 2010 Across the Stars.ico
+-r-xr-xr-x  1 grayson  staff   6766 Jul 15 13:35:54 2010 Across the Stars.png
+-r-xr-xr-x@ 1 grayson  staff   7168 Jul 15 13:35:54 2010 Thumbs.db
+
+/Volumes/GETLAMP/games/across/Feelies/Maps:
+total 1060
+-r-xr-xr-x  1 grayson  staff    2266 Jul 15 13:35:54 2010 ship&desert-spoilers.gmp
+-r-xr-xr-x  1 grayson  staff  537592 Jul 15 13:35:54 2010 ship&desert-spoilers.pdf
+
+/Volumes/GETLAMP/games/across/Feelies/PDR:
+total 128
+-r-xr-xr-x  1 grayson  staff  1274 Jul 15 13:35:54 2010 across.css
+-r-xr-xr-x  1 grayson  staff   763 Jul 15 13:35:54 2010 across.js
+-r-xr-xr-x  1 grayson  staff  4127 Jul 15 13:35:54 2010 blog.htm
+-r-xr-xr-x  1 grayson  staff  3393 Jul 15 13:35:54 2010 blog536412.htm
+-r-xr-xr-x  1 grayson  staff  3610 Jul 15 13:35:54 2010 blog536505.htm
+-r-xr-xr-x  1 grayson  staff  3600 Jul 15 13:35:54 2010 blog536506.htm
+-r-xr-xr-x  1 grayson  staff  3260 Jul 15 13:35:54 2010 blog536508.htm
+-r-xr-xr-x  1 grayson  staff  3641 Jul 15 13:35:54 2010 blog536510.htm
+-r-xr-xr-x  1 grayson  staff  3291 Jul 15 13:35:54 2010 blog536512.htm
+-r-xr-xr-x  1 grayson  staff  3644 Jul 15 13:35:54 2010 blog536601.htm
+-r-xr-xr-x  1 grayson  staff  3512 Jul 15 13:35:54 2010 blog536604.htm
+-r-xr-xr-x  1 grayson  staff  3470 Jul 15 13:35:54 2010 blog536605.htm
+-r-xr-xr-x  1 grayson  staff  2891 Jul 15 13:35:54 2010 blog536606.htm
+-r-xr-xr-x  1 grayson  staff  3668 Jul 15 13:35:54 2010 contacts.htm
+-r-xr-xr-x  1 grayson  staff  2239 Jul 15 13:35:54 2010 down.htm
+dr-xr-xr-x  2 grayson  staff   412 Jul 15 13:35:54 2010 images
+-r-xr-xr-x  1 grayson  staff  2855 Jul 15 13:35:54 2010 index.htm
+
+/Volumes/GETLAMP/games/across/Feelies/PDR/images:
+total 244
+-r-xr-xr-x  1 grayson  staff  12250 Jul 15 13:35:54 2010 blogblue.jpg
+-r-xr-xr-x  1 grayson  staff  12131 Jul 15 13:35:54 2010 blogwhite.jpg
+-r-xr-xr-x  1 grayson  staff  12994 Jul 15 13:35:54 2010 contactsblue.jpg
+-r-xr-xr-x  1 grayson  staff  12901 Jul 15 13:35:54 2010 contactswhite.jpg
+-r-xr-xr-x  1 grayson  staff  41512 Jul 15 13:35:54 2010 datapad.jpg
+-r-xr-xr-x  1 grayson  staff  12469 Jul 15 13:35:54 2010 homeblue.jpg
+-r-xr-xr-x  1 grayson  staff  12417 Jul 15 13:35:54 2010 homewhite.jpg
+
+/Volumes/GETLAMP/games/across/Feelies/Wallpaper:
+total 376
+-r-xr-xr-x@ 1 grayson  staff  12288 Jul 15 13:35:54 2010 Thumbs.db
+-r-xr-xr-x  1 grayson  staff  83367 Jul 15 13:35:54 2010 Wallpaper1024x768.jpg
+-r-xr-xr-x  1 grayson  staff  95376 Jul 15 13:35:54 2010 Wallpaper1280x800.jpg
+
+/Volumes/GETLAMP/games/ad-verbum:
+total 472
+-r-xr-xr-x  1 grayson  staff   99465 Jul 15 13:35:54 2010 ad_verbum_cover.png
+-r-xr-xr-x  1 grayson  staff  138240 Jul 15 13:35:54 2010 adverbum.z5
+-r-xr-xr-x  1 grayson  staff      59 Jul 15 13:35:54 2010 note.txt
+
+/Volumes/GETLAMP/games/advcrowther:
+total 304
+-r-xr-xr-x  1 grayson  staff  70125 Jul 15 13:35:54 2010 adv_crowther_win.zip
+-r-xr-xr-x  1 grayson  staff  19424 Jul 15 13:35:54 2010 advdat.77-03-11
+-r-xr-xr-x  1 grayson  staff  19424 Jul 15 13:35:54 2010 advdat.77-03-31
+-r-xr-xr-x  1 grayson  staff  12999 Jul 15 13:35:54 2010 advf4.77-03-11
+-r-xr-xr-x  1 grayson  staff  13335 Jul 15 13:35:54 2010 advf4.77-03-23
+-r-xr-xr-x  1 grayson  staff  13277 Jul 15 13:35:54 2010 advf4.77-03-31
+
+/Volumes/GETLAMP/games/annoyotron:
+total 432
+-r-xr-xr-x  1 grayson  staff   71168 Jul 15 13:35:54 2010 annoy.z5
+-r-xr-xr-x  1 grayson  staff  146073 Jul 15 13:35:54 2010 benparrish.jpg
+-r-xr-xr-x  1 grayson  staff     149 Jul 15 13:35:54 2010 readme.txt
+
+/Volumes/GETLAMP/games/arrival:
+total 3000
+-r-xr-xr-x  1 grayson  staff  404608 Jul 15 13:35:54 2010 arrival.gam
+-r-xr-xr-x  1 grayson  staff   21714 Jul 15 13:35:54 2010 arrival.jpg
+-r-xr-xr-x  1 grayson  staff  656004 Jul 15 13:35:54 2010 arrival.rs0
+-r-xr-xr-x  1 grayson  staff  254822 Jul 15 13:35:54 2010 arrival.rs1
+-r-xr-xr-x  1 grayson  staff  193590 Jul 15 13:35:54 2010 Stephen Granade.jpg
+
+/Volumes/GETLAMP/games/bmch:
+total 676
+-r-xr-xr-x  1 grayson  staff  331577 Jul 15 13:35:54 2010 bmch.gam
+-r-xr-xr-x  1 grayson  staff    8074 Jul 15 13:35:54 2010 bmch.jpg
+-r-xr-xr-x  1 grayson  staff    2229 Jul 15 13:35:54 2010 hints.txt
+-r-xr-xr-x  1 grayson  staff     786 Jul 15 13:35:54 2010 README.txt
+
+/Volumes/GETLAMP/games/book-and-volume:
+total 19728
+-r-xr-xr-x  1 grayson  staff   264673 Jul 15 13:35:54 2010 book_and_volume_cover.png
+-r-xr-xr-x  1 grayson  staff  9603958 Jul 15 13:35:54 2010 book_and_volume_gameplay.mov
+-r-xr-xr-x  1 grayson  staff   225792 Jul 15 13:35:54 2010 bookvol.z5
+dr-xr-xr-x  2 grayson  staff      188 Jul 15 13:35:54 2010 never_before_seen_promotional_images
+
+/Volumes/GETLAMP/games/book-and-volume/never_before_seen_promotional_images:
+total 364
+-r-xr-xr-x  1 grayson  staff  63800 Jul 15 13:35:54 2010 brain.jpg
+-r-xr-xr-x  1 grayson  staff  83973 Jul 15 13:35:54 2010 downwards.jpg
+-r-xr-xr-x  1 grayson  staff  33055 Jul 15 13:35:54 2010 thy.jpg
+
+/Volumes/GETLAMP/games/bronze:
+total 964
+-r-xr-xr-x  1 grayson  staff  492472 Jul 15 13:35:54 2010 Bronze.zblorb
+
+/Volumes/GETLAMP/games/childsplay:
+total 10736
+-r-xr-xr-x  1 grayson  staff   100729 Jul 15 13:35:54 2010 Child's Play.jpg
+-r-xr-xr-x  1 grayson  staff   535396 Jul 15 13:35:54 2010 ChildsPlay.zblorb
+-r-xr-xr-x  1 grayson  staff  4857731 Jul 15 13:35:54 2010 Stephen Granade.jpg
+
+/Volumes/GETLAMP/games/dawn:
+total 15324
+-r-xr-xr-x  1 grayson  staff  6189160 Jul 15 13:35:54 2010 DAWN_GFX
+-r-xr-xr-x  1 grayson  staff   729176 Jul 15 13:35:54 2010 dawn.hex
+-r-xr-xr-x  1 grayson  staff   671744 Jul 15 13:35:54 2010 hewin.exe
+-r-xr-xr-x  1 grayson  staff   249689 Jul 15 13:35:54 2010 newhaz.jpg
+-r-xr-xr-x  1 grayson  staff      607 Jul 15 13:35:54 2010 readme.txt
+
+/Volumes/GETLAMP/games/dreamhold:
+total 760
+-r-xr-xr-x  1 grayson  staff  386560 Jul 15 13:35:54 2010 dreamhold.z8
+-r-xr-xr-x  1 grayson  staff    1905 Jul 15 13:35:54 2010 readme.txt
+
+/Volumes/GETLAMP/games/earthandsky:
+total 12
+dr-xr-xr-x  2 grayson  staff  256 Jul 15 13:35:54 2010 eas1
+dr-xr-xr-x  2 grayson  staff  196 Jul 15 13:35:54 2010 eas2
+dr-xr-xr-x  3 grayson  staff  280 Jul 15 13:35:54 2010 eas3
+
+/Volumes/GETLAMP/games/earthandsky/eas1:
+total 708
+-r-xr-xr-x  1 grayson  staff  183296 Jul 15 13:35:54 2010 Eas.z5
+-r-xr-xr-x  1 grayson  staff  171905 Jul 15 13:35:54 2010 EAS1 cover.gif
+-r-xr-xr-x  1 grayson  staff    1413 Jul 15 13:35:54 2010 eas1 walkthrough.txt
+-r-xr-xr-x  1 grayson  staff    3843 Jul 15 13:35:54 2010 easinfo.txt
+
+/Volumes/GETLAMP/games/earthandsky/eas2:
+total 1904
+-r-xr-xr-x  1 grayson  staff  122554 Jul 15 13:35:54 2010 EAS2 cover.gif
+-r-xr-xr-x  1 grayson  staff  845600 Jul 15 13:35:54 2010 EAS2.BLB
+-r-xr-xr-x  1 grayson  staff    5487 Jul 15 13:35:54 2010 eas2info.txt
+
+/Volumes/GETLAMP/games/earthandsky/eas3:
+total 2840
+dr-xr-xr-x  2 grayson  staff      936 Jul 15 13:35:54 2010 Comic feelie - spoilers for episodes 1 and 2!
+-r-xr-xr-x  1 grayson  staff   148121 Jul 15 13:35:54 2010 EAS3 cover.jpg
+-r-xr-xr-x  1 grayson  staff  1293054 Jul 15 13:35:54 2010 eas3.blb
+-r-xr-xr-x  1 grayson  staff     7911 Jul 15 13:35:54 2010 eas3info.txt
+
+/Volumes/GETLAMP/games/earthandsky/eas3/Comic feelie - spoilers for episodes 1 and 2!:
+total 5168
+-r-xr-xr-x  1 grayson  staff  218508 Jul 15 13:35:54 2010 EAS-p01.jpg
+-r-xr-xr-x  1 grayson  staff  257502 Jul 15 13:35:54 2010 EAS-p02.jpg
+-r-xr-xr-x  1 grayson  staff  329262 Jul 15 13:35:54 2010 EAS-p03.jpg
+-r-xr-xr-x  1 grayson  staff  324003 Jul 15 13:35:54 2010 EAS-p04.jpg
+-r-xr-xr-x  1 grayson  staff  383582 Jul 15 13:35:54 2010 EAS-p05.jpg
+-r-xr-xr-x  1 grayson  staff  356027 Jul 15 13:35:54 2010 EAS-p06.jpg
+-r-xr-xr-x  1 grayson  staff  373857 Jul 15 13:35:54 2010 EAS-p07.jpg
+-r-xr-xr-x  1 grayson  staff  380167 Jul 15 13:35:54 2010 EAS-p08.jpg
+-r-xr-xr-x  1 grayson  staff     419 Jul 15 13:35:54 2010 EAScomic page 1.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 2.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 3.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 4.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 5.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 6.html
+-r-xr-xr-x  1 grayson  staff     512 Jul 15 13:35:54 2010 EAScomic page 7.html
+-r-xr-xr-x  1 grayson  staff     409 Jul 15 13:35:54 2010 EAScomic page 8.html
+
+/Volumes/GETLAMP/games/escapade:
+total 1880
+-r-xr-xr-x  1 grayson  staff  678318 Jul 15 13:35:54 2010 escapade.zblorb
+-r-xr-xr-x  1 grayson  staff  280741 Jul 15 13:35:54 2010 source.txt
+
+/Volumes/GETLAMP/games/everybodydies:
+total 16016
+-r-xr-xr-x  1 grayson  staff  4091308 Jul 15 13:35:54 2010 EverybodyDies.gblorb
+-r-xr-xr-x  1 grayson  staff  4039729 Jul 15 13:35:54 2010 EverybodyDies.zip
+-r-xr-xr-x  1 grayson  staff    66894 Jul 15 13:35:54 2010 graham-web.jpg
+
+/Volumes/GETLAMP/games/fridd:
+total 3132
+-r-xr-xr-x  1 grayson  staff    30418 Jul 15 13:35:54 2010 coldesca.zip
+-r-xr-xr-x  1 grayson  staff    17483 Jul 15 13:35:54 2010 soundhim.zip
+-r-xr-xr-x  1 grayson  staff  1553694 Jul 15 13:35:54 2010 WinAPE20A17.zip
+
+/Volumes/GETLAMP/games/friendlyfoe:
+total 2508
+-r-xr-xr-x  1 grayson  staff  1040442 Jul 15 13:35:54 2010 Friendly Foe (Windows).zip
+-r-xr-xr-x  1 grayson  staff      834 Jul 15 13:35:54 2010 Friendly Foe.txt
+-r-xr-xr-x  1 grayson  staff   238026 Jul 15 13:35:54 2010 FRIENDLY.GAM
+
+/Volumes/GETLAMP/games/galatea:
+total 864
+-r-xr-xr-x  1 grayson  staff  441992 Jul 15 13:35:54 2010 Galatea.zblorb
+
+/Volumes/GETLAMP/games/gggold:
+total 6844
+dr-xr-xr-x  2 grayson  staff       88 Jul 15 13:35:54 2010 data
+-r-xr-xr-x  1 grayson  staff   618374 Jul 15 13:35:54 2010 gggg.exe
+-r-xr-xr-x  1 grayson  staff   265091 Jul 15 13:35:54 2010 gggg.TKN
+-r-xr-xr-x  1 grayson  staff  1112657 Jul 15 13:35:54 2010 gggg.zip
+-r-xr-xr-x  1 grayson  staff   246720 Jul 15 13:35:54 2010 RICHED.DLL
+dr-xr-xr-x  2 grayson  staff       40 Jul 15 13:35:54 2010 saves
+-r-xr-xr-x  1 grayson  staff     2048 Jul 15 13:35:54 2010 VWABORT.DLL
+-r-xr-xr-x  1 grayson  staff   993559 Jul 15 13:35:54 2010 VWBAS20.DLL
+-r-xr-xr-x  1 grayson  staff     3088 Jul 15 13:35:54 2010 VWDLGS20.DLL
+-r-xr-xr-x  1 grayson  staff    20992 Jul 15 13:35:54 2010 VWFLOAT2.DLL
+-r-xr-xr-x  1 grayson  staff     6144 Jul 15 13:35:54 2010 VWHELP.DLL
+-r-xr-xr-x  1 grayson  staff    21824 Jul 15 13:35:54 2010 Vwicons.dll
+-r-xr-xr-x  1 grayson  staff    12288 Jul 15 13:35:54 2010 VWSIGNON.DLL
+-r-xr-xr-x  1 grayson  staff   187392 Jul 15 13:35:54 2010 VWVM20.DLL
+
+/Volumes/GETLAMP/games/gggold/data:
+total 320
+-r-xr-xr-x  1 grayson  staff  163533 Jul 15 13:35:54 2010 game.CDB
+
+/Volumes/GETLAMP/games/gggold/saves:
+total 0
+
+/Volumes/GETLAMP/games/grip:
+total 23076
+-r-xr-xr-x  1 grayson  staff   713150 Jul 15 13:35:54 2010 Losing Your Grip.gam
+-r-xr-xr-x  1 grayson  staff   260221 Jul 15 13:35:54 2010 Losing Your Grip.jpg
+-r-xr-xr-x  1 grayson  staff   142790 Jul 15 13:35:54 2010 LYG instruction booklet.pdf
+-r-xr-xr-x  1 grayson  staff  1962817 Jul 15 13:35:54 2010 Medical testing form.pdf
+-r-xr-xr-x  1 grayson  staff  7314437 Jul 15 13:35:54 2010 Nicor ad brochure.pdf
+-r-xr-xr-x  1 grayson  staff  1370597 Jul 15 13:35:54 2010 Quit Smoking ad.pdf
+-r-xr-xr-x  1 grayson  staff       71 Jul 15 13:35:54 2010 regkey.txt
+-r-xr-xr-x  1 grayson  staff    39439 Jul 15 13:35:54 2010 Stephen Granade.jpg
+
+/Volumes/GETLAMP/games/hunter-in-darkness:
+total 232
+-r-xr-xr-x  1 grayson  staff  116224 Jul 15 13:35:54 2010 huntdark.z5
+-r-xr-xr-x  1 grayson  staff    1853 Jul 15 13:35:54 2010 readme.txt
+
+/Volumes/GETLAMP/games/king:
+total 10000
+-r-xr-xr-x  1 grayson  staff     1778 Jul 15 13:35:54 2010 apple.jpg
+-r-xr-xr-x  1 grayson  staff    22264 Jul 15 13:35:54 2010 background.jpg
+-r-xr-xr-x  1 grayson  staff   123690 Jul 15 13:35:54 2010 bedlam.png
+-r-xr-xr-x  1 grayson  staff     1875 Jul 15 13:35:54 2010 border.jpg
+-r-xr-xr-x  1 grayson  staff    13165 Jul 15 13:35:54 2010 chaosium.gif
+-r-xr-xr-x  1 grayson  staff     1781 Jul 15 13:35:54 2010 contact.html
+-r-xr-xr-x  1 grayson  staff     2960 Jul 15 13:35:54 2010 credits.html
+-r-xr-xr-x  1 grayson  staff    68634 Jul 15 13:35:54 2010 croft.png
+-r-xr-xr-x  1 grayson  staff     2839 Jul 15 13:35:54 2010 cthulhu.html
+-r-xr-xr-x  1 grayson  staff    26847 Jul 15 13:35:54 2010 dee.png
+-r-xr-xr-x  1 grayson  staff     4531 Jul 15 13:35:54 2010 download.html
+-r-xr-xr-x  1 grayson  staff    15422 Jul 15 13:35:54 2010 fletcher.png
+-r-xr-xr-x  1 grayson  staff     5854 Jul 15 13:35:54 2010 glulx.gif
+-r-xr-xr-x  1 grayson  staff     3515 Jul 15 13:35:54 2010 index.html
+-r-xr-xr-x  1 grayson  staff    53464 Jul 15 13:35:54 2010 king_screenshot.jpg
+-r-xr-xr-x  1 grayson  staff     3494 Jul 15 13:35:54 2010 linux.jpg
+-r-xr-xr-x  1 grayson  staff    15861 Jul 15 13:35:54 2010 lucy.png
+-r-xr-xr-x  1 grayson  staff    32928 Jul 15 13:35:54 2010 menu.jpg
+-r-xr-xr-x  1 grayson  staff    22138 Jul 15 13:35:54 2010 moore.png
+-r-xr-xr-x  1 grayson  staff     4198 Jul 15 13:35:54 2010 players.html
+-r-xr-xr-x  1 grayson  staff    22685 Jul 15 13:35:54 2010 shakespeare.png
+-r-xr-xr-x  1 grayson  staff    19969 Jul 15 13:35:54 2010 simon.png
+-r-xr-xr-x  1 grayson  staff  4340676 Jul 15 13:35:54 2010 The King of Shreds and Patches.gblorb
+-r-xr-xr-x  1 grayson  staff    74408 Jul 15 13:35:54 2010 throne.png
+-r-xr-xr-x  1 grayson  staff   193382 Jul 15 13:35:54 2010 town.png
+-r-xr-xr-x  1 grayson  staff    11473 Jul 15 13:35:54 2010 wainscotting.jpg
+-r-xr-xr-x  1 grayson  staff     2844 Jul 15 13:35:54 2010 windows.jpg
+
+/Volumes/GETLAMP/games/lash:
+total 1120
+-r-xr-xr-x  1 grayson  staff  200802 Jul 15 13:35:54 2010 LASH cover.jpg
+-r-xr-xr-x  1 grayson  staff  370176 Jul 15 13:35:54 2010 LASH.z8
+
+/Volumes/GETLAMP/games/lighthouse:
+total 484
+-r-xr-xr-x  1 grayson  staff  246784 Jul 15 13:35:54 2010 lighthouse.z8
+
+/Volumes/GETLAMP/games/ndrift:
+total 81200
+-r-xr-xr-x  1 grayson  staff    667648 Jul 15 13:35:54 2010 hewin.exe
+-r-xr-xr-x  1 grayson  staff   7741524 Jul 15 13:35:54 2010 MALL
+-r-xr-xr-x  1 grayson  staff  32428390 Jul 15 13:35:54 2010 NDMUSIC
+-r-xr-xr-x  1 grayson  staff        18 Jul 15 13:35:54 2010 ndrift.bat
+-r-xr-xr-x  1 grayson  staff    556591 Jul 15 13:35:54 2010 ndrift.hex
+-r-xr-xr-x  1 grayson  staff       686 Jul 15 13:35:54 2010 readme.txt
+-r-xr-xr-x  1 grayson  staff     87983 Jul 15 13:35:54 2010 robb_axe01.jpg
+-r-xr-xr-x  1 grayson  staff     83946 Jul 15 13:35:54 2010 whichwitch.pdf
+
+/Volumes/GETLAMP/games/pantomime:
+total 488
+-r-xr-xr-x  1 grayson  staff  248466 Jul 15 13:35:54 2010 pmime.hex
+
+/Volumes/GETLAMP/games/parrots:
+total 4340
+-r-xr-xr-x  1 grayson  staff    37581 Jul 15 13:35:54 2010 hints.html
+-r-xr-xr-x  1 grayson  staff   119024 Jul 15 13:35:54 2010 maxblaster.jpg
+-r-xr-xr-x  1 grayson  staff   525990 Jul 15 13:35:54 2010 parrots.3r0
+-r-xr-xr-x  1 grayson  staff  1532127 Jul 15 13:35:54 2010 parrots.t3
+-r-xr-xr-x  1 grayson  staff      490 Jul 15 13:35:54 2010 README.txt
+
+/Volumes/GETLAMP/games/piracy:
+total 492
+-r-xr-xr-x  1 grayson  staff  250880 Jul 15 13:35:54 2010 Piracy_2.z5
+
+/Volumes/GETLAMP/games/quick:
+total 460
+-r-xr-xr-x  1 grayson  staff     319 Jul 15 13:35:54 2010 quick1.gam
+-r-xr-xr-x  1 grayson  staff  229888 Jul 15 13:35:54 2010 quick2.z5
+-r-xr-xr-x  1 grayson  staff     174 Jul 15 13:35:54 2010 README
+
+/Volumes/GETLAMP/games/recruit:
+total 2876
+-r-xr-xr-x  1 grayson  staff   354325 Jul 15 13:35:54 2010 recruit.gam
+-r-xr-xr-x  1 grayson  staff      965 Jul 15 13:35:54 2010 Recruit.txt
+-r-xr-xr-x  1 grayson  staff  1112480 Jul 15 13:35:54 2010 The Recruit (Windows).zip
+
+/Volumes/GETLAMP/games/savoirfaire:
+total 864
+-r-xr-xr-x  1 grayson  staff  442212 Jul 15 13:35:54 2010 Savoir-Faire.zblorb
+
+/Volumes/GETLAMP/games/shade:
+total 220
+-r-xr-xr-x  1 grayson  staff    2108 Jul 15 13:35:54 2010 readme.txt
+-r-xr-xr-x  1 grayson  staff  108544 Jul 15 13:35:54 2010 shade.z5
+
+/Volumes/GETLAMP/games/smuggler:
+total 4776
+dr-xr-xr-x  2 grayson  staff      88 Jul 15 13:35:54 2010 data
+-r-xr-xr-x  1 grayson  staff   59488 Jul 15 13:35:54 2010 DEANSLIB.DLL
+dr-xr-xr-x  2 grayson  staff     668 Jul 15 13:35:54 2010 gfx
+-r-xr-xr-x  1 grayson  staff  246720 Jul 15 13:35:54 2010 RICHED.DLL
+dr-xr-xr-x  2 grayson  staff     440 Jul 15 13:35:54 2010 sfx
+-r-xr-xr-x  1 grayson  staff  618374 Jul 15 13:35:54 2010 Smuggler.exe
+-r-xr-xr-x  1 grayson  staff  256210 Jul 15 13:35:54 2010 Smuggler.tkn
+-r-xr-xr-x  1 grayson  staff    2048 Jul 15 13:35:54 2010 VWABORT.DLL
+-r-xr-xr-x  1 grayson  staff  993559 Jul 15 13:35:54 2010 VWBAS20.DLL
+-r-xr-xr-x  1 grayson  staff    3088 Jul 15 13:35:54 2010 VWDLGS20.DLL
+-r-xr-xr-x  1 grayson  staff   20992 Jul 15 13:35:54 2010 VWFLOAT2.DLL
+-r-xr-xr-x  1 grayson  staff    6144 Jul 15 13:35:54 2010 VWHELP.DLL
+-r-xr-xr-x  1 grayson  staff   21824 Jul 15 13:35:54 2010 Vwicons.dll
+-r-xr-xr-x  1 grayson  staff   12288 Jul 15 13:35:54 2010 VWSIGNON.DLL
+-r-xr-xr-x  1 grayson  staff  187392 Jul 15 13:35:54 2010 VWVM20.DLL
+
+/Volumes/GETLAMP/games/smuggler/data:
+total 276
+-r-xr-xr-x  1 grayson  staff  139409 Jul 15 13:35:54 2010 GAME.CDB
+
+/Volumes/GETLAMP/games/smuggler/gfx:
+total 1948
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc1.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc10.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc17.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc2.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc23.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc30.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc34.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc36.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc44.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc51.bmp
+-r-xr-xr-x  1 grayson  staff  73878 Jul 15 13:35:54 2010 loc60.bmp
+-r-xr-xr-x  1 grayson  staff  71278 Jul 15 13:35:54 2010 logopic.bmp
+-r-xr-xr-x  1 grayson  staff  92160 Jul 15 13:35:54 2010 Thumbs.db
+
+/Volumes/GETLAMP/games/smuggler/sfx:
+total 720
+-r-xr-xr-x  1 grayson  staff   17452 Jul 15 13:35:54 2010 GOODBYE.WAV
+-r-xr-xr-x  1 grayson  staff   17098 Jul 15 13:35:54 2010 GULLS.WAV
+-r-xr-xr-x  1 grayson  staff   37928 Jul 15 13:35:54 2010 HORSE.WAV
+-r-xr-xr-x  1 grayson  staff   21032 Jul 15 13:35:54 2010 PIG.WAV
+-r-xr-xr-x  1 grayson  staff   17266 Jul 15 13:35:54 2010 ROOSTER.WAV
+-r-xr-xr-x  1 grayson  staff   55490 Jul 15 13:35:54 2010 warmup.wav
+-r-xr-xr-x  1 grayson  staff  182852 Jul 15 13:35:54 2010 Wave.wav
+-r-xr-xr-x  1 grayson  staff   10084 Jul 15 13:35:54 2010 WELLDONE.WAV
+
+/Volumes/GETLAMP/games/spider-and-web:
+total 440
+-r-xr-xr-x  1 grayson  staff    2650 Jul 15 13:35:54 2010 readme.txt
+-r-xr-xr-x  1 grayson  staff  221184 Jul 15 13:35:54 2010 Tangle.z5
+
+/Volumes/GETLAMP/games/squeal:
+total 3704
+-r-xr-xr-x  1 grayson  staff  1290396 Jul 15 13:35:54 2010 No Time To Squeal (Windows).zip
+-r-xr-xr-x  1 grayson  staff      835 Jul 15 13:35:54 2010 No Time To Squeal.txt
+-r-xr-xr-x  1 grayson  staff   601033 Jul 15 13:35:54 2010 NTTS.GAM
+
+/Volumes/GETLAMP/games/tilldeath:
+total 3532
+-r-xr-xr-x  1 grayson  staff   566548 Jul 15 13:35:54 2010 TILDEATH.GAM
+-r-xr-xr-x  1 grayson  staff  1238329 Jul 15 13:35:54 2010 Till Death (Windows).zip
+-r-xr-xr-x  1 grayson  staff     1031 Jul 15 13:35:54 2010 Till Death.txt
+
+/Volumes/GETLAMP/games/violet:
+total 1180
+-r-xr-xr-x  1 grayson  staff    1612 Jul 15 13:35:54 2010 Violet Walkthrough.txt
+-r-xr-xr-x  1 grayson  staff  601262 Jul 15 13:35:54 2010 Violet.zblorb
+
+/Volumes/GETLAMP/games/winchesters-nightmare:
+total 804
+-r-xr-xr-x  1 grayson  staff  293888 Jul 15 13:35:54 2010 winchest.z8
+-r-xr-xr-x  1 grayson  staff  116504 Jul 15 13:35:54 2010 winchesters_nightmare_cover.jpg
+
+/Volumes/GETLAMP/games/witsend:
+total 3128
+-r-xr-xr-x  1 grayson  staff  1149744 Jul 15 13:35:54 2010 At Wit's End (Windows).zip
+-r-xr-xr-x  1 grayson  staff      846 Jul 15 13:35:54 2010 At Wit's End.txt
+-r-xr-xr-x  1 grayson  staff   447975 Jul 15 13:35:54 2010 AWE.GAM
+
+/Volumes/GETLAMP/games/yomomma:
+total 2188
+-r-xr-xr-x  1 grayson  staff  139227 Jul 15 13:35:54 2010 source.txt
+-r-xr-xr-x  1 grayson  staff    2089 Jul 15 13:35:54 2010 walkthrough.txt
+-r-xr-xr-x  1 grayson  staff  976538 Jul 15 13:35:54 2010 yomomma.zblorb
+
+/Volumes/GETLAMP/interpreters:
+total 8
+dr-xr-xr-x  2 grayson  staff  252 Jul 15 13:35:54 2010 gargoyle
+dr-xr-xr-x  2 grayson  staff  104 Jul 15 13:35:54 2010 splatterlight
+
+/Volumes/GETLAMP/interpreters/gargoyle:
+total 31184
+-r-xr-xr-x  1 grayson  staff   1764352 Jul 15 13:35:54 2010 gargoyle-2009-08-25-linux.deb
+-r-xr-xr-x  1 grayson  staff  11551238 Jul 15 13:35:54 2010 gargoyle-2009-08-25-sources.zip
+-r-xr-xr-x  1 grayson  staff   2647726 Jul 15 13:35:54 2010 gargoyle-2009-08-25-windows.exe
+
+/Volumes/GETLAMP/interpreters/splatterlight:
+total 5908
+-r-xr-xr-x  1 grayson  staff  3024216 Jul 15 13:35:54 2010 spatterlight-0.5.0.zip
+
+/Volumes/GETLAMP/JACKET_P:
+total 196
+-r-xr-xr-x  1 grayson  staff  81920 Jul 15 13:35:54 2010 J00___5L.MP2
+-r-xr-xr-x  1 grayson  staff  12288 Jul 15 13:35:54 2010 J00___5M.MP2
+-r-xr-xr-x  1 grayson  staff   6144 Jul 15 13:35:54 2010 J00___5S.MP2
+
+/Volumes/GETLAMP/photos:
+total 532
+dr-xr-xr-x  2 grayson  staff    2896 Jul 15 13:35:54 2010 bedquiltvideo
+dr-xr-xr-x  2 grayson  staff    2176 Jul 15 13:35:54 2010 infocom-ads
+-r-xr-xr-x  1 grayson  staff  262368 Jul 15 13:35:54 2010 jason-at-16.jpg
+
+/Volumes/GETLAMP/photos/bedquiltvideo:
+total 71968
+-r-xr-xr-x  1 grayson  staff   789185 Jul 15 13:35:54 2010 Image00.jpg
+-r-xr-xr-x  1 grayson  staff   591831 Jul 15 13:35:54 2010 Image01.jpg
+-r-xr-xr-x  1 grayson  staff   615725 Jul 15 13:35:54 2010 Image02.jpg
+-r-xr-xr-x  1 grayson  staff   438999 Jul 15 13:35:54 2010 Image03.jpg
+-r-xr-xr-x  1 grayson  staff   832088 Jul 15 13:35:54 2010 Image05.jpg
+-r-xr-xr-x  1 grayson  staff   859118 Jul 15 13:35:54 2010 Image06.jpg
+-r-xr-xr-x  1 grayson  staff   980001 Jul 15 13:35:54 2010 Image07.jpg
+-r-xr-xr-x  1 grayson  staff  1055164 Jul 15 13:35:54 2010 Image08.jpg
+-r-xr-xr-x  1 grayson  staff  1124609 Jul 15 13:35:54 2010 Image09.jpg
+-r-xr-xr-x  1 grayson  staff  1005018 Jul 15 13:35:54 2010 Image11.jpg
+-r-xr-xr-x  1 grayson  staff  1186865 Jul 15 13:35:54 2010 Image12.jpg
+-r-xr-xr-x  1 grayson  staff   830399 Jul 15 13:35:54 2010 Image13.jpg
+-r-xr-xr-x  1 grayson  staff   792307 Jul 15 13:35:54 2010 Image14.jpg
+-r-xr-xr-x  1 grayson  staff   677708 Jul 15 13:35:54 2010 Image15.jpg
+-r-xr-xr-x  1 grayson  staff  1077056 Jul 15 13:35:54 2010 Image16.jpg
+-r-xr-xr-x  1 grayson  staff  1138176 Jul 15 13:35:54 2010 Image17.jpg
+-r-xr-xr-x  1 grayson  staff   812154 Jul 15 13:35:54 2010 Image18.jpg
+-r-xr-xr-x  1 grayson  staff   969040 Jul 15 13:35:54 2010 Image20.jpg
+-r-xr-xr-x  1 grayson  staff  1146029 Jul 15 13:35:54 2010 Image21.jpg
+-r-xr-xr-x  1 grayson  staff   742002 Jul 15 13:35:54 2010 Image22.jpg
+-r-xr-xr-x  1 grayson  staff   726659 Jul 15 13:35:54 2010 Image23.jpg
+-r-xr-xr-x  1 grayson  staff   911168 Jul 15 13:35:54 2010 Image24.jpg
+-r-xr-xr-x  1 grayson  staff   692660 Jul 15 13:35:54 2010 Image25.jpg
+-r-xr-xr-x  1 grayson  staff   634934 Jul 15 13:35:54 2010 Image26.jpg
+-r-xr-xr-x  1 grayson  staff   465990 Jul 15 13:35:54 2010 Image27.jpg
+-r-xr-xr-x  1 grayson  staff   567239 Jul 15 13:35:54 2010 Image28.jpg
+-r-xr-xr-x  1 grayson  staff   618506 Jul 15 13:35:54 2010 Image29.jpg
+-r-xr-xr-x  1 grayson  staff   586518 Jul 15 13:35:54 2010 Image30.jpg
+-r-xr-xr-x  1 grayson  staff   534324 Jul 15 13:35:54 2010 Image31.jpg
+-r-xr-xr-x  1 grayson  staff   628126 Jul 15 13:35:54 2010 Image32.jpg
+-r-xr-xr-x  1 grayson  staff   512308 Jul 15 13:35:54 2010 Image33.jpg
+-r-xr-xr-x  1 grayson  staff   737015 Jul 15 13:35:54 2010 Image34.jpg
+-r-xr-xr-x  1 grayson  staff   718207 Jul 15 13:35:54 2010 Image35.jpg
+-r-xr-xr-x  1 grayson  staff   498525 Jul 15 13:35:54 2010 Image36.jpg
+-r-xr-xr-x  1 grayson  staff   559308 Jul 15 13:35:54 2010 Image37.jpg
+-r-xr-xr-x  1 grayson  staff   609400 Jul 15 13:35:54 2010 Image38.jpg
+-r-xr-xr-x  1 grayson  staff   720894 Jul 15 13:35:54 2010 Image39.jpg
+-r-xr-xr-x  1 grayson  staff   234270 Jul 15 13:35:54 2010 Image40.jpg
+-r-xr-xr-x  1 grayson  staff   216387 Jul 15 13:35:54 2010 Image41.jpg
+-r-xr-xr-x  1 grayson  staff   545756 Jul 15 13:35:54 2010 Image42.jpg
+-r-xr-xr-x  1 grayson  staff   558150 Jul 15 13:35:54 2010 Image43.jpg
+-r-xr-xr-x  1 grayson  staff   206320 Jul 15 13:35:54 2010 Image44.jpg
+-r-xr-xr-x  1 grayson  staff   254321 Jul 15 13:35:54 2010 Image45.jpg
+-r-xr-xr-x  1 grayson  staff   653151 Jul 15 13:35:54 2010 Image46.jpg
+-r-xr-xr-x  1 grayson  staff   575979 Jul 15 13:35:54 2010 Image47.jpg
+-r-xr-xr-x  1 grayson  staff   611172 Jul 15 13:35:54 2010 Image48.jpg
+-r-xr-xr-x  1 grayson  staff   495152 Jul 15 13:35:54 2010 Image49.jpg
+-r-xr-xr-x  1 grayson  staff   657984 Jul 15 13:35:54 2010 Image50.jpg
+-r-xr-xr-x  1 grayson  staff   472744 Jul 15 13:35:54 2010 Image51.jpg
+-r-xr-xr-x  1 grayson  staff   540774 Jul 15 13:35:54 2010 Image52.jpg
+-r-xr-xr-x  1 grayson  staff   609031 Jul 15 13:35:54 2010 Image53.jpg
+-r-xr-xr-x  1 grayson  staff   560091 Jul 15 13:35:54 2010 Image54.jpg
+-r-xr-xr-x  1 grayson  staff   614669 Jul 15 13:35:54 2010 Image55.jpg
+-r-xr-xr-x  1 grayson  staff   600578 Jul 15 13:35:54 2010 Image56.jpg
+-r-xr-xr-x  1 grayson  staff       98 Jul 15 13:35:54 2010 README
+
+/Volumes/GETLAMP/photos/infocom-ads:
+total 113332
+-r-xr-xr-x  1 grayson  staff   696056 Jul 15 13:35:54 2010 1983Catalog.bmp
+-r-xr-xr-x  1 grayson  staff   693656 Jul 15 13:35:54 2010 1983RearCover.bmp
+-r-xr-xr-x  1 grayson  staff   758456 Jul 15 13:35:54 2010 1984Catalog.bmp
+-r-xr-xr-x  1 grayson  staff  1560056 Jul 15 13:35:54 2010 1984MysteryPage.bmp
+-r-xr-xr-x  1 grayson  staff   674456 Jul 15 13:35:54 2010 1985Catalog.bmp
+-r-xr-xr-x  1 grayson  staff  1375256 Jul 15 13:35:54 2010 1985MysteryTOAPage.bmp
+-r-xr-xr-x  1 grayson  staff   681656 Jul 15 13:35:54 2010 1986Catalog.bmp
+-r-xr-xr-x  1 grayson  staff  1388216 Jul 15 13:35:54 2010 1986PfallHijinxPage.bmp
+-r-xr-xr-x  1 grayson  staff   753656 Jul 15 13:35:54 2010 1987Catalog.bmp
+-r-xr-xr-x  1 grayson  staff  1562456 Jul 15 13:35:54 2010 1987TrilogyPage.bmp
+-r-xr-xr-x  1 grayson  staff  2635832 Jul 15 13:35:54 2010 AsWeCanAd.bmp
+-r-xr-xr-x  1 grayson  staff  2844054 Jul 15 13:35:54 2010 BookAd.bmp
+-r-xr-xr-x  1 grayson  staff  2617400 Jul 15 13:35:54 2010 BrainAd1.bmp
+-r-xr-xr-x  1 grayson  staff  2469944 Jul 15 13:35:54 2010 BrainAd2.bmp
+-r-xr-xr-x  1 grayson  staff  4177976 Jul 15 13:35:54 2010 CommodoreAd.bmp
+-r-xr-xr-x  1 grayson  staff  1864376 Jul 15 13:35:54 2010 CornerstoneAd.bmp
+-r-xr-xr-x  1 grayson  staff  1620536 Jul 15 13:35:54 2010 CouponAd.bmp
+-r-xr-xr-x  1 grayson  staff   552760 Jul 15 13:35:54 2010 DeadlineAd.bmp
+-r-xr-xr-x  1 grayson  staff  1303256 Jul 15 13:35:54 2010 GnomeAd.bmp
+-r-xr-xr-x  1 grayson  staff  2175032 Jul 15 13:35:54 2010 HitchhikersAd.bmp
+-r-xr-xr-x  1 grayson  staff  1641656 Jul 15 13:35:54 2010 ImaginationAd.bmp
+-r-xr-xr-x  1 grayson  staff  2506808 Jul 15 13:35:54 2010 IncompleteAd1.bmp
+-r-xr-xr-x  1 grayson  staff  2617400 Jul 15 13:35:54 2010 IncompleteAd2.bmp
+-r-xr-xr-x  1 grayson  staff   203937 Jul 15 13:35:54 2010 invisi-2.jpg
+-r-xr-xr-x  1 grayson  staff  1655096 Jul 15 13:35:54 2010 MatchWitsAd.bmp
+-r-xr-xr-x  1 grayson  staff   179280 Jul 15 13:35:54 2010 MindExpansionAd.bmp
+-r-xr-xr-x  1 grayson  staff   321720 Jul 15 13:35:54 2010 NeverChangeAd.bmp
+-r-xr-xr-x  1 grayson  staff   656696 Jul 15 13:35:54 2010 SmallPlanetfallAd.bmp
+-r-xr-xr-x  1 grayson  staff   656696 Jul 15 13:35:54 2010 SmallSeastalkerAd.bmp
+-r-xr-xr-x  1 grayson  staff   673976 Jul 15 13:35:54 2010 SmallWishbringerAd.bmp
+-r-xr-xr-x  1 grayson  staff   660536 Jul 15 13:35:54 2010 SmallZorkAd.bmp
+-r-xr-xr-x  1 grayson  staff  2171960 Jul 15 13:35:54 2010 SuspectAd.bmp
+-r-xr-xr-x  1 grayson  staff  1649336 Jul 15 13:35:54 2010 TeenageZombieAd.bmp
+-r-xr-xr-x  1 grayson  staff  4697144 Jul 15 13:35:54 2010 TheMatrix.bmp
+-r-xr-xr-x  1 grayson  staff   241080 Jul 15 13:35:54 2010 WhatItEatsAd.bmp
+-r-xr-xr-x  1 grayson  staff  2786456 Jul 15 13:35:54 2010 WineMerchantAd.bmp
+-r-xr-xr-x  1 grayson  staff  1657016 Jul 15 13:35:54 2010 WizardAd.bmp
+-r-xr-xr-x  1 grayson  staff   600120 Jul 15 13:35:54 2010 ZorkAd.bmp
+
+/Volumes/GETLAMP/production:
+total 8
+dr-xr-xr-x  2 grayson  staff  552 Jul 15 13:35:54 2010 coin
+dr-xr-xr-x  2 grayson  staff  676 Jul 15 13:35:54 2010 painting
+
+/Volumes/GETLAMP/production/coin:
+total 38512
+-r-xr-xr-x  1 grayson  staff  2985998 Jul 15 13:35:54 2010 0001.jpg
+-r-xr-xr-x  1 grayson  staff  3195724 Jul 15 13:35:54 2010 0042.jpg
+-r-xr-xr-x  1 grayson  staff  2569334 Jul 15 13:35:54 2010 coinbag1.jpg
+-r-xr-xr-x  1 grayson  staff  4204927 Jul 15 13:35:54 2010 coinbag2.jpg
+-r-xr-xr-x  1 grayson  staff  3219517 Jul 15 13:35:54 2010 coinbag3.jpg
+-r-xr-xr-x  1 grayson  staff  2604343 Jul 15 13:35:54 2010 coinbox1.jpg
+-r-xr-xr-x  1 grayson  staff   268095 Jul 15 13:35:54 2010 proof.jpg
+-r-xr-xr-x  1 grayson  staff   363584 Jul 15 13:35:54 2010 prototype1.jpg
+-r-xr-xr-x  1 grayson  staff   228398 Jul 15 13:35:54 2010 prototype2.jpg
+-r-xr-xr-x@ 1 grayson  staff    67584 Jul 15 13:35:54 2010 Thumbs.db
+
+/Volumes/GETLAMP/production/painting:
+total 3804
+-r-xr-xr-x  1 grayson  staff   90613 Jul 15 13:35:54 2010 58713827.jpg
+-r-xr-xr-x  1 grayson  staff  199903 Jul 15 13:35:54 2010 finaldrawing.jpg
+-r-xr-xr-x  1 grayson  staff  139019 Jul 15 13:35:54 2010 finalsketch.jpg
+-r-xr-xr-x  1 grayson  staff  317536 Jul 15 13:35:54 2010 getlamp-final.jpg
+-r-xr-xr-x  1 grayson  staff   95866 Jul 15 13:35:54 2010 marc1.jpg
+-r-xr-xr-x  1 grayson  staff  106105 Jul 15 13:35:54 2010 marc2.jpg
+-r-xr-xr-x  1 grayson  staff  154088 Jul 15 13:35:54 2010 middlesketch.jpg
+-r-xr-xr-x  1 grayson  staff  387533 Jul 15 13:35:54 2010 overlay.png
+-r-xr-xr-x  1 grayson  staff   40030 Jul 15 13:35:54 2010 reference1.jpg
+-r-xr-xr-x  1 grayson  staff  205083 Jul 15 13:35:54 2010 roughsketch.jpg
+-r-xr-xr-x  1 grayson  staff  150208 Jul 15 13:35:54 2010 sketch1.png
+-r-xr-xr-x@ 1 grayson  staff   47616 Jul 15 13:35:54 2010 Thumbs.db
+
+/Volumes/GETLAMP/video:
+total 797260
+-r-xr-xr-x  1 grayson  staff   10248192 Jul 15 13:35:54 2010 bbsdocpromo.mpg
+-r-xr-xr-x  1 grayson  staff  198128287 Jul 15 13:35:54 2010 frontalot-hd.mp4
+-r-xr-xr-x  1 grayson  staff  168698792 Jul 15 13:35:54 2010 getlamptrailer.m2t
+-r-xr-xr-x  1 grayson  staff    5645503 Jul 15 13:35:54 2010 mikedrop.wmv
+-r-xr-xr-x  1 grayson  staff   24848384 Jul 15 13:35:54 2010 penny.mpg
+-r-xr-xr-x  1 grayson  staff     622749 Jul 15 13:35:54 2010 stroll.mp4
+
+/Volumes/GETLAMP/VIDEO_TS:
+total 13068252
+-r-xr-xr-x  1 grayson  staff       71680 Jul 15 13:35:54 2010 VIDEO_TS.BUP
+-r-xr-xr-x  1 grayson  staff       71680 Jul 15 13:35:54 2010 VIDEO_TS.IFO
+-r-xr-xr-x  1 grayson  staff      237568 Jul 15 13:35:54 2010 VIDEO_TS.VOB
+-r-xr-xr-x  1 grayson  staff       47104 Jul 15 13:35:54 2010 VTS_01_0.BUP
+-r-xr-xr-x  1 grayson  staff       47104 Jul 15 13:35:54 2010 VTS_01_0.IFO
+-r-xr-xr-x  1 grayson  staff   594391040 Jul 15 13:35:54 2010 VTS_01_0.VOB
+-r-xr-xr-x  1 grayson  staff     1488896 Jul 15 13:35:54 2010 VTS_01_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_02_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_02_0.IFO
+-r-xr-xr-x  1 grayson  staff    83812352 Jul 15 13:35:54 2010 VTS_02_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_03_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_03_0.IFO
+-r-xr-xr-x  1 grayson  staff   137369600 Jul 15 13:35:54 2010 VTS_03_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_04_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_04_0.IFO
+-r-xr-xr-x  1 grayson  staff    33366016 Jul 15 13:35:54 2010 VTS_04_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_05_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_05_0.IFO
+-r-xr-xr-x  1 grayson  staff    54906880 Jul 15 13:35:54 2010 VTS_05_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_06_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_06_0.IFO
+-r-xr-xr-x  1 grayson  staff    66217984 Jul 15 13:35:54 2010 VTS_06_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_07_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_07_0.IFO
+-r-xr-xr-x  1 grayson  staff    35878912 Jul 15 13:35:54 2010 VTS_07_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_08_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_08_0.IFO
+-r-xr-xr-x  1 grayson  staff    91670528 Jul 15 13:35:54 2010 VTS_08_1.VOB
+-r-xr-xr-x  1 grayson  staff       28672 Jul 15 13:35:54 2010 VTS_09_0.BUP
+-r-xr-xr-x  1 grayson  staff       28672 Jul 15 13:35:54 2010 VTS_09_0.IFO
+-r-xr-xr-x  1 grayson  staff  1047513088 Jul 15 13:35:54 2010 VTS_09_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_10_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_10_0.IFO
+-r-xr-xr-x  1 grayson  staff    74534912 Jul 15 13:35:54 2010 VTS_10_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_11_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_11_0.IFO
+-r-xr-xr-x  1 grayson  staff    60829696 Jul 15 13:35:54 2010 VTS_11_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_12_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_12_0.IFO
+-r-xr-xr-x  1 grayson  staff   202196992 Jul 15 13:35:54 2010 VTS_12_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_13_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_13_0.IFO
+-r-xr-xr-x  1 grayson  staff   127836160 Jul 15 13:35:54 2010 VTS_13_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_14_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_14_0.IFO
+-r-xr-xr-x  1 grayson  staff   117780480 Jul 15 13:35:54 2010 VTS_14_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_15_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_15_0.IFO
+-r-xr-xr-x  1 grayson  staff   193759232 Jul 15 13:35:54 2010 VTS_15_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_16_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_16_0.IFO
+-r-xr-xr-x  1 grayson  staff   201627648 Jul 15 13:35:54 2010 VTS_16_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_17_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_17_0.IFO
+-r-xr-xr-x  1 grayson  staff   130877440 Jul 15 13:35:54 2010 VTS_17_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_18_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_18_0.IFO
+-r-xr-xr-x  1 grayson  staff    94367744 Jul 15 13:35:54 2010 VTS_18_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_19_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_19_0.IFO
+-r-xr-xr-x  1 grayson  staff    33095680 Jul 15 13:35:54 2010 VTS_19_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_20_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_20_0.IFO
+-r-xr-xr-x  1 grayson  staff    43882496 Jul 15 13:35:54 2010 VTS_20_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_21_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_21_0.IFO
+-r-xr-xr-x  1 grayson  staff   273162240 Jul 15 13:35:54 2010 VTS_21_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_22_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_22_0.IFO
+-r-xr-xr-x  1 grayson  staff   144654336 Jul 15 13:35:54 2010 VTS_22_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_23_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_23_0.IFO
+-r-xr-xr-x  1 grayson  staff    99594240 Jul 15 13:35:54 2010 VTS_23_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_24_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_24_0.IFO
+-r-xr-xr-x  1 grayson  staff   222593024 Jul 15 13:35:54 2010 VTS_24_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_25_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_25_0.IFO
+-r-xr-xr-x  1 grayson  staff    82565120 Jul 15 13:35:54 2010 VTS_25_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_26_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_26_0.IFO
+-r-xr-xr-x  1 grayson  staff   276903936 Jul 15 13:35:54 2010 VTS_26_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_27_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_27_0.IFO
+-r-xr-xr-x  1 grayson  staff    72093696 Jul 15 13:35:54 2010 VTS_27_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_28_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_28_0.IFO
+-r-xr-xr-x  1 grayson  staff    82630656 Jul 15 13:35:54 2010 VTS_28_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_29_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_29_0.IFO
+-r-xr-xr-x  1 grayson  staff   124884992 Jul 15 13:35:54 2010 VTS_29_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_30_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_30_0.IFO
+-r-xr-xr-x  1 grayson  staff    60260352 Jul 15 13:35:54 2010 VTS_30_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_31_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_31_0.IFO
+-r-xr-xr-x  1 grayson  staff   296204288 Jul 15 13:35:54 2010 VTS_31_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_32_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_32_0.IFO
+-r-xr-xr-x  1 grayson  staff   161173504 Jul 15 13:35:54 2010 VTS_32_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_33_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_33_0.IFO
+-r-xr-xr-x  1 grayson  staff   106397696 Jul 15 13:35:54 2010 VTS_33_1.VOB
+-r-xr-xr-x  1 grayson  staff       18432 Jul 15 13:35:54 2010 VTS_34_0.BUP
+-r-xr-xr-x  1 grayson  staff       18432 Jul 15 13:35:54 2010 VTS_34_0.IFO
+-r-xr-xr-x  1 grayson  staff   326275072 Jul 15 13:35:54 2010 VTS_34_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_35_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_35_0.IFO
+-r-xr-xr-x  1 grayson  staff    41007104 Jul 15 13:35:54 2010 VTS_35_1.VOB
+-r-xr-xr-x  1 grayson  staff       18432 Jul 15 13:35:54 2010 VTS_36_0.BUP
+-r-xr-xr-x  1 grayson  staff       18432 Jul 15 13:35:54 2010 VTS_36_0.IFO
+-r-xr-xr-x  1 grayson  staff   242280448 Jul 15 13:35:54 2010 VTS_36_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_37_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_37_0.IFO
+-r-xr-xr-x  1 grayson  staff   144148480 Jul 15 13:35:54 2010 VTS_37_1.VOB
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_38_0.BUP
+-r-xr-xr-x  1 grayson  staff       14336 Jul 15 13:35:54 2010 VTS_38_0.IFO
+-r-xr-xr-x  1 grayson  staff    19202048 Jul 15 13:35:54 2010 VTS_38_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_39_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_39_0.IFO
+-r-xr-xr-x  1 grayson  staff   242176000 Jul 15 13:35:54 2010 VTS_39_1.VOB
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_40_0.BUP
+-r-xr-xr-x  1 grayson  staff       16384 Jul 15 13:35:54 2010 VTS_40_0.IFO
+-r-xr-xr-x  1 grayson  staff   243662848 Jul 15 13:35:54 2010 VTS_40_1.VOB

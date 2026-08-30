@@ -20,7 +20,8 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Classic Text Adventure Masterpieces of Infocom (1996)](discs/masterpieces-1996/README.md) | yes | yes | Full raw dump hash-matches the Redump database entry; extraction verified, 766 files with all resource forks |
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
-| The Zork Anthology (1994) | no | no | |
+| [The Zork Anthology (1994)](discs/zork-anthology-1994/README.md) | yes | no | Redump-verified; games live inside the ZORKANTH.RED installer archive |
+| [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalogue/ad scans, curated IF games |
 
 ## Findings
 

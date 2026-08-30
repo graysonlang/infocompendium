@@ -1,0 +1,100 @@
+total 469076
+-rwxr-xr-x  1 grayson  staff   1152806 Sep  7 10:09:57 1994 -Zork Anthology Install
+drwxr-xr-x  1 grayson  staff      2048 Sep 12 10:40:03 1994 DEMOS
+-rwxr-xr-x  1 grayson  staff        31 Jul 26 22:44:20 1994 DISK.ID
+-rwxr-xr-x  1 grayson  staff     27847 Jul  6 09:28:50 1994 DRIVERS.RED
+-rwxr-xr-x  1 grayson  staff    489177 Aug 15 03:34:50 1994 EFFECTS.VOC
+-rwxr-xr-x  1 grayson  staff   2506260 Mar 11 19:36:24 1994 FDWNRV01.MMV
+-rwxr-xr-x  1 grayson  staff   1583057 Sep  1 09:05:40 1993 FDWNRV01.PMV
+-rwxr-xr-x  1 grayson  staff   1366325 May 11 07:04:22 1994 FGUA02XX.MMV
+-rwxr-xr-x  1 grayson  staff   1173652 Jul 30 08:59:20 1993 FGUA02XX.PMV
+-rwxr-xr-x  1 grayson  staff  22902503 Feb  2 08:35:10 1994 FINTRO00.MMV
+-rwxr-xr-x  1 grayson  staff   8859653 Sep 16 11:17:18 1993 FINTRO00.PMV
+-rwxr-xr-x  1 grayson  staff   8666920 May 11 07:04:14 1994 FINTRO01.MMV
+-rwxr-xr-x  1 grayson  staff   6765611 Sep 16 11:22:56 1993 FINTRO01.PMV
+-rwxr-xr-x  1 grayson  staff   1691241 May 28 02:28:06 1993 FKEP01AX.PMV
+-rwxr-xr-x  1 grayson  staff   3597827 Apr 14 10:29:51 1994 FKEP01XX.LMV
+-rwxr-xr-x  1 grayson  staff   4242452 Mar  5 02:13:06 1994 FKEP01XX.MMV
+-rwxr-xr-x  1 grayson  staff   1279195 Mar 11 09:54:24 1994 FKEP03AX.MMV
+-rwxr-xr-x  1 grayson  staff   1100698 Mar 11 10:08:54 1994 FKEP04AX.MMV
+-rwxr-xr-x  1 grayson  staff   1098968 Jan  5 02:11:50 1994 FKEP04XX.MMV
+-rwxr-xr-x  1 grayson  staff    453841 Mar 16 08:13:54 1994 FKEP05NF.MMV
+-rwxr-xr-x  1 grayson  staff    422834 Mar 11 10:28:34 1994 FKEP05XX.MMV
+-rwxr-xr-x  1 grayson  staff   1963420 Jan  3 04:28:52 1994 FKEP06AX.MMV
+-rwxr-xr-x  1 grayson  staff   1953010 Mar 11 09:57:40 1994 FKEP06XX.MMV
+-rwxr-xr-x  1 grayson  staff    669364 Jan  3 04:30:30 1994 FKEP07NF.MMV
+-rwxr-xr-x  1 grayson  staff    661075 Mar 11 10:30:02 1994 FKEP07XX.MMV
+-rwxr-xr-x  1 grayson  staff   1137788 Jan  3 04:34:02 1994 FKEP08NF.MMV
+-rwxr-xr-x  1 grayson  staff   1128844 Mar 11 09:59:54 1994 FKEP08XX.MMV
+-rwxr-xr-x  1 grayson  staff    701821 Mar 11 10:31:24 1994 FKEP09XX.MMV
+-rwxr-xr-x  1 grayson  staff   1224414 Mar 11 10:02:40 1994 FKEP10X1.MMV
+-rwxr-xr-x  1 grayson  staff    823856 Mar 11 10:32:46 1994 FKEP11XX.MMV
+-rwxr-xr-x  1 grayson  staff    400906 Mar 11 10:33:48 1994 FKEP12XX.MMV
+-rwxr-xr-x  1 grayson  staff    403884 Mar 11 10:35:08 1994 FKEP13XX.MMV
+-rwxr-xr-x  1 grayson  staff    212482 Mar 11 10:36:20 1994 FKEP14XX.MMV
+-rwxr-xr-x  1 grayson  staff    442988 Mar 11 10:37:46 1994 FKEP16XX.MMV
+-rwxr-xr-x  1 grayson  staff    518800 Mar 11 10:39:08 1994 FKEP18XX.MMV
+-rwxr-xr-x  1 grayson  staff    388061 Mar 11 10:40:22 1994 FKEP22XX.MMV
+-rwxr-xr-x  1 grayson  staff    260482 Mar 11 10:45:12 1994 FKEP27XX.MMV
+-rwxr-xr-x  1 grayson  staff    631591 Mar 11 10:46:40 1994 FKEP28XX.MMV
+-rwxr-xr-x  1 grayson  staff    613679 Mar 11 10:47:58 1994 FKEP29XX.MMV
+-rwxr-xr-x  1 grayson  staff    319568 Apr 14 11:21:03 1994 FKEP32XX.LMV
+-rwxr-xr-x  1 grayson  staff    307163 Mar 11 10:49:12 1994 FKEP32XX.MMV
+-rwxr-xr-x  1 grayson  staff    873960 Apr 14 11:24:02 1994 FKEP33XX.LMV
+-rwxr-xr-x  1 grayson  staff   1563114 Mar 11 10:05:20 1994 FKEP33XX.MMV
+-rwxr-xr-x  1 grayson  staff    551560 Mar 11 10:50:40 1994 FKEP34XX.MMV
+-rwxr-xr-x  1 grayson  staff   1863035 May 11 07:04:42 1994 FKEP35X1.MMV
+-rwxr-xr-x  1 grayson  staff   1064502 Mar 11 10:53:36 1994 FKEP35XB.MMV
+-rwxr-xr-x  1 grayson  staff    604237 Mar 11 10:54:40 1994 FKEP36XX.MMV
+-rwxr-xr-x  1 grayson  staff    580474 Mar 11 10:55:54 1994 FKEP38XX.MMV
+-rwxr-xr-x  1 grayson  staff    400982 Mar 11 10:57:08 1994 FKEP40XX.MMV
+-rwxr-xr-x  1 grayson  staff   2262379 Mar 11 20:04:08 1994 FLH1ST01.MMV
+-rwxr-xr-x  1 grayson  staff   1236279 Sep  2 03:15:34 1993 FLH1ST01.PMV
+-rwxr-xr-x  1 grayson  staff    259597 Mar 12 03:53:40 1994 FMPVFA00.MMV
+-rwxr-xr-x  1 grayson  staff    268781 Mar 12 03:55:34 1994 FMPVFO00.MMV
+-rwxr-xr-x  1 grayson  staff    852661 Dec  2 09:31:26 1993 FRTZDEMO.MOV
+-rwxr-xr-x  1 grayson  staff    947233 Jun 14 09:38:52 1993 FWIZ01X1.PMV
+-rwxr-xr-x  1 grayson  staff   1623383 May 11 07:05:06 1994 FWIZ01XX.MMV
+-rwxr-xr-x  1 grayson  staff    600499 Jul 28 11:35:12 1993 FWIZ0ZXX.PMV
+-rwxr-xr-x  1 grayson  staff   1002103 Mar 12 03:42:56 1994 FWIZ22XX.MMV
+-rwxr-xr-x  1 grayson  staff    870431 Aug 30 07:14:10 1993 FWIZ24X1.PMV
+-rwxr-xr-x  1 grayson  staff   1102858 Mar 12 03:44:08 1994 FWIZ24XX.MMV
+-rwxr-xr-x  1 grayson  staff    557260 Aug 30 07:12:46 1993 FWIZAF01.PMV
+-rwxr-xr-x  1 grayson  staff     30879 Sep  2 01:58:08 1994 GAMEPC
+-rwxr-xr-x  1 grayson  staff     14361 Sep  1 07:50:48 1993 ICON.DAT
+-rwxr-xr-x  1 grayson  staff      8479 Sep 12 06:10:26 1994 INSTALL.DAT
+-rwxr-xr-x  1 grayson  staff     97327 Sep 13 10:53:22 1993 INSTALL.EXE
+-rwxr-xr-x  1 grayson  staff      9301 Sep  8 09:45:24 1994 ITXT.ENG
+-rwxr-xr-x  1 grayson  staff      9277 Sep  7 03:50:28 1994 ITXT.TXT
+drwxr-xr-x  1 grayson  staff      2048 Sep 12 05:26:03 1994 MECH2
+-rwxr-xr-x  1 grayson  staff    104192 Nov 10 08:35:46 1993 MOVIE.EXE
+-rwxr-xr-x  1 grayson  staff      3204 Sep  1 06:09:36 1993 MT_FM.IBK
+-rwxr-xr-x  1 grayson  staff   7637976 Sep  2 05:31:34 1994 PLANETF.IBM
+-rwxr-xr-x  1 grayson  staff         0 May  4 08:22:57 1994 Return To Zork
+-rwxr-xr-x  1 grayson  staff    600576 May 11 06:43:32 1994 RTZ.DAT
+-rwxr-xr-x  1 grayson  staff  47461369 May 11 06:59:20 1994 RTZ.PRJ
+-rwxr-xr-x  1 grayson  staff  43016792 Sep 15 11:31:20 1993 RTZCD.PRJ
+-rwxr-xr-x  1 grayson  staff    130683 Sep  8 09:47:52 1994 RTZCD.RED
+-rwxr-xr-x  1 grayson  staff    101827 Sep  9 05:31:50 1994 RTZCDDRV.RED
+-rwxr-xr-x  1 grayson  staff     60605 May 24 08:39:14 1994 RUNVGA.EXE
+-rwxr-xr-x  1 grayson  staff     19250 Mar 20 09:51:00 1994 SETD.SND
+-rwxr-xr-x  1 grayson  staff     43586 Jul  5 04:30:26 1994 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff      1074 Jun  2 02:39:04 1994 SIMON.BAT
+-rwxr-xr-x  1 grayson  staff   1236298 Sep  2 01:59:10 1994 SIMON.GME
+-rwxr-xr-x  1 grayson  staff  34687810 Sep  1 16:39:10 1994 SIMON.VOC
+-rwxr-xr-x  1 grayson  staff       252 Sep  2 01:58:06 1994 STRIPPED.TXT
+-rwxr-xr-x  1 grayson  staff       711 Sep  2 01:58:08 1994 TBLLIST
+-rwxr-xr-x  1 grayson  staff   1289064 Aug 22 07:46:52 1994 ZORKANTH.RED
+-rwxr-xr-x  1 grayson  staff    280617 Sep 11 18:00:26 1993 ZZZZZZ.ZZZ
+
+/Volumes/ZORK_ANTHOLOGY/DEMOS:
+total 256
+-rwxr-xr-x  1 grayson  staff  20713 Sep 12 10:23:14 1994 INSTALL.DAT
+-rwxr-xr-x  1 grayson  staff  94149 Apr 21 03:27:14 1994 INSTALL.EXE
+-rwxr-xr-x  1 grayson  staff   9296 Sep 12 09:35:42 1994 ITXT.ENG
+-rwxr-xr-x  1 grayson  staff   3012 Sep 12 08:43:46 1994 READ.ME
+
+/Volumes/ZORK_ANTHOLOGY/MECH2:
+total 6416
+-rwxr-xr-x  1 grayson  staff   104368 Nov 19 07:59:22 1993 MECINTRO.EXE
+-rwxr-xr-x  1 grayson  staff  3180054 Aug  3 10:18:01 1994 MECINTRO.MOV

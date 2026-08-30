@@ -1,0 +1,52 @@
+# Captured 2026-08-29T23:39:07Z from GETLAMP.cdr (user-made rip; no physical drive involved in this capture)
+
+## hdiutil imageinfo
+hdiutil: imageinfo failed - internal error
+Class Name: CRawDiskImage
+Size Information:
+	Total Bytes: 7617241088
+	Compressed Ratio: 1
+	Sector Count: 14877424
+	Total Non-Empty Bytes: 7617241088
+	Compressed Bytes: 7617241088
+	Total Empty Bytes: 0
+Checksum Type: none
+Format: UDTO
+partitions:
+	partition-scheme: ISO9660
+	block-size: 0
+	appendable: false
+	partitions:
+		0:
+			partition-name: GETLAMP                         
+			partition-start: 0
+			partition-synthesized: true
+			partition-length: 14877424
+			partition-hint: Apple_UDF
+			partition-filesystems:
+				UDF: GETLAMP
+				ISO9660: GETLAMP                         
+	burnable: true
+Format Description: raw read/write
+Checksum Value: 
+Properties:
+	Encrypted: false
+	Kernel Compatible: true
+	Checksummed: false
+	Software License Agreement: false
+	Partitioned: false
+	Compressed: no
+Segments:
+	0: /Users/grayson/Desktop/GETLAMP.cdr
+Backing Store Information:
+	URL: file:///Users/grayson/Desktop/GETLAMP.cdr
+	Name: GETLAMP.cdr
+	Class Name: CBSDBackingStore
+
+## mount (attached read-only)
+/dev/disk4 on /Volumes/GETLAMP (udf, local, nodev, nosuid, read-only, noowners, mounted by grayson)
+
+## volume root dates
+dr-xr-xr-x  12 grayson  staff   512 Jul 15 13:35:54 2010 /Volumes/GETLAMP
+dr-xr-xr-x  43 grayson  staff  2108 Jul 15 13:35:54 2010 /Volumes/GETLAMP/games
+dr-xr-xr-x   2 grayson  staff  6488 Jul 15 13:35:54 2010 /Volumes/GETLAMP/VIDEO_TS

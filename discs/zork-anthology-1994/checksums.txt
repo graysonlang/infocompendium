@@ -1,0 +1,23 @@
+# The Zork Anthology (1994) - dump checksums
+#
+# Dumped 2026-08-29 on macOS 26 (Apple Silicon), Pioneer BD-RW BDR-XS07U fw 1.03.
+# Method: dd if=/dev/rdiskN bs=2352 count=120295 against the whole-disc raw
+# device, then scripts/raw2user.py to convert and verify.
+#
+# The raw track hashes match redump.org disc 82144 exactly
+# (http://redump.org/disc/82144/, "Original, Special Edition"),
+# so this pressing is byte-identical to the Redump reference.
+# Redump disc 80023 is a different mastering (120445 sectors).
+#
+# Structure verification at conversion time: 120295 sectors, all Mode 1,
+# 0 bad sync, 0 bad address, 0 bad mode, 0 EDC mismatches in 482 sampled.
+
+# Raw track, 2352 bytes/sector (Redump-comparable) - 282,933,840 bytes
+crc32  6bdc69e8                                  za-full-2352.bin
+md5    60be81da1e0207e81fb03bb5cc44f8a0          za-full-2352.bin
+sha1   2d72854a085c0094d1b6aee47b54e1145ae9fbdd  za-full-2352.bin
+
+# User data, 2048 bytes/sector (mountable ISO) - 246,364,160 bytes
+crc32  39c82a1a                                  za-full-user.img
+md5    e6888989797911b6137f7b95624316d9          za-full-user.img
+sha1   609ae4f8b10f3721fc571e1e8fb4c55dab46cf3a  za-full-user.img
