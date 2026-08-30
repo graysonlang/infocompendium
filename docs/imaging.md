@@ -76,3 +76,27 @@ hexdump -C mp-hfs.img | head -5
 
 A good HFS image shows zeros for the first 1024 bytes (empty boot blocks on a non-bootable volume) and then `BD` at offset 0x400 followed by the volume name.
 The full-disc dump above supersedes this route - it captures everything and verifies against Redump - but the slice dump remains useful for a quick look at one volume.
+
+## Mixed-mode discs: audio tracks come along for free
+
+A mixed-mode disc (one data track followed by Red Book audio tracks) needs no special handling on the dump side.
+The raw whole-disc device delivers every sector linearly - data sectors with their sync/header structure, audio sectors as 2352 bytes of 16-bit stereo PCM - so the same `dd bs=2352 count=<blocks>` captures the entire disc, `drutil status` block count included.
+Established on the Zork Legacy Collection's Return to Zork / Zork Anthology disc (2026-08-29).
+
+Two things that look like problems but are not:
+
+- The 150-sector pregap between the data track and the first audio track, and the first sectors of a quiet track, read back as all zeros. That is genuine silence, not the driver blanking non-data sectors; sectors further into any audio track are full of signal.
+- macOS mounts the audio side as a `cddafs` "Audio CD" of AIFF files. Those are convenient for listening but are not sector-precise (track 2 came back as 3,859,560 PCM bytes, not a whole number of sectors), so do not use them as the archival copy.
+
+Split the linear dump at Redump's track boundaries with `scripts/splittracks.py --toc disc-info.txt`, which reads the `drutil toc` capture, cuts each audio track 150 sectors before its TOC start (Redump attaches the pregap to the front of the following track), and hashes every track in Redump's shape.
+Feed only the data track (`track01.bin`) to `raw2user.py`; audio sectors have no sync pattern and would fail its structure checks.
+
+### Audio and the drive's read offset
+
+Every CD drive returns audio shifted by a fixed number of samples from where it was asked to read - the read offset - and Redump's audio track hashes are offset-corrected, so a raw dump's audio tracks will not match Redump until the shift is undone.
+The data track is unaffected (data sectors carry their own addresses), which is why it matches straight away while every audio track differs by the same amount.
+
+Measured on the Pioneer BD-RW BDR-XS07U on 2026-08-29: **+667 samples** (2,668 bytes). Found by taking one short audio track and searching for the sample shift at which its CRC32 matches Redump's; a second track confirmed it, and with `--offset 667` all 25 audio tracks of the Zork Legacy Collection disc matched Redump exactly.
+The search is cheap (a few thousand CRCs of a few megabytes), so a drive with an unknown offset can be characterized from any disc Redump already has.
+
+Record the *uncorrected* linear dump as the archival file: it is what the drive actually read, and the correction is a pure function of the offset applied at split time.

@@ -1,0 +1,84 @@
+# Captured 2026-08-30T01:23:26Z - Pioneer BD-RW BDR-XS07U, macOS 26.6.2
+
+## drutil status
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+           Type: CD-ROM               Name: /dev/disk6
+       Sessions: 1                  Tracks: 26
+   Overwritable:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Free:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Used:   47:05:65         blocks:   211940 / 434.05MB / 413.95MiB
+    Writability: 
+
+
+## drutil toc
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+    First session:             1
+    Last session:              1
+    First track:               1
+    Disc type:                 0 (CD-DA, or CD-ROM with first track in Mode 1)
+    Last track:                26
+    Lead-out:                  47:07.65
+    Session  1, Track  1:      00:02.00  data track, digital copy prohibited
+    Session  1, Track  2:      21:05.07  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  3:      21:26.72  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  4:      21:46.14  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  5:      22:54.11  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  6:      23:34.39  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  7:      24:15.03  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  8:      25:27.46  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  9:      27:33.12  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 10:      28:57.70  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 11:      29:27.34  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 12:      29:56.72  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 13:      30:36.09  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 14:      31:22.62  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 15:      32:01.23  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 16:      32:31.41  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 17:      33:46.70  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 18:      34:45.52  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 19:      35:50.62  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 20:      36:14.42  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 21:      37:18.14  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 22:      38:00.06  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 23:      38:52.72  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 24:      40:47.10  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 25:      42:18.44  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 26:      43:41.54  2ch audio, no pre-emphasis, digital copy prohibited
+
+
+## diskutil list disk6
+Could not find disk for disk6
+
+## diskutil info disk6s0
+Could not find disk: disk6s0
+## cddafs audio tracks (as macOS presents them)
+total 538552
+-rw-rw-rw-  1 grayson  staff   5209680 Aug 29 18:23:30 2026 10 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   5207328 Aug 29 18:23:30 2026 11 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   6910176 Aug 29 18:23:30 2026 12 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   8241408 Aug 29 18:23:30 2026 13 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   6790224 Aug 29 18:23:30 2026 14 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   5336688 Aug 29 18:23:30 2026 15 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  13300560 Aug 29 18:23:30 2026 16 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  10367616 Aug 29 18:23:30 2026 17 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  11491872 Aug 29 18:23:30 2026 18 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   4188912 Aug 29 18:23:30 2026 19 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   3859632 Aug 29 18:23:30 2026 2 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  11226096 Aug 29 18:23:30 2026 20 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   7392336 Aug 29 18:23:30 2026 21 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   9330384 Aug 29 18:23:30 2026 22 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  20142528 Aug 29 18:23:30 2026 23 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  16134720 Aug 29 18:23:30 2026 24 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  14667072 Aug 29 18:23:30 2026 25 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  36366624 Aug 29 18:23:30 2026 26 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   3393936 Aug 29 18:23:30 2026 3 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  11990496 Aug 29 18:23:30 2026 4 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   7124208 Aug 29 18:23:30 2026 5 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff   7150080 Aug 29 18:23:30 2026 6 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  12804288 Aug 29 18:23:30 2026 7 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  22148784 Aug 29 18:23:30 2026 8 Audio Track.aiff
+-rw-rw-rw-  1 grayson  staff  14956368 Aug 29 18:23:30 2026 9 Audio Track.aiff

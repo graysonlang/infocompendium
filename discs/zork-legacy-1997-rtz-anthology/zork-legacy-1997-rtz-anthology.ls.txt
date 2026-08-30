@@ -1,0 +1,230 @@
+total 326292
+-rwxr-xr-x  1 grayson  staff    320276 Nov  5 08:17:32 1996 _INST32I.EX_
+-rwxr-xr-x  1 grayson  staff      8192 Sep  7 12:22:40 1995 _ISDEL.EXE
+-rwxr-xr-x  1 grayson  staff     91136 Oct  7 09:01:36 1996 _ISRES.DLL
+-rwxr-xr-x  1 grayson  staff      6128 Sep 30 01:06:54 1996 _SETUP.DLL
+-rwxr-xr-x  1 grayson  staff    427084 Mar  4 10:19:32 1997 _SETUP.LIB
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 14:07:18 1997 ACRODOS
+-rwxr-xr-x  1 grayson  staff   3919312 Feb 27 07:41:46 1997 ACROREAD.EXE
+-rwxr-xr-x  1 grayson  staff        69 Mar 10 07:23:56 1997 AUTORUN.INF
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:38 1997 AVI
+-rwxr-xr-x  1 grayson  staff      1016 Dec 12 12:39:48 1996 BUTTON.WAV
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:42 1997 DATA
+-rwxr-xr-x  1 grayson  staff   2835304 Mar  4 14:24:20 1997 DATA.Z
+-rwxr-xr-x  1 grayson  staff        36 Sep 29 10:20:12 1994 DISK.ID
+-rwxr-xr-x  1 grayson  staff     28032 Sep 27 05:05:02 1994 DRIVERS.RED
+-rwxr-xr-x  1 grayson  staff   1570801 Jul 22 03:22:40 1993 FBFTKN01.PMV
+-rwxr-xr-x  1 grayson  staff    626380 Jul  2 04:08:54 1993 FBLA00XX.PMV
+-rwxr-xr-x  1 grayson  staff    605636 Sep  1 08:22:44 1993 FBLA06XX.PMV
+-rwxr-xr-x  1 grayson  staff   2340378 Sep  1 06:59:54 1993 FBLA09XX.PMV
+-rwxr-xr-x  1 grayson  staff    291778 Jul 22 06:01:06 1993 FBOO04AA.PMV
+-rwxr-xr-x  1 grayson  staff    720410 Jul 22 05:47:36 1993 FBOSMF01.PMV
+-rwxr-xr-x  1 grayson  staff    347158 Sep  1 07:06:12 1993 FBOSPD01.PMV
+-rwxr-xr-x  1 grayson  staff    217284 Jul 12 11:35:50 1993 FBOSPU01.PMV
+-rwxr-xr-x  1 grayson  staff    706421 Jul 22 05:50:02 1993 FBOSTK01.PMV
+-rwxr-xr-x  1 grayson  staff    663374 Jul 22 06:03:16 1993 FBSGSW01.PMV
+-rwxr-xr-x  1 grayson  staff    895358 Jul 21 09:14:32 1993 FBSGVS01.PMV
+-rwxr-xr-x  1 grayson  staff   1197229 Jul 22 07:17:42 1993 FCAN34X1.PMV
+-rwxr-xr-x  1 grayson  staff   1783565 Aug 30 05:13:36 1993 FCCLWU01.PMV
+-rwxr-xr-x  1 grayson  staff    753947 Jul 22 07:12:28 1993 FCLI04XX.PMV
+-rwxr-xr-x  1 grayson  staff   1585328 Sep  1 07:55:40 1993 FCLIFF01.PMV
+-rwxr-xr-x  1 grayson  staff     83144 Sep  1 08:02:26 1993 FCSHDR01.PMV
+-rwxr-xr-x  1 grayson  staff    217666 Jul 22 10:48:20 1993 FDUCKY01.PMV
+-rwxr-xr-x  1 grayson  staff   3481282 Jul 30 08:53:10 1993 FDWAZZBB.PMV
+-rwxr-xr-x  1 grayson  staff   1583057 Sep  1 09:05:40 1993 FDWNRV01.PMV
+-rwxr-xr-x  1 grayson  staff  10074387 Sep 14 07:10:26 1993 FENDING0.PMV
+-rwxr-xr-x  1 grayson  staff   7686587 Sep 13 11:02:38 1993 FENDING1.PMV
+-rwxr-xr-x  1 grayson  staff   2481129 Sep  8 03:59:20 1993 FFBTRD01.PMV
+-rwxr-xr-x  1 grayson  staff     79463 Sep 13 05:51:28 1993 FFCBO101.PMV
+-rwxr-xr-x  1 grayson  staff     85713 Sep 13 05:51:54 1993 FFCBO201.PMV
+-rwxr-xr-x  1 grayson  staff     65630 Sep 13 05:52:20 1993 FFCBO301.PMV
+-rwxr-xr-x  1 grayson  staff    352262 Jul 21 11:06:48 1993 FFRYTB01.PMV
+-rwxr-xr-x  1 grayson  staff   1173652 Jul 30 08:59:20 1993 FGUA02XX.PMV
+-rwxr-xr-x  1 grayson  staff    899565 Sep 13 10:53:22 1993 FHDWSU01.PMV
+-rwxr-xr-x  1 grayson  staff    150516 Jul 22 08:26:30 1993 FHOL01XX.PMV
+-rwxr-xr-x  1 grayson  staff    711462 Sep  1 09:16:30 1993 FHWBLW01.PMV
+-rwxr-xr-x  1 grayson  staff    265133 Jul 22 08:00:32 1993 FHWDRK01.PMV
+-rwxr-xr-x  1 grayson  staff    106849 Jul 22 08:06:16 1993 FHWFEW01.PMV
+-rwxr-xr-x  1 grayson  staff    703056 Jul 22 08:17:20 1993 FHWHEL01.PMV
+-rwxr-xr-x  1 grayson  staff  11668314 Mar  7 10:06:04 1997 FINAL.PDF
+-rwxr-xr-x  1 grayson  staff    650929 Sep  2 03:02:20 1993 FINHAL01.PMV
+-rwxr-xr-x  1 grayson  staff    203600 Jul 14 04:31:30 1993 FINRML01.PMV
+-rwxr-xr-x  1 grayson  staff   8859653 Sep 16 11:17:18 1993 FINTRO00.PMV
+-rwxr-xr-x  1 grayson  staff   6765611 Sep 16 11:22:56 1993 FINTRO01.PMV
+-rwxr-xr-x  1 grayson  staff    467146 Sep  1 05:08:28 1993 FITNHL01.PMV
+-rwxr-xr-x  1 grayson  staff   1691241 May 28 02:28:06 1993 FKEP01AX.PMV
+-rwxr-xr-x  1 grayson  staff   1236279 Sep  2 03:15:34 1993 FLH1ST01.PMV
+-rwxr-xr-x  1 grayson  staff    561122 Jul 22 08:45:18 1993 FLHKGD01.PMV
+-rwxr-xr-x  1 grayson  staff    419844 Sep  1 09:22:30 1993 FMAY01XX.PMV
+-rwxr-xr-x  1 grayson  staff   1631996 Sep  1 09:23:22 1993 FMAYRJ01.PMV
+-rwxr-xr-x  1 grayson  staff   1379617 Jul 22 09:03:34 1993 FMOA11X1.PMV
+-rwxr-xr-x  1 grayson  staff    487307 Sep  2 03:41:36 1993 FMOR15AA.PMV
+-rwxr-xr-x  1 grayson  staff   1041767 Aug 27 08:01:22 1993 FOMBGR01.PMV
+-rwxr-xr-x  1 grayson  staff   1127330 Aug 30 05:13:46 1993 FOMTDU01.PMV
+-rwxr-xr-x  1 grayson  staff    235973 Sep  2 03:58:04 1993 FORCLV01.PMV
+-rwxr-xr-x  1 grayson  staff    586670 Sep  2 03:57:40 1993 FORCSH01.PMV
+-rwxr-xr-x  1 grayson  staff    764184 Sep  2 09:37:56 1993 FPEE01XX.PMV
+-rwxr-xr-x  1 grayson  staff    719056 Jul 30 06:28:18 1993 FPNSHP01.PMV
+-rwxr-xr-x  1 grayson  staff   1108396 Aug 25 11:26:06 1993 FPSHWK01.PMV
+-rwxr-xr-x  1 grayson  staff    234788 Jul 22 09:33:14 1993 FREB01X1.PMV
+-rwxr-xr-x  1 grayson  staff    259332 Sep 17 03:16:54 1993 FREB02XX.PMV
+-rwxr-xr-x  1 grayson  staff    282133 Sep 17 03:18:24 1993 FREB03XX.PMV
+-rwxr-xr-x  1 grayson  staff    138950 Sep 17 03:19:22 1993 FREBG201.PMV
+-rwxr-xr-x  1 grayson  staff    320647 Sep  2 04:28:56 1993 FROSIR01.PMV
+-rwxr-xr-x  1 grayson  staff    976253 Aug 25 11:26:12 1993 FSCHWK01.PMV
+-rwxr-xr-x  1 grayson  staff   1268978 Sep  2 06:23:46 1993 FSHBFL01.PMV
+-rwxr-xr-x  1 grayson  staff    349578 Sep  2 06:41:06 1993 FSNBDR01.PMV
+-rwxr-xr-x  1 grayson  staff    607384 Sep  2 06:47:12 1993 FSNBTH01.PMV
+-rwxr-xr-x  1 grayson  staff    628091 Sep  2 06:53:34 1993 FSNKTN01.PMV
+-rwxr-xr-x  1 grayson  staff    467175 Aug 25 11:26:24 1993 FTHLWK01.PMV
+-rwxr-xr-x  1 grayson  staff    148872 Jul 21 12:15:08 1993 FTMPDR01.PMV
+-rwxr-xr-x  1 grayson  staff    432298 Aug  9 11:09:20 1993 FTRLCV01.PMV
+-rwxr-xr-x  1 grayson  staff    677194 Jun 11 09:29:40 1993 FTRO01XX.PMV
+-rwxr-xr-x  1 grayson  staff   1839265 Jun 14 08:46:52 1993 FTRO23X1.PMV
+-rwxr-xr-x  1 grayson  staff   1646188 Aug 30 07:19:32 1993 FTRTMP01.PMV
+-rwxr-xr-x  1 grayson  staff    443405 Sep 15 09:51:42 1993 FUPLAD01.PMV
+-rwxr-xr-x  1 grayson  staff    507694 Jul 22 09:44:10 1993 FWAI07XX.PMV
+-rwxr-xr-x  1 grayson  staff     82089 Jul 22 10:56:44 1993 FWAIFL01.PMV
+-rwxr-xr-x  1 grayson  staff    102279 Jul 22 09:43:08 1993 FWAIFP01.PMV
+-rwxr-xr-x  1 grayson  staff    629815 Sep  2 07:36:04 1993 FWALIL01.PMV
+-rwxr-xr-x  1 grayson  staff    326472 Aug 19 05:07:16 1993 FWHAMO01.PMV
+-rwxr-xr-x  1 grayson  staff   3006257 Aug 30 07:19:50 1993 FWILCT01.PMV
+-rwxr-xr-x  1 grayson  staff    515640 Jul 22 09:48:22 1993 FWIT02XX.PMV
+-rwxr-xr-x  1 grayson  staff   1796722 Sep  2 07:32:56 1993 FWIT05AA.PMV
+-rwxr-xr-x  1 grayson  staff    366660 Jul 22 10:06:50 1993 FWIT10AA.PMV
+-rwxr-xr-x  1 grayson  staff   1615305 Jul 22 09:57:52 1993 FWIT32XX.PMV
+-rwxr-xr-x  1 grayson  staff    947233 Jun 14 09:38:52 1993 FWIZ01X1.PMV
+-rwxr-xr-x  1 grayson  staff    600499 Jul 28 11:35:12 1993 FWIZ0ZXX.PMV
+-rwxr-xr-x  1 grayson  staff    870431 Aug 30 07:14:10 1993 FWIZ24X1.PMV
+-rwxr-xr-x  1 grayson  staff    557260 Aug 30 07:12:46 1993 FWIZAF01.PMV
+-rwxr-xr-x  1 grayson  staff   1304611 Sep 15 02:58:56 1993 FWSOMW01.PMV
+-rwxr-xr-x  1 grayson  staff     18487 Jun 21 18:41:00 1996 GAME.ICO
+-rwxr-xr-x  1 grayson  staff    134144 Mar  4 04:33:28 1997 GETINFO.DLL
+-rwxr-xr-x  1 grayson  staff      8628 Mar  5 14:15:24 1997 HELP.GID
+-rwxr-xr-x  1 grayson  staff     52190 Mar 11 05:44:40 1997 HELP.HLP
+-rwxr-xr-x  1 grayson  staff    294362 Mar  7 10:07:42 1997 HINTS.PDF
+-rwxr-xr-x  1 grayson  staff     20377 Sep 29 11:44:38 1994 INSTALL.DAT
+-rwxr-xr-x  1 grayson  staff     93520 Dec  7 17:10:54 1993 INSTALL.EXE
+-rwxr-xr-x  1 grayson  staff      8159 Sep 14 18:00:20 1993 ITXT.DEU
+-rwxr-xr-x  1 grayson  staff      8386 Dec  7 17:10:10 1993 ITXT.ENG
+-rwxr-xr-x  1 grayson  staff      7865 Sep 14 18:00:34 1993 ITXT.FRA
+-rwxr-xr-x  1 grayson  staff      7865 Sep 14 18:00:34 1993 ITXT.ITA
+-rwxr-xr-x  1 grayson  staff   4309485 Mar  7 10:07:30 1997 MAPS.PDF
+-rwxr-xr-x  1 grayson  staff     20480 Mar  4 04:33:28 1997 MIDIDLL.DLL
+-rwxr-xr-x  1 grayson  staff     10457 Sep 15 11:44:32 1993 QDOS.LOG
+-rwxr-xr-x  1 grayson  staff     10120 Jan  8 05:36:20 1980 READ.ME
+-rwxr-xr-x  1 grayson  staff         9 Mar  4 11:19:02 1997 README.TXT
+-rwxr-xr-x  1 grayson  staff       136 Mar  5 12:09:22 1997 RTZ.BAT
+-rwxr-xr-x  1 grayson  staff        47 Mar  6 04:04:10 1997 RTZ.CFG
+-rwxr-xr-x  1 grayson  staff  43016792 Sep 15 11:31:20 1993 RTZCD.PRJ
+-rwxr-xr-x  1 grayson  staff    276584 Sep 29 10:14:22 1994 RTZCD.RED
+-rwxr-xr-x  1 grayson  staff    104708 Sep 27 05:14:18 1994 RTZCDDRV.RED
+-rwxr-xr-x  1 grayson  staff     44928 Nov  4 05:04:12 1996 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff     72057 Mar  5 10:38:48 1997 SETUP.INS
+-rwxr-xr-x  1 grayson  staff       972 Mar  5 11:52:30 1997 SETUP.PKG
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:58:02 1997 SP256
+-rwxr-xr-x  1 grayson  staff     43520 Mar  6 11:11:22 1997 SPLASH.EXE
+-rwxr-xr-x  1 grayson  staff    299008 Nov  5 08:13:22 1996 UNINST.EXE
+-rwxr-xr-x  1 grayson  staff     78336 Mar  4 04:33:30 1997 VIDDLL.DLL
+-rwxr-xr-x  1 grayson  staff      1475 Mar  7 07:03:02 1997 ZORK.BAT
+-rwxr-xr-x  1 grayson  staff    280617 Sep 11 18:00:26 1993 ZZZZZZ.ZZZ
+
+/Volumes/RTZ_ZA/ACRODOS:
+total 5232
+-rwxr-xr-x  1 grayson  staff     3245 Oct 14 06:33:48 1994 8514HERE.EXE
+-rwxr-xr-x  1 grayson  staff  1209256 Oct 14 06:33:50 1994 ACROBAT.001
+-rwxr-xr-x  1 grayson  staff  1221865 Oct 14 06:34:14 1994 ACROBAT.002
+-rwxr-xr-x  1 grayson  staff     5763 Oct 14 06:34:14 1994 ACRTEST.EXE
+-rwxr-xr-x  1 grayson  staff     4873 Oct 14 06:34:14 1994 BINMOD.EXE
+-rwxr-xr-x  1 grayson  staff       43 Oct 14 06:34:14 1994 DISK.ID
+-rwxr-xr-x  1 grayson  staff   204111 Oct 14 06:34:26 1994 INSTALL.EXE
+-rwxr-xr-x  1 grayson  staff     1504 Oct 14 06:34:28 1994 MOUSECHK.EXE
+-rwxr-xr-x  1 grayson  staff    10587 Oct 14 06:34:28 1994 README.TXT
+-rwxr-xr-x  1 grayson  staff       18 Oct 14 06:34:28 1994 SERNUM.TXT
+-rwxr-xr-x  1 grayson  staff     5302 Jun 18 08:21:22 1995 UPDATE.TXT
+
+/Volumes/RTZ_ZA/AVI:
+total 9896
+-rwxr-xr-x  1 grayson  staff  5066322 Mar 10 10:58:48 1997 MOVIE.AVI
+
+/Volumes/RTZ_ZA/DATA:
+total 31884
+-rwxr-xr-x  1 grayson  staff     33946 Jun 21 18:41:00 1996 BZORK.EXE
+-rwxr-xr-x  1 grayson  staff  11668314 Mar  7 10:06:04 1997 FINAL.PDF
+-rwxr-xr-x  1 grayson  staff    294362 Mar  7 10:07:42 1997 HINTS.PDF
+-rwxr-xr-x  1 grayson  staff   4309485 Mar  7 10:07:30 1997 MAPS.PDF
+-rwxr-xr-x  1 grayson  staff      5221 Jun 21 18:41:00 1996 NNANSI.COM
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:44 1997 ZORK1
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:48 1997 ZORK2
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:52 1997 ZORK3
+drwxr-xr-x  1 grayson  staff      2048 Mar  5 13:57:42 1997 ZORKZERO
+
+/Volumes/RTZ_ZA/DATA/ZORK1:
+total 52
+-rwxr-xr-x  1 grayson  staff  11402 May 31 06:00:00 1995 _ZORK1.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:46 1997 DATA
+-rwxr-xr-x  1 grayson  staff   5221 May 31 06:00:00 1995 NNANSI.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:46 1997 SAVE
+-rwxr-xr-x  1 grayson  staff      3 May 31 06:00:00 1995 SETUP.INF
+-rwxr-xr-x  1 grayson  staff     59 May 16 13:32:18 1995 ZORK1.BAT
+
+/Volumes/RTZ_ZA/DATA/ZORK1/DATA:
+total 180
+-rwxr-xr-x  1 grayson  staff  92160 May 31 06:00:00 1995 ZORK1.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORK1/SAVE:
+total 28
+-rwxr-xr-x  1 grayson  staff  12883 Jun 11 10:22:00 1996 ZORK1.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORK2:
+total 52
+-rwxr-xr-x  1 grayson  staff  11402 May 31 06:00:00 1995 _ZORK2.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:48 1997 DATA
+-rwxr-xr-x  1 grayson  staff   5221 May 31 06:00:00 1995 NNANSI.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:50 1997 SAVE
+-rwxr-xr-x  1 grayson  staff      3 May 31 06:00:00 1995 SETUP.INF
+-rwxr-xr-x  1 grayson  staff     59 May 16 13:32:18 1995 ZORK2.BAT
+
+/Volumes/RTZ_ZA/DATA/ZORK2/DATA:
+total 180
+-rwxr-xr-x  1 grayson  staff  92160 May 31 06:00:00 1995 ZORK2.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORK2/SAVE:
+total 24
+-rwxr-xr-x  1 grayson  staff  12213 Jun 11 10:22:42 1996 ZORK2.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORK3:
+total 52
+-rwxr-xr-x  1 grayson  staff  11402 May 31 06:00:00 1995 _ZORK3.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:52 1997 DATA
+-rwxr-xr-x  1 grayson  staff   5221 May 31 06:00:00 1995 NNANSI.COM
+drwxr-xr-x  1 grayson  staff   2048 Mar  5 13:57:54 1997 SAVE
+-rwxr-xr-x  1 grayson  staff      3 May 31 06:00:00 1995 SETUP.INF
+-rwxr-xr-x  1 grayson  staff     59 May 16 13:32:18 1995 ZORK3.BAT
+
+/Volumes/RTZ_ZA/DATA/ZORK3/DATA:
+total 180
+-rwxr-xr-x  1 grayson  staff  92160 May 31 06:00:00 1995 ZORK3.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORK3/SAVE:
+total 28
+-rwxr-xr-x  1 grayson  staff  12680 Jun 11 10:23:08 1996 ZORK3.DAT
+
+/Volumes/RTZ_ZA/DATA/ZORKZERO:
+total 1816
+-rwxr-xr-x  1 grayson  staff  244507 May 31 06:00:00 1995 ZORK0.CG1
+-rwxr-xr-x  1 grayson  staff  333654 May 31 06:00:00 1995 ZORK0.EG1
+-rwxr-xr-x  1 grayson  staff  300032 May 31 06:00:00 1995 ZORK0.ZIP
+-rwxr-xr-x  1 grayson  staff   47494 May 31 06:00:00 1995 ZORKZERO.EXE
+
+/Volumes/RTZ_ZA/SP256:
+total 1732
+-rwxr-xr-x  1 grayson  staff   10550 Mar  4 09:27:40 1997 ABOUTDN.BMP
+-rwxr-xr-x  1 grayson  staff   10550 Mar  4 09:27:26 1997 ABOUTUP.BMP
+-rwxr-xr-x  1 grayson  staff   10934 Mar  4 09:27:16 1997 EXITDN.BMP
+-rwxr-xr-x  1 grayson  staff   10934 Mar  4 09:27:08 1997 EXITUP.BMP
+-rwxr-xr-x  1 grayson  staff   10678 Mar  4 09:26:56 1997 INSTALLD.BMP
+-rwxr-xr-x  1 grayson  staff   10678 Mar  4 09:26:48 1997 INSTALLU.BMP
+-rwxr-xr-x  1 grayson  staff   11062 Mar  4 09:26:36 1997 TRAILD.BMP
+-rwxr-xr-x  1 grayson  staff   11062 Mar  4 09:27:34 1997 TRAILU.BMP
+-rwxr-xr-x  1 grayson  staff  787510 Mar  4 07:42:38 1997 ZBACK.BMP

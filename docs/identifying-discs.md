@@ -18,6 +18,8 @@ Consequences worth internalizing:
 - The same bytes can present differently per side. A file may appear as a plain DOS file to the ISO catalog and as a typed Mac document (creator `mdos`) to the HFS catalog.
 
 Not every disc in this project is a hybrid: The Zork Anthology (1994) is plain ISO 9660, mounts fine on modern macOS, and the identification commands below apply unchanged.
+The Zork Legacy Collection's Return to Zork / Zork Anthology disc (1997) is a genuine *mixed mode* disc - one data track followed by 25 audio tracks - and `diskutil list` shows every audio track as its own `CD_DA` slice while macOS mounts the audio side as a `cddafs` "Audio CD" volume alongside the data volume.
+Expect macOS to re-enumerate such a disc a few seconds after insertion (the device node briefly disappears) as it sets up both mounts.
 The Lost Treasures CDs shipped as separate PC and Mac discs for volume 1 and a single combined disc for volume 2, so the partition layout may differ per disc.
 Verify with `drutil toc` and `diskutil list` before assuming.
 

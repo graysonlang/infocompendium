@@ -21,6 +21,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | [The Zork Anthology (1994)](discs/zork-anthology-1994/README.md) | yes | no | Redump-verified; games live inside the ZORKANTH.RED installer archive |
+| [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games |
 
 ## Findings
@@ -28,6 +29,8 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 What each disc actually contains, checked against the published references:
 
 - [Masterpieces (1996)](discs/masterpieces-1996/notes.md) - the Leather Goddesses boss key survives, Lurking Horror sound on the PC side, real save files with the copy-protection credentials in them, and more. The pressing is Redump-verified, so these describe the reference disc, not a variant.
+- [The Zork Anthology (1994)](discs/zork-anthology-1994/notes.md) - an installer disc where the five classic games occupy 1.3 MB of 246 MB, the rest being Return to Zork and demos, including a 1994 demo of the cancelled Planetfall sequel under the title "Floyd Strikes Back".
+- [Return to Zork / The Zork Anthology (1997)](discs/zork-legacy-1997-rtz-anthology/notes.md) - a mixed-mode disc verified against Redump on all 26 tracks; its anthology files are byte-identical to Masterpieces' PC builds, and its Windows installer archive quietly carries the story files of fourteen Infocom games the product never advertises.
 
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
@@ -47,6 +50,10 @@ scripts/
                                  (PC .CG1/.EG1/.MG1, Mac PIC.DATA), either byte order.
   get-ztools.sh                  Fetches and builds ztools (txd, infodump, pix2gif, check)
                                  from the IF Archive into tools/ztools/ (gitignored).
+  splittracks.py                 Splits a raw dump of a mixed-mode disc into per-track files
+                                 at Redump's boundaries, hashing each track.
+  isz.py                         Lists and extracts InstallShield 3 .Z archives (PKWARE DCL
+                                 decoder included), as found on 1990s Windows installer discs.
 discs/
   masterpieces-1996/             One folder per disc: identification capture, catalog
     README.md                    listing, findings, and disc-specific build scripts.
