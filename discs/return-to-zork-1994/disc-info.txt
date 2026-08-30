@@ -16,7 +16,38 @@
  Vendor   Product           Rev 
  PIONEER  BD-RW  BDR-XS07U  1.03
 
-    Could not unmount disc.  Exclusive access is required to read TOC/ATIP information.
+    First session:             1
+    Last session:              1
+    First track:               1
+    Disc type:                 0 (CD-DA, or CD-ROM with first track in Mode 1)
+    Last track:                26
+    Lead-out:                  42:36.51
+    Session  1, Track  1:      00:02.00  data track, digital copy prohibited
+    Session  1, Track  2:      18:15.18  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  3:      18:33.04  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  4:      18:48.17  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  5:      19:52.10  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  6:      20:28.34  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  7:      21:04.69  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  8:      22:13.33  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track  9:      24:14.70  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 10:      25:35.49  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 11:      26:01.09  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 12:      26:26.43  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 13:      27:01.51  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 14:      27:44.25  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 15:      28:18.57  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 16:      28:44.71  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 17:      29:56.21  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 18:      30:50.74  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 19:      31:52.05  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 20:      32:11.56  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 21:      33:11.24  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 22:      33:49.12  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 23:      34:37.74  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 24:      36:28.08  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 25:      37:55.38  2ch audio, no pre-emphasis, digital copy prohibited
+    Session  1, Track 26:      39:14.44  2ch audio, no pre-emphasis, digital copy prohibited
 
 
 ## diskutil list disk6

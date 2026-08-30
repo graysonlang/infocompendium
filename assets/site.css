@@ -45,22 +45,15 @@ body {
 a { color: inherit; text-decoration-color: #b7b2a4; text-underline-offset: 3px; }
 a:hover { text-decoration-color: var(--ink); }
 
-/* Utility row above the content: site name at left, repo link, a hairline
+/* Utility row above the content, right-aligned: repo link, a hairline
    divider, then the theme toggle. Icon buttons share the quiet style. */
 .corner {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 2px;
   margin-bottom: 26px;
 }
-.site-name {
-  font-family: var(--mono);
-  font-size: 13px;
-  color: var(--muted);
-  text-decoration: none;
-}
-.site-name:hover { color: var(--ink); }
-.corner-spacer { flex: 1; }
 .corner-div {
   width: 1px;
   height: 18px;

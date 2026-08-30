@@ -25,10 +25,10 @@ A **mixed-mode** disc, like the [1997 Zork Legacy Collection pressing](../zork-l
    dd if=/dev/rdiskN of=~/Desktop/rtz-full-2352.bin bs=2352 count=191601 status=progress
    ```
 
-3. Split the dump at Redump's track boundaries, correcting for your drive's read offset (the Pioneer BDR-XS07U's is +667 samples):
+3. Split the dump at Redump's track boundaries. This pressing has a pregap only before the first audio track (`--pregaps first`), and the offset to apply is your drive's read offset plus this disc's -22 write offset (645 for the Pioneer BDR-XS07U's +667):
 
    ```
-   python3 ../../scripts/splittracks.py --toc disc-info.txt ~/Desktop/rtz-full-2352.bin --out ~/Desktop/rtz-tracks --offset 667
+   python3 ../../scripts/splittracks.py --toc disc-info.txt ~/Desktop/rtz-full-2352.bin --out ~/Desktop/rtz-tracks --pregaps first --offset 645
    ```
 
 4. Convert the data track and compare everything against [checksums.txt](checksums.txt):

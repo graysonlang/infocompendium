@@ -21,7 +21,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | [The Zork Anthology (1994)](discs/zork-anthology-1994/README.md) | yes | no | Redump-verified; games live inside the ZORKANTH.RED installer archive |
-| [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/README.md) | in progress | n/a | Mixed-mode; the original pressing of the disc later revised for the Legacy Collection |
+| [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/README.md) | yes | n/a | Redump-verified on all 26 tracks; the original pressing of the disc later revised for the Legacy Collection |
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games |
 

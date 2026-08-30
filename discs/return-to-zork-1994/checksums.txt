@@ -1,0 +1,56 @@
+# Return to Zork CD-ROM v1.1 (1994) - dump checksums
+#
+# Dumped 2026-08-29 on macOS 26 (Apple Silicon), Pioneer BD-RW BDR-XS07U fw 1.03.
+# Method: dd if=/dev/rdiskN bs=2352 count=191601 against the whole-disc raw
+# device (a linear dump of the data track and all 25 audio tracks), then
+# scripts/splittracks.py --pregaps first --offset 645 to cut and hash
+# tracks, and scripts/raw2user.py on the data track.
+#
+# All 26 tracks match redump.org disc 80660 exactly
+# (http://redump.org/disc/80660/, "Rerelease", version 1.1, write offset -22).
+# The offset is the combined one Redump uses: the drive's +667 read offset
+# plus the disc's -22 write offset. Only track 2 carries a pregap on this
+# pressing; the audio tracks are otherwise gapless (hence --pregaps first).
+# The uncorrected linear dump is recorded first: it is the archival file.
+#
+# Data track structure verification: 81843 sectors, all Mode 1,
+# 0 bad sync, 0 bad address, 0 bad mode, 0 EDC mismatches in 328 sampled.
+
+# Linear raw dump as read by this drive (uncorrected) - 450,645,552 bytes
+crc32  41e14077                                  rtz-full-2352.bin
+md5    5ebe05578f03703243c83411edfc959d          rtz-full-2352.bin
+sha1   274792c7dda0382ee7ce04d0952fd5abfdac7c45  rtz-full-2352.bin
+
+# Data track user data, 2048 bytes/sector (mountable ISO) - 167,614,464 bytes
+crc32  c8375c9d                                  rtz-data.iso
+md5    9dde215875f98744eb50ba7fd35b74c9          rtz-data.iso
+sha1   899b40affe51b75b9e79943de8fd065b3c7ea44a  rtz-data.iso
+
+# Per-track, offset corrected (Redump layout). Columns: track, type,
+# sectors, bytes, crc32, md5, sha1.
+1  data    81843  192494736 2d4e404c 59d83b6451cb1c1abffde5a6657f9392 d348e5a9d112e67dbbc910f49dd1b29d047efecb
+2  audio    1486    3495072 5b994c02 403437563535c478efa13e348a803669 a7fa10da01503099caaa132df662bfe9aadb9e44
+3  audio    1138    2676576 09503e71 4215e12678d3a8468c83c0edbf9491b7 aa1cd12927592c2444dc67975dc3bef3b338331d
+4  audio    4793   11273136 25da2cdd f19e5ab0198320553107ffe785671f12 7fa178f9c6c571b93a722197c89e4ca47b222368
+5  audio    2724    6406848 c87ae86f 08f773b448cf20f7d1040044a320a2aa c8a4f21607e825072c0349df7adc728d2e304e30
+6  audio    2735    6432720 c48a6bba 5a0dfb1871e7c2413c13d5ed306a2fc0 96b243b48dcda7eb315a2b142202ac5921325c23
+7  audio    5139   12086928 b5b72158 23dc93b3e690f629e092f3c886eb9f18 e6cb3dbe9c87df08fd0fa7029d307ef410046461
+8  audio    9112   21431424 2f69ef8a c9eea128ed769bdd2522aba4caad05fe e30afa285e921ba61c7a4a78244c2958fff2127f
+9  audio    6054   14239008 ccaca5e6 f1e56fe1cd1a8996cce0392cc33d279e 798b21047b2c927ccb5d28ed1b38538a3a33acc1
+10 audio    1910    4492320 18196467 9e84cad959b33e92112a47036ac4c002 e9c9776d0315b3cf77519c9b642cddf015f0f372
+11 audio    1909    4489968 a036a727 e08030c1459bbda16eea10b83c2ead32 11e5d9511c697beda8c58a92160cf941b33edf8b
+12 audio    2633    6192816 df7169c1 085aa2afaae12e13f49ee1ec0f3f3d46 a4144811a70c60ce21794d5f160d329dc7df6740
+13 audio    3199    7524048 3623722c 749819c3771f51c1708a23248993558d 4e23df8ca097ca488e06b3e3bd5c7ed25120e5bc
+14 audio    2582    6072864 c59b40b5 078017e8949fd42c5844bc4799d69fc4 278a401a9917312a2b325530282d56f1e787b4aa
+15 audio    1964    4619328 c7921e83 d380b68bcd4e9190c57ea5c9b090b8d0 eeccd935472ebee5041addb3d93d165bd8b23e8e
+16 audio    5350   12583200 b71ac0e7 1d7de2130014f22d04d7d06540076b68 2a71dc3af026564ddf7cf2d948bf3c6a322994ee
+17 audio    4103    9650256 f3e4ec3c 95bbc823ed3f2dbb65f3eaa5e381ea80 2e00bdf599f736d831847ae7ef9e0771df19e14d
+18 audio    4581   10774512 64fbf603 b7c5921f5181dad6b3d2b10ce455f6ab 9dcee68ab5a8c6db113b730df02a0f09278fb598
+19 audio    1476    3471552 7aa8d443 12c18931e03687bb251ac7bbac573452 54a7547a3c66500102c9eef1ac42bdd1fde9190a
+20 audio    4468   10508736 6c911688 051eae4d8b98858b9ab0c21069fcf4ff 1d8ee9d43deea2366974795681cf4e165596fb7d
+21 audio    2838    6674976 98e426fb cf87adbd2cd373d77e418a369a3fcd18 0bf82f4aee17ea8bae2967d0f049ccd6c73658e9
+22 audio    3662    8613024 7cf2a174 b0270d001a8b252ef0742310d02bfbd0 f12a96d91e077cdc1b81b853a2533d460b1d0dd9
+23 audio    8259   19425168 dae2ac6e a56fe65b90b6b1dfc7466c2181ee10db 9a45a79a3264902bd14723e6a2b1e3d834e5b9b2
+24 audio    6555   15417360 a06ac9f9 3258839c4a719d35ed441d75fdc8bcb0 35bb86f7bb63cfa081fd9793a6c0f31a6c05a47d
+25 audio    5931   13949712 c870ba76 8a9e97e6eaaa939e982edbeff8e61660 92624ae4bf6147b9fe1b00c59c34c6cfbeaf6ccb
+26 audio   15157   35649264 2c172755 6a00339ca699e76095e374a50eb94327 ae5d0f6c351cbcd107725be089d2978c844e6bbd

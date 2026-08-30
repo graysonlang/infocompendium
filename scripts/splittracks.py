@@ -4,9 +4,17 @@ splittracks.py -- split a linear raw 2352-byte/sector dump of a mixed-mode
 CD into per-track files at Redump's boundaries, hashing each track.
 
 Track starts come from `drutil toc` output (saved in a disc's disc-info.txt).
-Redump attaches each audio track's 150-sector pregap to the front of that
-track, so the cut for track N (N >= 2) is at its TOC start minus 150
-sectors; track 1 starts at sector 0 and carries no pregap.
+Redump attaches each audio track's pregap to the front of that track, so
+the cut for track N (N >= 2) is at its TOC start minus its pregap; track 1
+starts at sector 0 and carries no pregap.
+
+Pregap lengths live in the subchannel, which `drutil toc` cannot read, so
+they are a parameter: --pregaps all (the default: 150 sectors before every
+track after the first, as on discs mastered with a 2-second gap between
+every track), --pregaps first (150 sectors before the first audio track
+only - the pause required after a data track - and gapless audio after
+it), or an explicit comma-separated list of sector counts, one per track.
+Redump's track table shows each track's pregap; match it.
 
 Drives return audio shifted by their read offset (in 16-bit stereo
 samples, 4 bytes each); Redump hashes are offset-corrected. Pass the
@@ -17,6 +25,7 @@ The data track is never shifted.
 Usage:
     python3 splittracks.py --toc disc-info.txt full-2352.bin
     python3 splittracks.py --toc disc-info.txt full-2352.bin --out tracks/ --offset 667
+    python3 splittracks.py --toc disc-info.txt full-2352.bin --pregaps first --offset 645
 """
 
 import sys
@@ -92,7 +101,11 @@ def main():
     ap.add_argument("--toc", required=True, help="file containing drutil toc output")
     ap.add_argument("--out", help="directory to write per-track .bin files into")
     ap.add_argument("--offset", type=int, default=0,
-                    help="drive read offset in samples, applied to audio tracks")
+                    help="combined read offset in samples, applied to audio tracks")
+    ap.add_argument("--pregaps", default="all",
+                    help="'all' (150 before every track after the first), 'first' "
+                         "(150 before the first audio track only), or a comma-separated "
+                         "list of sector counts, one per track")
     args = ap.parse_args()
 
     tracks, leadout = parse_toc(open(args.toc, encoding="utf-8", errors="replace").read())
@@ -101,10 +114,22 @@ def main():
         print(f"warning: dump is {size // SECTOR} sectors, TOC lead-out says {leadout}",
               file=sys.stderr)
 
-    # Cut points: track 1 at 0; later tracks at TOC start minus the pregap.
+    # Pregap per track, then cut points: track 1 at 0; later tracks at TOC
+    # start minus their pregap.
+    if args.pregaps == "all":
+        pregaps = [0] + [PREGAP] * (len(tracks) - 1)
+    elif args.pregaps == "first":
+        pregaps = [0] * len(tracks)
+        for i in range(1, len(tracks)):
+            if tracks[i][2] == "audio" and tracks[i - 1][2] == "data":
+                pregaps[i] = PREGAP
+    else:
+        pregaps = [int(x) for x in args.pregaps.split(",")]
+        if len(pregaps) != len(tracks):
+            sys.exit(f"--pregaps lists {len(pregaps)} values for {len(tracks)} tracks")
     cuts = []
     for i, (num, lba, kind) in enumerate(tracks):
-        cuts.append(0 if i == 0 else lba - PREGAP)
+        cuts.append(0 if i == 0 else lba - pregaps[i])
     cuts.append(leadout)
 
     if args.out:

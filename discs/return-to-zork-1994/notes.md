@@ -12,6 +12,10 @@ Mixed-mode CD: one Mode 1 data track (volume `RTZ-CD`, 81843 sectors) followed b
 Return to Zork exists in at least a dozen Redump-cataloged pressings (versions 1.00, 1.1 and 1.2, an OEM bundle, Megapak, Special Edition, FM Towns, and console ports).
 This copy's sector count matches redump.org disc 80660 exactly - version 1.1, tagged "Rerelease", write offset -22 - while two other v1.1 entries (126092 and the OEM bundle 33185) are three sectors shorter.
 
+**The pressing is Redump-verified, all 26 tracks.**
+A full linear raw dump made 2026-08-29, split at Redump's boundaries and corrected by 645 samples, hashes byte-identical to disc 80660 on every track; see [checksums.txt](checksums.txt).
+Two things had to be right for that to work, both learned on this disc: the correction is the *combined* offset (the drive's +667 read offset plus the disc's -22 write offset), and only track 2 carries a 150-sector pregap - the pause required after a data track - while the audio tracks that follow are gapless, so each later track's file begins exactly at its TOC start.
+
 ## Structure
 
 - **The 1993 Return to Zork build**: `RTZCD.PRJ` (43,016,792 bytes, 1993-09-15) and 84 `.PMV` movie files, identical in size and date to the copies on the 1997 Zork Legacy Collection disc. The 25 audio tracks are the game's CD audio.
@@ -25,8 +29,10 @@ The same disc, revised twice over. Against [the 1997 disc](../zork-legacy-1997-r
 - **The game itself is unchanged.** 92 of the 97 filenames the two data volumes share are identical in size and date - every movie and the 43 MB `.PRJ` among them.
 - **The install set was revised.** The five differing files are `DISK.ID` (v1.1 -> v1.2), `READ.ME`, `INSTALL.DAT`, `RTZCD.RED` (276,177 -> 276,584 bytes) and `RTZCDDRV.RED` (111,013 -> 104,708), all redated September 1994. With the 1994 Zork Anthology disc's much smaller `RTZCD.RED` (130,683 bytes, a demo install set), that makes three distinct Return to Zork `.RED` builds across three discs.
 - **The demos were swapped.** This disc's Simon/MechWarrior II/Richard Scarry demos are gone from the 1997 disc, replaced by the anthology, the InstallShield Windows front end, and the PDF documentation - which is where the 1997 data track's extra 12,739 sectors go.
-- **The audio was re-cut.** Every audio track on the 1997 disc is longer by the same amount: +304 sectors (4.05 seconds) on tracks 3-25, with the first and last audio tracks differing by 150 sectors either side of that because of how the pregaps fall. The 1997 mastering evidently padded each track, and its Redump entry carries a write offset of 0 against this disc's -22.
+- **The audio was re-cut.** This disc's audio is gapless after track 2; the 1997 disc inserts a 2-second (150-sector) pregap before every audio track, and each track's content is also 154 sectors (2.05 seconds) longer, the last track's 304. The two masterings also differ in write offset: -22 here, 0 on the 1997 disc.
 
 ## Open items for this disc
 
-- Redump hash verification of the full dump (in progress).
+None.
+
+Resolved 2026-08-29: Redump verification, all 26 tracks; see above.

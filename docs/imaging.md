@@ -88,7 +88,7 @@ Two things that look like problems but are not:
 - The 150-sector pregap between the data track and the first audio track, and the first sectors of a quiet track, read back as all zeros. That is genuine silence, not the driver blanking non-data sectors; sectors further into any audio track are full of signal.
 - macOS mounts the audio side as a `cddafs` "Audio CD" of AIFF files. Those are convenient for listening but are not sector-precise (track 2 came back as 3,859,560 PCM bytes, not a whole number of sectors), so do not use them as the archival copy.
 
-Split the linear dump at Redump's track boundaries with `scripts/splittracks.py --toc disc-info.txt`, which reads the `drutil toc` capture, cuts each audio track 150 sectors before its TOC start (Redump attaches the pregap to the front of the following track), and hashes every track in Redump's shape.
+Split the linear dump at Redump's track boundaries with `scripts/splittracks.py --toc disc-info.txt`, which reads the `drutil toc` capture, cuts each track at its TOC start minus its pregap (Redump attaches the pregap to the front of the following track; see below for choosing the pregap structure), and hashes every track in Redump's shape.
 Feed only the data track (`track01.bin`) to `raw2user.py`; audio sectors have no sync pattern and would fail its structure checks.
 
 ### Audio and the drive's read offset
@@ -99,4 +99,12 @@ The data track is unaffected (data sectors carry their own addresses), which is 
 Measured on the Pioneer BD-RW BDR-XS07U on 2026-08-29: **+667 samples** (2,668 bytes). Found by taking one short audio track and searching for the sample shift at which its CRC32 matches Redump's; a second track confirmed it, and with `--offset 667` all 25 audio tracks of the Zork Legacy Collection disc matched Redump exactly.
 The search is cheap (a few thousand CRCs of a few megabytes), so a drive with an unknown offset can be characterized from any disc Redump already has.
 
+The offset Redump's hashes expect is the *combined* offset: the drive's read offset plus the disc's own write offset, which Redump lists on each disc page. A disc mastered with a write offset of 0 needs just the drive figure (667 here); the 1994 Return to Zork pressing, mastered at -22, needed 645. Measure it the same way if in doubt.
+
 Record the *uncorrected* linear dump as the archival file: it is what the drive actually read, and the correction is a pure function of the offset applied at split time.
+
+### Pregaps decide where the cuts fall
+
+Redump puts each track's pregap at the front of that track's file, so the cut before track N is its TOC start minus its pregap - and pregap lengths live in the subchannel, which `drutil toc` cannot read.
+Two structures have turned up so far: every audio track preceded by a 2-second gap (the 1997 Zork Legacy Collection disc), and a single 2-second gap after the data track with gapless audio thereafter (the 1994 Return to Zork disc).
+`splittracks.py --pregaps all|first|<list>` selects between them; Redump's track table shows the pregap per track, so match that, and if the first split disagrees with Redump on every audio track while the data track matches, suspect the pregap structure before the offset.
