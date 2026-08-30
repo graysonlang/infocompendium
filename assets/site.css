@@ -1,0 +1,186 @@
+/* infocompendium site styles, in the vein of the viridis project page.
+   Light is the base; dark applies when the OS prefers it (unless the user
+   forced light) or when the user explicitly picks it. */
+:root {
+  --paper: #faf9f6;
+  --tile: #fffefb;
+  --ink: #1b1a20;
+  --body: #4c4a43;
+  --muted: #78746a;
+  --hair: #e2dfd6;
+  --shadow: rgba(27, 26, 32, 0.28);
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141317;
+    --tile: #1b1a20;
+    --ink: #eceae4;
+    --body: #b8b5ad;
+    --muted: #86827a;
+    --hair: #2c2a32;
+    --shadow: rgba(0, 0, 0, 0.55);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141317;
+  --tile: #1b1a20;
+  --ink: #eceae4;
+  --body: #b8b5ad;
+  --muted: #86827a;
+  --hair: #2c2a32;
+  --shadow: rgba(0, 0, 0, 0.55);
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0 auto;
+  padding: 32px 32px 56px;
+  max-width: 880px;
+  color: var(--body);
+  font: 15px/1.6 system-ui, sans-serif;
+  transition: background-color 220ms ease, color 220ms ease;
+}
+a { color: inherit; text-decoration-color: #b7b2a4; text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--ink); }
+
+/* Utility row above the content: site name at left, repo link, a hairline
+   divider, then the theme toggle. Icon buttons share the quiet style. */
+.corner {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 26px;
+}
+.site-name {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.site-name:hover { color: var(--ink); }
+.corner-spacer { flex: 1; }
+.corner-div {
+  width: 1px;
+  height: 18px;
+  margin: 0 5px;
+  background: var(--hair);
+}
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  cursor: pointer;
+  opacity: 0.55;
+  text-decoration: none;
+  transition: opacity 160ms ease, color 160ms ease,
+    background-color 160ms ease, border-color 160ms ease;
+}
+.icon-btn:hover {
+  opacity: 1;
+  color: var(--ink);
+  background: var(--tile);
+  border-color: var(--hair);
+}
+.icon-btn svg { width: 18px; height: 18px; display: block; }
+/* Show the icon of the active theme; the selectors mirror the var cascade. */
+#theme-toggle .moon { display: none; }
+#theme-toggle .sun { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #theme-toggle .sun { display: none; }
+  :root:not([data-theme="light"]) #theme-toggle .moon { display: block; }
+}
+:root[data-theme="dark"] #theme-toggle .sun { display: none; }
+:root[data-theme="dark"] #theme-toggle .moon { display: block; }
+:root[data-theme="light"] #theme-toggle .sun { display: block; }
+:root[data-theme="light"] #theme-toggle .moon { display: none; }
+
+/* Markdown content */
+.content h1, .content h2, .content h3, .content h4 {
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.content h1 { font-size: 40px; margin: 0 0 18px; letter-spacing: -0.02em; }
+.content h2 {
+  font-size: 26px;
+  margin: 38px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hair);
+}
+.content h3 { font-size: 20px; margin: 28px 0 10px; }
+.content h4 { font-size: 16px; margin: 22px 0 8px; }
+.content p { margin: 12px 0; }
+.content li { margin: 5px 0; }
+.content strong { color: var(--ink); font-weight: 600; }
+.content hr { border: none; border-top: 1px solid var(--hair); margin: 30px 0; }
+
+.content code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+  background: var(--tile);
+  border: 1px solid var(--hair);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+.content pre {
+  background: var(--tile);
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  line-height: 1.5;
+  transition: background-color 220ms ease, border-color 220ms ease;
+}
+.content pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+}
+/* Keep rouge's token spans quiet rather than shipping a highlight palette. */
+.content .highlight span { color: inherit; }
+
+.content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+.content th {
+  color: var(--ink);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid var(--muted);
+  padding: 7px 14px 7px 0;
+}
+.content td {
+  border-bottom: 1px solid var(--hair);
+  padding: 7px 14px 7px 0;
+  vertical-align: top;
+}
+
+.content blockquote {
+  margin: 14px 0;
+  padding: 2px 18px;
+  border-left: 3px solid var(--hair);
+  color: var(--muted);
+}
+.content img { max-width: 100%; }
+
+@media (max-width: 640px) {
+  body { padding: 20px 18px 40px; }
+  .content h1 { font-size: 32px; }
+}

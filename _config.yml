@@ -6,7 +6,8 @@ description: Imaging, cataloguing, and findings for the Activision Infocom compi
 url: "https://graysonlang.github.io"
 baseurl: "/infocompendium"
 
-theme: jekyll-theme-primer
+# No theme: _layouts/default.html and assets/site.css carry the whole look
+# (viridis-style tokens, dark/light switcher, corner GitHub link).
 
 plugins:
   - jekyll-optional-front-matter   # pages without front matter still build

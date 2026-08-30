@@ -14,3 +14,6 @@ out/
 
 # Third-party tools fetched by scripts/get-ztools.sh
 tools/
+
+# Local Jekyll build output
+_site/
