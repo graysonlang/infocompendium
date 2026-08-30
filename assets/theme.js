@@ -1,6 +1,6 @@
 // Two-state toggle: an explicit choice is stored and wins over the OS
 // setting; with nothing stored we follow prefers-color-scheme (and live
-// OS changes, which pure CSS handles). Same mechanism as the viridis page.
+// OS changes, which pure CSS handles).
 (() => {
   'use strict';
   const KEY = 'infocompendium-theme';

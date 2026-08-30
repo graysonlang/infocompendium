@@ -12,14 +12,14 @@ A hybrid DVD-Video/data disc.
 - `games/` - a curated collection of 41 modern IF games with a `README.txt` crediting each author (Plotkin, Short, Montfort, Granade, Sherwin, Sousa, and others). Playable-with-permission copies, not Infocom material.
 - `interpreters/` - `gargoyle` and `splatterlight` interpreter builds for playing them.
 - `eamon/` - `EAG_90F.rar`, an Eamon Adventurer's Guild collection.
-- `photos/infocom-ads/` - **38 scans of Infocom advertisements and catalogues, including the 1983-1987 product catalogues** (`1983Catalog.bmp` through `1987Catalog.bmp`, rear covers and interior pages, plus individual game ads: Deadline, Hitchhiker's, Cornerstone, and more). The most catalogue-relevant material on the disc.
+- `photos/infocom-ads/` - **38 scans of Infocom advertisements and catalogs, including the 1983-1987 product catalogs** (`1983Catalog.bmp` through `1987Catalog.bmp`, rear covers and interior pages, plus individual game ads: Deadline, Hitchhiker's, Cornerstone, and more). The most catalog-relevant material on the disc.
 - `photos/bedquiltvideo/`, `audio/` - Colossal Cave-adjacent material, including "The Death of Floyd Collins" ballad and an "eyes and hands" recording with transcript.
 - `production/` - production photos of the famous Get Lamp coin (proof, prototypes, bag) and the cover painting's drafts (`marc1.jpg`/`marc2.jpg` - Marc Ericksen's sketches through final).
 - `video/` - trailer, MC Frontalot "It Is Pitch Dark" HD video, BBS documentary promo, and other shorts.
 
 ## Findings
 
-- The `photos/infocom-ads/` catalogue scans overlap this repo's mission directly: five year-complete Infocom catalogues (1983-1987) in uncompressed BMP, likely scanned for the documentary and not all mirrored elsewhere.
+- The `photos/infocom-ads/` catalog scans overlap this repo's mission directly: five year-complete Infocom catalogs (1983-1987) in uncompressed BMP, likely scanned for the documentary and not all mirrored elsewhere.
 - Redump has no Get Lamp entry (checked 2026-08-29), so [checksums.txt](checksums.txt) stands as an independent reference for this pressing until one exists.
 
 ## Open items for this disc

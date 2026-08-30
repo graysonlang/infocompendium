@@ -2,12 +2,13 @@
 # Built by .github/workflows/pages.yml with the github-pages gem;
 # the site mirrors the repo layout, with each README as its folder's index.
 title: infocompendium
-description: Imaging, cataloguing, and findings for the Activision Infocom compilation CD-ROMs
-url: "https://graysonlang.github.io"
-baseurl: "/infocompendium"
+description: Imaging, cataloging, and findings for the Activision Infocom compilation CD-ROMs
+# Served at the custom domain root, so no baseurl prefix.
+url: "https://infocompendium.org"
+baseurl: ""
 
 # No theme: _layouts/default.html and assets/site.css carry the whole look
-# (viridis-style tokens, dark/light switcher, corner GitHub link).
+# (color tokens, dark/light switcher, corner GitHub link).
 
 plugins:
   - jekyll-optional-front-matter   # pages without front matter still build

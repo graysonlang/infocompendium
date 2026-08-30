@@ -5,10 +5,10 @@ The general method and its pitfalls are in [docs/imaging.md](../../docs/imaging.
 
 ## Identity
 
-Hybrid CD: one Mode 1 data track carrying an ISO 9660 catalogue (260 KB slice, pointer structure only) and an HFS catalogue (308 MB volume holding everything).
+Hybrid CD: one Mode 1 data track carrying an ISO 9660 catalog (260 KB slice, pointer structure only) and an HFS catalog (308 MB volume holding everything).
 Volume `Masterpieces`, created 18 June 1996, modified 22 June 1996.
 `drutil status` reports 150515 blocks; 150515 x 2048 = 308,254,720 bytes of user data is the number to verify any image against.
-879 catalogue entries: 113 directories, 766 files.
+879 catalog entries: 113 directories, 766 files.
 See [disc-info.txt](disc-info.txt) for the captured TOC and slice layout.
 
 **The pressing is Redump-verified.**
@@ -42,9 +42,9 @@ The split also makes sense on 1989 PC hardware: on a region change, redrawing a 
 
 Loose ends from the disassembly: the invisible PC-only pictures are read via `PICTURE_DATA` as expected (486, 487 and 496 observed), confirming the layout-metrics channel; the two 20x7 fragments 484/485 appear in an r393 picture-preload table alongside the `U-BOX`/`D-BOX`/`BOX-COVER` button pictures, so they belong to that on-screen button UI, though their exact draw sites use computed operands and were not pinned down.
 
-Analysed with `scripts/picdir.py` against this disc's picture libraries, `txd` from ztools 7.3.1 against this disc's `ZORK0.ZIP`, plus the ZIL source at <https://github.com/historicalsource/zorkzero> (`globals.zil` `SET-BORDER`/`INIT-STATUS-LINE`, `picdef.zil`).
+Analyzed with `scripts/picdir.py` against this disc's picture libraries, `txd` from ztools 7.3.1 against this disc's `ZORK0.ZIP`, plus the ZIL source at <https://github.com/historicalsource/zorkzero> (`globals.zil` `SET-BORDER`/`INIT-STATUS-LINE`, `picdef.zil`).
 
-## Findings that correct or extend the published catalogues
+## Findings that correct or extend the published catalogs
 
 - **`LEATHER.SCR` is present** (1,408 bytes) in `PC/LEATHER/`, and `_LEATHER.COM` is 12,004 bytes, which is Infocom MS-DOS interpreter **3N** - the only build that loads a boss key screen. So the Leather Goddesses boss key works on this disc. Doherty's Infocom Fact Sheet notes the LTOI1 IBM packages dropped it, and is internally inconsistent about the filename (`LEATHER.DAT` in one section, `<GAMENAME>.SCR` in the interpreter table). The disc settles it: `.SCR`.
 - **`PC/LURKING/DATA/LHSOUND.ZIP`** (589,733 bytes) is Stefan Jokisch's freeware sound package, shipped on a commercial Activision disc. Contents: fourteen `LURKINxx.SND` files matching Doherty's count of fourteen sounds, `UPDATELH.EXE` plus C source, and `LURKING.CNV` at 129,944 bytes - exactly the length Doherty gives for release 221.870918. The README is signed by Jokisch and mentions Frotz as unfinished, dating it before December 1995; internal file dates run January to August 1995. So a PC owner of this disc can convert the shipped r203 to r221 and play with sound on a Sound Blaster, contrary to the usual claim that Lurking Horror sound was Amiga-only.

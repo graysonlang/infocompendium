@@ -7,15 +7,15 @@ Once a disc is identified, continue with [imaging.md](imaging.md).
 
 ## What hybrid discs are
 
-A hybrid CD carries a single Mode 1 data track holding **two filesystem catalogues over one set of data blocks**. The PC reads an ISO 9660 catalogue; the Mac reads an HFS catalogue. Most content exists once and is indexed twice.
+A hybrid CD carries a single Mode 1 data track holding **two filesystem catalogs over one set of data blocks**. The PC reads an ISO 9660 catalog; the Mac reads an HFS catalog. Most content exists once and is indexed twice.
 
 This is not the same as a *mixed mode* disc, which is a data track followed by Red Book audio tracks. Check with `drutil toc` before assuming: one track means hybrid.
 
-Consequences worth internalising:
+Consequences worth internalizing:
 
 - The ISO slice can be tiny while the HFS volume holds everything. On Masterpieces the ISO slice is 260 KB and the HFS volume is 308 MB. The ISO slice is a pointer structure, not a copy of the content.
-- The two catalogues do not necessarily index identical sets. Masterpieces has genuinely separate `MAC` and `PC` directory trees with different game files in each.
-- The same bytes can present differently per side. A file may appear as a plain DOS file to the ISO catalogue and as a typed Mac document (creator `mdos`) to the HFS catalogue.
+- The two catalogs do not necessarily index identical sets. Masterpieces has genuinely separate `MAC` and `PC` directory trees with different game files in each.
+- The same bytes can present differently per side. A file may appear as a plain DOS file to the ISO catalog and as a typed Mac document (creator `mdos`) to the HFS catalog.
 
 Not every disc in this project is a hybrid: The Zork Anthology (1994) is plain ISO 9660, mounts fine on modern macOS, and the identification commands below apply unchanged.
 The Lost Treasures CDs shipped as separate PC and Mac discs for volume 1 and a single combined disc for volume 2, so the partition layout may differ per disc.

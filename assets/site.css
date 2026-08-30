@@ -1,4 +1,4 @@
-/* infocompendium site styles, in the vein of the viridis project page.
+/* infocompendium site styles.
    Light is the base; dark applies when the OS prefers it (unless the user
    forced light) or when the user explicitly picks it. */
 :root {

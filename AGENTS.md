@@ -12,6 +12,10 @@ Source code stays 7-bit ASCII (bytes 0x00-0x7F), comments and string literals in
 
 This governs source files. Markdown prose may use non-ASCII freely.
 
+## Language
+
+US English spelling throughout — code, comments, UI strings, and docs. color (not colour), center, gray, behavior, license, honor, canceled, labeled, and -ize verbs (serialize, normalize, recognize).
+
 ## Python scripts
 
 Start every script with `import sys` followed by `sys.dont_write_bytecode = True`, before the other imports, so no `.pyc` files are created.
@@ -38,7 +42,7 @@ Specific habits that matter here:
 
 - Do not use `capture_output=True` or `2>/dev/null` on a command whose failure you are trying to diagnose. Both have already cost debugging time on this project.
 - After any `dd`, check the output size and hexdump the head before proceeding. A zero-filled image looks like a successful run.
-- When a claim about a disc's contents can be checked against the disc, check it. Published catalogues of these compilations contain errors and omissions, several of which this repo has already documented.
+- When a claim about a disc's contents can be checked against the disc, check it. Published catalogs of these compilations contain errors and omissions, several of which this repo has already documented.
 
 ## Testing
 

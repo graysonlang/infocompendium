@@ -4,10 +4,10 @@ Tooling and notes for imaging and extracting 1990s hybrid CD-ROMs, with a focus 
 
 The repo serves two purposes:
 
-- Source material for filling gaps in the shared public knowledge of the Infocom catalogue and related assets. Per-disc notes record what a physical pressing actually contains, including where it contradicts the published references.
+- Source material for filling gaps in the shared public knowledge of the Infocom catalog and related assets. Per-disc notes record what a physical pressing actually contains, including where it contradicts the published references.
 - A mechanism for people to archive their own media. Each disc folder documents how to image and verify that specific disc, and the shared scripts do the extraction.
 
-No disc content is stored here - only identification records, catalogue listings, notes, and tooling.
+No disc content is stored here - only identification records, catalog listings, notes, and tooling.
 
 These discs carry two filesystems over one set of data blocks: ISO 9660 for the PC side and HFS for the Mac side.
 macOS dropped HFS support in Ventura, so modern Macs can identify these discs but refuse to mount them.
@@ -21,7 +21,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | The Lost Treasures of Infocom (CD) | no | no | |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | [The Zork Anthology (1994)](discs/zork-anthology-1994/README.md) | yes | no | Redump-verified; games live inside the ZORKANTH.RED installer archive |
-| [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalogue/ad scans, curated IF games |
+| [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games |
 
 ## Findings
 
@@ -48,7 +48,7 @@ scripts/
   get-ztools.sh                  Fetches and builds ztools (txd, infodump, pix2gif, check)
                                  from the IF Archive into tools/ztools/ (gitignored).
 discs/
-  masterpieces-1996/             One folder per disc: identification capture, catalogue
+  masterpieces-1996/             One folder per disc: identification capture, catalog
     README.md                    listing, findings, and disc-specific build scripts.
     disc-info.txt                No disc content, just the material needed to archive
     masterpieces-1996.hls.txt    and verify a copy.
@@ -78,4 +78,4 @@ If you are starting from a physical disc, read [docs/imaging.md](docs/imaging.md
 
 Keep the raw sector image as the archival artifact and never modify it.
 Everything else in this repo produces derivatives - convenience copies for browsing and emulation.
-A derivative that has been re-catalogued will not hash against Redump, and that is fine, as long as the original is still around to verify against.
+A derivative that has been re-cataloged will not hash against Redump, and that is fine, as long as the original is still around to verify against.

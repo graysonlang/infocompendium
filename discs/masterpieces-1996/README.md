@@ -8,8 +8,8 @@ No disc content lives in this folder - only identification records, listings, no
 | File | What it is |
 | --- | --- |
 | `disc-info.txt` | Captured `drutil` and `diskutil` output from the physical disc: TOC, session/track/block counts, slice layout |
-| `masterpieces-1996.hls.txt` | Full `hls -l -R` catalogue listing of the HFS volume (879 entries), also the parser fixture for `scripts/hfscopy.py --dry-run` |
-| `notes.md` | Per-disc findings, including corrections and extensions to the published catalogues |
+| `masterpieces-1996.hls.txt` | Full `hls -l -R` catalog listing of the HFS volume (879 entries), also the parser fixture for `scripts/hfscopy.py --dry-run` |
+| `notes.md` | Per-disc findings, including corrections and extensions to the published catalogs |
 | `checksums.txt` | Reference hashes for a full dump of this disc, Redump-verified; check your own dump against these |
 | `build-masterpieces.sh` | Turns a dumped HFS slice image into a modern, mountable HFS+ `.dmg` with resource forks and metadata intact |
 
