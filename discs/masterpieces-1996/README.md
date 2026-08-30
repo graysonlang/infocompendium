@@ -15,7 +15,7 @@ No disc content lives in this folder - only identification records, listings, no
 
 ## Archiving your own copy
 
-The full method with its pitfalls is in [docs/knowledge-transfer.md](../../docs/knowledge-transfer.md). The short version for this disc:
+The full method with its pitfalls is in [docs/imaging.md](../../docs/imaging.md) and [docs/hfs-extraction.md](../../docs/hfs-extraction.md). The short version for this disc:
 
 1. Insert the disc and confirm it matches [disc-info.txt](disc-info.txt): one session, one data track, 150515 blocks, an Apple partition scheme with ISO9660 and Apple_HFS slices.
 2. Unmount and dump the whole disc as raw sectors (no `sudo` needed; macOS gives the console user the optical device nodes):

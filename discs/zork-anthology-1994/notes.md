@@ -1,7 +1,7 @@
 # The Zork Anthology (1994) - findings
 
 Established against a physical pressing read on an Apple Silicon Mac with a Pioneer BD-RW BDR-XS07U.
-The general method is in [docs/knowledge-transfer.md](../../docs/knowledge-transfer.md); this file holds what is specific to this disc.
+The general method is in [docs/imaging.md](../../docs/imaging.md); this file holds what is specific to this disc.
 
 ## Identity
 

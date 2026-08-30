@@ -29,13 +29,16 @@ What each disc actually contains, checked against the published references:
 
 - [Masterpieces (1996)](discs/masterpieces-1996/notes.md) - the Leather Goddesses boss key survives, Lurking Horror sound on the PC side, real save files with the copy-protection credentials in them, and more. The pressing is Redump-verified, so these describe the reference disc, not a variant.
 
-The disc-agnostic method - what a hybrid disc is, why macOS fights you, and the imaging traps - is in [docs/knowledge-transfer.md](docs/knowledge-transfer.md).
+The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
 ## Layout
 
 ```
 docs/
-  knowledge-transfer.md          Method and pitfalls, disc-agnostic. Read this first.
+  identifying-discs.md           Hybrid discs, why macOS refuses them, identification. Start here.
+  imaging.md                     The imaging traps and the working raw-dump method.
+  hfs-extraction.md              hfsutils, forks, timestamps, building mountable images.
+  references.md                  External references: Doherty, Plotkin, ztools, Redump.
 scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
   raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
@@ -69,7 +72,7 @@ Given an HFS slice image already dumped from the disc:
 
 That produces `~/Desktop/masterpieces.dmg`, a compressed read-only HFS+ image with resource forks, type/creator codes, and modification dates intact.
 
-If you are starting from a physical disc, read [docs/knowledge-transfer.md](docs/knowledge-transfer.md) first - the imaging step has several traps that will silently produce a file full of zeros - then follow the per-disc steps in that disc's README, e.g. [Masterpieces](discs/masterpieces-1996/README.md).
+If you are starting from a physical disc, read [docs/imaging.md](docs/imaging.md) first - the imaging step has several traps that will silently produce a file full of zeros - then follow the per-disc steps in that disc's README, e.g. [Masterpieces](discs/masterpieces-1996/README.md).
 
 ## Principles
 
