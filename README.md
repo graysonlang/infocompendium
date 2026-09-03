@@ -18,7 +18,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | Disc | Imaged | Extracted | Notes |
 | --- | --- | --- | --- |
 | [Classic Text Adventure Masterpieces of Infocom (1996)](discs/masterpieces-1996/README.md) | yes | yes | Full raw dump hash-matches the Redump database entry; extraction verified, 766 files with all resource forks |
-| The Lost Treasures of Infocom (CD) | no | no | |
+| [The Lost Treasures of Infocom (CD, 1992)](discs/lost-treasures-1-1992/README.md) | yes | yes | First dump: no Redump entry exists; one 8 MB ISO carrying both Mac and PC trees |
 | The Lost Treasures of Infocom II (CD) | no | no | |
 | [The Zork Anthology (1994)](discs/zork-anthology-1994/README.md) | yes | no | Redump-verified; games live inside the ZORKANTH.RED installer archive |
 | [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/README.md) | yes | n/a | Redump-verified on all 26 tracks; the original pressing of the disc later revised for the Legacy Collection |
@@ -29,6 +29,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 
 What each disc actually contains, checked against the published references:
 
+- [The Lost Treasures of Infocom CD (1992)](discs/lost-treasures-1-1992/notes.md) - one small ISO holds both platforms; the Zork Zero graphics omission and the padded story-file set that later products inherited both start here; Hitchhiker's Guide still aboard.
 - [Masterpieces (1996)](discs/masterpieces-1996/notes.md) - the Leather Goddesses boss key survives, Lurking Horror sound on the PC side, real save files with the copy-protection credentials in them, and more. The pressing is Redump-verified, so these describe the reference disc, not a variant.
 - [The Zork Anthology (1994)](discs/zork-anthology-1994/notes.md) - an installer disc where the five classic games occupy 1.3 MB of 246 MB, the rest being Return to Zork and demos, including a 1994 demo of the cancelled Planetfall sequel under the title "Floyd Strikes Back".
 - [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/notes.md) - the same game files as the 1997 pressing with a different install set, three swapped-out demos (Simon the Sorcerer, MechWarrior II, Richard Scarry), and audio tracks each four seconds shorter.
@@ -56,6 +57,10 @@ scripts/
                                  at Redump's boundaries, hashing each track.
   isz.py                         Lists and extracts InstallShield 3 .Z archives (PKWARE DCL
                                  decoder included), as found on 1990s Windows installer discs.
+  appleiso.py                    Extracts an Apple-extended ISO 9660 image natively, restoring
+                                 resource forks, Finder metadata and dates.
+  adcopy.py                      Copies a tree, folding AppleDouble ._ companions into real
+                                 resource forks and Finder metadata.
 discs/
   masterpieces-1996/             One folder per disc: identification capture, catalog
     README.md                    listing, findings, and disc-specific build scripts.

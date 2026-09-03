@@ -1,0 +1,32 @@
+# Captured 2026-09-03T02:33:19Z - Pioneer BD-RW BDR-XS07U, macOS 26.6.2
+
+## drutil status
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+           Type: CD-ROM               Name: /dev/disk5
+       Sessions: 1                  Tracks: 1 
+   Overwritable:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Free:   00:00:00         blocks:        0 /   0.00MB /   0.00MiB
+     Space Used:   00:51:70         blocks:     3895 /   7.98MB /   7.61MiB
+    Writability: 
+
+
+## drutil toc
+ Vendor   Product           Rev 
+ PIONEER  BD-RW  BDR-XS07U  1.03
+
+    First session:             1
+    Last session:              1
+    First track:               1
+    Disc type:                 0 (CD-DA, or CD-ROM with first track in Mode 1)
+    Last track:                1
+    Lead-out:                  00:53.70
+    Session  1, Track  1:      00:02.00  data track, digital copy prohibited
+
+
+## diskutil list disk5
+/dev/disk5 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:        CD_partition_scheme                        *9.2 MB     disk5
+   1:              CD_ROM_Mode_1 INFOCOM                 8.0 MB     disk5s0

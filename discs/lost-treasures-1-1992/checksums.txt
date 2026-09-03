@@ -1,0 +1,23 @@
+# The Lost Treasures of Infocom CD (1992) - dump checksums
+#
+# Dumped 2026-09-02 on macOS 26 (Apple Silicon), Pioneer BD-RW BDR-XS07U fw 1.03.
+# Method: dd if=/dev/rdiskN bs=2352 count=3895 against the whole-disc raw
+# device, then scripts/raw2user.py to convert and verify.
+#
+# Redump has NO Lost Treasures entry (checked 2026-09-02), so these hashes
+# are published here as a reference for this pressing rather than verified
+# against one. The raw track below is in Redump's shape (single data track,
+# no pregap) if an entry ever appears.
+#
+# Structure verification at conversion time: 3895 sectors, all Mode 1,
+# 0 bad sync, 0 bad address, 0 bad mode, 0 EDC mismatches in 16 sampled.
+
+# Raw track, 2352 bytes/sector (Redump-comparable) - 9,161,040 bytes
+crc32  2f474fc2                                  ltoi1-full-2352.bin
+md5    25998a1720c3269cd91964f6fab4c003          ltoi1-full-2352.bin
+sha1   b0f34c0aac3f804980b27a8ea09f684a6db89f99  ltoi1-full-2352.bin
+
+# User data, 2048 bytes/sector (mountable ISO) - 7,976,960 bytes
+crc32  52addc3a                                  ltoi1-data.iso
+md5    3b2cbd4a3d3fb185c56f31edd298ebce          ltoi1-data.iso
+sha1   7b9ba2d74916fd6c4cc77bd84f74aa141fc624ec  ltoi1-data.iso

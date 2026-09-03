@@ -1,0 +1,93 @@
+total 36
+-rwxr-xr-x  1 grayson  staff  9029 Apr  8 21:00:00 1991 ANSI.SYS
+-rwxr-xr-x  1 grayson  staff    21 Apr 17 23:23:22 1992 DISK.ID
+drwxr-xr-x  1 grayson  staff  4096 May 26 07:02:48 1992 MAC
+drwxr-xr-x  1 grayson  staff  2048 May 26 07:02:48 1992 PC
+
+/Volumes/INFOCOM/MAC:
+total 4420
+-rwxr-xr-x  1 grayson  staff  129024 Oct 28 07:14:58 1991 BALLYHOO
+-rwxr-xr-x  1 grayson  staff  262144 Jan 13 06:30:55 1988 BEYOND ZORK
+-rwxr-xr-x  1 grayson  staff  108544 Oct 28 07:15:13 1991 DEADLINE
+-rwxr-xr-x  1 grayson  staff  111616 Oct 28 07:16:20 1991 ENCHANTER
+-rwxr-xr-x  1 grayson  staff  113664 Oct 28 07:13:39 1991 HITCHHIKER'S GUIDE
+-rwxr-xr-x  1 grayson  staff   93696 Oct 28 07:13:58 1991 INFIDEL
+-rwxr-xr-x  1 grayson  staff  129024 Oct 28 07:15:27 1991 MOONMIST
+-rwxr-xr-x  1 grayson  staff  136704 Jun  2 01:25:45 1988 PLANETFALL
+-rwxr-xr-x  1 grayson  staff  109056 Oct 28 07:16:36 1991 SORCERER
+-rwxr-xr-x  1 grayson  staff  129024 Oct 28 07:16:49 1991 SPELLBREAKER
+-rwxr-xr-x  1 grayson  staff   83968 Oct 28 07:13:17 1991 STARCROSS
+-rwxr-xr-x  1 grayson  staff  129024 Oct 28 07:14:15 1991 STATIONFALL
+-rwxr-xr-x  1 grayson  staff  118784 Oct 28 07:15:43 1991 SUSPECT
+-rwxr-xr-x  1 grayson  staff  105984 Oct 28 07:14:30 1991 SUSPENDED
+-rwxr-xr-x  1 grayson  staff  129024 Oct 28 07:19:07 1991 THE LURKING HORROR
+-rwxr-xr-x  1 grayson  staff  104960 Oct 28 07:15:58 1991 THE WITNESS
+-rwxr-xr-x  1 grayson  staff   84992 Oct 28 07:17:04 1991 ZORK I
+-rwxr-xr-x  1 grayson  staff   90112 Oct 28 07:17:19 1991 ZORK II
+-rwxr-xr-x  1 grayson  staff   82944 Oct 28 07:17:37 1991 ZORK III
+drwxr-xr-x  1 grayson  staff    2048 May 26 07:02:48 1992 ZORK ZERO
+
+/Volumes/INFOCOM/MAC/ZORK ZERO:
+total 1476
+-rwxr-xr-x  1 grayson  staff  218624 Oct 21 08:12:11 1988 CPIC.DATA
+-rwxr-xr-x  1 grayson  staff  239104 Oct 21 07:57:14 1988 PIC.DATA
+-rwxr-xr-x  1 grayson  staff  295936 Oct 21 07:27:49 1988 STORY.DATA
+-rwxr-xr-x  1 grayson  staff       0 Oct 21 14:05:32 1988 ZORK ZERO
+
+/Volumes/INFOCOM/PC:
+total 728
+-rwxr-xr-x  1 grayson  staff  81553 Sep 25 19:11:06 1991 ANSI.EXE
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:07:06 1992 BALLYHOO.COM
+-rwxr-xr-x  1 grayson  staff  33946 Apr 22 11:36:00 1992 BZORK.EXE
+drwxr-xr-x  1 grayson  staff   2048 May 26 07:02:48 1992 DATA
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:02:10 1992 DEADLINE.COM
+-rwxr-xr-x  1 grayson  staff  12004 May 11 08:57:54 1992 ENCHANT.COM
+-rwxr-xr-x  1 grayson  staff  31924 Apr 22 11:35:44 1992 HITCHHIK.EXE
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:08:08 1992 INFIDEL.COM
+-rwxr-xr-x  1 grayson  staff   2060 May 11 03:43:36 1992 INSTALL.DAT
+-rwxr-xr-x  1 grayson  staff  12004 May 11 09:05:52 1992 LURKING.COM
+-rwxr-xr-x  1 grayson  staff  12004 May 11 09:09:10 1992 MOONMIST.COM
+-rwxr-xr-x  1 grayson  staff  12004 May 11 09:13:30 1992 PLANETF.COM
+-rwxr-xr-x  1 grayson  staff   1584 Apr 22 11:36:32 1992 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff      6 Apr 22 11:36:48 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff  11402 May 11 08:59:08 1992 SORCERER.COM
+-rwxr-xr-x  1 grayson  staff  12004 May 11 09:01:14 1992 SPELLBRK.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:10:12 1992 STARCROS.COM
+-rwxr-xr-x  1 grayson  staff  12004 May 11 09:14:24 1992 STATIONF.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:04:10 1992 SUSPECT.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:11:54 1992 SUSPEND.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 09:03:06 1992 WITNESS.COM
+drwxr-xr-x  1 grayson  staff   2048 May 26 07:02:48 1992 ZORK0
+-rwxr-xr-x  1 grayson  staff     27 May 11 08:56:48 1992 ZORK0.BAT
+-rwxr-xr-x  1 grayson  staff  11402 May 11 08:45:08 1992 ZORK1.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 08:46:04 1992 ZORK2.COM
+-rwxr-xr-x  1 grayson  staff  11402 May 11 08:47:06 1992 ZORK3.COM
+
+/Volumes/INFOCOM/PC/DATA:
+total 5040
+-rwxr-xr-x  1 grayson  staff  153600 May 19 05:00:48 1992 BALLYHOO.DAT
+-rwxr-xr-x  1 grayson  staff  276480 May 19 05:01:36 1992 BEYONDZO.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:01:52 1992 DEADLINE.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:02:09 1992 ENCHANTE.DAT
+-rwxr-xr-x  1 grayson  staff  184320 May 19 05:02:26 1992 HITCHHIK.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:02:42 1992 INFIDEL.DAT
+-rwxr-xr-x  1 grayson  staff  153600 May 19 05:02:59 1992 LURKING.DAT
+-rwxr-xr-x  1 grayson  staff  153600 May 19 05:03:16 1992 MOONMIST.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:03:33 1992 PLANETFA.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:03:49 1992 SORCERER.DAT
+-rwxr-xr-x  1 grayson  staff  153600 May 19 05:04:06 1992 SPELLBRE.DAT
+-rwxr-xr-x  1 grayson  staff   92160 May 19 05:04:22 1992 STARCROS.DAT
+-rwxr-xr-x  1 grayson  staff  153600 May 19 05:04:39 1992 STATIONF.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:04:56 1992 SUSPECT.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:05:12 1992 SUSPEND.DAT
+-rwxr-xr-x  1 grayson  staff  122880 May 19 05:05:29 1992 WITNESS.DAT
+-rwxr-xr-x  1 grayson  staff   92160 May 19 05:05:46 1992 ZORK1.DAT
+-rwxr-xr-x  1 grayson  staff   92160 May 19 05:06:02 1992 ZORK2.DAT
+-rwxr-xr-x  1 grayson  staff   92160 May 19 05:06:19 1992 ZORK3.DAT
+
+/Volumes/INFOCOM/PC/ZORK0:
+total 1816
+-rwxr-xr-x  1 grayson  staff  244507 Apr 22 11:42:42 1992 ZORK0.CG1
+-rwxr-xr-x  1 grayson  staff  333654 Apr 22 11:43:16 1992 ZORK0.EG1
+-rwxr-xr-x  1 grayson  staff  300032 Apr 22 11:43:34 1992 ZORK0.ZIP
+-rwxr-xr-x  1 grayson  staff   47494 Apr 22 11:42:58 1992 ZORKZERO.EXE
