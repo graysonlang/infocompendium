@@ -35,6 +35,8 @@ What each disc actually contains, checked against the published references:
 - [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/notes.md) - the same game files as the 1997 pressing with a different install set, three swapped-out demos (Simon the Sorcerer, MechWarrior II, Richard Scarry), and audio tracks each four seconds shorter.
 - [Return to Zork / The Zork Anthology (1997)](discs/zork-legacy-1997-rtz-anthology/notes.md) - a mixed-mode disc verified against Redump on all 26 tracks; its anthology files are byte-identical to Masterpieces' PC builds, and its Windows installer archive quietly carries the story files of fourteen Infocom games the product never advertises.
 
+- [The historicalsource repositories (2019)](collections/historicalsource/versions.md) - the leaked Infocom source treated as a compilation: 70 compiled story files across 46 repositories, cross-referenced against the disc builds. Twenty-one match a disc exactly; the rest include post-release masters newer than anything shipped, alphas and betas, unreleased games, and a mislabeled Journey prototype hiding in the Checkpoint repository.
+
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
 ## Layout
@@ -68,6 +70,11 @@ discs/
     masterpieces-1996.hls.txt    and verify a copy.
     notes.md
     build-masterpieces.sh
+collections/
+  historicalsource/              Non-disc compilations cataloged the same way; here,
+    README.md                    the 2019 GitHub publication of Infocom's source code,
+    versions.md                  its 70 compiled story files enumerated and hashed.
+    checksums.txt
 ```
 
 ## Quick start
