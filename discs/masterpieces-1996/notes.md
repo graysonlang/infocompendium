@@ -41,7 +41,13 @@ The compiled `SET-BORDER` sits directly after it, matching the leaked source lin
 Neither the leaked ZIL nor the shipped `ZORKZERO.EXE` (the generic 47,494-byte 6.71 interpreter) contains any of this - it is all r393 z-code.
 The split also makes sense on 1989 PC hardware: on a region change, redrawing a 640x37 banner and two column strips is far cheaper in EGA planar memory than repainting a full 640x200 frame.
 
-Loose ends from the disassembly: the invisible PC-only pictures are read via `PICTURE_DATA` as expected (486, 487 and 496 observed), confirming the layout-metrics channel; the two 20x7 fragments 484/485 appear in an r393 picture-preload table alongside the `U-BOX`/`D-BOX`/`BOX-COVER` button pictures, so they belong to that on-screen button UI, though their exact draw sites use computed operands and were not pinned down.
+The invisible PC-only pictures are read via `PICTURE_DATA` as expected (486, 487 and 496 observed), confirming the layout-metrics channel.
+
+The two 20x7 fragments 484/485 are resolved (2026-09-03): they are **border-themed covers for the compass rose's up/down buttons**.
+The ZIL source draws `U-BOX` (479) or `D-BOX` (480) beside the compass when an up or down exit is available and otherwise blanks the button with `BOX-COVER` (481), at coordinates read from the invisible `U-BOX-LOC`/`D-BOX-LOC` pictures (482/483).
+In r393's compiled compass-redraw routine the blanking became border-aware: the cover is chosen by the current border picture - castle (border 5) keeps the original 481, outside (6) draws 485, and everything else (underground, hints) draws 484 - because on the PC the area behind the buttons is banner art whose texture differs per border theme, so one cover no longer matched all three.
+The r393 preload table is the source's `COMPASS-PICSET-TBL` with 484 and 485 appended, and in the CGA library the three covers are 21x8 against the 20x7 buttons, a one-pixel overpaint margin.
+(The draw sites turned out to be plain constants after all - `txd` had been rendering the operands 0x1E4/0x1E5 as string references, which is why earlier searches missed them.)
 
 Analyzed with `scripts/picdir.py` against this disc's picture libraries, `txd` from ztools 7.3.1 against this disc's `ZORK0.ZIP`, plus the ZIL source at <https://github.com/historicalsource/zorkzero> (`globals.zil` `SET-BORDER`/`INIT-STATUS-LINE`, `picdef.zil`).
 
