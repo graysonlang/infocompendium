@@ -26,7 +26,8 @@ Two things had to be right for that to work, both learned on this disc: the corr
 
 Measured on the raw dump (2026-08-29):
 
-- **The data track is padded by a minute.** The ISO volume declares 77,268 sectors, but the data track runs to 81,843: the last 4,575 sectors (9.4 MB, 61 seconds) are structured empty Mode 1 sectors - sync, headers, EDC and ECC present, user data all zero. The Yellow Book calls for about two seconds of such post-gap before a mode change; this is thirty times that, and the reason is unknown. (The 1997 pressing has exactly 152.)
+- **The data track is padded by a minute, and the pad is mastering slack.** The ISO volume declares 77,268 sectors, but the data track runs to 81,843: the last 4,575 sectors (9.4 MB, 61 seconds) are structured empty Mode 1 sectors - sync, headers, EDC and ECC present, user data all zero. The Yellow Book calls for about two seconds of such post-gap before a mode change; this is thirty times that. Comparing across Redump's Return to Zork family (2026-09-03) dissolves the mystery: the other v1.1 pressing (disc 126092, a different KAO glass master - ring `X39220-1` against this disc's `CD06129-04`) carries the same version and PVD and byte-identical audio track lengths, but pads to 81,840 - three sectors less. Same content, different master, different pad; and the family's other masterings (Original 74,092; v1.2 at 81,028 and 71,158 data sectors) show the data-track length floating freely against the filesystem in every generation. The oversized pad is inert premaster slack whose exact length is set per glass master, not a revision artifact, not protection, and not recoverable intent. (The 1997 pressing's mastering used exactly the canonical 152.)
+- **The v1.1 filesystem keeps the original's birth date.** Redump's PVD capture shows this disc and the Original pressing (disc 112221) share the exact creation timestamp 1993-07-22 21:04:19 -08:00, though the Original's data track is far smaller (74,092 sectors): the v1.1 volume was rebuilt from the original mastering project with its creation date carried over, while the content grew around it.
 - **The pregap before track 2 is 150 sectors of digital silence**, all zero bytes. In an uncorrected dump its tail holds the first 2,580 bytes of track 2's audio, pulled back by the drive's read offset; the correction restores them.
 - **No pregaps between audio tracks.** The silence between songs is inside the audio instead: the last 75 sectors (one second) of track 2 are zero and track 3 sounds from its first sector. The 1997 pressing does the opposite, with a 150-sector zero pregap before every track.
 
@@ -42,5 +43,7 @@ The same disc, revised twice over. Against [the 1997 disc](../zork-legacy-1997-r
 ## Open items for this disc
 
 None.
+
+Resolved 2026-09-03: the 61-second post-gap explained by cross-pressing comparison; see above.
 
 Resolved 2026-08-29: Redump verification, all 26 tracks; see above.
