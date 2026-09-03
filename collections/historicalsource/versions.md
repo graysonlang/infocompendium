@@ -1,8 +1,13 @@
 # The historicalsource repositories (2019) - title versions
 
 In April 2019 the leaked Infocom source code was published on GitHub under the `historicalsource` account, one repository per game.
-Treated as a compilation, it is the largest one there is: 49 repositories contain ZIL source, and 46 of them also carry compiled Z-machine story files - 70 distinct builds, enumerated below the same way as the disc tables.
+Treated as a compilation, it is the largest one there is: 49 repositories contain ZIL source, and 46 of them also carry compiled Z-machine story files - 70 distinct builds at the current HEAD, plus 19 more that exist only in earlier commits (see the git-history section below), enumerated the same way as the disc tables.
 Captured 2026-09-03 by walking each repository's git tree through the GitHub API and reading each story file's z-code header; [checksums.txt](checksums.txt) records every file's git blob SHA, MD5 and SHA-1 so the exact bytes remain identifiable.
+
+One thing this table does not claim: that a repository's compiled files correspond to its source.
+The repositories' own READMEs state the binaries "were there as of final spin-down of the Infocom Drive" - leftovers archived beside the source, not builds of it - and the data below proves the point where it can: `witness` pairs one source tree with six builds spanning sixteen months, and `checkpoint` pairs Checkpoint source with a Journey binary.
+With no surviving official compiler, source-to-build correspondence is unverifiable even where it is probable (the lone builds in `zork1` and `zorkzero` fit their source trees well).
+The commit history settles how the binaries got there: they arrive in the initial source-import commits of 2019-04-14 (they are drive contents, not later additions), and the only archivist post-processing is the 2019-04-16 pair of reorganization commits, "Moved compilations to subdirectory" (creating `COMPILED/`) and "Extensions on Z-Machine Fixed" (adding the modern `.z3`/`.z5`-extension copies of the drive's `.zip` files).
 
 Column notes:
 
@@ -105,6 +110,38 @@ Twenty-one of the seventy builds are z-code-identical to a disc build, including
 - **Two different "release 8" Suspendeds.** `suspended.z3` is r8.830521 and `mac.z3` is r8.840521 - same release number, serials a year apart; only the later one matches the discs. The serial, not the release, is the discriminator.
 - **`wishbringer` carries an experimental build** (`nj2.z3`) whose release field reads 32933 with serial 880609 - an EZIP-era test binary that `txd` cannot disassemble.
 - **Seastalker is the most-built game in the leak**: seven distinct builds, including platform-targeted Atari, TRS-80 CoCo and Tandy variants that the compilations never carried.
+
+## A second layer in the git histories
+
+The repositories were not imported as single snapshots.
+For most classic games the archivist committed an earlier drive state first - the commit is labeled "Revision NN (Original Source)" where NN is a shipped release - and then committed "Final Revision", the drive's shutdown state, on top; `stationfall` even carries "Beta Version" and "Gamma Version" layers, and `beyondzork` a "Revision 57" between its two.
+The HEAD trees enumerated above therefore hide a second census: 19 builds that exist only in earlier commits, recoverable with `git cat-file` at the commit shown.
+
+| Repository | Commit | Import label | File | Z-machine | Release | Built-in hints | Same z-code as |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `beyondzork` | `86b36fa` | Revision 57 | `z.zip` | v5 | r57.871221 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `cutthroats` | `47fbe00` | Revision 23 (Original Source) | `toa.zip` | v3 | r23.840809 | - | MP Mac; MP PC |
+| `enchanter` | `826abeb` | Revision 24 (Original Source) | `enchanter.zip` | v3 | r24.851118 | - | - |
+| `hitchhikersguide` | `c55088a` | Revision 58 (Original Source) | `s4.zip` | v3 | r58.851002 | - | - |
+| `lurkinghorror` | `7edaa11` | Revision 203 (Original Source) | `h1.zip` | v3 | r203.870506 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `moonmist` | `7dcf75b` | Revision 9 (Original Source) | `m5.zip` | v3 | r9.861022 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `nordandbert` | `1f51010` | Revision 19 (Original Source) | `j3.zip` | v4 | r19.870722 | yes | MP Mac; MP PC |
+| `planetfall` | `281bd34` | Revision 37 (Original Source) | `planetfall.zip` | v3 | r37.851003 | - | LTOI1 PC; MP PC |
+| `seastalker` | `18809a2` | Revision 15 (Original Source) | `atari.zip` | v3 | r15.840522 | - | MP Mac |
+| `seastalker` | `18809a2` | Revision 15 (Original Source) | `j1.zip` | v3 | r15.840501 | - | - |
+| `sorcerer` | `daad2bd` | Revision 13 (Original Source) | `sorcerer.zip` | v3 | r13.851021 | - | - |
+| `spellbreaker` | `3a4d17d` | Revision 63 (Original Source) | `z6.zip` | v3 | r63.850916 | - | - |
+| `stationfall` | `24f2323` | Gamma Version | `s6.zip` | v3 | r87.870326 | - | - |
+| `stationfall` | `9c713dd` | Beta Version | `s6.zip` | v3 | r63.870218 | - | - |
+| `suspect` | `1c8c4fc` | Revision 14 (Original Source) | `m3.zip` | v3 | r14.841005 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `trinity` | `54d8efc` | Revision 12 (Original Source) | `tr.zip` | v4 | r12.860926 | - | MP Mac; MP PC |
+| `zork1` | `34cc828` | Revision 88 (Original Source) | `zork1.zip` | v3 | r88.840726 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `zork2` | `d26f157` | Revision 48 (Original Source) | `zork2.zip` | v3 | r48.840904 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+| `zork3` | `1dfe76c` | Revision 17 (Original Source) | `zork3.zip` | v3 | r17.840727 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
+
+Twelve of the nineteen are the exact shipped masters, and they close gaps the HEAD census left open: the shipped Zork I/II/III (r88/r48/r17), Beyond Zork r57, The Lurking Horror r203, Moonmist r9, Nord and Bert r19, Planetfall r37, Suspect r14, Trinity r12 and Cutthroats r23 - each z-code-identical to the disc copies - plus Seastalker's `atari.zip` in the "Revision 15" layer, which is actually the Mac disc build r15.840522 (the platform labels shifted between layers).
+The other seven never shipped on the cataloged discs at all: Enchanter r24.851118, Hitchhiker's r58.851002, Sorcerer r13.851021, Spellbreaker's first release r63.850916, a second Seastalker r15 (serial 840501), and Stationfall's beta (r63.870218) and gamma (r87.870326).
+So in these repositories the layer where source and binary do plausibly correspond is the "Revision NN (Original Source)" commit - shipped source paired with its shipped build - while HEAD pairs the final source state with whatever binaries the drive held last.
 
 ## Internal codenames
 
