@@ -5,8 +5,8 @@ No disc content lives in this folder - only identification records, listings, no
 
 Unlike the hybrid compilations, this is a plain ISO 9660 disc (one Mode 1 track, no HFS side), so modern macOS mounts it by double-click.
 The catch is different: it is an **installer-based** disc.
-The five classic games are not present as files; they live inside `ZORKANTH.RED`, an Activision installer archive unpacked by the DOS `INSTALL.EXE`.
-See [notes.md](notes.md) for the format details.
+The six classic games are not present as loose files; they live inside `ZORKANTH.RED`, an Activision installer archive unpacked by the DOS `INSTALL.EXE`.
+See [notes.md](notes.md) for the container format and [versions.md](versions.md) for the exact builds inside it.
 
 ## Contents
 
@@ -15,6 +15,7 @@ See [notes.md](notes.md) for the format details.
 | `disc-info.txt` | Captured `drutil` and `diskutil` output: TOC, block count, slice layout |
 | `zork-anthology-1994.ls.txt` | Recursive listing of the mounted ISO volume |
 | `notes.md` | Per-disc findings |
+| `versions.md` | Release/serial table for the games inside `ZORKANTH.RED` |
 | `checksums.txt` | Reference hashes for a full dump, checked against Redump |
 
 ## Archiving your own copy

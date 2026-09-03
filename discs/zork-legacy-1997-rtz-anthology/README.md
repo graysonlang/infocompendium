@@ -13,6 +13,7 @@ macOS mounts both sides - the data volume, and the audio tracks as a `cddafs` "A
 | `disc-info.txt` | Captured `drutil` and `diskutil` output: TOC with all 26 tracks, block count, slice layout, and the audio tracks as `cddafs` presents them |
 | `zork-legacy-1997-rtz-anthology.ls.txt` | Recursive listing of the mounted data volume |
 | `notes.md` | Per-disc findings |
+| `versions.md` | Release/serial table for the anthology games and the unadvertised story files |
 | `checksums.txt` | Reference hashes for a full dump and for each track, checked against Redump |
 
 ## Archiving your own copy

@@ -23,6 +23,7 @@ There is no separate PC filesystem tree to merge - extracting the HFS volume onc
 
 Mac and PC builds diverge for Sherlock, Seastalker, Wishbringer, Leather Goddesses, Planetfall, Arthur, Journey and Zork Zero.
 Do not merge the two trees by filename; keep them as siblings.
+The full per-title release table for both platforms is in [versions.md](versions.md).
 
 ## Zork Zero: how the changing border frames are built
 

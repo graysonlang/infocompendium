@@ -2,6 +2,7 @@
 
 Release and serial numbers read from the z-code headers of every story file on the disc, both platforms.
 Generated from the extracted contents; see [notes.md](notes.md) for how the disc was read.
+Where the two platforms ship different Z-machine versions, the cell reads Mac / PC.
 
 | Title | Z-machine | Mac release | PC release | Same build |
 | --- | --- | --- | --- | --- |
@@ -9,11 +10,11 @@ Generated from the extracted contents; see [notes.md](notes.md) for how the disc
 | Beyond Zork | v5 | r57.871221 | r57.871221 | yes |
 | Deadline | v3 | r27.831005 | r27.831005 | yes |
 | Enchanter | v3 | r29.860820 | r29.860820 | yes |
-| The Hitchhiker's Guide to the Galaxy | v3 | r59.851108 | r31.871119 | **no** |
+| The Hitchhiker's Guide to the Galaxy | v3 / v5 | r59.851108 | r31.871119 | **no** |
 | Infidel | v3 | r22.830916 | r22.830916 | yes |
 | The Lurking Horror | v3 | r203.870506 | r203.870506 | yes |
 | Moonmist | v3 | r9.861022 | r9.861022 | yes |
-| Planetfall | v5 | r10.880531 | r37.851003 | **no** |
+| Planetfall | v5 / v3 | r10.880531 | r37.851003 | **no** |
 | Sorcerer | v3 | r15.851108 | r15.851108 | yes |
 | Spellbreaker | v3 | r87.860904 | r87.860904 | yes |
 | Starcross | v3 | r17.821021 | r17.821021 | yes |

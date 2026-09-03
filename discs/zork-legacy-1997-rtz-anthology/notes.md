@@ -29,6 +29,7 @@ The 150-sector pregap before track 2 and the 150-sector pregaps before each of t
 
 ## The anthology games
 
+The per-title release table, including the unadvertised story files, is in [versions.md](versions.md).
 Unlike the 1994 disc, where the games hide inside `ZORKANTH.RED`, here they sit as loose files under `DATA/`:
 
 - **Zork I, II, III** in `DATA/ZORK1..3/`: interpreter `_ZORKn.COM` at 11,402 bytes (Doherty's 3M2), `NNANSI.COM`, a `DATA/ZORKn.DAT` padded to 92,160 bytes, and a `SAVE/ZORKn.DAT`. Every file is dated 1995-05-31 except the saves.
