@@ -59,9 +59,30 @@ Analyzed with `scripts/picdir.py` against this disc's picture libraries, `txd` f
 - `PCDEMOS/PLANETFALL/planetfall.avi` (4.2 MB) is likely promotional footage for the cancelled *Planetfall: The Search for Floyd*.
 - `VERYLOST/` on both sides holds aborted game proposals (Amnesia, Boston, Creation, LG2 ideas, Oz, Thriller, Trek, Truffles) and three issues of the internal *Infodope* newsletter. The Mac copy of `MISC/` has one file the PC copy lacks.
 
+## Inside this disc's DATA.Z: the PC tree with its history intact
+
+The root `DATA.Z` (10,587,923 bytes, an InstallShield 3 archive readable with `scripts/isz.py`) is what the Windows `SETUP.EXE` installs from: 215 members that are the entire `PC/` tree except `README.TXT`, byte-identical where compared (every story file, spot-checked saves) - with two exceptions that make the archive more interesting than the tree it copies.
+
+**The archive preserves the timestamps the mastering destroyed.**
+The disc stamps nearly every file 1996-06-22 (or 19 June on the Mac side); inside `DATA.Z` the members keep their working dates, a whole stratigraphy:
+
+- The bulk of the PC set is mass-stamped 1995-05-31 12:00 - the assembly date of the PC file set, and the date the [Zork Legacy Collection disc](../zork-legacy-1997-rtz-anthology/notes.md) still shows on its loose copies of these files.
+- The V6 games keep original dates that match their builds: `ARTHUR.ZIP` is dated 1989-07-14 (its serial is 890714) and `JOURNEY.ZIP` 1989-07-06 (serial 890706), the `.CG1` hi-res art is from July 1989, and the `.EG1`/`.EG2` EGA conversions from 22-27 October 1992, the Lost Treasures preparation window (matching the 1992-10-29 creation date on the Mac `ARTHUR` file).
+- Leather Goddesses keeps 1986 dates on `_LEATHER.COM` (1986-07-30, the 3N interpreter) and `LEATHER.SCR` (1986-05-19, the boss-key screen).
+- `JOURNEY.MG1` and `LHSOUND.ZIP` are both stamped 1996-06-13 22:56: the MCGA art and the Lurking Horror sound package were added together, late, nine days before mastering.
+- **The seventeen save files were made in one 36-minute sitting**: 1996-06-11, Ballyhoo at 15:47 through Zork III at 16:23. Someone at Activision spent that afternoon opening seventeen games and saving, and the disc has carried the session ever since (the Legacy disc's loose saves show the same date; only the archive keeps the minutes).
+
+**The Windows installer ships a suppressed draft of the Very Lost Treasures essay.**
+`VERYLOST\ABOUT.TXT` inside the archive is 5,432 bytes, dated 1996-06-19 20:35 - a longer, earlier draft of the disc's 4,210-byte `PC/VERYLOST/ABOUT.TXT`, and the only member whose content differs from the tree.
+The cut material describes content that is on neither the disc nor the archive: recovered **mail messages** from the old Infocom UNIX server ("thoughts on Activision's acquisition of Infocom... The politicking would have made many people proud"), and a set of 1996 Interactive Fiction Competition files (`SPAG.FAQ`, `CONTEST1.TXT`, `CONTEST2.TXT`, `INTRVIEW.TXT`, with a deadline of "Sept. 31, 1996").
+So the Very Lost Treasures was planned to include the server's mail and the IF Competition documents, both were pulled, the essay was edited to match for the disc - and the unedited draft survived inside the installer archive, where every Windows installation of Masterpieces received it.
+`DATA.Z` itself is dated 20 June on the disc, but `LEATHER\LEATHER.DAT` inside it is stamped 1996-06-20 21:45, so the archive was built on the evening of the 20th: after the draft, before the edit reached it.
+
 ## Open items for this disc
 
 None.
+
+Resolved 2026-09-03: this disc's `DATA.Z` enumerated; see the section above.
 
 Resolved 2026-08-29: creation dates on extracted files.
 `scripts/hfscopy.py` now restores them from the MacBinary header via `SetFile -d`.

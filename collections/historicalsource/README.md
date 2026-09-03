@@ -22,3 +22,9 @@ Enumerated 2026-09-03 without cloning:
 6. The walk repeats over each repository's earlier commits: most repos were imported as an older drive state first ("Revision NN (Original Source)") with the shutdown state ("Final Revision") committed on top, and 19 builds exist only in those earlier layers. They are listed with the commit that holds them.
 
 Because everything is keyed to git blob SHAs, any claim here can be re-verified against a clone with `git cat-file blob <sha>` even after the repositories move or rewrite history.
+
+## Known limits of this census
+
+- The history walk covered the 46 repositories that have builds at HEAD; the histories of the two source-only repositories (`arthur`, `wishbringer-gold`) and the 27 repositories over 20 MB that were size-filtered before the ZIL test were not walked. None is likely to hide a story file, but they were not checked.
+- The `.serial` files' exact role (the per-directory-counter reading in `versions.md`) is a hypothesis consistent with all 32 data points, not a documented fact.
+- Whether Masterpieces' `LURKING.CNV` converter reproduces the leak's r221 byte for byte has not been tested.
