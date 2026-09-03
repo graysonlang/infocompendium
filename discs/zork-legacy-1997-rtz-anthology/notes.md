@@ -44,7 +44,26 @@ Unlike the 1994 disc, where the games hide inside `ZORKANTH.RED`, here they sit 
 
 Its contents are the disc's `DATA/` tree again (the same 24 Zork I-III and Zork Zero files, byte-identical to the loose copies, plus `BZORK.EXE` and `NNANSI.COM`) **and a `DATA\` directory of 18 story files that is Masterpieces' `PC/DATA/` directory, byte for byte**, every one timestamped 1996-06-22 01:41, Masterpieces' mastering moment:
 
-Ballyhoo r97.851218, Beyond Zork r57.871221, Deadline r27.831005, Enchanter r29.860820, Infidel r22.830916, The Lurking Horror r203.870506, Moonmist r9.861022, Planetfall r37.851003, Sorcerer r15.851108, Spellbreaker r87.860904, Starcross r17.821021, Stationfall r107.870430, Suspect r14.841005, Suspended r8.840521, The Witness r22.840924, Zork I r88.840726, Zork II r48.840904, Zork III r17.840727.
+| File | Title | Release | On the box |
+| --- | --- | --- | --- |
+| `BALLYHOO.DAT` | Ballyhoo | r97.851218 | - |
+| `BEYONDZO.DAT` | Beyond Zork | r57.871221 | yes |
+| `DEADLINE.DAT` | Deadline | r27.831005 | - |
+| `ENCHANTE.DAT` | Enchanter | r29.860820 | - |
+| `INFIDEL.DAT` | Infidel | r22.830916 | - |
+| `LURKING.DAT` | The Lurking Horror | r203.870506 | - |
+| `MOONMIST.DAT` | Moonmist | r9.861022 | - |
+| `PLANETFA.DAT` | Planetfall | r37.851003 | - |
+| `SORCERER.DAT` | Sorcerer | r15.851108 | - |
+| `SPELLBRE.DAT` | Spellbreaker | r87.860904 | - |
+| `STARCROS.DAT` | Starcross | r17.821021 | - |
+| `STATIONF.DAT` | Stationfall | r107.870430 | - |
+| `SUSPECT.DAT` | Suspect | r14.841005 | - |
+| `SUSPEND.DAT` | Suspended | r8.840521 | - |
+| `WITNESS.DAT` | The Witness | r22.840924 | - |
+| `ZORK1.DAT` | Zork I | r88.840726 | yes |
+| `ZORK2.DAT` | Zork II | r48.840904 | yes |
+| `ZORK3.DAT` | Zork III | r17.840727 | yes |
 
 So a Zork Legacy Collection owner who runs the Windows installer receives the story files for fourteen Infocom games the product never mentions - no interpreters or documentation for them, just the padded `.DAT` files, playable in any Z-machine interpreter.
 The simplest explanation is that the 1997 installer was built from Masterpieces' PC directory wholesale and nobody pruned the shared `DATA/` folder.
