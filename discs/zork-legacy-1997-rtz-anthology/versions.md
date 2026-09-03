@@ -5,17 +5,20 @@ Return to Zork itself is not a Z-machine game (it runs on Activision's MADE engi
 
 ## The advertised anthology games
 
-| Title | Z-machine | Release | Where on disc |
-| --- | --- | --- | --- |
-| Zork I | v3 | r88.840726 | `DATA/ZORK1/`, and again inside `DATA.Z` |
-| Zork II | v3 | r48.840904 | `DATA/ZORK2/`, and again inside `DATA.Z` |
-| Zork III | v3 | r17.840727 | `DATA/ZORK3/`, and again inside `DATA.Z` |
-| Zork Zero | v6 | r393.890714 | `DATA/ZORKZERO/`, and again inside `DATA.Z` |
-| Beyond Zork | v5 | r57.871221 | inside `DATA.Z` only |
+"Built-in hints" marks builds whose z-code contains the in-game hint system, determined from the decoded game text; only Zork Zero's r393 carries one.
+
+| Title | Z-machine | Release | Where on disc | Built-in hints |
+| --- | --- | --- | --- | --- |
+| Zork I | v3 | r88.840726 | `DATA/ZORK1/`, and again inside `DATA.Z` | - |
+| Zork II | v3 | r48.840904 | `DATA/ZORK2/`, and again inside `DATA.Z` | - |
+| Zork III | v3 | r17.840727 | `DATA/ZORK3/`, and again inside `DATA.Z` | - |
+| Zork Zero | v6 | r393.890714 | `DATA/ZORKZERO/`, and again inside `DATA.Z` | yes |
+| Beyond Zork | v5 | r57.871221 | inside `DATA.Z` only | - |
 
 ## The unadvertised story files inside DATA.Z
 
-The Windows installer archive `DATA.Z` also carries a `DATA\` directory that is Masterpieces' shared `PC/DATA/` byte for byte - story files for fourteen games the product never mentions, with no interpreters or documentation (see [notes.md](notes.md)):
+The Windows installer archive `DATA.Z` also carries a `DATA\` directory that is Masterpieces' shared `PC/DATA/` byte for byte - story files for fourteen games the product never mentions, with no interpreters or documentation (see [notes.md](notes.md)).
+None of the fourteen has built-in hints; they are all plain PC builds from 1992:
 
 | Title | Z-machine | Release |
 | --- | --- | --- |
