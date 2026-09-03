@@ -26,6 +26,10 @@ A hybrid DVD-Video/data disc.
 
 ## Open items for this disc
 
-- Disc 1 of the set is not yet imaged from physical media. The IA item above carries a reference ISO for it (8,153,104,384 bytes, md5 `50ad27c56bcca22a9a86aaaa202c11dc`, sha1 `a9a68e986d136d2ec378f3bfbb3fb61562265c6b`) to verify any future dump against.
+None.
+
+Resolved 2026-09-03: disc 1 of the set.
+An existing rip of disc 1 hashes byte-identical to the IA item's disc 1 ISO with no padding difference (see [checksums.txt](checksums.txt)).
+Disc 1 is the documentary DVD proper - DVD-Video only, no data side - so disc 2 remains the set's only carrier of bonus material.
 
 Resolved 2026-09-03: the `infocom-ads` comparison; see the findings above.

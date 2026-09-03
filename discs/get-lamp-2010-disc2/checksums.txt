@@ -20,7 +20,11 @@ sha1   a41d0d646515cc0b3b40dbe9ba3c509fd9bcf0d7  GETLAMP.cdr
 # md5    39eb095aa3fc79159be84bd5601f66b3  (IA's published md5)
 # sha1   963247abf6a068357c409b81ca17d7d7b71e1f10  (IA's published sha1)
 #
-# IA also publishes disc 1 of the set, for verifying a future dump:
-# "GET LAMP The Text Adventure Documentary Disc 1.ISO", 8,153,104,384 bytes
-# md5    50ad27c56bcca22a9a86aaaa202c11dc
-# sha1   a9a68e986d136d2ec378f3bfbb3fb61562265c6b
+# Disc 1 of the set (verified 2026-09-03): the owner's existing rip is
+# byte-identical to IA's "GET LAMP The Text Adventure Documentary Disc
+# 1.ISO", with no padding difference this time.
+#
+# Disc 1 image - 8,153,104,384 bytes (3,981,008 x 2048)
+# crc32  65b30691
+# md5    50ad27c56bcca22a9a86aaaa202c11dc   (= IA's published md5)
+# sha1   a9a68e986d136d2ec378f3bfbb3fb61562265c6b   (= IA's published sha1)
