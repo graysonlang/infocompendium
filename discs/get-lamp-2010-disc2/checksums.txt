@@ -11,3 +11,16 @@
 crc32  20c9a704                                  GETLAMP.cdr
 md5    a0e95dc67fc72ea21abab33c0eb6aa37          GETLAMP.cdr
 sha1   a41d0d646515cc0b3b40dbe9ba3c509fd9bcf0d7  GETLAMP.cdr
+
+# Cross-reference (established 2026-09-03): the Internet Archive item
+# GET_LAMP_The_Text_Adventure_Documentary publishes this disc as
+# "GET LAMP The Text Adventure Documentary Disc 2.ISO", 7,617,249,280
+# bytes - this image plus 8,192 trailing zero bytes (4 empty sectors).
+# GETLAMP.cdr + 4 zero sectors hashes byte-identical to it:
+# md5    39eb095aa3fc79159be84bd5601f66b3  (IA's published md5)
+# sha1   963247abf6a068357c409b81ca17d7d7b71e1f10  (IA's published sha1)
+#
+# IA also publishes disc 1 of the set, for verifying a future dump:
+# "GET LAMP The Text Adventure Documentary Disc 1.ISO", 8,153,104,384 bytes
+# md5    50ad27c56bcca22a9a86aaaa202c11dc
+# sha1   a9a68e986d136d2ec378f3bfbb3fb61562265c6b

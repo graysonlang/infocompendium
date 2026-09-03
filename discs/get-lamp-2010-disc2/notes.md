@@ -21,8 +21,11 @@ A hybrid DVD-Video/data disc.
 
 - The `photos/infocom-ads/` catalog scans overlap this repo's mission directly: five year-complete Infocom catalogs (1983-1987) in uncompressed BMP, likely scanned for the documentary and not all mirrored elsewhere.
 - Redump has no Get Lamp entry (checked 2026-08-29), so [checksums.txt](checksums.txt) stands as an independent reference for this pressing until one exists.
+- **The image verifies against the Internet Archive's published copy.** The IA item `GET_LAMP_The_Text_Adventure_Documentary` carries both discs as ISO+MDS rips, and this rip plus 8,192 trailing zero bytes (four empty sectors, a rip-length convention difference) hashes byte-identical to IA's disc 2 ISO (md5 `39eb095aa3fc79159be84bd5601f66b3`). Established 2026-09-03; the closest thing to a Redump match this disc currently has.
+- **The `infocom-ads` scans exist publicly only inside that ISO.** The IF Archive's `infocom/adverts/` directory (checked 2026-09-03) is a different, smaller corpus - other scans of other ads, JPEG/PNG/PDF, no overlap with this disc's 38 BMP files by name or content type. Nobody has published the disc's ad and catalog scans as individual files; anyone wanting the 1983-1987 catalog BMPs must extract them from a disc image.
 
 ## Open items for this disc
 
-- Compare the `infocom-ads` scans against the IF Archive and the Internet Archive's Get Lamp uploads to establish whether any are unique to the disc.
-- Disc 1 of the set is not yet imaged.
+- Disc 1 of the set is not yet imaged from physical media. The IA item above carries a reference ISO for it (8,153,104,384 bytes, md5 `50ad27c56bcca22a9a86aaaa202c11dc`, sha1 `a9a68e986d136d2ec378f3bfbb3fb61562265c6b`) to verify any future dump against.
+
+Resolved 2026-09-03: the `infocom-ads` comparison; see the findings above.

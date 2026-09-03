@@ -25,6 +25,8 @@ Because everything is keyed to git blob SHAs, any claim here can be re-verified 
 
 ## Known limits of this census
 
-- The history walk covered the 46 repositories that have builds at HEAD; the histories of the two source-only repositories (`arthur`, `wishbringer-gold`) and the 27 repositories over 20 MB that were size-filtered before the ZIL test were not walked. None is likely to hide a story file, but they were not checked.
 - The `.serial` files' exact role (the per-directory-counter reading in `versions.md`) is a hypothesis consistent with all 32 data points, not a documented fact.
-- Whether Masterpieces' `LURKING.CNV` converter reproduces the leak's r221 byte for byte has not been tested.
+
+Resolved 2026-09-03: the completeness gaps are closed. The repositories over 20 MB contain no ZIL (checked; the DMCA-blocked `mk2` is not an Infocom repository), and the source-only repositories `arthur` ("May 16 1989 Edition") and `wishbringer-gold` are single-import histories with no hidden builds.
+
+Resolved 2026-09-03: `LURKING.CNV` verified - applying Masterpieces' XOR patch to its r203 reproduces this collection's r221 byte for byte; see `versions.md`.
