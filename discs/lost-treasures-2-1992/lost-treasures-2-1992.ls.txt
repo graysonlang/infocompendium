@@ -1,0 +1,195 @@
+total 8
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 DOS
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 MAC
+
+.//DOS:
+total 72
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 AMFV
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 ARTHUR
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 BORDERZO
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 BUREAUCR
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 CUTTHROA
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 HOLLYWOO
+-rwxr-xr-x  1 grayson  staff  4205 Oct 22 10:35:46 1992 INFOCOM2.BAT
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 JOURNEY
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 NORDANDB
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 PLUNDERE
+-rwxr-xr-x  1 grayson  staff    14 Aug 29 23:31:56 1988 REPLY.COM
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 SEASTALK
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 SHERLOCK
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 SHOGUN
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 TRINITY
+drwxr-xr-x  1 grayson  staff  2048 Nov  6 06:12:32 1992 WISHBRIN
+
+.//DOS/AMFV:
+total 552
+-rwxr-xr-x  1 grayson  staff   12640 Aug 16 02:57:08 1985 AMFV.COM
+-rwxr-xr-x  1 grayson  staff  262018 Aug 14 07:26:52 1985 AMFV.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/ARTHUR:
+total 2352
+-rwxr-xr-x  1 grayson  staff  209359 Jul 13 11:50:16 1989 ARTHUR.CG1
+-rwxr-xr-x  1 grayson  staff  223522 Oct 22 04:55:48 1992 ARTHUR.EG1
+-rwxr-xr-x  1 grayson  staff  154137 Oct 22 04:59:32 1992 ARTHUR.EG2
+-rwxr-xr-x  1 grayson  staff   47528 Jul 14 09:21:38 1989 ARTHUR.EXE
+-rwxr-xr-x  1 grayson  staff  292279 Jul 14 04:32:56 1989 ARTHUR.MG1
+-rwxr-xr-x  1 grayson  staff  269312 Jul 14 09:16:28 1989 ARTHUR.ZIP
+
+.//DOS/BORDERZO:
+total 432
+-rwxr-xr-x  1 grayson  staff  178373 Oct  8 08:14:54 1987 BORDERZO.DAT
+-rwxr-xr-x  1 grayson  staff   33946 Jun 10 08:18:20 1988 BORDERZO.EXE
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/BUREAUCR:
+total 516
+-rwxr-xr-x  1 grayson  staff   12688 Dec 31 17:24:48 1979 BUREAUCR.COM
+-rwxr-xr-x  1 grayson  staff  243341 Dec 31 19:29:30 1979 BUREAUCR.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 04:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 14:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 05:02:30 1984 YES.COM
+
+.//DOS/CUTTHROA:
+total 256
+-rwxr-xr-x  1 grayson  staff   11402 Dec 31 16:54:56 1979 CUTTHROA.COM
+-rwxr-xr-x  1 grayson  staff  112640 Jun  8 04:11:16 1992 CUTTHROA.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/HOLLYWOO:
+total 252
+-rwxr-xr-x  1 grayson  staff   12004 Dec 15 18:02:36 1986 HOLLYWOO.COM
+-rwxr-xr-x  1 grayson  staff  109651 Dec 15 16:43:44 1986 HOLLYWOO.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/JOURNEY:
+total 3340
+-rwxr-xr-x  1 grayson  staff  297105 Oct 27 09:30:14 1992 JOURNEY.CG1
+-rwxr-xr-x  1 grayson  staff  360500 Oct 27 09:30:16 1992 JOURNEY.EG1
+-rwxr-xr-x  1 grayson  staff  249241 Oct 27 09:30:16 1992 JOURNEY.EG2
+-rwxr-xr-x  1 grayson  staff   47442 Oct 27 09:30:16 1992 JOURNEY.EXE
+-rwxr-xr-x  1 grayson  staff  465606 Oct 27 09:30:16 1992 JOURNEY.MG1
+-rwxr-xr-x  1 grayson  staff  282624 Jul  6 12:00:32 1989 JOURNEY.ZIP
+
+.//DOS/NORDANDB:
+total 376
+-rwxr-xr-x  1 grayson  staff   12682 Dec 31 16:01:16 1979 NORDANDB.COM
+-rwxr-xr-x  1 grayson  staff  170285 Dec 31 16:30:38 1979 NORDANDB.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/PLUNDERE:
+total 288
+-rwxr-xr-x  1 grayson  staff   12004 Dec 31 16:06:58 1979 PLUNDERE.COM
+-rwxr-xr-x  1 grayson  staff  128963 Dec 31 16:17:12 1979 PLUNDERE.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/SEASTALK:
+total 268
+-rwxr-xr-x  1 grayson  staff   11394 Dec 31 17:18:18 1979 SEASTALK.COM
+-rwxr-xr-x  1 grayson  staff  117763 Dec 31 17:02:12 1979 SEASTALK.DAT
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/SHERLOCK:
+total 452
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff  188445 Dec 15 06:19:20 1987 SHERLOCK.DAT
+-rwxr-xr-x  1 grayson  staff   33946 Jun 10 07:41:16 1988 SHERLOCK.EXE
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/SHOGUN:
+total 2020
+-rwxr-xr-x  1 grayson  staff  141450 Jul  6 08:34:14 1989 SHOGUN.CG1
+-rwxr-xr-x  1 grayson  staff  278669 Jun 28 04:47:58 1989 SHOGUN.EG1
+-rwxr-xr-x  1 grayson  staff   47402 Jul 10 10:21:10 1989 SHOGUN.EXE
+-rwxr-xr-x  1 grayson  staff  213425 Jul  6 08:21:06 1989 SHOGUN.MG1
+-rwxr-xr-x  1 grayson  staff  345088 Jul  6 07:55:28 1989 SHOGUN.ZIP
+
+.//DOS/TRINITY:
+total 552
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff   12682 May 18 06:12:08 1988 TRINITY.COM
+-rwxr-xr-x  1 grayson  staff  262065 Sep 29 21:58:48 1986 TRINITY.DAT
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//DOS/WISHBRIN:
+total 288
+-rwxr-xr-x  1 grayson  staff    1584 Jun 28 03:53:14 1985 SETUP.EXE
+-rwxr-xr-x  1 grayson  staff       3 May 12 13:25:34 1992 SETUP.INF
+-rwxr-xr-x  1 grayson  staff   11402 Dec 31 16:54:56 1979 WISHBRIN.COM
+-rwxr-xr-x  1 grayson  staff  128905 Dec 31 16:29:38 1979 WISHBRIN.DAT
+-rwxr-xr-x  1 grayson  staff      93 Nov 30 04:02:30 1984 YES.COM
+
+.//MAC:
+total 3748
+-rwxr-xr-x  1 grayson  staff  262144 Nov  4 02:26:24 1992 A MIND FOREVER VOYAGING
+drwxr-xr-x  1 grayson  staff    2048 Nov  6 06:12:32 1992 ARTHUR FOLDER
+-rwxr-xr-x  1 grayson  staff  178688 Oct 29 09:30:27 1992 BORDER ZONE
+-rwxr-xr-x  1 grayson  staff  243712 Apr 21 01:36:52 1992 BUREAUCRACY
+-rwxr-xr-x  1 grayson  staff  112640 Oct 30 08:17:00 1992 CUTTHROATS
+-rwxr-xr-x  1 grayson  staff  110080 Oct 30 08:16:44 1992 HOLLYWOOD HIJINX
+drwxr-xr-x  1 grayson  staff    2048 Nov  6 06:12:32 1992 JOURNEY FOLDER
+-rwxr-xr-x  1 grayson  staff  170496 Apr 21 01:22:03 1992 NORD AND BERT
+-rwxr-xr-x  1 grayson  staff  129024 Oct 29 08:28:31 1992 PLUNDERED HEARTS
+-rwxr-xr-x  1 grayson  staff  117760 Nov  4 02:29:56 1992 SEASTALKER
+-rwxr-xr-x  1 grayson  staff  190464 Oct 29 09:31:16 1992 SHERLOCK
+drwxr-xr-x  1 grayson  staff    2048 Nov  6 06:12:32 1992 SHOGUN FOLDER
+drwxr-xr-x  1 grayson  staff    2048 Nov  6 06:12:32 1992 SOUND
+-rwxr-xr-x  1 grayson  staff  262144 Oct 30 09:19:31 1992 TRINITY
+-rwxr-xr-x  1 grayson  staff  129024 Oct 30 07:17:39 1992 WISHBRINGER
+
+.//MAC/ARTHUR FOLDER:
+total 1844
+-rwxr-xr-x  1 grayson  staff       0 Oct 29 09:52:51 1992 ARTHUR
+-rwxr-xr-x  1 grayson  staff  328548 Jun  6 09:05:43 1989 CPIC.DATA
+-rwxr-xr-x  1 grayson  staff  341556 Jun  6 04:07:24 1989 PIC.DATA
+-rwxr-xr-x  1 grayson  staff  270848 Jun  6 03:34:36 1989 STORY.DATA
+
+.//MAC/JOURNEY FOLDER:
+total 2440
+-rwxr-xr-x  1 grayson  staff  493425 Mar 16 02:25:51 1989 CPIC.DATA
+-rwxr-xr-x  1 grayson  staff       0 Oct 29 09:52:30 1992 JOURNEY
+-rwxr-xr-x  1 grayson  staff  473730 Mar 16 07:41:51 1989 PIC.DATA
+-rwxr-xr-x  1 grayson  staff  279872 Mar 16 04:11:26 1989 STORY.DATA
+
+.//MAC/SHOGUN FOLDER:
+total 1452
+-rwxr-xr-x  1 grayson  staff  216598 Mar  8 05:52:32 1989 CPIC.DATA
+-rwxr-xr-x  1 grayson  staff  184118 Mar 13 13:05:08 1989 PIC.DATA
+-rwxr-xr-x  1 grayson  staff       0 Oct 29 09:52:04 1992 SHOGUN
+-rwxr-xr-x  1 grayson  staff  341416 Mar 14 04:00:10 1989 STORY.DATA
+
+.//MAC/SOUND:
+total 820
+-rwxr-xr-x  1 grayson  staff     32 Feb 10 10:04:31 1988 M11
+-rwxr-xr-x  1 grayson  staff     32 Feb 10 10:04:31 1988 M13
+-rwxr-xr-x  1 grayson  staff     32 Feb 10 10:04:31 1988 M14
+-rwxr-xr-x  1 grayson  staff     32 Feb 10 10:04:31 1988 M8
+-rwxr-xr-x  1 grayson  staff  25244 Feb  8 08:43:03 1988 S10
+-rwxr-xr-x  1 grayson  staff   7004 Feb  8 08:57:50 1988 S12
+-rwxr-xr-x  1 grayson  staff   9704 Feb  9 03:44:29 1988 S14
+-rwxr-xr-x  1 grayson  staff  48218 Feb  8 09:03:05 1988 S15
+-rwxr-xr-x  1 grayson  staff  49930 Feb  8 09:05:30 1988 S16
+-rwxr-xr-x  1 grayson  staff  25454 Feb  8 09:17:48 1988 S17
+-rwxr-xr-x  1 grayson  staff  33290 Feb  8 09:18:22 1988 S3
+-rwxr-xr-x  1 grayson  staff  38650 Feb  8 09:03:33 1988 S4
+-rwxr-xr-x  1 grayson  staff   6508 Feb  8 09:11:25 1988 S5
+-rwxr-xr-x  1 grayson  staff  53130 Feb  8 09:05:48 1988 S6
+-rwxr-xr-x  1 grayson  staff  19090 Feb  8 08:53:41 1988 S7
+-rwxr-xr-x  1 grayson  staff  25830 Feb 18 05:27:34 1988 S8
+-rwxr-xr-x  1 grayson  staff  56602 Feb  8 09:11:05 1988 S9

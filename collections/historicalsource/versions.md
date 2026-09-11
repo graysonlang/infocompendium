@@ -13,7 +13,7 @@ Column notes:
 
 - Most repositories carry each build twice (a `COMPILED/*.z*` copy and a `*.zip` twin, "ZIP" being Infocom's own name for Z-machine binaries); rows list every path that shares the one blob.
 - "Built-in hints" uses the same test as the disc tables: the in-game hint system's machinery in the decoded text, not the mere presence of a HINT verb. The one `?` is a build `txd` cannot disassemble.
-- "Same z-code as" marks builds byte-identical (up to the header-declared length) to a build on a cataloged disc: LTOI1 = [The Lost Treasures of Infocom (1992)](../../discs/lost-treasures-1-1992/versions.md), MP = [Masterpieces (1996)](../../discs/masterpieces-1996/versions.md), each split by platform side. A match against MP PC extends transitively to the [Zork Anthology (1994)](../../discs/zork-anthology-1994/versions.md) and [Zork Legacy Collection (1997)](../../discs/zork-legacy-1997-rtz-anthology/versions.md) copies of the anthology titles, which are the same bytes.
+- "Same z-code as" marks builds byte-identical (up to the header-declared length) to a build on a cataloged disc: LTOI1 = [The Lost Treasures of Infocom (1992)](../../discs/lost-treasures-1-1992/versions.md), LTOI2 = [volume II (1992)](../../discs/lost-treasures-2-1992/versions.md), MP = [Masterpieces (1996)](../../discs/masterpieces-1996/versions.md), each split by platform side. LTOI2's fourteen titles are byte-identical to Masterpieces' copies, so an MP match on those titles extends to LTOI2 implicitly; only Shogun, which Masterpieces lacks, is labeled LTOI2 directly. A match against MP PC extends transitively to the [Zork Anthology (1994)](../../discs/zork-anthology-1994/versions.md) and [Zork Legacy Collection (1997)](../../discs/zork-legacy-1997-rtz-anthology/versions.md) copies of the anthology titles, which are the same bytes.
 
 | Repository | Story file | Z-machine | Release | Built-in hints | Same z-code as |
 | --- | --- | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Column notes:
 | `seastalker` | `seastalker.z3`, `seastalker.zip` | v3 | r16.850515 | - | - |
 | `seastalker` | `tandy.z3`, `tandy.zip` | v3 | r15.840716 | - | - |
 | `sherlock` | `gamesound.zip` | v5 | r26.880127 | yes | MP Mac |
-| `shogun` | `a5.zip` | v6 | r322.890706 | yes | - |
+| `shogun` | `a5.zip` | v6 | r322.890706 | yes | LTOI2 PC |
 | `sorcerer` | `sorcerer.z3`, `sorcerer.zip` | v3 | r18.860904 | - | - |
 | `spellbreaker` | `z6.z3`, `z6.zip` | v3 | r87.860904 | - | LTOI1 Mac; LTOI1 PC; MP Mac; MP PC |
 | `starcross` | `starcross.z3`, `starcross.zip` | v3 | r18.830114 | - | - |
@@ -90,7 +90,8 @@ Column notes:
 
 ## What matches the discs
 
-Twenty-one of the seventy builds are z-code-identical to a disc build, including every Solid Gold repository: `hitchhikersguide-gold` is LTOI1's PC build, `planetfall-gold` is the Mac build on both hybrid discs, and `leathergoddesses-gold` is Masterpieces' Mac build.
+Twenty-two of the seventy builds are z-code-identical to a disc build, including every Solid Gold repository: `hitchhikersguide-gold` is LTOI1's PC build, `planetfall-gold` is the Mac build on both hybrid discs, and `leathergoddesses-gold` is Masterpieces' Mac build.
+`shogun` is byte-identical, full file, to the Lost Treasures II CD's `SHOGUN.ZIP` (verified 2026-09-11) - the leak's lone Shogun build is that disc's PC build, while the disc's Mac r292.890314 exists nowhere else.
 `zorkzero` holds r296.881019 - the Mac disc build; the PC side's r393 with its reworked border graphics is **not** in the leak, consistent with [the Masterpieces analysis](../../discs/masterpieces-1996/notes.md) that the leaked ZIL predates the r393 border rework.
 `journey` holds exactly Masterpieces' PC build (r83.890706), `sherlock` exactly its Mac sound build (r26.880127), and `seastalker`'s `reg.z3` is exactly Masterpieces' odd PC-only r16.850603 - the repositories settle where that disc's Seastalker split came from.
 

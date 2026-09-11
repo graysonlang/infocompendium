@@ -43,7 +43,7 @@ Where the two platforms ship different Z-machine versions, the cell reads Mac / 
 | Zork III | v3 | r17.840727 | r17.840727 | yes | - |
 | Zork Zero | v6 | r296.881019 | r393.890714 | **no** | yes |
 
-Thirty-three titles; The Hitchhiker's Guide to the Galaxy and Shogun are the catalog's absentees.
+Thirty-three titles; The Hitchhiker's Guide to the Galaxy and Shogun are the catalog's absentees - both survive on the Lost Treasures CDs ([volume 1](../lost-treasures-1-1992/versions.md) and [volume 2](../lost-treasures-2-1992/versions.md) respectively).
 Twenty-five ship as the identical build on both platforms; the eight splits run in both directions:
 
 - **Mac newer.** Planetfall and Leather Goddesses get their Solid Gold v5 builds on the Mac only, while the PC keeps the plain v3 releases - Planetfall's split carried over from [the 1992 LTOI CD](../lost-treasures-1-1992/versions.md); Leather Goddesses sat out LTOI volume 1, so its split has no 1992 precedent to compare. Mac Sherlock is r26.880127, the sound build that the shipped `MAC/SOUND/` files belong to; PC Sherlock is the older, soundless r21.871214.

@@ -1,0 +1,19 @@
+# The Lost Treasures of Infocom II CD (1992) - image checksums
+#
+# Dumped 2026-09-11 on a Pioneer BD-RW BDR-XS07U: one Mode 1 data track,
+# 6075 blocks, read raw at 2352 bytes/sector with an explicit count and
+# converted with scripts/raw2user.py (0 sector errors, EDC clean).
+#
+# The raw track hashes byte-identical to redump.org disc 105382
+# ("The Lost Treasures of Infocom II", edition "CD-ROM Version
+# (3 Bonus Titles)", write offset 0), so this dump is Redump-verified.
+
+# Raw track - 14,288,400 bytes (6,075 x 2352)
+crc32  6657aaf2                                  ltoi2-full-2352.bin
+md5    c938d59e07de5a95b9699108c1dc5d62          ltoi2-full-2352.bin
+sha1   8246cbc924a3923ea7fa745bcd58260c90cfac10  ltoi2-full-2352.bin
+
+# User data - 12,441,600 bytes (6,075 x 2048)
+crc32  58614133                                  ltoi2-data.iso
+md5    2f2406dd200f1e86cfb54f35f32c6afc          ltoi2-data.iso
+sha1   edc303eb545355d4cc5ea24f249e4dfa2740b523  ltoi2-data.iso

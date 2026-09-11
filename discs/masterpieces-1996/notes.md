@@ -76,7 +76,7 @@ The disc stamps nearly every file 1996-06-22 (or 19 June on the Mac side); insid
 - The bulk of the PC set is mass-stamped 1995-05-31 12:00 - the assembly date of the PC file set, and the date the [Zork Legacy Collection disc](../zork-legacy-1997-rtz-anthology/notes.md) still shows on its loose copies of these files.
 - The V6 games keep original dates that match their builds: `ARTHUR.ZIP` is dated 1989-07-14 (its serial is 890714) and `JOURNEY.ZIP` 1989-07-06 (serial 890706), the `.CG1` hi-res art is from July 1989, and the `.EG1`/`.EG2` EGA conversions from 22-27 October 1992, the Lost Treasures preparation window (matching the 1992-10-29 creation date on the Mac `ARTHUR` file).
 - Leather Goddesses keeps 1986 dates on `_LEATHER.COM` (1986-07-30, the 3N interpreter) and `LEATHER.SCR` (1986-05-19, the boss-key screen).
-- `JOURNEY.MG1` and `LHSOUND.ZIP` are both stamped 1996-06-13 22:56: the MCGA art and the Lurking Horror sound package were added together, late, nine days before mastering.
+- `JOURNEY.MG1` and `LHSOUND.ZIP` are both stamped 1996-06-13 22:56: both were added to the tree late, nine days before mastering. The MCGA art is not new, though - it is byte-identical to the 1992-dated copy on [the Lost Treasures II CD](../lost-treasures-2-1992/notes.md); only the sound package is genuinely new material.
 - **The seventeen save files were made in one 36-minute sitting**: 1996-06-11, Ballyhoo at 15:47 through Zork III at 16:23. Someone at Activision spent that afternoon opening seventeen games and saving, and the disc has carried the session ever since (the Legacy disc's loose saves show the same date; only the archive keeps the minutes).
 
 **The Windows installer ships a suppressed draft of the Very Lost Treasures essay.**
