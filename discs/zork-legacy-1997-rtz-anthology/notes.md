@@ -33,7 +33,7 @@ The per-title release table, including the unadvertised story files, is in [vers
 Unlike the 1994 disc, where the games hide inside `ZORKANTH.RED`, here they sit as loose files under `DATA/`:
 
 - **Zork I, II, III** in `DATA/ZORK1..3/`: interpreter `_ZORKn.COM` at 11,402 bytes (Doherty's 3M2), `NNANSI.COM`, a `DATA/ZORKn.DAT` padded to 92,160 bytes, and a `SAVE/ZORKn.DAT`. Every file is dated 1995-05-31 except the saves.
-- **Zork Zero** in `DATA/ZORKZERO/`: `ZORK0.ZIP` (300,032 bytes, r393), `ZORK0.CG1` (244,507) and `ZORK0.EG1` (333,654) plus `ZORKZERO.EXE` (47,494, interpreter 6.71) - byte-for-byte the same sizes as Masterpieces' `PC/ZORK0/`, and again **no `.MG1` and no `.EG2`**. The incomplete-graphics omission Doherty documented for LTOI1 persists on this disc too.
+- **Zork Zero** in `DATA/ZORKZERO/`: `ZORK0.ZIP` (300,032 bytes, r393), `ZORK0.CG1` (244,507) and `ZORK0.EG1` (333,654) plus `ZORKZERO.EXE` (47,494, interpreter 6.71) - byte-for-byte the same sizes as Masterpieces' `PC/ZORK0/`, and again **no `.MG1`** (Zork Zero never had an `.EG2`; its EGA art fits one file). The incomplete-graphics omission Doherty documented for LTOI1 persists on this disc too.
 - **Beyond Zork**: `BZORK.EXE` (33,946 bytes, interpreter 5J) and `NNANSI.COM` sit in `DATA/` dated 1996-06-21, but there is no loose `BEYONDZO.DAT`. The story file ships inside the InstallShield `DATA.Z` - along with a great deal more; see below.
 - **Real save files again.** `SAVE/ZORK1.DAT` (12,883 bytes), `ZORK2.DAT` (12,213) and `ZORK3.DAT` (12,680) are dated 1996-06-11 and are byte-identical to the saves on Masterpieces, which carry a 1996-06-22 stamp - so one set of saves, made on or before 11 June 1996, was reused across both products.
 
