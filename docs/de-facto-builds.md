@@ -5,7 +5,8 @@ This page names that de-facto build for each of the 35 games and lists which cat
 
 The status is descriptive, not editorial: these are not always the last builds Infocom made (the leaked repositories hold later masters for a third of the catalog), and not always one build per title (five games shipped platform splits that persist to this day, and the five Solid Gold editions appear as their own rows, since the community treats them as separate editions rather than replacements).
 
-Columns: **Box** = original boxed retail media, checked where this catalog holds it (the 1989 Zork Zero floppies) and "doc" where a boxed release is documented but no copy has been cataloged; **MP** = Masterpieces (1996); **LTOI1**/**LTOI2** = the 1992 Lost Treasures CDs; **Leak** = the historicalsource repositories (2019), where "hist" marks a build present only in a repository's git history.
+Columns: **Box** = original boxed retail media, checked where this catalog holds it (the 1989 Zork Zero floppies) and "doc" where a documented boxed release is the build's only known carrier; **MP** = Masterpieces (1996); **LTOI1**/**LTOI2** = the 1992 Lost Treasures CDs; **Leak** = the historicalsource repositories (2019), where "hist" marks a build present only in a repository's git history.
+A hybrid disc carries two platform trees and so can hold two builds of one game: Masterpieces checks both Planetfall rows (plain on its PC side, Solid Gold on its Mac side) and both Leather Goddesses rows, and LTOI1 checks both Hitchhiker's rows - the `(PC)`/`(Mac)` marker on a build names the side that carries it.
 The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns because they never carry a build these columns lack: the anthology discs redistribute the Zork-family set, and the Legacy Collection's `DATA.Z` repeats Masterpieces' shared story files.
 
 | Title | De-facto build | Box | MP | LTOI1 | LTOI2 | Leak |
@@ -26,7 +27,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Journey | v6 r83.890706 (PC) |  | ✓ |  | ✓ | ✓ |
 | Leather Goddesses of Phobos | v3 r59.860730 (PC) |  | ✓ |  |  | ✓ |
 | Leather Goddesses of Phobos (Solid Gold) | v5 r4.880405 (Mac) |  | ✓ |  |  | ✓ |
-| The Lurking Horror | v3 r203.870506 |  | ✓ | ✓ |  | hist |
+| The Lurking Horror | v3 r203.870506 |  | ✓† | ✓ |  | hist |
 | Moonmist | v3 r9.861022 |  | ✓ | ✓ |  | hist |
 | Nord and Bert | v4 r19.870722 |  | ✓ |  | ✓ | hist |
 | Planetfall | v3 r37.851003 (PC) |  | ✓ | ✓ |  |  |
@@ -49,7 +50,11 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Zork I (Solid Gold) | v5 r52.871125 |  |  |  |  | ✓ |
 | Zork II | v3 r48.840904 |  | ✓ | ✓ |  | hist |
 | Zork III | v3 r17.840727 |  | ✓ | ✓ |  | hist |
-| Zork Zero | v6 r393.890714 (PC) | ✓ | ✓ | ✓ |  |  |
+| Zork Zero | v6 r393.890714 (PC) | ✓ | ✓\* | ✓\* |  |  |
+
+\* The CD copies of Zork Zero are complete as a game but lack the MCGA graphics file (`ZORK0.MG1`) - only the retail floppies (and the IF Archive's separately hosted copy) carry it; see [media assets](media-assets.md).
+
+† Masterpieces' PC copy also carries the sound upgrade in the game's `DATA` folder: `LHSOUND.ZIP`, with the fourteen samples and the patch that converts r203 into the r221 sound build; see [media assets](media-assets.md).
 
 Reading the table:
 
