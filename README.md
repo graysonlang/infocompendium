@@ -24,6 +24,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/README.md) | yes | n/a | Redump-verified on all 26 tracks; the original pressing of the disc later revised for the Legacy Collection |
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games; both discs of the set verified byte-identical to the Internet Archive's published ISOs |
+| [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | 3.5" set (5.25" awaits hardware) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance |
 
 ## Findings
 
@@ -38,6 +39,7 @@ What each disc actually contains, checked against the published references:
 
 - [The historicalsource repositories (2019)](collections/historicalsource/versions.md) - the leaked Infocom source treated as a compilation: 89 compiled story files across 46 repositories (19 of them hiding in earlier git commits, where most repos carry a shipped-release layer under the final one), cross-referenced against the disc builds. Post-release masters newer than anything shipped, alphas and betas, unreleased games, and a mislabeled Journey prototype hiding in the Checkpoint repository.
 
+- [Zork Zero's MS-DOS floppies (1989)](discs/zork-zero-1989-dos/notes.md) - the dual-media retail box shipped its graphics renditions by media format: MCGA on the 3.5" diskettes, EGA (by the disk-count arithmetic) on the 5.25", CGA on both. Its MG1 is byte-identical to the IF Archive's 1994 upload, settling that file's provenance, and its story file and interpreter are byte-identical to the compilations' - the CD lineage starts here.
 - [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
 
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).

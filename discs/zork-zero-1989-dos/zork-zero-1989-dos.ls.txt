@@ -1,0 +1,11 @@
+== disk 1: volume ZORK0 1
+-rwx------  1 grayson  staff   63709 Jul  8 13:00:28 1989 EZR.EXE
+-rwx------  1 grayson  staff    5834 Jul 14 14:36:06 1989 INSTALL.EXE
+-rwx------  1 grayson  staff    4519 Jul 14 17:00:22 1989 IZORK03.RUN
+-rwx------  1 grayson  staff  226436 Jul 10 11:35:32 1989 ZORK0.MG1
+-rwx------  1 grayson  staff  300032 Jul 14 19:00:16 1989 ZORK0.ZIP
+-rwx------  1 grayson  staff   47494 Jul 14 16:57:08 1989 ZORKZERO.EXE
+
+== disk 2: volume ZORK0 2
+-rwx------  1 grayson  staff  244507 Jul 14 16:42:50 1989 ZORK0.CG1
+

@@ -1,0 +1,26 @@
+# Zork Zero, MS-DOS retail release (1989) - floppy image checksums
+#
+# Imaged 2026-09-12 from the 3.5" diskettes of an original dual-media retail
+# box (two 720K 3.5" diskettes plus three 5.25" diskettes) via a USB 3.5"
+# floppy drive. macOS does not grant the console user the USB floppy's device
+# node (unlike optical drives), so the capture goes through hdiutil:
+#
+#   hdiutil create -srcdevice /dev/diskN -format UDRO disk.dmg
+#   hdiutil convert disk.dmg -format UDTO -o disk   # then rename .cdr to .img
+#
+# The .img files are raw 720K sector images (1440 x 512).
+#
+# No Redump entries exist for Infocom floppies; these hashes stand as the
+# reference for this pressing.
+
+# 3.5" disk 1 (volume "ZORK0 1") - 737,280 bytes
+crc32  16f6535a                                  zork0-dos35-disk1.img
+md5    67abe77362704f759a0e32c7d74d9996          zork0-dos35-disk1.img
+sha1   cca4a87e28cd6902d8addd454b5b6093d43ec1fd  zork0-dos35-disk1.img
+
+# 3.5" disk 2 (volume "ZORK0 2") - 737,280 bytes
+crc32  9481f0f5                                  zork0-dos35-disk2.img
+md5    424322cf9da706746c2d81a2982bbca6          zork0-dos35-disk2.img
+sha1   629e7946cbcf8ff26e132cceabd3520aed9e1b4e  zork0-dos35-disk2.img
+
+# The three 5.25" diskettes await flux-level imaging hardware.
