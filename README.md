@@ -38,6 +38,8 @@ What each disc actually contains, checked against the published references:
 
 - [The historicalsource repositories (2019)](collections/historicalsource/versions.md) - the leaked Infocom source treated as a compilation: 89 compiled story files across 46 repositories (19 of them hiding in earlier git commits, where most repos carry a shipped-release layer under the final one), cross-referenced against the disc builds. Post-release masters newer than anything shipped, alphas and betas, unreleased games, and a mislabeled Journey prototype hiding in the Checkpoint repository.
 
+- [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
+
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
 ## Layout
@@ -48,6 +50,7 @@ docs/
   imaging.md                     The imaging traps and the working raw-dump method.
   hfs-extraction.md              hfsutils, forks, timestamps, building mountable images.
   references.md                  External references: Doherty, Plotkin, ztools, Redump.
+  media-assets.md                Cross-collection table of the graphics and sound assets.
 scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
   raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
