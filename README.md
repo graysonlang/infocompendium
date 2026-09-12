@@ -40,7 +40,7 @@ What each disc actually contains, checked against the published references:
 - [The historicalsource repositories (2019)](collections/historicalsource/versions.md) - the leaked Infocom source treated as a compilation: 89 compiled story files across 46 repositories (19 of them hiding in earlier git commits, where most repos carry a shipped-release layer under the final one), cross-referenced against the disc builds. Post-release masters newer than anything shipped, alphas and betas, unreleased games, and a mislabeled Journey prototype hiding in the Checkpoint repository.
 
 - [Zork Zero's MS-DOS floppies (1989)](discs/zork-zero-1989-dos/notes.md) - the dual-media retail box shipped its graphics renditions by media format: MCGA on the 3.5" diskettes, EGA (by the disk-count arithmetic) on the 5.25", CGA on both. Its MG1 is byte-identical to the IF Archive's 1994 upload, settling that file's provenance, and its story file and interpreter are byte-identical to the compilations' - the CD lineage starts here.
-- [The community-sanctioned builds](docs/community-builds.md) - one row per game: the build the community treats as its version of record, which collections carry it, and the variants and never-shipped later masters around it.
+- [The de-facto builds](docs/de-facto-builds.md) - one row per game: the build the community treats as its version of record, and which collections carry it.
 - [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
 
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
@@ -54,7 +54,7 @@ docs/
   hfs-extraction.md              hfsutils, forks, timestamps, building mountable images.
   references.md                  External references: Doherty, Plotkin, ztools, Redump.
   media-assets.md                Cross-collection table of the graphics and sound assets.
-  community-builds.md            The community-sanctioned build of each game, per collection.
+  de-facto-builds.md             The de-facto standard build of each game, per collection.
 scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
   raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
