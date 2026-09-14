@@ -25,4 +25,16 @@ mv disk1.cdr disk1.img                             # raw 737,280-byte image
 ```
 
 Compare against [checksums.txt](checksums.txt).
-The 5.25" diskettes need flux-level hardware (a Greaseweazle or similar); their reference hashes will follow once captured.
+
+The 5.25" diskettes need flux-level hardware (a Greaseweazle or similar).
+Capture flux first - it is the archival artifact, and it makes decode mistakes recoverable without re-reading the disk - then decode:
+
+```
+gw read --format=ibm.360 --raw diskN.scp
+gw convert --format=ibm.360 diskN.scp diskN.img
+```
+
+Both flags matter on the read: `--format` makes the read verify each track as it goes (with retries on marginal reads), and `--raw` keeps the stored flux genuine.
+With `--format` alone, `gw read` writes flux re-synthesized from the decoded sectors - clean-looking, but stripped of the weak bits, gaps and timing detail that flux capture exists to preserve.
+
+These are 360K double-sided diskettes; a decode at the wrong format betrays itself immediately (a 184,320-byte image whose FAT media byte still reads `0xFD`).

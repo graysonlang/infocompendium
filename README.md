@@ -24,7 +24,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Return to Zork CD-ROM v1.1 (1994)](discs/return-to-zork-1994/README.md) | yes | n/a | Redump-verified on all 26 tracks; the original pressing of the disc later revised for the Legacy Collection |
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games; both discs of the set verified byte-identical to the Internet Archive's published ISOs |
-| [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | 3.5" set (5.25" awaits hardware) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance |
+| [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | yes (all five diskettes) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance, with media-targeted graphics confirmed on both sides |
 
 ## Findings
 

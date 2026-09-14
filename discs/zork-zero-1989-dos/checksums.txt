@@ -23,4 +23,22 @@ crc32  9481f0f5                                  zork0-dos35-disk2.img
 md5    424322cf9da706746c2d81a2982bbca6          zork0-dos35-disk2.img
 sha1   629e7946cbcf8ff26e132cceabd3520aed9e1b4e  zork0-dos35-disk2.img
 
-# The three 5.25" diskettes await flux-level imaging hardware.
+# The 5.25" diskettes, imaged 2026-09-13 with a Greaseweazle V4.1 as 360K
+# double-sided (40 cylinders x 2 heads x 9 sectors), decoded with
+# "gw convert --format=ibm.360" from flux / read with the same format.
+# Raw flux (.scp) is retained for disk 1; disks 2-3 were decoded at read time.
+
+# 5.25" disk 1 (volume "ZORK0 1") - 368,640 bytes
+crc32  11cd7452                                  zork0-dos525-disk1.img
+md5    3828cc78c798e66a1e2777f6046360c1          zork0-dos525-disk1.img
+sha1   ddb25aaa942df182a07f3b76b496feab82f9e335  zork0-dos525-disk1.img
+
+# 5.25" disk 2 (volume "ZORK0 2") - 368,640 bytes
+crc32  9cfc119b                                  zork0-dos525-disk2.img
+md5    c8f55d51b0f5962d486c1668b44a14b8          zork0-dos525-disk2.img
+sha1   05e4c43ea0177727ae1d66316657eda3da80bdcb  zork0-dos525-disk2.img
+
+# 5.25" disk 3 (volume "ZORK0 3") - 368,640 bytes
+crc32  d86be876                                  zork0-dos525-disk3.img
+md5    b91d1a599b9a23535561e9647795c99b          zork0-dos525-disk3.img
+sha1   f5df4705338fcbd2a61fe947a81473cccc90ea79  zork0-dos525-disk3.img

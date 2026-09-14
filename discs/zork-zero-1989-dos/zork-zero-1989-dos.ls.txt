@@ -9,3 +9,17 @@
 == disk 2: volume ZORK0 2
 -rwx------  1 grayson  staff  244507 Jul 14 16:42:50 1989 ZORK0.CG1
 
+
+== 5.25" disk 1: volume ZORK0 1
+-rwx------  1 grayson  staff   63709 Jul  8 13:00:28 1989 EZR.EXE
+-rwx------  1 grayson  staff    5834 Jul 13 14:38:22 1989 INSTALL.EXE
+-rwx------  1 grayson  staff    4515 Jul 14 14:34:46 1989 IZORK0.RUN
+-rwx------  1 grayson  staff  244507 Jul 14 16:42:50 1989 ZORK0.CG1
+
+== 5.25" disk 2: volume ZORK0 2
+-rwx------  1 grayson  staff  300032 Jul 14 19:00:16 1989 ZORK0.ZIP
+-rwx------  1 grayson  staff   47494 Jul 14 16:57:08 1989 ZORKZERO.EXE
+
+== 5.25" disk 3: volume ZORK0 3
+-rwx------  1 grayson  staff  333654 Jul 13 17:48:04 1989 ZORK0.EG1
+
