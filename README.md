@@ -25,6 +25,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games; both discs of the set verified byte-identical to the Internet Archive's published ISOs |
 | [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | yes (all five diskettes) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance, with media-targeted graphics confirmed on both sides |
+| 8-bit retail diskettes (Apple II, Atari XL/XE, Commodore 64) | yes (eleven diskettes, twelve titles) | partly | Original 1983-88 media carrying builds no compilation does, four of them first releases; see [the de-facto builds](docs/de-facto-builds.md) and [flux capture](docs/floppy-imaging.md). Two Atari titles are incomplete: their stories span both surfaces and the reverse side is only partly reachable on the drive used |
 
 ## Findings
 
@@ -43,7 +44,9 @@ What each disc actually contains, checked against the published references:
 - [The de-facto builds](docs/de-facto-builds.md) - one row per game: the build the community treats as its version of record, and which collections carry it.
 - [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
 
-The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
+- [The 8-bit retail diskettes](docs/de-facto-builds.md) - Apple II, Atari XL/XE and Commodore 64 originals carry builds no compilation does, four of them *first* releases: Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Spellbreaker r63.850916. The Spellbreaker disc also settles a question the source repositories could not: its story is byte-identical to the leak's compiled r63, confirming that a "Revision NN (Original Source)" commit holds the build that actually shipped.
+
+The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), [flux capture and the 8-bit diskette formats](docs/floppy-imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
 ## Layout
 
@@ -51,6 +54,7 @@ The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what thes
 docs/
   identifying-discs.md           Hybrid discs, why macOS refuses them, identification. Start here.
   imaging.md                     The imaging traps and the working raw-dump method.
+  floppy-imaging.md              Flux capture: 5.25" formats, flippy second sides, merging reads.
   hfs-extraction.md              hfsutils, forks, timestamps, building mountable images.
   references.md                  External references: Doherty, Plotkin, ztools, Redump.
   media-assets.md                Cross-collection table of the graphics and sound assets.
