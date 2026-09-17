@@ -45,6 +45,7 @@ What each disc actually contains, checked against the published references:
 - [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
 
 - [The 8-bit retail diskettes](docs/de-facto-builds.md) - Apple II, Atari XL/XE and Commodore 64 originals carry builds no compilation does, four of them *first* releases: Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Spellbreaker r63.850916. The Spellbreaker disc also settles a question the source repositories could not: its story is byte-identical to the leak's compiled r63, confirming that a "Revision NN (Original Source)" commit holds the build that actually shipped.
+- [Wishbringer Solid Gold on MS-DOS (1988)](docs/de-facto-builds.md) - the one shipped edition no compilation carried, read first hand from its retail diskette: v5 r23.880706 with checksum verified and the built-in hints present. The leak has only its source, so the original box is the build's only known carrier.
 
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), [flux capture and the 8-bit diskette formats](docs/floppy-imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
