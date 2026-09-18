@@ -1,11 +1,15 @@
 # Media assets across the collections
 
 Six Infocom titles carry media: the four V6 graphical games (Zork Zero, Arthur, Journey, Shogun) and the two with sampled sound (Sherlock on the Mac, The Lurking Horror on the PC).
-This table records which collections carry each title's assets and which files those are, as measured on the cataloged media; the per-disc detail lives in each disc's notes.
 
-File vocabulary: PC graphics are `.CG1` (CGA, two-color), `.EG1`/`.EG2` (EGA, split when the set exceeded a 360K floppy), `.MG1` (MCGA); Mac graphics are `PIC.DATA` (black-and-white) and `CPIC.DATA` (color).
+These tables record which collections carry each title's assets and which files those are, as measured on the cataloged media; the per-disc detail lives in each disc's notes.
 
 ## Graphics
+
+File vocabulary:
+- PC graphics are `.CG1` (CGA, two-color), `.EG1`/`.EG2` (EGA, split when the set exceeded a 360K floppy), `.MG1` (MCGA)
+- Mac graphics are `PIC.DATA` (black-and-white) and `CPIC.DATA` (color).
+
 
 | Title | Side | LTOI1 (1992) | LTOI2 (1992) | Anthology (1994) | Masterpieces (1996) | Legacy (1997) | Source leak (2019) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -42,6 +46,8 @@ What the gaps mean:
 
 In both games the sampled sounds start at number 3, because the Z-machine reserves 1 and 2 for its two interpreter-generated tones - the high and low bleep, which need no sample file and work on every interpreter - and both games' sources name them the same way: `S-BEEP` and `S-BOOP`.
 
+### Sherlock
+
 Sherlock's sound numbers decode from the leaked repository twice over: the `s3.nam`-`s17.nam` files map each number to its sample, and `sounds.zil` carries Infocom's own constant names and descriptions:
 
 | # | ZIL name | Sound | Shipped on the Mac discs as |
@@ -66,6 +72,8 @@ Sherlock's sound numbers decode from the leaked repository twice over: the `s3.n
 The `S` files are type `SDAT`, sound in the data fork: a 10-byte header, then unsigned 8-bit PCM.
 The four 32-byte `M` files are playback-parameter records, each ending in the ASCII name of the `S` file it plays - which is how sounds 11 and 13 exist without samples of their own: the one heart recording replayed at different rates.
 
+### The Lurking Horror
+
 The Lurking Horror's sounds decode from the leaked repository's `sounds.txt` - Infocom's own internal sound list, which records that two samples were "cut for reasons of space", which is why the game has fourteen sounds and not sixteen.
 Every documented size matches the corresponding `LURKINxx.SND` in Masterpieces' `LHSOUND.ZIP` (Jokisch's 1995 conversions of the Amiga samples):
 
@@ -87,5 +95,7 @@ Every documented size matches the corresponding `LURKINxx.SND` in Masterpieces' 
 | 16 | `S-CRETIN` | frob frying on the high voltage (looping) | `LURKIN16.SND`, 25,050 |
 | 17 | `S-ZOMBIE` | frob noises in the inner lair (looping) | `LURKIN17.SND`, 39,258 |
 | 18 | `S-MONSTR` | things in the pit in the altar area (looping) | `LURKIN18.SND`, 50,010 |
+
 Measured against the leaked repository's sources (2026-09-12): the disc samples are the same recordings converted from signed to unsigned 8-bit PCM - 99.4-99.5% byte-identical under a sign-bit flip, the remainder scattered single bytes at near-silence, a different processing generation of the same masters.
+
 The Lurking Horror's sound was native to the Amiga; no cataloged disc carries those samples, and the Masterpieces package is Stefan Jokisch's 1995 freeware conversion kit, not Infocom's - see [the Masterpieces notes](../discs/masterpieces-1996/notes.md) for its verification.
