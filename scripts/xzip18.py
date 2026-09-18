@@ -86,6 +86,20 @@ GAINS = (1.0, 0.0875, 0.095, 0.070, 0.15, 0.30)
 MAX_REVS = 20
 
 
+def _read_maybe_zst(path):
+    """Read a capture, transparently decompressing a zstd-compressed one.
+
+    Flux compresses to roughly a quarter of its size losslessly, which matters
+    when captures are kept for provenance: compress BEFORE committing one, since
+    a git blob is permanent and compressing afterwards only adds a second copy.
+    """
+    raw = pathlib.Path(path).read_bytes()
+    if raw[:4] == b'\x28\xb5\x2f\xfd':
+        from compression import zstd
+        return zstd.decompress(raw)
+    return raw
+
+
 def scp_tracks(path, reverse=False):
     """Read an SCP capture into {index: [flux intervals in ns, per revolution]}.
 
@@ -94,7 +108,7 @@ def scp_tracks(path, reverse=False):
     was written with the disc flipped, so in place it passes the head backwards.
     Reversing the interval sequence undoes exactly that.
     """
-    d = pathlib.Path(path).read_bytes()
+    d = _read_maybe_zst(path)
     if d[:3] != b'SCP':
         raise ValueError("%s is not an SCP capture" % path)
     tick = 25 * (d[11] + 1)
@@ -424,6 +438,33 @@ def surface(scps, nblk, reversed_scps=(), jobs=None):
     return blocks, ck
 
 
+# DOS 3.3 sector interleave, as interlz5.c's interl[] and Infocom's own RWTS
+# table. Side 1's story area is interleaved through this; tracks 0-3, holding
+# the boot code and interpreter, are not.
+INTERLEAVE = [0x0, 0xD, 0xB, 0x9, 0x7, 0x5, 0x3, 0x1,
+              0xE, 0xC, 0xA, 0x8, 0x6, 0x4, 0x2, 0xF]
+
+
+def side1_prefix(dsk_path):
+    """Pull the story's first 100,864 bytes out of a 16-sector side-1 image.
+
+    The XZIP stub occupies the first 64 sectors (tracks 0-3); the story starts
+    at sector 64 and runs 394 sectors, each located through the FORWARD
+    interleave. Reading the story SEQUENCE uses the forward table; locating a
+    physical sector inside an appledos image uses its inverse. Confusing the two
+    yields a readable header followed by garbage.
+    """
+    dsk = pathlib.Path(dsk_path).read_bytes()
+    if len(dsk) != 143360:
+        raise ValueError("%s is not a 143,360-byte appledos image" % dsk_path)
+    out = bytearray()
+    for k in range(64, 64 + 394):
+        trk, sec = divmod(k, 16)
+        off = (trk * 16 + INTERLEAVE[sec]) * 256
+        out += dsk[off:off + 256]
+    return bytes(out)
+
+
 def zheader(data):
     scale = {1: 2, 2: 2, 3: 2, 4: 4, 5: 4, 6: 8, 7: 8, 8: 8}[data[0]]
     length = int.from_bytes(data[0x1A:0x1C], 'big') * scale
@@ -446,13 +487,19 @@ def main():
                          'the second surface with the disc the normal way up); '
                          'repeatable, and it must also appear in the scp list')
     ap.add_argument('--prefix', help='the 100,864-byte story prefix read from side 1')
+    ap.add_argument('--side1', metavar='DSK',
+                    help='side-1 appledos .dsk to take that prefix from directly, '
+                         'instead of a pre-extracted --prefix file')
     ap.add_argument('-o', '--out', help='write the assembled story file here')
     ap.add_argument('--blocks-out', help='write each recovered block as DIR/NNNN.bin')
     args = ap.parse_args()
     globals()['MAX_REVS'] = args.max_revs
 
-    if args.prefix:
-        prefix = pathlib.Path(args.prefix).read_bytes()
+    if args.side1 and args.prefix:
+        sys.exit('give --side1 or --prefix, not both')
+    if args.side1 or args.prefix:
+        prefix = (side1_prefix(args.side1) if args.side1
+                  else pathlib.Path(args.prefix).read_bytes())
         if len(prefix) != SIDE1_BYTES:
             sys.exit('prefix must be exactly %d bytes' % SIDE1_BYTES)
         ver, rel, ser, length, declared = zheader(prefix)

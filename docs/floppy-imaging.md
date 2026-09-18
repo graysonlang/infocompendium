@@ -146,6 +146,17 @@ Border Zone likewise reached 303 of 303, and Beyond Zork's assembled story match
 Everything below about repairing false transitions still applies to captures taken without it, and the repair is what made those captures usable at all.
 But it is a second-best: a setting that costs nothing beat nine captures, two heads and every software trick in this document.
 
+**It is not only for the 18-sector format, or only for Apple II.** Two surfaces in this catalog had needed multi-capture merges to complete, and both now read perfectly in one pass:
+
+| Surface | Before | With `--densel L` |
+| --- | --- | --- |
+| Border Zone, Apple II side 1 (16-sector) | 554/560 per read, three captures merged | **560/560**, byte-identical to the merge |
+| Enchanter, Atari 810 side 2 (FM) | 700/720 on two separate attempts, three captures merged | **720/720**, byte-identical to the merge |
+
+The Atari result was the surprise. Apple GCR is the worst case - 8.71% of its flux intervals exceed 10 microseconds, against **0.000%** for Atari FM, which tops out near 8.6 - so the prediction was that Atari would benefit far less. It read perfectly on the first try. Long flux samples are evidently not the only thing the density-select line changes, so measure rather than predict: try it on any 300 RPM media read in a 360 RPM drive, whatever the format.
+
+Both merges being reproduced byte-for-byte by an independent single read is also the strongest possible confirmation that the original per-sector merging was done correctly.
+
 ### Two things to get right when slicing the flux
 
 **The bit cell is not 4000 ns.** This media was written at 300 RPM. A 360 RPM drive such as the TEAC FD-55GFR reads it 6/5 fast, putting the cell near **3355 ns**. Fit the period per track rather than assuming it; a fixed 4000 ns nominal with a +/-10% clamp cannot even reach the true value.
@@ -255,6 +266,17 @@ Whether a story file can be read straight off a decoded image varies by platform
 
 ZCut ([references.md](references.md)) understands all three layouts and is the practical way to extract a story file.
 Verify its output independently, though: its own "Checksum good" is the byte sum described above.
+
+## Keep the flux, compressed
+
+Flux is worth keeping as provenance, and it compresses well: `zstd -19` took 638 MB of captures here to 204 MB - 32% overall, and as low as 18% for clean `--densel L` reads - losslessly.
+A story decoded from a compressed capture is byte-identical to one decoded from the original, and [scripts/xzip18.py](../scripts/xzip18.py) reads `.zst` captures directly, so nothing in the workflow changes.
+
+Two rules if the captures are version-controlled:
+
+Compress **before** committing, never after. A git blob is permanent, so compressing a file that is already tracked adds a second copy rather than replacing the first, and the repository grows instead of shrinking. For the same reason, deleting a tracked file frees no space at all.
+
+Hash the **uncompressed** flux, because that is the artifact's identity - the container is not - and say so in the record. Otherwise a later verification pass reports every compressed capture as unverifiable, which is exactly what happened here the moment 40 captures were compressed.
 
 ## Capture size
 
