@@ -71,12 +71,19 @@ REGRID_GAIN = 0.0875
 # as a mark-to-mark gap too small to hold the 6179 nibbles the format needs.
 # Beyond Zork's track 28 went from 0 to 15 of 18 sectors purely by easing off.
 # Span both regimes rather than picking one; 1.0 effectively disables merging.
-GAINS = (0.0875, 0.095, 0.070, 0.15, 0.30, 1.0)
+# Ordered so the FIRST two span both extremes: 1.0 leaves the flux alone, which
+# is right for a clean capture (see --densel below), and 0.0875 repairs false
+# transitions, which is right for a drive that produces them. The abandon-early
+# test below consults both before giving up on a position - probing with only
+# one silently loses every track that needs the other.
+GAINS = (1.0, 0.0875, 0.095, 0.070, 0.15, 0.30)
 
-# Slicing is the expensive step, so cap how many revolutions of a capture are
-# used. Past a handful the extra revolutions rarely add a sector that the
-# gain ensemble has not already resolved.
-MAX_REVS = 6
+# Cap on revolutions used per capture position, since slicing is the expensive
+# step. Do NOT set this low on marginal media: on a degraded track, finding the
+# sync mark at all is probabilistic per revolution - measured here, one track's
+# mark appeared in 2 revolutions out of 10 and another's in 4. Capping at 6 lost
+# a whole track of Beyond Zork that 10 revolutions recovered.
+MAX_REVS = 20
 
 
 def scp_tracks(path, reverse=False):
@@ -284,8 +291,8 @@ def track_runs(revs):
                     runs.append(bytes(seg))
                     tno = t
                 break
-        if gi == 0 and tno is None:
-            break                       # nothing here; do not try more gains
+        if gi == 1 and tno is None:
+            break                       # neither extreme found a mark; give up
         if runs and max(_sectors_ok(r) for r in runs) == NSEC:
             break                       # already complete
     REGRID_GAIN = GAINS[0]
@@ -429,6 +436,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('scp', nargs='+', help='raw flux captures of the 18-sector surface')
+    ap.add_argument('--max-revs', type=int, default=MAX_REVS,
+                    help='revolutions to use per capture position '
+                         '(default %d); raise it for marginal media' % MAX_REVS)
     ap.add_argument('-j', '--jobs', type=int, default=None,
                     help='worker processes (default: one per core)')
     ap.add_argument('--reverse', metavar='SCP', action='append', default=[],
@@ -439,6 +449,7 @@ def main():
     ap.add_argument('-o', '--out', help='write the assembled story file here')
     ap.add_argument('--blocks-out', help='write each recovered block as DIR/NNNN.bin')
     args = ap.parse_args()
+    globals()['MAX_REVS'] = args.max_revs
 
     if args.prefix:
         prefix = pathlib.Path(args.prefix).read_bytes()

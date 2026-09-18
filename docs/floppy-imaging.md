@@ -128,6 +128,24 @@ S. V. Nickolas's `interlz5.c`, which writes these images, contains the literal l
 Infocom's own XZIP interpreter source contains the reading half, a routine commented "READ SECTOR FROM BIG TRACK" that hunts the mark, decodes the 4-and-4 track number, and then walks forward sector by sector, checking the checksum only on the one it wants.
 That is why the stride never drifts: the interpreter has no way to seek within the track, so the sectors must be exactly where it counts them.
 
+### First, stop the drive inventing transitions: `--densel L`
+
+Before tuning any software, check that the drive is not manufacturing the errors.
+An HD 5.25" drive does not expect flux samples as long as 12 microseconds and produces **false transitions** when it meets them ([Greaseweazle issue #444](https://github.com/keirf/greaseweazle/issues/444)).
+This format's 3-cell gaps are 10,020 ns, squarely in that range - which is why every decode error observed here was an *extra* transition and never a missing one.
+
+Pulling the density-select line low fixes it at the source:
+
+```
+gw read --tracks=c=0-34:step=2 --revs=20 --densel L --raw side2.scp
+```
+
+Measured on the same discs and drive, off-grid flux intervals fell from 0.098% to 0.007% - a fourteenfold reduction - and Leather Goddesses' second surface went from 228 of 231 sectors to **231 of 231 from a single capture**.
+Border Zone likewise reached 303 of 303, and Beyond Zork's assembled story matched its declared checksum for the first time.
+
+Everything below about repairing false transitions still applies to captures taken without it, and the repair is what made those captures usable at all.
+But it is a second-best: a setting that costs nothing beat nine captures, two heads and every software trick in this document.
+
 ### Two things to get right when slicing the flux
 
 **The bit cell is not 4000 ns.** This media was written at 300 RPM. A 360 RPM drive such as the TEAC FD-55GFR reads it 6/5 fast, putting the cell near **3355 ns**. Fit the period per track rather than assuming it; a fixed 4000 ns nominal with a +/-10% clamp cannot even reach the true value.
@@ -157,13 +175,15 @@ That ordering alone was worth five sectors on Border Zone.
 
 Measured against builds whose contents are known, with [scripts/xzip18.py](../scripts/xzip18.py):
 
-| Title | Sectors on the second surface | Byte-exact |
-| --- | --- | --- |
-| Leather Goddesses Solid Gold | 231 | 228 |
-| Border Zone | 303 | 302 |
-| Beyond Zork | 630 | 630 decoded, story checksum unmatched |
+| Title | Sectors | Without `--densel L` | With it |
+| --- | --- | --- | --- |
+| Leather Goddesses Solid Gold | 231 | 228 | **231** |
+| Border Zone | 303 | 302 | **303** |
+| Beyond Zork | 630 | 630 decoded, checksum unmatched | **630, checksum matched** |
 
-The assembled Leather Goddesses story differs from the reference build in 3 blocks out of 625, plus three header bytes that genuinely differ on the disc.
+Each `--densel L` figure is from a *single* capture. The left column took nine.
+
+The assembled Leather Goddesses and Border Zone stories now match their reference builds exactly but for three header bytes at 0x01, 0x04 and 0x05 - flags1 and the base of high memory - which genuinely differ on Apple II media and sit below the checksummed region. Beyond Zork, which has no reference build anywhere, matches its own declared checksum and disassembles to 1,719 routines.
 
 ### An invalid nibble is worth more than a valid one
 
@@ -175,7 +195,7 @@ The catch is that correcting an erasure *consumes* the checksum, so the result i
 Rank it below a cleanly-verified sector rather than equal to it.
 Treating the two as equivalent here let corrected sectors displace good decodes from other captures and cost 11 sectors on Border Zone before the ranking was fixed.
 With the ranking right, the same change added a sector on one title and cost nothing on the other, and every sector reported as checksum-verified was genuinely correct - the false positives disappeared.
-The residual failures are physical, not structural - specific spots that read the same way every revolution - and the fix is more revolutions on those tracks, not more processing.
+Residual failures in captures taken without `--densel L` are reproducible rather than random - the same spots read the same way every revolution - because the drive generates the same false transitions each time. That is the tell that the problem is the read path, not the media.
 Because `--retries` only means something when a format is being decoded, and nothing here can decode this surface, use `--revs` instead: a raw read with many revolutions gives the voting more independent samples.
 Independent *captures* are worth more than extra revolutions of one, and a read through the other head is worth more still - see below.
 
@@ -187,7 +207,25 @@ Reversing the interval sequence undoes exactly that, and the track numbers confi
 Nothing depends on getting the cylinder offset right, because the format records its own track number.
 On Beyond Zork the head-1 read was markedly cleaner over the outer two thirds and took the recovery from 485 blocks to 522 on its own.
 
-A closing caution on the checksum: on Border Zone, 302 of 303 sectors passed it while 297 were actually correct.
+### Revolutions are lottery tickets on degraded media
+
+On a healthy track the sync mark is found on every revolution, so a handful is plenty.
+On a degraded one, finding it at all is probabilistic: measured here, one track's mark appeared in 2 revolutions out of 10 and another's in 17 out of 40 - after 10 revolutions had missed it completely.
+A decoder that caps revolutions to save time will silently lose whole tracks that the capture actually contains.
+Raising the cap from 6 to 10 recovered a track from data already on disk, and `--revs=40` recovered another.
+Prefer more revolutions and more separate insertions over more processing.
+
+### The story checksum cannot adjudicate a repair
+
+It is tempting, once a story is nearly complete, to try candidate substitutions until the Z-machine checksum matches.
+Do the arithmetic before believing the result. That checksum is 16 bits.
+With 6,889 candidate sectors across 543 blocks, a **single**-block search tests 6,889 combinations and expects 0.1 false matches - so a single-block hit is meaningful.
+A **two**-block search tests roughly 23.7 *million* and expects about 362 false matches.
+Running that search here duly produced a pair that matched the declared checksum exactly, and it was wrong: `txd` on the "repaired" file found 830 routines against 1,653 for the unrepaired one.
+
+Use a disassembler as the strong validator. A correct story disassembles completely - here 1,653 routines through to end of file - with `infodump` parsing the header, object table, dictionary and abbreviations cleanly. That is a far higher bar than sixteen bits of sum, and it is the check that caught a plausible-looking repair destroying the file.
+
+A closing caution on the sector checksum: on Border Zone, 302 of 303 sectors passed it while 297 were actually correct.
 Six bits is six bits. Treat a passing sector checksum as weak evidence and verify the assembled story against the Z-machine header.
 
 ## Compare decodes as sets, not by position
