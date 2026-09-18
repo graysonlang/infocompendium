@@ -83,6 +83,8 @@ The index hole does not control spinning - the motor runs whenever the drive is 
 `--fake-index` tells the firmware to synthesize its own pulses and is the documented workaround, but per the Greaseweazle wiki it "requires a drive which will spin up in the absence of index pulses (many will not)".
 The TEAC FD-55GFR is one that will not: it returns `0 flux in 0.00ms` regardless of the value passed, and neither the drive's index-sensor jumpers nor its RY/DC jumper changes that.
 For such a disc on such a drive there is no software route to the second surface - only a different drive, a flippy-modded drive with a second index sensor, or punching the jacket.
+Punching does work: two Atari discs here were punched for a second index hole and their reverse sides then read normally, one at a clean 720/720 and one marginally at 700/720.
+It destroys original packaging, so treat it as a last resort rather than a method.
 
 ### Reading side 2 through head 1
 
@@ -112,7 +114,10 @@ This nearly caused a correct result to be discarded here.
 
 An Infocom story file's header declares a checksum, but it is a 16-bit **byte sum** over the body.
 It cannot detect a permutation, and it is far too weak to select among candidate reassemblies of a split story: searching some 80,000 of them yields about 1.2 false matches by chance, and in practice two and three false matches were found.
-Corroborate any reconstruction against a known build of the same game by longest-common-run, and establish a baseline with an *unrelated* game - a true match must beat that baseline comfortably.
+The sharpest discriminator is a disassembler.
+Run `txd` on each candidate: the correct assembly disassembles fully - hundreds of routines over thousands of lines - while a wrong one emits nothing, or hangs outright on garbage code.
+That separated four checksum-valid candidates cleanly on both Atari titles here, where a longest-common-run comparison against a known build of the same game scored all four identically and settled nothing.
+Bound each run with a timeout, since a wrong candidate may not terminate.
 On one title here, both checksum-valid candidates scored *below* the unrelated-game baseline and were correctly rejected.
 
 ## Story data is not always stored plainly
