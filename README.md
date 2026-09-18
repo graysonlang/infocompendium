@@ -69,6 +69,9 @@ scripts/
                                  (PC .CG1/.EG1/.MG1, Mac PIC.DATA), either byte order.
   get-ztools.sh                  Fetches and builds ztools (txd, infodump, pix2gif, check)
                                  from the IF Archive into tools/ztools/ (gitignored).
+  xzip18.py                      Recovers the 18-sector second surface of an Apple II XZIP
+                                 (v5) diskette from Greaseweazle flux, and assembles the
+                                 complete story file. Reads .zst captures directly.
   splittracks.py                 Splits a raw dump of a mixed-mode disc into per-track files
                                  at Redump's boundaries, hashing each track.
   isz.py                         Lists and extracts InstallShield 3 .Z archives (PKWARE DCL

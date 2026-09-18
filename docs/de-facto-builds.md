@@ -16,7 +16,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Ballyhoo | v3 r97.851218 |  | ✓ | ✓ |  | ✓ |
 | Beyond Zork | v5 r57.871221 |  | ✓ | ✓ |  | hist |
 | Beyond Zork (Apple II) | v5 r49.870917 | ✓‡ |  |  |  |  |
-| Border Zone | v5 r9.871008 |  | ✓ |  | ✓ | ✓ |
+| Border Zone | v5 r9.871008 | ✓‡ | ✓ |  | ✓ | ✓ |
 | Bureaucracy | v4 r116.870602 |  | ✓ |  | ✓ |  |
 | Cutthroats | v3 r23.840809 |  | ✓ |  | ✓ | hist |
 | Deadline | v3 r27.831005 |  | ✓ | ✓ |  | ✓ |
@@ -28,7 +28,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Infidel | v3 r22.830916 |  | ✓ | ✓ |  | ✓ |
 | Journey | v6 r83.890706 (PC) |  | ✓ |  | ✓ | ✓ |
 | Leather Goddesses of Phobos | v3 r59.860730 (PC) | ✓‡ | ✓ |  |  | ✓ |
-| Leather Goddesses of Phobos (Solid Gold) | v5 r4.880405 (Mac) |  | ✓ |  |  | ✓ |
+| Leather Goddesses of Phobos (Solid Gold) | v5 r4.880405 (Mac) | ✓‡ | ✓ |  |  | ✓ |
 | The Lurking Horror | v3 r203.870506 |  | ✓† | ✓ |  | hist |
 | Moonmist | v3 r9.861022 |  | ✓ | ✓ |  | hist |
 | Nord and Bert | v4 r19.870722 |  | ✓ |  | ✓ | hist |
@@ -61,9 +61,9 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 
 † Masterpieces' PC copy also carries the sound upgrade in the game's `DATA` folder: `LHSOUND.ZIP`, with the fourteen samples and the patch that converts r203 into the r221 sound build; see [media assets](media-assets.md).
 
-‡ Verified first hand from the original 8-bit retail diskettes, read with a Greaseweazle on 2026-09-13, each build taken from the z-header on the disk itself and matching a release Doherty documents. Four of the six - Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Beyond Zork r49.870917 - are carried by no cataloged collection and appear in no leaked repository. The other two are marked for a different reason: Leather Goddesses r59.860730 is the build the compilations already carry, recorded here on its original Atari media, and Spellbreaker r63.850916 does survive in the leak, which is what makes it useful (see below).
+‡ Verified first hand from the original 8-bit retail diskettes, read with a Greaseweazle between 2026-09-13 and 2026-09-18, each build taken from the z-header on the disk itself and matching a release Doherty documents. Every one of the eight has had its **complete** story extracted and checked against its own Z-machine checksum. Four - Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Beyond Zork r49.870917 - are carried by no cataloged collection and appear in no leaked repository. The other four are marked for different reasons: Leather Goddesses r59.860730 and Border Zone r9.871008 are builds the compilations already carry, recorded here on their original media; Leather Goddesses Solid Gold r4.880405 is the Solid Gold build that Masterpieces carries only on its Mac side, here on an Apple II diskette; and Spellbreaker r63.850916 does survive in the leak, which is what makes it useful (see below).
 
-*Apple II:* Wishbringer r68.850501 (128,952 bytes) is the **first** Wishbringer release, predating the r69.850920 the compilations standardized on; its story fits one 140K side and extracts complete, verified against its own Z-machine checksum. Beyond Zork r49.870917 (261,900 bytes) is the third of five documented releases, four earlier than the de-facto r57.871221; its story exceeds one side, so the disk carries only part of it.
+*Apple II:* Wishbringer r68.850501 (128,952 bytes) is the **first** Wishbringer release, predating the r69.850920 the compilations standardized on; its story fits one 140K side and extracts complete, verified against its own Z-machine checksum. The three V5 titles - Beyond Zork r49.870917 (261,900 bytes), Border Zone r9.871008 (178,372) and Leather Goddesses Solid Gold r4.880405 (159,928) - each exceed one 140K side and continue onto the reverse of the same diskette in an 18-sector format carrying no address fields, described in [floppy-imaging.md](floppy-imaging.md). All three are now complete: each matches its own declared Z-machine checksum, and Border Zone and Solid Gold are byte-identical to the leak's builds apart from three header bytes below the checksummed region that genuinely differ on Apple II media. Beyond Zork r49 is the third of five documented releases, four earlier than the de-facto r57.871221, and its 261,900 bytes match the size Doherty documents - the only known copy, since no CD and no repository carries it.
 
 *Atari 8-bit (XL/XE, 90K single-density):* Enchanter r10.830810 (109,126 bytes) is the **first** Enchanter release, five builds before the de-facto r29.860820. Sorcerer r4.840131 (109,734 bytes) is the **first released** Sorcerer - Doherty lists three earlier builds, all marked unreleased - eleven builds before the de-facto r15.851108. Both come from folio-era packaging (1983 and 1984) and both stories span two surfaces. Their jackets carried a single index hole, so the reverse side could not be read at all until the jackets were punched for a second one; both stories are now fully reconstructed from the two surfaces and verified, each by its own Z-machine checksum and by disassembling cleanly where the rival assemblies do not disassemble at all. Leather Goddesses r59.860730 is the same build the compilations carry, here on its original Atari flippy, and *is* fully reconstructed from both sides with its checksum verified.
 
