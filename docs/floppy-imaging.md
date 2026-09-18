@@ -103,6 +103,31 @@ Some formats declare `heads = 1` and will refuse head 1 with "Out of range for f
 And on this drive head 1 sits **four cylinders inward**: head-1 cylinder N returns real track N+4, so the outermost four tracks of the second surface cannot be reached at all.
 The Greaseweazle wiki documents `h1.off=-8` for flippy-modded drives, which is the same offset in physical steps.
 
+## A format with no address fields at all
+
+Not every soft-sectored format has address marks, and a decoder that assumes they exist will report a written surface as blank.
+
+Infocom's Apple II XZIP (v5) titles are the case encountered here.
+Per Michael Sternberg's *An Apple II Build Chain for Inform* (KansasFest 2017), an XZIP game ships on one or two disks: the first is 16-sector, with boot code and the interpreter on tracks 0-3 and the story from track 5, and "if the story file is larger than 100,864 bytes, the remainder of the Z-code is stored on a second 18-sector disk image."
+On the three discs here that second image is the reverse side of the same diskette.
+
+That 18-sector surface is laid out as:
+
+- exactly **one** `D5 AA AD` sync mark per track, roughly 357 nibbles in, and no address fields anywhere;
+- then 18 back-to-back data fields of 343 nibbles each (342 GCR bytes plus a checksum), at exactly `5 + 343*n` from the mark, with no drift;
+- story blocks mapped linearly - block *b* at track `b // 18`, sector `b % 18` - where side 1's story is interleaved through the forward DOS 3.3 table.
+
+Two lessons, both learned the hard way:
+
+**A sector count of 0/560 under every stepping is not evidence of a blank surface.** No stock Apple decoder can read a track without address fields, so that result is what a perfectly good disc of this kind looks like. The written, reproducible flux is the signal; the decoder's silence is not a measurement.
+
+**Do not search a window for a passing sector checksum.** The Apple 6-and-2 data-field checksum is only **6 bits**, so scanning N candidate offsets yields roughly N/64 false positives per sector. Wide-window searches reported 616 of 630 sectors "recovered" on one title here; an exhaustive scan of a single track found 102 valid-looking groups where 18 exist. Correct sectors sit at offset +0 exactly. Decode at computed positions and verify against something stronger.
+
+Layout alone is not enough to finish the job.
+A hand-rolled MSB-latch bit-to-nibble converter got about half the blocks on each title and no further, because it does not reproduce a canonical Apple GCR stream.
+The right tool is a real nibblizer - Applesauce, or WOZ/A2R through CiderPress II or wozardry - producing a genuine `.nib`, which is the input ZCut wants for a V5 title anyway.
+Greaseweazle writes neither `.nib` nor `.woz`.
+
 ## Compare decodes as sets, not by position
 
 Two images of the same data decoded by different formats will not line up positionally, because each applies its own sector skew.
