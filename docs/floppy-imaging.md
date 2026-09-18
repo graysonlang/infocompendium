@@ -123,10 +123,72 @@ Two lessons, both learned the hard way:
 
 **Do not search a window for a passing sector checksum.** The Apple 6-and-2 data-field checksum is only **6 bits**, so scanning N candidate offsets yields roughly N/64 false positives per sector. Wide-window searches reported 616 of 630 sectors "recovered" on one title here; an exhaustive scan of a single track found 102 valid-looking groups where 18 exist. Correct sectors sit at offset +0 exactly. Decode at computed positions and verify against something stronger.
 
-Layout alone is not enough to finish the job.
-A hand-rolled MSB-latch bit-to-nibble converter got about half the blocks on each title and no further, because it does not reproduce a canonical Apple GCR stream.
-The right tool is a real nibblizer - Applesauce, or WOZ/A2R through CiderPress II or wozardry - producing a genuine `.nib`, which is the input ZCut wants for a V5 title anyway.
-Greaseweazle writes neither `.nib` nor `.woz`.
+The layout above was reverse-engineered off the flux and then confirmed against two sources that agree with it exactly.
+S. V. Nickolas's `interlz5.c`, which writes these images, contains the literal line `o=5+(s*343);`, fills `track[3]`/`track[4]` from a hardcoded 35-entry table of 4-and-4 track numbers, and uses the same `{0,D,B,9,7,5,3,1,E,C,A,8,6,4,2,F}` interleave for side 1.
+Infocom's own XZIP interpreter source contains the reading half, a routine commented "READ SECTOR FROM BIG TRACK" that hunts the mark, decodes the 4-and-4 track number, and then walks forward sector by sector, checking the checksum only on the one it wants.
+That is why the stride never drifts: the interpreter has no way to seek within the track, so the sectors must be exactly where it counts them.
+
+### Two things to get right when slicing the flux
+
+**The bit cell is not 4000 ns.** This media was written at 300 RPM. A 360 RPM drive such as the TEAC FD-55GFR reads it 6/5 fast, putting the cell near **3355 ns**. Fit the period per track rather than assuming it; a fixed 4000 ns nominal with a +/-10% clamp cannot even reach the true value.
+
+**Spurious flux reversals land inside 3-cell gaps.** A genuine 10,020 ns gap arrives as roughly 5828 + 3828 ns, which slices to `011` where the disc says `001`. Every decode error observed here was that one defect: a single 0 bit read as 1, never the reverse. It is quiet and it is devastating, because one wrong nibble propagates through the running-XOR chain and corrupts every byte after it in the sector - which is why a sector with a single bad bit comes back looking like 256 bytes of garbage.
+
+Neither piece of a split gap fits the cell grid (residuals around 0.26 and 0.15 cell) while their sum fits to about 0.11, so the pair can be re-fitted and merged. On a known build that one correction moved the result from 122 to 223 of 231 sectors. Combining independent captures and voting across revolutions took it to 227.
+
+### One setting does not fit every track
+
+The re-fitting above is tuned against clean tracks, and that tuning is actively wrong on marginal ones.
+A noisy track has larger fit residuals everywhere, so an aggressive setting merges transitions that are real and silently shortens the track.
+That is measurable rather than a matter of taste: count nibbles between one track's mark and the next, and compare against the `5 + 343*18 = 6179` the format needs.
+Good tracks here showed about 60 nibbles of slack; over-merged ones showed 25, and one showed *minus* 65 - the decoded track could not physically hold its own data.
+Easing off took Beyond Zork's track 28 from 0 of 18 sectors to 15.
+Run a spread of settings rather than choosing one, and let the sector checksum pick.
+
+### Keep captures separate until the last moment
+
+It is tempting to pool every revolution of every capture and vote across the lot.
+Do not. A single dropped nibble shifts a whole stream, and two reads of one track can then share almost no positions - measured here, runs of the same track ranged from 3% to 100% agreement.
+Merging across that produces a stream of individually-valid nibbles that is collectively wrong, which is worse than an obvious failure because it looks like clean data.
+Cluster runs *within* each capture, form candidate sectors there, and only then combine candidates across captures, preferring ones that more than one capture produced.
+That ordering alone was worth five sectors on Border Zone.
+
+### What it yields
+
+Measured against builds whose contents are known, with [scripts/xzip18.py](../scripts/xzip18.py):
+
+| Title | Sectors on the second surface | Byte-exact |
+| --- | --- | --- |
+| Leather Goddesses Solid Gold | 231 | 228 |
+| Border Zone | 303 | 302 |
+| Beyond Zork | 630 | 630 decoded, story checksum unmatched |
+
+The assembled Leather Goddesses story differs from the reference build in 3 blocks out of 625, plus three header bytes that genuinely differ on the disc.
+
+### An invalid nibble is worth more than a valid one
+
+A nibble that is not one of the 64 six-and-two bytes cannot be data, so its *position* is known.
+That makes it an erasure rather than an unknown error, and a single erasure in a sector is exactly correctable: every value from it onward is off by one constant, and the trailing checksum nibble pins that constant.
+Discarding such sectors - which is the obvious thing to do, and what this tool did at first - throws away most of what a marginal track has to offer, because a marginal track puts roughly one invalid nibble in each sector.
+
+The catch is that correcting an erasure *consumes* the checksum, so the result is no longer independently verified.
+Rank it below a cleanly-verified sector rather than equal to it.
+Treating the two as equivalent here let corrected sectors displace good decodes from other captures and cost 11 sectors on Border Zone before the ranking was fixed.
+With the ranking right, the same change added a sector on one title and cost nothing on the other, and every sector reported as checksum-verified was genuinely correct - the false positives disappeared.
+The residual failures are physical, not structural - specific spots that read the same way every revolution - and the fix is more revolutions on those tracks, not more processing.
+Because `--retries` only means something when a format is being decoded, and nothing here can decode this surface, use `--revs` instead: a raw read with many revolutions gives the voting more independent samples.
+Independent *captures* are worth more than extra revolutions of one, and a read through the other head is worth more still - see below.
+
+### The other head is a second opinion
+
+A flippy's second surface can be read two ways, and they fail differently.
+Flipping the disc puts it under head 0; leaving it the normal way up puts it under head 1, which on this drive sits four cylinders inward and reads the data time-reversed, since that surface was written for a flipped disc.
+Reversing the interval sequence undoes exactly that, and the track numbers confirm it within seconds: reversed, 31 tracks identified themselves at 99.9% valid nibbles; unreversed, 2 did at 52%.
+Nothing depends on getting the cylinder offset right, because the format records its own track number.
+On Beyond Zork the head-1 read was markedly cleaner over the outer two thirds and took the recovery from 485 blocks to 522 on its own.
+
+A closing caution on the checksum: on Border Zone, 302 of 303 sectors passed it while 297 were actually correct.
+Six bits is six bits. Treat a passing sector checksum as weak evidence and verify the assembled story against the Z-machine header.
 
 ## Compare decodes as sets, not by position
 
