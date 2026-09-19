@@ -58,11 +58,15 @@ Nor should damage be inferred from bytes that differ between two reads - those a
 
 ## Merging several reads of a damaged disc
 
-`gw convert` can recover fewer sectors than `gw read` did from the same flux.
-Read-time retries decode each attempt and accumulate recovered sectors; convert re-decodes the stored flux in a single pass.
-Measured here on one title: read reported 559/560 while converting that same `.scp` gave 556/560.
-It is not a sector-order or PLL artifact - both orderings give identical counts, and five PLL variations changed nothing.
-Only marginal media is affected; clean captures convert identically.
+`gw convert` can recover fewer sectors than `gw read` did from the same flux, and the usual cause is simply that the capture holds too few revolutions.
+
+Measured here on one PC 360K disc. Captured at `--revs=3`, the read reported 720/720 - its last sector rescued by a retry - while converting that same capture gave 719/720. Re-captured at `--revs=5`, the read needed no retry at all and the convert gave **720/720, byte-identical to a known-good copy of the same disc**. Nothing about the media or the decoder changed; three revolutions were not enough for one marginal sector and five were.
+
+So the rule for an archival capture is **generous `--revs`, so the flux stands on its own.** A capture with enough revolutions converts exactly as well as it read, which is what you want from something kept as the archival artifact. Passing `--format` alongside `--raw` is still worth doing - the format then verifies at read time and tells you immediately whether the disc gave up everything - but it writes only one file, so the flux is what you keep.
+
+**A retried track stores MORE revolutions than the file header declares.** The retry's flux is kept, not discarded: on the disc above, the retried track carried six revolutions where its neighbours carried three, its track header grown from three entries to six and its data area starting at offset 76 rather than 40. Any parser that applies the file header's count to every track silently drops exactly the revolutions that were read because the first attempt failed. This project's own parser had that bug; scanning the archive after fixing it found four captures with retried tracks, one holding eleven revolutions where its header declares two.
+
+None of which rescues a sector the flux genuinely does not contain. One Atari surface has a sector that resisted eight PLL variations across four captures, and re-testing it after the parser fix still fails at 692/720. That sector was only ever obtained by reading the disc again - which `--densel L` later did cleanly, at 720/720. When the flux does not have it, no amount of re-decoding will conjure it; read the disc again instead.
 
 So on a disc with weak sectors, also run a non-`--raw` read to keep the image the drive actually recovered, or take several captures and merge per-sector.
 One title here reached a complete image only by merging four reads, none of which was complete alone.

@@ -1,27 +1,25 @@
 # The de-facto builds
 
 Every disc in this catalog copies rather than remasters: one set of story-file builds was fixed in place by the 1992 Lost Treasures CDs, inherited byte-for-byte by every later compilation, and adopted by the interactive-fiction community as each game's version of record - the builds that interpreter authors test against, that reference materials describe, and that a player almost certainly has if they have the game at all.
-This page names that de-facto build for each of the 35 games and lists which cataloged collections carry it, verified by hash throughout; each collection's `versions.md` holds the measurements, the platform variants, and the later masters that never shipped.
+This page names that de-facto build for each of the 35 games and lists which cataloged collections carry it, verified by hash throughout. It answers where to get the blessed copy of a game; for what the original boxes actually shipped, which is a different and often surprising question, see [box-releases.md](box-releases.md). Per-collection detail: each collection's `versions.md` holds the measurements, the platform variants, and the later masters that never shipped.
 
 The status is descriptive, not editorial: these are not always the last builds Infocom made (the leaked repositories hold later masters for a third of the catalog), and not always one build per title (five games shipped platform splits that persist to this day, and the five Solid Gold editions appear as their own rows, since the community treats them as separate editions rather than replacements).
 
-Columns: **Box** = original boxed retail media, checked where the build has been verified first hand from the physical diskettes - the 1989 Zork Zero floppies, the 1988 Wishbringer Solid Gold diskette, and the 8-bit diskettes marked ‡; **MP** = Masterpieces (1996); **LTOI1**/**LTOI2** = the 1992 Lost Treasures CDs; **Leak** = the historicalsource repositories (2019), where "hist" marks a build present only in a repository's git history.
+Columns: **Box** = original boxed retail media, checked where *this* build has been verified first hand from a physical diskette (marked ‡). A box that shipped a **different** build is not checked here - that is a question about releases rather than about where to play, and [box-releases.md](box-releases.md) answers it per title; **MP** = Masterpieces (1996); **LTOI1**/**LTOI2** = the 1992 Lost Treasures CDs; **Leak** = the historicalsource repositories (2019), where "hist" marks a build present only in a repository's git history.
 A hybrid disc carries two platform trees and so can hold two builds of one game: Masterpieces checks both Planetfall rows (plain on its PC side, Solid Gold on its Mac side) and both Leather Goddesses rows, and LTOI1 checks both Hitchhiker's rows - the `(PC)`/`(Mac)` marker on a build names the side that carries it.
 The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns because they never carry a build these columns lack: the anthology discs redistribute the Zork-family set, and the Legacy Collection's `DATA.Z` repeats Masterpieces' shared story files.
 
 | Title | De-facto build | Box | MP | LTOI1 | LTOI2 | Leak |
 | --- | --- | --- | --- | --- | --- | --- |
-| A Mind Forever Voyaging | v4 r77.850814 |  | ✓ |  | ✓ | ✓ |
+| A Mind Forever Voyaging | v4 r77.850814 |   ✓‡ | ✓ |  | ✓ | ✓ |
 | Arthur | v6 r74.890714 (PC) |  | ✓ |  | ✓ |  |
 | Ballyhoo | v3 r97.851218 |  | ✓ | ✓ |  | ✓ |
-| Beyond Zork | v5 r57.871221 |  | ✓ | ✓ |  | hist |
-| Beyond Zork (Apple II) | v5 r49.870917 | ✓‡ |  |  |  |  |
+| Beyond Zork | v5 r57.871221 |   ✓‡ | ✓ | ✓ |  | hist |
 | Border Zone | v5 r9.871008 | ✓‡ | ✓ |  | ✓ | ✓ |
 | Bureaucracy | v4 r116.870602 |  | ✓ |  | ✓ |  |
 | Cutthroats | v3 r23.840809 |  | ✓ |  | ✓ | hist |
-| Deadline | v3 r27.831005 |  | ✓ | ✓ |  | ✓ |
+| Deadline | v3 r27.831005 |   ✓‡ | ✓ | ✓ |  | ✓ |
 | Enchanter | v3 r29.860820 |  | ✓ | ✓ |  | ✓ |
-| Enchanter (Atari first release) | v3 r10.830810 | ✓‡ |  |  |  |  |
 | The Hitchhiker's Guide to the Galaxy | v3 r59.851108 (Mac) |  | | ✓ |  |  |
 | The Hitchhiker's Guide to the Galaxy (Solid Gold) | v5 r31.871119 (PC) |  |  | ✓ |  | ✓ |
 | Hollywood Hijinx | v3 r37.861215 |  | ✓ |  | ✓ | ✓ |
@@ -29,7 +27,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Journey | v6 r83.890706 (PC) |  | ✓ |  | ✓ | ✓ |
 | Leather Goddesses of Phobos | v3 r59.860730 (PC) | ✓‡ | ✓ |  |  | ✓ |
 | Leather Goddesses of Phobos (Solid Gold) | v5 r4.880405 (Mac) | ✓‡ | ✓ |  |  | ✓ |
-| The Lurking Horror | v3 r203.870506 |  | ✓† | ✓ |  | hist |
+| The Lurking Horror | v3 r203.870506 |   ✓‡ | ✓† | ✓ |  | hist |
 | Moonmist | v3 r9.861022 |  | ✓ | ✓ |  | hist |
 | Nord and Bert | v4 r19.870722 |  | ✓ |  | ✓ | hist |
 | Planetfall | v3 r37.851003 (PC) |  | ✓ | ✓ |  |  |
@@ -39,18 +37,15 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Sherlock | v5 r21.871214 (PC) |  | ✓ |  | ✓ |  |
 | Shogun | v6 r322.890706 (PC) |  |  |  | ✓ | ✓ |
 | Sorcerer | v3 r15.851108 |  | ✓ | ✓ |  |  |
-| Sorcerer (Atari first release) | v3 r4.840131 | ✓‡ |  |  |  |  |
 | Spellbreaker | v3 r87.860904 |  | ✓ | ✓ |  | ✓ |
-| Spellbreaker (C64 first release) | v3 r63.850916 | ✓‡ |  |  |  | hist |
 | Starcross | v3 r17.821021 |  | ✓ | ✓ |  |  |
-| Stationfall | v3 r107.870430 |  | ✓ | ✓ |  | ✓ |
+| Stationfall | v3 r107.870430 |   ✓‡ | ✓ | ✓ |  | ✓ |
 | Suspect | v3 r14.841005 |  | ✓ | ✓ |  | hist |
 | Suspended | v3 r8.840521 |  | ✓ | ✓ |  | ✓ |
 | Trinity | v4 r12.860926 |  | ✓ |  | ✓ | hist |
 | The Witness | v3 r22.840924 |  | ✓ | ✓ |  | ✓ |
 | Wishbringer | v3 r69.850920 (PC) |  | ✓ |  | ✓ | ✓ |
 | Wishbringer (Solid Gold) | v5 r23.880706 (PC) | ✓ |  |  |  |  |
-| Wishbringer (Apple II first release) | v3 r68.850501 | ✓‡ |  |  |  |  |
 | Zork I | v3 r88.840726 |  | ✓ | ✓ |  | hist |
 | Zork I (Solid Gold) | v5 r52.871125 |  |  |  |  | ✓ |
 | Zork II | v3 r48.840904 |  | ✓ | ✓ |  | hist |
@@ -61,13 +56,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 
 † Masterpieces' PC copy also carries the sound upgrade in the game's `DATA` folder: `LHSOUND.ZIP`, with the fourteen samples and the patch that converts r203 into the r221 sound build; see [media assets](media-assets.md).
 
-‡ Verified first hand from the original 8-bit retail diskettes, read with a Greaseweazle between 2026-09-13 and 2026-09-18, each build taken from the z-header on the disk itself and matching a release Doherty documents. Every one of the eight has had its **complete** story extracted and checked against its own Z-machine checksum. Four - Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Beyond Zork r49.870917 - are carried by no cataloged collection and appear in no leaked repository. The other four are marked for different reasons: Leather Goddesses r59.860730 and Border Zone r9.871008 are builds the compilations already carry, recorded here on their original media; Leather Goddesses Solid Gold r4.880405 is the Solid Gold build that Masterpieces carries only on its Mac side, here on an Apple II diskette; and Spellbreaker r63.850916 does survive in the leak, which is what makes it useful (see below).
-
-*Apple II:* Wishbringer r68.850501 (128,952 bytes) is the **first** Wishbringer release, predating the r69.850920 the compilations standardized on; its story fits one 140K side and extracts complete, verified against its own Z-machine checksum. The three V5 titles - Beyond Zork r49.870917 (261,900 bytes), Border Zone r9.871008 (178,372) and Leather Goddesses Solid Gold r4.880405 (159,928) - each exceed one 140K side and continue onto the reverse of the same diskette in an 18-sector format carrying no address fields, described in [floppy-imaging.md](floppy-imaging.md). All three are now complete: each matches its own declared Z-machine checksum, and Border Zone and Solid Gold are byte-identical to the leak's builds apart from three header bytes below the checksummed region that genuinely differ on Apple II media. Beyond Zork r49 is the third of five documented releases, four earlier than the de-facto r57.871221, and its 261,900 bytes match the size Doherty documents - the only known copy, since no CD and no repository carries it.
-
-*Atari 8-bit (XL/XE, 90K single-density):* Enchanter r10.830810 (109,126 bytes) is the **first** Enchanter release, five builds before the de-facto r29.860820. Sorcerer r4.840131 (109,734 bytes) is the **first released** Sorcerer - Doherty lists three earlier builds, all marked unreleased - eleven builds before the de-facto r15.851108. Both come from folio-era packaging (1983 and 1984) and both stories span two surfaces. Their jackets carried a single index hole, so the reverse side could not be read at all until the jackets were punched for a second one; both stories are now fully reconstructed from the two surfaces and verified, each by its own Z-machine checksum and by disassembling cleanly where the rival assemblies do not disassemble at all. Leather Goddesses r59.860730 is the same build the compilations carry, here on its original Atari flippy, and *is* fully reconstructed from both sides with its checksum verified.
-
-*Commodore 64 (170K, 1541):* Spellbreaker r63.850916 (128,480 bytes) is Doherty's **first** Spellbreaker release, one build before the de-facto r87.860904. Unlike the other ‡ rows this build is not new to the catalog - the leak preserves it in the `spellbreaker` repository's "Revision 63 (Original Source)" commit, and the [historicalsource census](../collections/historicalsource/versions.md) already lists it among the builds that reached no cataloged disc. What this disk adds is that it **shipped on retail media**, which the source repositories alone could not establish - and the story extracted from it is **byte-identical to the leak's compiled r63**, both 128,480 bytes computing the same checksum. A 1985 pressing and Infocom's own archived build agree exactly, which is the first direct confirmation in this catalog that a "Revision NN (Original Source)" commit holds the build that actually shipped. Coverage against the r87 builds the CDs carry is 3.7%, confirming a distinct build rather than a repackaging.
+‡ The build has been read first hand from an original retail diskette and checked against its own Z-machine checksum. What each box shipped - including the seven builds that reached no compilation and survive in no leaked repository - is cataloged per title in [box-releases.md](box-releases.md).
 
 Reading the table:
 

@@ -113,12 +113,32 @@ def scp_tracks(path, reverse=False):
         raise ValueError("%s is not an SCP capture" % path)
     tick = 25 * (d[11] + 1)
     offs = struct.unpack('<168I', d[16:16 + 168 * 4])
+    ends = sorted(x for x in offs if x) + [len(d)]
     out = {}
     for i, o in enumerate(offs):
         if o == 0 or d[o:o + 3] != b'TRK':
             continue
+        # A RETRIED TRACK HOLDS MORE REVOLUTIONS THAN THE FILE HEADER DECLARES.
+        # Greaseweazle keeps the retry's flux, and its track header grows to
+        # match: a retried track here carries 6 revolutions where its
+        # neighbours carry 3, with the data area starting at 4 + 6*12 instead
+        # of 4 + 3*12. Trusting the global count silently discards exactly the
+        # revolutions that were read because the first attempt failed - the
+        # ones most likely to hold the sector you are missing.
+        region_end = next(x for x in ends if x > o)
+        nrev = 0
+        while nrev < 64:
+            base = o + 4 + nrev * 12
+            if base + 12 > region_end:
+                break
+            _, ln, do = struct.unpack('<III', d[base:base + 12])
+            if ln == 0 or do == 0 or o + do + ln * 2 > region_end:
+                break
+            if do < 4 + (nrev + 1) * 12:      # data would overlap the header
+                break
+            nrev += 1
         revs = []
-        for r in range(d[5]):
+        for r in range(max(nrev, 1)):
             _, ln, do = struct.unpack('<III', d[o + 4 + r * 12:o + 16 + r * 12])
             vals = struct.unpack('>%dH' % ln, d[o + do:o + do + ln * 2])
             fl, acc = [], 0
