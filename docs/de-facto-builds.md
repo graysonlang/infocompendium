@@ -21,7 +21,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Deadline | v3 r27.831005 |   ✓‡ | ✓ | ✓ |  | ✓ |
 | Enchanter | v3 r29.860820 |  | ✓ | ✓ |  | ✓ |
 | The Hitchhiker's Guide to the Galaxy | v3 r59.851108 (Mac) |  | | ✓ |  |  |
-| The Hitchhiker's Guide to the Galaxy (Solid Gold) | v5 r31.871119 (PC) |  |  | ✓ |  | ✓ |
+| The Hitchhiker's Guide to the Galaxy (Solid Gold) | v5 r31.871119 (PC) |   ✓‡ |  | ✓ |  | ✓ |
 | Hollywood Hijinx | v3 r37.861215 |  | ✓ |  | ✓ | ✓ |
 | Infidel | v3 r22.830916 |  | ✓ | ✓ |  | ✓ |
 | Journey | v6 r83.890706 (PC) |  | ✓ |  | ✓ | ✓ |
@@ -31,7 +31,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Moonmist | v3 r9.861022 |  | ✓ | ✓ |  | hist |
 | Nord and Bert | v4 r19.870722 |  | ✓ |  | ✓ | hist |
 | Planetfall | v3 r37.851003 (PC) |  | ✓ | ✓ |  |  |
-| Planetfall (Solid Gold) | v5 r10.880531 (Mac) |  | ✓ | ✓ |  | ✓ |
+| Planetfall (Solid Gold) | v5 r10.880531 (Mac) |   ✓‡ | ✓ | ✓ |  | ✓ |
 | Plundered Hearts | v3 r26.870730 |  | ✓ |  | ✓ | ✓ |
 | Seastalker | v3 r16.850603 (PC) |  | ✓ |  | ✓ | ✓ |
 | Sherlock | v5 r21.871214 (PC) |  | ✓ |  | ✓ |  |
@@ -46,10 +46,10 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | The Witness | v3 r22.840924 |  | ✓ | ✓ |  | ✓ |
 | Wishbringer | v3 r69.850920 (PC) |  | ✓ |  | ✓ | ✓ |
 | Wishbringer (Solid Gold) | v5 r23.880706 (PC) | ✓ |  |  |  |  |
-| Zork I | v3 r88.840726 |  | ✓ | ✓ |  | hist |
-| Zork I (Solid Gold) | v5 r52.871125 |  |  |  |  | ✓ |
-| Zork II | v3 r48.840904 |  | ✓ | ✓ |  | hist |
-| Zork III | v3 r17.840727 |  | ✓ | ✓ |  | hist |
+| Zork I | v3 r88.840726 |   ✓‡ | ✓ | ✓ |  | hist |
+| Zork I (Solid Gold) | v5 r52.871125 |   ✓‡ |  |  |  | ✓ |
+| Zork II | v3 r48.840904 |   ✓‡ | ✓ | ✓ |  | hist |
+| Zork III | v3 r17.840727 |   ✓‡ | ✓ | ✓ |  | hist |
 | Zork Zero | v6 r393.890714 (PC) | ✓ | ✓\* | ✓\* |  |  |
 
 \* The CD copies of Zork Zero are complete as a game but lack the MCGA graphics file (`ZORK0.MG1`) - only the retail floppies (and the IF Archive's separately hosted copy) carry it; see [media assets](media-assets.md).
