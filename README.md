@@ -78,6 +78,8 @@ scripts/
   fat12.py                       Lists or extracts a FAT12 floppy image (Atari ST, PC), naming
                                  Infocom stories from their Z-machine header and matching save
                                  files to the story they belong to.
+  macscreen.py                   Converts a raw 512x342 1-bit Mac screen dump (a StartupScreen
+                                 file) to PNG.
   mfs.py                         Lists or extracts a Macintosh MFS (400K, pre-HFS) image, both
                                  forks - hfsutils cannot read MFS.
   xzip18.py                      Recovers the 18-sector second surface of an Apple II XZIP
