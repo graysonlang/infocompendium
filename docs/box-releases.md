@@ -69,7 +69,19 @@ These are Infocom **Order Codes**: a Product Code for the game plus a System Cod
 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| PC | 5.25" 360K DS | IS4-IB2-FD1, PD-IS4G-04 | v5 r31.871119 | 158,412 | 410D | The de-facto Solid Gold build. Byte-identical to the leak's `hitchhikersguide-gold` compile and to LTOI1's PC copy. **Two SKUs, one master:** a second disk numbered `PD-IS4G-04` in Activision's later scheme is byte-identical to the `IS4-IB2-FD1` disk across the whole 368,640-byte image, boot sector and unused space included. The `G` marking Solid Gold appears only in the Activision numbering. |
+| PC | 5.25" 360K DS | IS4-IB2-FD1, PD-IS4G-04 | v5 r31.871119 | 158,412 | 410D | The de-facto Solid Gold build. Byte-identical to the leak's `hitchhikersguide-gold` compile and to LTOI1's PC copy, and see below: two separately numbered printings hold the same master. |
+
+Two printings of this edition are held, and their disks are **byte-identical across the whole 368,640-byte image** - boot sector, FAT, directory and unused space included, not merely the payload files. Everything that differs is on paper:
+
+| | First printing | Second printing |
+| --- | --- | --- |
+| ISBN | 0-87321-227-4 | 0-87321-446-3 |
+| Bar code | 05105101277 | 051051014461 |
+| Disk label | `IS4-IB2-FD1` | `PD-IS4G-04` |
+| Package codes | `PD-IS4`, `PD-844-24` | `IS4-IB1`, `PD-IS4G-07`, `PD-844-41` |
+| Stated requirement | 128K, MS-DOS 2.0 or higher | **192K**, MS-DOS 2.0 or higher |
+
+Three things worth taking from that. The second package lists the Infocom and Activision schemes side by side, which is the behavior Doherty describes and the reason Hitchhiker's Solid Gold appears under the plain `IS4` in one place and `IS4G` in another. The disk and the box carry **different** numbers - `PD-IS4G-04` on the media against `PD-IS4G-07` on the package - so a citation should say which was read. And the stated memory requirement rose from 128K to 192K between printings while the software did not change by a single byte, so a requirement printed on a box is a claim about the package, not a fact about the program.
 
 ## Leather Goddesses of Phobos
 
