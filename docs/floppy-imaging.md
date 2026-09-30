@@ -107,6 +107,25 @@ Some formats declare `heads = 1` and will refuse head 1 with "Out of range for f
 And on this drive head 1 sits **four cylinders inward**: head-1 cylinder N returns real track N+4, so the outermost four tracks of the second surface cannot be reached at all.
 The Greaseweazle wiki documents `h1.off=-8` for flippy-modded drives, which is the same offset in physical steps.
 
+## Copy protection looks exactly like a dead disk
+
+An Apple II disk that decodes 84 sectors of 560 - all of track 0, four of track 2, all of tracks 31 to 34, nothing in between - is not damaged. That is a protected disk, and the pattern is the signature: a standard boot track, standard tracks at the end, and an altered middle.
+
+Infocom protected some Apple II releases by changing the **data** field prologue from `D5 AA AD` to something else, leaving the **address** fields alone. On the Sorcerer disk here it is `D5 AA BC` on tracks 1 and 3-30, with track 2 deliberately mixed: four standard sectors and twelve altered, which is precisely the four sectors a stock decoder finds there.
+
+The test takes one pass over the flux. Count `D5 AA 96` and `D5 AA AD` per track over two revolutions:
+
+| address marks | data marks | meaning |
+| --- | --- | --- |
+| 32 | 32 | healthy standard track |
+| 32 | 0 | protected - look at what the data prologue actually is |
+| 32 | some | partly protected, as on that track 2 |
+| few | few | now you may have damage |
+
+[scripts/a2gcr.py](../scripts/a2gcr.py) does the census with `--report` and decodes both prologues; the Sorcerer disk gives 560 of 560 sectors, every one checksum-verified. Sector placement comes from the address field rather than from counting round the track, so an unusual sector order decodes correctly too.
+
+Two related traps met on the same disk. Its bit cell is about **3800 ns**, not the ~3355 ns of the other Apple II disks here - fit it, do not assume, because an analysis run at the wrong figure reported about 50% valid GCR on *every* track including the one gw reads perfectly. And its story is not contiguous: read from the header sector onward the checksum misses, while read through the forward DOS 3.3 interleave it matches exactly.
+
 ## A format with no address fields at all
 
 Not every soft-sectored format has address marks, and a decoder that assumes they exist will report a written surface as blank.

@@ -5,7 +5,9 @@ What the boxes actually shipped, one section per title.
 This is a different question from [the de-facto builds](de-facto-builds.md), which names the one build the community treats as each game's version of record and says which compilation to get it from.
 That page is for deciding where to play a game.
 This one is a record of what has been read first hand off original diskettes: which build each platform's box carried, verified against the disc rather than against a catalog.
-The two disagree more often than you would expect, which is the point - several boxes shipped builds that reached no compilation and survive in no leaked repository.
+The two disagree more often than you would expect, which is the point - several boxes shipped builds that no compilation carries and no leaked repository holds.
+
+Those builds are not unknown to the world, and this page does not claim to have rescued them. Andrew Plotkin's [Obsessively Complete Infocom Catalog](references.md) documents every release listed here and hosts a copy of each. What these discs add is provenance rather than preservation: a build read off the physical media it shipped on, with the flux kept and the checksum verified, and the platform-level detail that a single archived copy cannot show.
 
 Every build below was read with a Greaseweazle from the physical diskette, extracted, and checked against its own Z-machine checksum; the checksum column is the declared value, confirmed by recomputing it over the story body.
 Where a build is byte-identical to a copy from another source, that is stated, because agreement between independent witnesses is the strongest evidence available that a reconstruction is right.
@@ -13,8 +15,11 @@ Method is in [floppy-imaging.md](floppy-imaging.md).
 
 The part number is recorded exactly as printed on the diskette label, since it is the one identifier on the physical media itself and how releases are told apart without reading them. A dash means it has not been recorded yet, not that the disk lacks one.
 
-**Absent from every compilation and from the leaked repositories:** Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131, Beyond Zork r49.870917, Trinity r11.860509, Enchanter r16.831118 and Bureaucracy r86.870212.
-Seven builds, on seven boxes, surviving nowhere else. Two more - Spellbreaker r63.850916 and Zork I Solid Gold r52.871125 - reached no compilation either, but survive in the leak, and in both cases the retail disc matches Infocom's archived build byte for byte.
+These are Infocom **Order Codes**: a Product Code for the game plus a System Code for the platform, as set out in [Doherty's Fact Sheet](references.md) - so `IS4-IB2-FD1` is Hitchhiker's (`IS4`) for IBM/MS-DOS (`IB2`), and `IZ1-AP2-FD1` is Zork I (`IZ1`) for the Apple Macintosh (`AP2`). After the Activision merger the platform half switched to Activision's codes, which is why Planetfall's later disk reads `PD-IS3G-04` - `PD` being IBM/MS-DOS - with the Solid Gold edition marked by the `G` in `IS3G`. Beware two traps: Hitchhiker's Solid Gold shares the plain release's `IS4` rather than taking a G code, and a code alone does not always settle which edition is in the box.
+
+**Carried by no compilation in this catalog and by no leaked repository:** Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131, Sorcerer r6.840508, Beyond Zork r49.870917, Trinity r11.860509, Enchanter r16.831118 and Bureaucracy r86.870212 - eight builds on eight boxes, with Sorcerer alone accounting for two of them on two platforms. Spellbreaker r63.850916 and Zork I Solid Gold r52.871125 reached no compilation either but do survive in the leak, and in both cases the retail disc matches Infocom's archived build byte for byte.
+
+**Checked against the Obsessively Complete Infocom Catalog.** All 21 stories extracted here were compared with its hosted copies: 14 are byte-identical, and the other 7 differ only in the two or three platform header bytes at 0x01, 0x04 and 0x05 - flags1 and the base of high memory - which sit below the checksummed region at 0x40, so both copies compute the same Z-machine checksum. That is an independent confirmation in both directions, and it is how the Sorcerer disk's protected-track decode was verified: 560 sectors recovered by breaking the protection, yielding a story that matches an externally archived copy to within those header bytes.
 
 ## A Mind Forever Voyaging
 
@@ -64,7 +69,7 @@ Seven builds, on seven boxes, surviving nowhere else. Two more - Spellbreaker r6
 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| PC | 5.25" 360K DS | IS4-IB2-FD1 | v5 r31.871119 | 158,412 | 410D | The de-facto Solid Gold build. Byte-identical to the leak's `hitchhikersguide-gold` compile and to LTOI1's PC copy. |
+| PC | 5.25" 360K DS | IS4-IB2-FD1, PD-IS4G-04 | v5 r31.871119 | 158,412 | 410D | The de-facto Solid Gold build. Byte-identical to the leak's `hitchhikersguide-gold` compile and to LTOI1's PC copy. **Two SKUs, one master:** a second disk numbered `PD-IS4G-04` in Activision's later scheme is byte-identical to the `IS4-IB2-FD1` disk across the whole 368,640-byte image, boot sector and unused space included. The `G` marking Solid Gold appears only in the Activision numbering. |
 
 ## Leather Goddesses of Phobos
 
@@ -102,6 +107,7 @@ Seven builds, on seven boxes, surviving nowhere else. Two more - Spellbreaker r6
 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+| Apple II | 5.25" 140K | IZ5-AP1-FD1 | v3 r6.840508 | 109,482 | E7AC | **On no compilation and in no repository.** Two releases after the Atari disk's r4, nine before the de-facto r15.851108. The disk is **copy protected**: tracks 1 and 3-30 use a `D5 AA BC` data prologue instead of `D5 AA AD`, so a stock decoder recovers 84 of 560 sectors and the disk looks dead. Every address field is intact and all 560 sectors decode with [a2gcr.py](../scripts/a2gcr.py). |
 | Atari 8-bit | 5.25" 90K | - | v3 r4.840131 | 109,734 | 2E36 | **On no compilation and in no repository.** The first *released* Sorcerer - Doherty lists three earlier builds, all unreleased - eleven before the de-facto r15.851108. |
 
 ## Spellbreaker
@@ -133,7 +139,7 @@ Seven builds, on seven boxes, surviving nowhere else. Two more - Spellbreaker r6
 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| PC | 5.25" 360K DS | - | v5 r23.880706 | 164,712 | 4222 | The one shipped edition no compilation carried; the leak holds only its source. This box is the build's only known carrier. Built-in hints present. |
+| PC | 5.25" 360K DS | - | v5 r23.880706 | 164,712 | 4222 | The one shipped edition no compilation carried; the leak holds only its source. Byte-identical to the catalog's hosted copy. Built-in hints present. |
 
 ## Zork I, II and III
 

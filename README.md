@@ -25,7 +25,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games; both discs of the set verified byte-identical to the Internet Archive's published ISOs |
 | [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | yes (all five diskettes) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance, with media-targeted graphics confirmed on both sides |
-| 8-bit and 16-bit retail diskettes (Apple II, Atari XL/XE, Commodore 64, Atari ST, Amiga, Macintosh) | yes (eighteen diskettes, nineteen titles) | partly | Original 1983-88 media carrying builds no compilation does, several of them earlier than any cataloged release; see [the de-facto builds](docs/de-facto-builds.md) and [flux capture](docs/floppy-imaging.md). The three Apple II V5 titles are complete: their stories continue onto the reverse side of the same diskette in an 18-sector format with no address fields, now fully decoded and checksum-verified, including Beyond Zork r49.870917 which no other medium carries |
+| 8-bit and 16-bit retail diskettes (Apple II, Atari XL/XE, Commodore 64, Atari ST, Amiga, Macintosh) | yes (nineteen diskettes, twenty titles) | partly | Original 1983-88 media carrying builds no compilation does, several of them earlier than any cataloged release; see [the de-facto builds](docs/de-facto-builds.md) and [flux capture](docs/floppy-imaging.md). The three Apple II V5 titles are complete: their stories continue onto the reverse side of the same diskette in an 18-sector format with no address fields, now fully decoded and checksum-verified, including Beyond Zork r49.870917 which no other medium carries |
 
 ## Findings
 
@@ -42,13 +42,13 @@ What each disc actually contains, checked against the published references:
 
 - [Zork Zero's MS-DOS floppies (1989)](discs/zork-zero-1989-dos/notes.md) - the dual-media retail box shipped its graphics renditions by media format: MCGA on the 3.5" diskettes, EGA (by the disk-count arithmetic) on the 5.25", CGA on both. Its MG1 is byte-identical to the IF Archive's 1994 upload, settling that file's provenance, and its story file and interpreter are byte-identical to the compilations' - the CD lineage starts here.
 - [The de-facto builds](docs/de-facto-builds.md) - one row per game: the build the community treats as its version of record, and which collections carry it. Answers where to play a game.
-- [Releases on original media](docs/box-releases.md) - the other question, per title: what each platform's box actually shipped, read first hand from the diskette and checked against its own checksum. Seven of those builds reached no compilation and survive in no leaked repository.
+- [Releases on original media](docs/box-releases.md) - the other question, per title: what each platform's box actually shipped, read first hand from the diskette and checked against its own checksum. Eight of those builds are carried by no compilation and no leaked repository; all were checked against the Obsessively Complete Infocom Catalog's hosted copies and agree, 14 of 21 byte-identical and the rest differing only in platform header bytes.
 - [Media assets across the collections](docs/media-assets.md) - one table for the six titles with graphics or sound: which collections carry which asset files, the byte-identity of every repeated file, and the decoded Sherlock sound-name map.
 
 - [The 8-bit retail diskettes](docs/box-releases.md) - Apple II, Atari XL/XE and Commodore 64 originals carry builds no compilation does, four of them *first* releases: Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131 and Spellbreaker r63.850916. The Spellbreaker disc also settles a question the source repositories could not: its story is byte-identical to the leak's compiled r63, confirming that a "Revision NN (Original Source)" commit holds the build that actually shipped.
 - [The Apple II V5 diskettes' second surface](docs/floppy-imaging.md) - Beyond Zork, Border Zone and Leather Goddesses Solid Gold each carry the first 100,864 bytes of their story on the labelled 16-sector side and the remainder on the *reverse of the same disc*, in an 18-sector format with no address fields: one sync mark per track, then eighteen data fields at a fixed stride. Every stock decoder reports that surface as 0/560, which is what a good disc of this kind looks like rather than a blank one. The format is now decoded from flux by [scripts/xzip18.py](scripts/xzip18.py), confirmed against `interlz5.c` - which writes these images - and against Infocom's own XZIP interpreter source, which reads them. **All three stories are complete and verified**: Leather Goddesses 231 of 231 sectors and Border Zone 303 of 303, each byte-identical to its known build but for three Apple II header bytes, and Beyond Zork all 630, matching its own declared checksum and disassembling to 1,719 routines. The decisive step was a drive setting, not software - `gw read --densel L`, which stops an HD drive inventing flux transitions on this format's long gaps.
 - [Trinity on the Atari ST (1986)](docs/box-releases.md) - the first 16-bit disc in this catalog, and it carries v4 r11.860509, an earlier build than the r12.860926 held by both CDs and the leaked repository. The disc also preserved `LONGWATE.SAV`, a saved game left on it by an earlier player - the first save recovered from original media here, its header carrying the story's own release, serial and checksum, and its dynamic memory 98.1% identical to the game's opening state.
-- [Wishbringer Solid Gold on MS-DOS (1988)](docs/box-releases.md) - the one shipped edition no compilation carried, read first hand from its retail diskette: v5 r23.880706 with checksum verified and the built-in hints present. The leak has only its source, so the original box is the build's only known carrier.
+- [Wishbringer Solid Gold on MS-DOS (1988)](docs/box-releases.md) - the one shipped edition no compilation carried, read first hand from its retail diskette: v5 r23.880706 with checksum verified and the built-in hints present. The leak has only its source, so the original box is where this catalog gets the build.
 
 The disc-agnostic method lives in [docs/](docs/identifying-discs.md): [what these discs are and how to identify them](docs/identifying-discs.md), [the imaging traps and what works](docs/imaging.md), [flux capture and the 8-bit diskette formats](docs/floppy-imaging.md), and [extracting HFS volumes into modern images](docs/hfs-extraction.md), plus the [external references](docs/references.md).
 
@@ -64,15 +64,20 @@ docs/
   media-assets.md                Cross-collection table of the graphics and sound assets.
   de-facto-builds.md             The de-facto standard build of each game, per collection.
   box-releases.md                What the original boxes shipped, per title - the builds read
-                                 first hand from retail diskettes, seven of which survive nowhere else.
+                                 first hand from retail diskettes, eight of them carried by no compilation or repository.
 scripts/
   hfscopy.py                     Walks an HFS volume and copies it out preserving forks and metadata.
+  verify.py                      Checks a checksums.txt against the files it describes, hashing
+                                 .zst captures both as stored and decompressed; search roots are
+                                 given on the command line, never recorded.
   raw2user.py                    Converts a raw 2352-byte/sector dump to 2048-byte user data,
                                  verifying sector structure and printing Redump-style hashes.
   picdir.py                      Lists the image directory of an Infocom V6 picture library
                                  (PC .CG1/.EG1/.MG1, Mac PIC.DATA), either byte order.
   get-ztools.sh                  Fetches and builds ztools (txd, infodump, pix2gif, check)
                                  from the IF Archive into tools/ztools/ (gitignored).
+  a2gcr.py                       Decodes an Apple II 16-sector disk from flux, including
+                                 copy-protected disks a stock decoder reports as empty.
   adf.py                         Lists or extracts an AmigaDOS floppy image (.adf), walking the
                                  OFS/FFS block chains - Amiga files are not contiguous on disc.
   fat12.py                       Lists or extracts a FAT12 floppy image (Atari ST, PC), naming
