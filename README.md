@@ -25,7 +25,7 @@ The scripts here work around that: image the disc at sector level, read the HFS 
 | [Return to Zork / The Zork Anthology (Zork Legacy Collection, 1997)](discs/zork-legacy-1997-rtz-anthology/README.md) | yes | no | Redump-verified on all 26 tracks (data plus 25 audio); anthology games as loose files |
 | [GET LAMP (2010), disc 2](discs/get-lamp-2010-disc2/README.md) | yes (from existing rip) | n/a | Bonus DVD: Infocom catalog/ad scans, curated IF games; both discs of the set verified byte-identical to the Internet Archive's published ISOs |
 | [Zork Zero, MS-DOS (1989)](discs/zork-zero-1989-dos/README.md) | yes (all five diskettes) | yes | The catalog's first floppies: the dual-media retail box whose MG1 settles the IF Archive file's provenance, with media-targeted graphics confirmed on both sides |
-| 8-bit and 16-bit retail diskettes (Apple II, Atari XL/XE, Commodore 64, Atari ST, Amiga, Macintosh) | yes (nineteen diskettes, twenty titles) | partly | Original 1983-88 media carrying builds no compilation does, several of them earlier than any cataloged release; see [the de-facto builds](docs/de-facto-builds.md) and [flux capture](docs/floppy-imaging.md). The three Apple II V5 titles are complete: their stories continue onto the reverse side of the same diskette in an 18-sector format with no address fields, now fully decoded and checksum-verified, including Beyond Zork r49.870917 which no other medium carries |
+| 8-bit and 16-bit retail diskettes (Apple II, Atari XL/XE, Commodore 64, Atari ST, Amiga, Macintosh) | yes (twenty diskettes, twenty-one titles) | partly | Original 1983-88 media carrying builds no compilation does, several of them earlier than any cataloged release; see [the de-facto builds](docs/de-facto-builds.md) and [flux capture](docs/floppy-imaging.md). The three Apple II V5 titles are complete: their stories continue onto the reverse side of the same diskette in an 18-sector format with no address fields, now fully decoded and checksum-verified, including Beyond Zork r49.870917 which no other medium carries |
 
 ## Findings
 
@@ -80,7 +80,8 @@ scripts/
                                  copy-protected disks a stock decoder reports as empty.
   adf.py                         Lists or extracts an AmigaDOS floppy image (.adf), walking the
                                  OFS/FFS block chains - Amiga files are not contiguous on disc.
-  fat12.py                       Lists or extracts a FAT12 floppy image (Atari ST, PC), naming
+  fat12.py                       Lists or extracts a FAT12 floppy image (Atari ST, PC), descending
+                                 into subdirectories, naming
                                  Infocom stories from their Z-machine header and matching save
                                  files to the story they belong to.
   macscreen.py                   Converts a raw 512x342 1-bit Mac screen dump (a StartupScreen

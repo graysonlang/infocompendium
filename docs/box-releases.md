@@ -88,8 +88,29 @@ Three things worth taking from that. The second package lists the Infocom and Ac
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | PC | 5.25" 180K SS | - | v3 r59.860730 | 129,022 | D070 | The de-facto build. |
+| PC | 3.5", 360K-formatted | PD-IC1-04T | v3 r59.860730 | 129,022 | D070 | Byte-identical to the 5.25" and Atari ST copies. A 3.5" disk formatted as 40 cylinders x 2 heads x 9 sectors, so it decodes as `ibm.360`, not `ibm.720`. Carries far more than the game: a full installer suite, `LEATHER.COM`, a `READ.ME` documenting the Cornerstone **boss key**, and a `DEMO` subdirectory holding a Cornerstone demo byte-identical to the one on the Lurking Horror disk. |
 | Atari ST | 3.5" 360K SS | - | v3 r59.860730 | 129,022 | D070 | **Byte-identical to the PC copy.** |
 | Atari 8-bit | 5.25" 90K flippy | - | v3 r59.860730 | 129,022 | D070 | Reconstructed from both surfaces. Differs from the PC and ST copies in four places only: three header bytes at 0x01/0x04/0x05, below the checksummed region, plus one of trailing length. An independent platform agreeing to within the known header bytes is what confirms that reconstruction. |
+
+### The dual-media grey box
+
+The 3.5" disk above is one of two in a single grey box, bought from a seller in Australia, and the package carries codes that the standard references do not:
+
+| | |
+| --- | --- |
+| ISBN | 0-87321-402-1 |
+| Bar code | 051051014027 |
+| Package codes | `PD-IC1T2`, `IC-1-IB3` |
+| 5.25" disk | `PD-IC1-04` |
+| 3.5" disk | `PD-IC1-04T` |
+
+Two things follow, and the box is the evidence for both because it is a controlled comparison - one product, one package, two media.
+
+**`T` marks the 3.5" disk.** Both disks carry `PD-IC1-04`; only the 3.5" one adds a `T`, and the package code `PD-IC1T2` carries it too. `PD-IC1-04` is documented in collector listings as the IBM release; `PD-IC1-04T` appears nowhere searchable.
+
+**`IB3` is an undocumented system code.** Doherty's Fact Sheet lists `IB1` for IBM and 100% compatibles and `IB2` for IBM and MS-DOS compatibles, and stops there - `IB3` is absent from it, and from search results generally. A third IBM code on a package that ships both media sizes suggests `IB3` denotes exactly that, which would make the Fact Sheet's table incomplete rather than wrong. One box is not proof; a second dual-media package would settle it.
+
+The arrangement itself is not unique - the 1989 Zork Zero box also shipped both media - but that box put *different* graphics renditions on each, so whether these two disks carry the same software is a real question rather than a formality. The 5.25" disk from this box has not been read yet.
 
 ## Leather Goddesses of Phobos (Solid Gold)
 

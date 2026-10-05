@@ -63,19 +63,39 @@ class Fat12:
             c = self._next(c)
         return bytes(out[:size])
 
-    def files(self):
-        out = []
-        for i in range(self.ndir):
-            e = self.d[self.root + i * 32: self.root + i * 32 + 32]
-            if not e or e[0] == 0x00:
-                break
+    def _entries(self, blob):
+        for i in range(0, len(blob) - 31, 32):
+            e = blob[i:i + 32]
+            if e[0] == 0x00:
+                return
             if e[0] == 0xE5 or e[11] & 0x08:      # deleted, or volume label
                 continue
             stem = e[0:8].decode('latin1').rstrip()
             ext = e[8:11].decode('latin1').rstrip()
             name = stem + ('.' + ext if ext else '')
-            size = int.from_bytes(e[28:32], 'little')
-            out.append((name, self._chain(int.from_bytes(e[26:28], 'little'), size)))
+            yield name, e[11], int.from_bytes(e[26:28], 'little'), \
+                int.from_bytes(e[28:32], 'little')
+
+    def files(self, blob=None, prefix='', seen=None):
+        """Every file, descending into subdirectories.
+
+        A directory entry has size 0, so a parser that reads only the root
+        reports one as an empty file and hides everything inside it. The
+        Leather Goddesses 3.5 inch disk keeps its demo that way.
+        """
+        if blob is None:
+            blob = self.d[self.root:self.root + self.ndir * 32]
+        seen = seen if seen is not None else set()
+        out = []
+        for name, attr, clus, size in self._entries(blob):
+            if attr & 0x10:                       # directory
+                if name in ('.', '..') or clus in seen or clus < 2:
+                    continue
+                seen.add(clus)
+                sub = self._chain(clus, 1 << 20)
+                out += self.files(sub, prefix + name + '/', seen)
+            else:
+                out.append((prefix + name, self._chain(clus, size)))
         return out
 
 
@@ -148,9 +168,12 @@ def main():
             d = pathlib.Path(args.out)
             d.mkdir(parents=True, exist_ok=True)
             for name, b in files:
-                target = d / name
+                target = d.joinpath(*name.split('/'))
+                if not target.resolve().is_relative_to(d.resolve()):
+                    sys.exit('refusing to write outside %s: %s' % (d, name))
                 if target.exists():
                     sys.exit('refusing to overwrite %s' % target)
+                target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(b)
             print('  extracted %d files to %s' % (len(files), d))
 
