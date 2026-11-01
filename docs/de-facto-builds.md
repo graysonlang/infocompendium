@@ -29,7 +29,7 @@ The Zork Anthology (1994) and the Zork Legacy Collection (1997) are not columns 
 | Leather Goddesses of Phobos (Solid Gold) | v5 r4.880405 (Mac) | ✓‡ | ✓ |  |  | ✓ |
 | The Lurking Horror | v3 r203.870506 |   ✓‡ | ✓† | ✓ |  | hist |
 | Moonmist | v3 r9.861022 |  | ✓ | ✓ |  | hist |
-| Nord and Bert | v4 r19.870722 |  | ✓ |  | ✓ | hist |
+| Nord and Bert | v4 r19.870722 |   ✓‡ | ✓ |  | ✓ | hist |
 | Planetfall | v3 r37.851003 (PC) |  | ✓ | ✓ |  |  |
 | Planetfall (Solid Gold) | v5 r10.880531 (Mac) |   ✓‡ | ✓ | ✓ |  | ✓ |
 | Plundered Hearts | v3 r26.870730 |  | ✓ |  | ✓ | ✓ |

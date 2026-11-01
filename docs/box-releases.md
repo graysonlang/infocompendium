@@ -17,7 +17,7 @@ The part number is recorded exactly as printed on the diskette label, since it i
 
 These are Infocom **Order Codes**: a Product Code for the game plus a System Code for the platform, as set out in [Doherty's Fact Sheet](references.md) - so `IS4-IB2-FD1` is Hitchhiker's (`IS4`) for IBM/MS-DOS (`IB2`), and `IZ1-AP2-FD1` is Zork I (`IZ1`) for the Apple Macintosh (`AP2`). After the Activision merger the platform half switched to Activision's codes, which is why Planetfall's later disk reads `PD-IS3G-04` - `PD` being IBM/MS-DOS - with the Solid Gold edition marked by the `G` in `IS3G`. Beware two traps: Hitchhiker's Solid Gold shares the plain release's `IS4` rather than taking a G code, and a code alone does not always settle which edition is in the box.
 
-**Carried by no compilation in this catalog and by no leaked repository:** Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131, Sorcerer r6.840508, Beyond Zork r49.870917, Trinity r11.860509, Enchanter r16.831118 and Bureaucracy r86.870212 - eight builds on eight boxes, with Sorcerer alone accounting for two of them on two platforms. Spellbreaker r63.850916 and Zork I Solid Gold r52.871125 reached no compilation either but do survive in the leak, and in both cases the retail disc matches Infocom's archived build byte for byte.
+**Carried by no compilation in this catalog and by no leaked repository:** Wishbringer r68.850501, Enchanter r10.830810, Sorcerer r4.840131, Sorcerer r6.840508, Beyond Zork r49.870917, Trinity r11.860509, Enchanter r16.831118 and Bureaucracy r86.870212 - eight builds on eight boxes, with Sorcerer alone accounting for two of them on two platforms. Spellbreaker r63.850916 and Zork I Solid Gold r52.871125 reached no compilation either but do survive in the leak, and in both cases the retail disc matches Infocom's archived build byte for byte. Spellbreaker r63 is held on two platforms, C64 and MS-DOS, whose files are identical to each other.
 
 **Checked against the Obsessively Complete Infocom Catalog.** All 21 stories extracted here were compared with its hosted copies: 14 are byte-identical, and the other 7 differ only in the two or three platform header bytes at 0x01, 0x04 and 0x05 - flags1 and the base of high memory - which sit below the checksummed region at 0x40, so both copies compute the same Z-machine checksum. That is an independent confirmation in both directions, and it is how the Sorcerer disk's protected-track decode was verified: 560 sectors recovered by breaking the protection, yielding a story that matches an externally archived copy to within those header bytes.
 
@@ -124,6 +124,12 @@ The arrangement itself is not unique - the 1989 Zork Zero box also shipped both 
 | --- | --- | --- | --- | --- | --- | --- |
 | PC | 5.25" 360K DS | - | v3 r203.870506 | 128,986 | FB9C | The de-facto build. The box also bundles a Cornerstone demo. |
 
+## Nord and Bert Couldn't Make Head or Tail of It
+
+| Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| PC | 5.25" 360K DS | PD-IC3-04 | v4 r19.870722 | 170,284 | 4986 | The de-facto build, byte-identical to the catalog's hosted copy. The leak's HEAD carries `r20.870722` instead - a post-release master sharing the same serial date that never shipped - so this disk settles which of the two retail got. |
+
 ## Planetfall
 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
@@ -148,6 +154,7 @@ The arrangement itself is not unique - the 1989 Zork Zero box also shipped both 
 | Platform | Media | Part no. | Build | Bytes | Checksum | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | Commodore 64 | 5.25" 170K | - | v3 r63.850916 | 128,480 | 6C0A | Doherty's first release, one build before the de-facto r87.860904. Absent from every disc, but **byte-identical to the leak's compiled r63** - the first direct confirmation here that a "Revision NN (Original Source)" commit holds the build that actually shipped. |
+| PC | 5.25" 180K SS | IZ6-IB2-FD1 | v3 r63.850916 | 128,480 | 6C0A | The same first release, on MS-DOS. **Byte-identical to the C64 copy** - not one byte differs, not even the platform header bytes that separate the Atari 8-bit Leather Goddesses from its PC and ST counterparts. Ships the shared PC installer suite; no demo, no README. |
 
 ## Stationfall
 
